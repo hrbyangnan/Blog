@@ -4,6 +4,7 @@ import entity.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AccessDAO {
@@ -17,25 +18,44 @@ public class AccessDAO {
 
 
     //Takes a username and "password" and adds it to the database
-    public void setNewUser(String name, String passwd) throws SQLException {
-        try(PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd) VALUES (?,?)")){
-            stmt.setString(1,name);
-            stmt.setString(2,passwd);
+    public void setNewUser(String name, String password) throws SQLException {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd) VALUES (?,?)")) {
+            stmt.setString(1, name);
+            stmt.setString(2, password);
+
+            stmt.executeUpdate();
         }
     }
 
-    public void getLoginFromDataBase() throws SQLException {
+    //get password for matching login
+    public String getLoginFromDataBase(String name) throws SQLException {
+        String plaintext;
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT UserPasswd FROM user WHERE UserName = ?")) {
+            stmt.setString(1, name);
+            try (ResultSet rs = stmt.executeQuery()) {
+                //For this method should be only one item, it will be in a table
+                plaintext = rs.getString(1);
+            }
+
+        }
+        return plaintext;
     }
 
-    public User getUserInfoFromDataBase() throws SQLException {
-    return null; }
+    public User getUserInfoFromDataBase(String name) throws SQLException {
+        User thisUser;
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM userinformation WHERE UserId =? ")){
+
+        }
+        return null;
+    }
 
     public void postUserInfoToDatabase() throws SQLException {
     }
 
-    public Article getOneArticleFromDataBase() throws SQLException {
+    /*public Article getOneArticleFromDataBase() throws SQLException {
     }
 
     public List<Article> getAllArticlesFromDataBase() throws SQLException{}
+    */
 
 }
