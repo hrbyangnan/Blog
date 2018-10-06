@@ -8,6 +8,9 @@
 package servlet;
 
 
+import dao.UserDao;
+import dao.UserDaoImp;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,7 +27,18 @@ public class loginServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String name = request.getParameter("name");
-        String pwd = request.getParameter("password");
+        String password = request.getParameter("password");
+
+
+
+        UserDao ud = new UserDaoImp();
+
+        if(ud.login(name, password)){
+            request.setAttribute("xiaoxi", "welcome"+name);
+            request.getRequestDispatcher("/success.jsp").forward(request, response);
+        }else{
+            response.sendRedirect("index.jsp");
+        }
 
 
     }

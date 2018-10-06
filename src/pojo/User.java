@@ -1,4 +1,4 @@
-package entity;
+package pojo;
 
 public class User {
     private int id;
@@ -6,7 +6,7 @@ public class User {
     private String password;
     private String realName;
     private String country;
-    private int birthday;
+    private String birthday;
     private String information;
 
     public int getId() {
@@ -49,11 +49,11 @@ public class User {
         this.country = country;
     }
 
-    public int getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(int birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

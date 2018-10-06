@@ -1,6 +1,6 @@
 package dao;
 
-import entity.User;
+import pojo.User;
 
 public class UserDaoImp implements UserDao {
     @Override

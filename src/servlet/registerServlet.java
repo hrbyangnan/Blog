@@ -7,7 +7,9 @@
 package servlet;
 
 
-import entity.User;
+import dao.UserDao;
+import dao.UserDaoImp;
+import pojo.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -25,9 +27,30 @@ public class registerServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String name = request.getParameter("name");
-
+        String password = request.getParameter("password");
+        String realName = request.getParameter("realName");
+        String country = request.getParameter("country");
+        String birthday = request.getParameter("birthday");
+        String information = request.getParameter("information");
 
         User user = new User();
+        user.setName(name);
+        user.setPassword(password);
+        user.setRealName(realName);
+        user.setCountry(country);
+        user.setBirthday(birthday);
+        user.setInfomation(information);
+
+
+        UserDao ud = new UserDaoImp();
+
+        if(ud.register(user)){
+            request.setAttribute("username", name);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+        }else{
+
+            response.sendRedirect("regSuccess.jsp");
+        }
 
 
     }

@@ -1,6 +1,6 @@
 package dao;
 
-import entity.User;
+import pojo.User;
 
 public interface UserDao{
     public boolean login(String name, String UserPasswd);

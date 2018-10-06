@@ -1,8 +1,8 @@
 //
 //		Created by IntelliJ IDEA.
 //		User: Neco Yang
-//		Date: 2018/10/4
-//		Time: 16:38
+//		Date: 2018/10/5
+//		Time: 13:14
 //		To change this template use File | Settings | File Templates.
 //
 package servlet;
@@ -18,15 +18,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-public class DeleteServlet extends HttpServlet {
+public class AddArticleServlet extends HttpServlet {
     ArticleDao dao=new ArticleDao();
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        int articleId=Integer.parseInt(request.getParameter("articleId"));
-        dao.deleteArticle(articleId);
-        int userId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        List<Article> articles=dao.selectArtByUser(userId);
+        String articleName=request.getParameter("articleName");
+        String articleContent=request.getParameter("articleContent");
+        int loginUserId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
+        Article newArticle=new Article(loginUserId,articleName,articleContent);
+        dao.addArticle(newArticle);
+        List<Article> articles=dao.selectArtByUser(loginUserId);
         request.getSession().setAttribute("userArticles",articles);
         response.sendRedirect("article/articleList.jsp");
     }
@@ -34,8 +36,7 @@ public class DeleteServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String id = request.getParameter("id");
-        int userId = Integer.parseInt(id);
+        this.doGet(request, response);
 
 
     }
