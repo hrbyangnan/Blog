@@ -1,21 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Website</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="loginForm.css">
+</head>
 
+
+<style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+        .pointer {cursor: pointer;}
+
+    </style>
+    <script>
+
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+         var modal = document.getElementById('id02');
+         window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Blog Name</h1>
+</div>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registration</button>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a class = pointer onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registration</a></li>
+                <li><a class = pointer onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</a></li>
+             </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Article about something</h2>
+            <h5>Photo of something:</h5>
+            <div class="fakeimg">Fake pictures</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>Some Links</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <hr class="hidden-sm hidden-md hidden-lg">
+        </div>
+        <div class="col-sm-8">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg">Fake something</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg">Fake picture</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+</div>
+
+<!––--------------------------------------------------Registration Page----------------------------------------------------!>
 
 <div id="id01" class="modal">
 
     <form class="modal-content animate" action="/action_page.php">
         <div class="userInfocontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-         </div>
+        </div>
 
         <div class="row" style="margin:20px">
             <div class="col-25" >
@@ -35,9 +124,10 @@
         </div>
         <div class="row" style="margin:20px">
             <div class="col-25">
+                <label for="bday">Birthday:</label>
             </div>
             <div class="col-75">
-            Birthday: <input type="date" name="bday">
+                <input type="date" id="bday" name="bday">
             </div>
         </div>
 
@@ -250,31 +340,72 @@
                 <label for="subject">Subject</label>
             </div>
             <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." rows="7" cols="70"></textarea>
+                <textarea id="subject" name="subject" placeholder="Write something.." rows="7" cols="60"></textarea>
             </div>
         </div>
         <div class="row"  style="margin:20px">
             <input type="submit" value="Submit">
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="container">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-         </div>
+        </div>
     </form>
 </div>
 
-<script>
+<!––------------------------------------------------------------------------------------------------------!>
+<!––-----------------------------------------------------Login Page-----------------------------------------------------!>
 
-    var modal = document.getElementById('id01');
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+<div id="id02" class="modal">
+
+     <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="testAvatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <div class="row" style="margin:20px">
+                <div class="col-25">
+                    <label for="userName"><b>Username</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id = "userName" placeholder="Enter Username" name="userName" required>
+                </div>
+            </div>
+            <div class="row" style="margin:20px">
+                <div class="col-25">
+                    <label for="Password"><b>Password</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id = "Password" placeholder="Enter Password" name="Password" required>
+                </div>
+            </div>
+            <div class="row" style="margin:20px">
+                <div class="col-25">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="col-75">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+             <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<!––------------------------------------------------------------------------------------------------------!>
+
+
 
 </body>
 </html>
-
-
