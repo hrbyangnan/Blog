@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `aricle`;
-CREATE TABLE `aricle` (
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE `article` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
   `UserId` int(4) NOT NULL,
   `ArticleTitle` varchar(50) NOT NULL,
@@ -7,12 +7,12 @@ CREATE TABLE `aricle` (
   `PubTime` datetime DEFAULT NULL,
   'picPath' varchar(1000) NOT NULL,
   PRIMARY KEY (`ArticleId`),
-  KEY `fk-Ariticle-User` (`UserId`)
+  KEY `fk-Article-User` (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null);
-INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null);
+INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null);
+INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null);
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -24,7 +24,7 @@ CREATE TABLE `comment` (
   `UserName` varchar(255) NOT NULL,
   PRIMARY KEY (`CommentId`),
   KEY `fk-Comment-User` (`UserId`),
-  KEY `fk-Comment-Aricle` (`ArticleId`)
+  KEY `fk-Comment-Article` (`ArticleId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
@@ -67,3 +67,6 @@ INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'A
 INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India');
 INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China');
 INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates');
+
+INSERT INTO `user` (UserName, UserPasswd, profilePath) VALUES ('Bob','Unbreakable','');
+SELECT UserPasswd FROM `user` WHERE UserName = "Bob";

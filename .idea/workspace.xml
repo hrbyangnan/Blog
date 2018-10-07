@@ -7,25 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase">
-      <change beforePath="" afterPath="$PROJECT_DIR$/PRACTICE_SQL" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/TESTING.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" />
-      <change beforePath="$PROJECT_DIR$/src/dao/AccessDAO.java" afterPath="$PROJECT_DIR$/src/dao/AccessDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/connection.properties" afterPath="$PROJECT_DIR$/src/dao/connection.properties" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_46_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PRACTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/ArticlePOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dac04fd-3214-483f-b8c5-fdb50f458649.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dac04fd-3214-483f-b8c5-fdb50f458649.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRACTICE_SQL" beforeDir="false" afterPath="$PROJECT_DIR$/PRACTICE_SQL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/blogs.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/HikariCP-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/json-simple-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/mysql-connector-java-5.1.46-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-api-1.8.0-beta2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-jdk14-1.8.0-beta2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/AccessDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AccessDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/connection.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/HikariCP-3.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/HikariCP-3.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/json-simple-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/mysql-connector-java-5.1.46-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/slf4j-api-1.8.0-beta2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.8.0-beta2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/slf4j-jdk14-1.8.0-beta2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-jdk14-1.8.0-beta2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webBlog.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,40 +55,31 @@
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
         <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ExecutionTargetDialog">
     <checked>
-      <node key="1dac04fd-3214-483f-b8c5-fdb50f458649" />
+      <node key="bfd39762-9752-425b-8e94-63748a5706d8" />
     </checked>
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -126,95 +135,91 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1335654375">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="PRACTICE" value="1" />
+          <entry key="PRACTICE_SQL" value="2" />
+          <entry key="c" value="1" />
+          <entry key="class" value="1" />
+          <entry key="html" value="2" />
+          <entry key="java" value="11" />
+          <entry key="properties" value="3" />
+          <entry key="sql" value="5" />
+          <entry key="userinformation" value="1" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Database Element" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="11" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="4" />
+          <entry key="SQL" value="5" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2492" />
+          <entry key="sql" value="21" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2492" />
+          <entry key="SQL" value="21" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.604147">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DeleteServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlet/DeleteServlet.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/TESTING.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="153">
+                  <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user" pinned="false" current-in-tab="false">
-            <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.user">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="connection.properties" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/connection.properties">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PRACTICE_TestDAO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="47" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="12" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Properties.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webBlog.iml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webBlog.iml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PRACTICEServlet.java" pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/servlet/PRACTICEServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="306">
+                  <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -222,12 +227,62 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TESTING.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/TESTING.html">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/dao/AccessDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-                  <folding />
+                <state relative-caret-position="1666">
+                  <caret line="98" column="100" selection-start-line="98" selection-start-column="100" selection-end-line="98" selection-end-column="100" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="356">
+                  <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/entity/ArticlePOJO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blogs.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/entity/User.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/userinformation">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
                 </state>
               </provider>
             </entry>
@@ -236,14 +291,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="PRACTICEServlet.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/servlet/PRACTICEServlet.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blogs.sql">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="425">
+                  <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -256,6 +308,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="XML Properties File" />
         <option value="Class" />
       </list>
     </option>
@@ -271,11 +324,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -289,15 +337,21 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/dao/DAO.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/connection.properties" />
-        <option value="$PROJECT_DIR$/blogs.sql" />
-        <option value="$PROJECT_DIR$/src/dao/AccessDAO.java" />
-        <option value="$PROJECT_DIR$/PRACTICE_SQL" />
-        <option value="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/web/TESTING.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/c.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/c" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" />
+        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" />
         <option value="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" />
+        <option value="$PROJECT_DIR$/blogs.sql" />
+        <option value="$PROJECT_DIR$/PRACTICE_SQL" />
+        <option value="$PROJECT_DIR$/PRACTICE" />
+        <option value="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" />
+        <option value="$PROJECT_DIR$/src/entity/ArticlePOJO.java" />
+        <option value="$PROJECT_DIR$/src/dao/AccessDAO.java" />
       </list>
     </option>
   </component>
@@ -314,188 +368,129 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="564" />
-    <option name="y" value="40" />
-    <option name="width" value="1380" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="7" />
+    <option name="y" value="12" />
+    <option name="width" value="1939" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigProjectICT" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BigProjectICT" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webBlog" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538645632634" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="H:/labs/jsp-jstl/web_lab_jsp_jstl_2018b" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538895557137" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="C:/ICT coursework/industry_lab_testing" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\Project TeamTwo\projectteamtwo\web\WEB-INF\classes" />
-      <recent name="H:\Project TeamTwo\projectteamtwo\conf" />
-      <recent name="H:\Project TeamTwo\projectteamtwo\web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BigProjectICT\conf\prod" />
+      <recent name="C:\BigProjectICT\conf\dev" />
+      <recent name="H:\Project TeamTwo\projectteamtwo" />
+      <recent name="H:\Project TeamTwo\projectteamtwo\src\dao" />
+      <recent name="H:\Project TeamTwo\projectteamtwo\out\artifacts\webBlog_war_exploded\WEB-INF\classes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Project TeamTwo\projectteamtwo" />
-      <recent name="H:\Project TeamTwo\projectteamtwo\src\dao" />
-      <recent name="H:\Project TeamTwo\projectteamtwo\out\artifacts\webBlog_war_exploded\WEB-INF\classes" />
-      <recent name="H:\Project TeamTwo\projectteamtwo\web\WEB-INF" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BigProjectICT\web\WEB-INF" />
+      <recent name="H:\Project TeamTwo\projectteamtwo\web\WEB-INF\classes" />
+      <recent name="H:\Project TeamTwo\projectteamtwo\conf" />
       <recent name="H:\Project TeamTwo\projectteamtwo\web" />
     </key>
   </component>
@@ -511,29 +506,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.TESTING.html">
+  <component name="RunManager" selected="JUnit.TestsForAccessDAO">
     <configuration name="PRACTICE_TestDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="dao.PRACTICE_TestDAO" />
+      <module name="webBlog" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dao.PRACTICE_TestDAO" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="webBlog" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TESTING.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.341" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8181/TESTING.html" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="TestsForAccessDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.TestsForAccessDAO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsForAccessDAO.setLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.TestsForAccessDAO" />
+      <option name="METHOD_NAME" value="setLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsForAccessDAO.testGetUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.TestsForAccessDAO" />
+      <option name="METHOD_NAME" value="testGetUserInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TESTING.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.341" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/TESTING.html" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="webBlog:war exploded">
           <settings>
@@ -543,14 +579,13 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="_webBlog" />
-        <option name="HTTP_PORT" value="8181" />
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="55864" />
       </RunnerSettings>
@@ -599,7 +634,82 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="webBlog:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.341" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/TESTING.html" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="webBlog:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_BigProjectICT_3" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55864" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="webBlog:war exploded" />
         </option>
@@ -616,7 +726,6 @@
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="55864" />
       </RunnerSettings>
@@ -665,23 +774,26 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.PRACTICE_TestDAO" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.TESTING.html" />
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="Tomcat Server.TESTING.html" />
+      <item itemvalue="Application.PRACTICE_TestDAO" />
+      <item itemvalue="JUnit.TestsForAccessDAO" />
+      <item itemvalue="JUnit.TestsForAccessDAO.setLogin" />
+      <item itemvalue="JUnit.TestsForAccessDAO.testGetUserInfo" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TESTING.html" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PRACTICE_TestDAO" />
+      <list>
+        <item itemvalue="JUnit.TestsForAccessDAO" />
+        <item itemvalue="JUnit.TestsForAccessDAO.testGetUserInfo" />
+        <item itemvalue="JUnit.TestsForAccessDAO.setLogin" />
+        <item itemvalue="Application.PRACTICE_TestDAO" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -696,6 +808,9 @@
       <workItem from="1538624331178" duration="7431000" />
       <workItem from="1538686100179" duration="1919000" />
       <workItem from="1538689899986" duration="20835000" />
+      <workItem from="1538804830910" duration="139000" />
+      <workItem from="1538805857776" duration="5983000" />
+      <workItem from="1538874557623" duration="11811000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538695417248</created>
@@ -721,45 +836,83 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestsForAccessDAO - 2018.10.07 at 14h 32m 28s.xml">
+      <configuration name="TestsForAccessDAO" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_setLogin - 2018.10.07 at 14h 34m 00s.xml">
+      <configuration name="TestsForAccessDAO.setLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 42m 01s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 42m 18s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 43m 25s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 43m 54s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 47m 05s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 48m 11s.xml">
+      <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO - 2018.10.07 at 14h 48m 22s.xml">
+      <configuration name="TestsForAccessDAO" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30185000" />
+    <option name="totallyTimeSpent" value="50622000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="564" y="40" width="1380" height="1056" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39935064" sideWeight="0.5060606" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.13153154" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39935064" sideWeight="0.4939394" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.4805576" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.7602108" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40584415" sideWeight="0.49253732" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.86846846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83943087" visible="true" weight="0.22684564" />
+      <window_info id="Structure" order="1" sideWeight="0.16025642" side_tool="true" weight="0.23020135" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.1605691" side_tool="true" weight="0.25167784" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49936143" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7805369" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4939394" weight="0.39935064" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49127516" weight="0.40571427" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6610738" weight="0.3371105" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21946308" side_tool="true" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49832326" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4936034" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.0053691277" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -821,366 +974,186 @@
     <MESSAGE value="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase" />
     <option name="LAST_COMMIT_MESSAGE" value="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java</url>
-          <line>7</line>
-          <properties class="dao.PRACTICE_TestDAO" method="start">
-            <option name="EMULATED" value="true" />
-          </properties>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blogs.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/TESTING_sql" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.userinformation" />
+    <entry file="das://table:/d72243b4/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.user" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.article" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.artist" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.compose" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.lab12_articles" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.jstlPractice" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.genre" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_tablefour" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_tablefiveEx4" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_ex7" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.lyricsby" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.pfilms_actor" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.pfilms_film" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.comment" />
+    <entry file="file://$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/connection.properties" />
+    <entry file="file://$PROJECT_DIR$/connection.properties" />
+    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.user" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Properties.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
+    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/dbtest_tableone" />
+    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/comment" />
+    <entry file="jar://$PROJECT_DIR$/web/lib/HikariCP-3.0.0.jar!/com/zaxxer/hikari/HikariDataSource.class" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1dac04fd-3214-483f-b8c5-fdb50f458649/schema/nyan779/table/aricle" />
-    <entry file="das://1dac04fd-3214-483f-b8c5-fdb50f458649/schema/nyan779/table/comment" />
-    <entry file="das://1dac04fd-3214-483f-b8c5-fdb50f458649/schema/nyan779/table/user" />
-    <entry file="das://1dac04fd-3214-483f-b8c5-fdb50f458649/schema/nyan779/table/userinformation" />
-    <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.comment" />
-    <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.userinformation" />
-    <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.user" />
-    <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.aricle" />
-    <entry file="file://$PROJECT_DIR$/src/servlet/registerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.aricle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bfd39762-9752-425b-8e94-63748a5706d8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/TESTING_sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.artist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.compose">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.lab12_articles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.jstlPractice">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.genre">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_tablefour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_tablefiveEx4">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.dbtest_ex7">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.lyricsby">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.pfilms_actor">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.pfilms_film">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PRACTICE_SQL">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/connection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/connection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/AccessDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1538706801702" expanded="true" signature="592:643" ph="INSERT INTO user... " />
-            <marker date="1538706801702" expanded="true" signature="983:1029" ph="SELECT UserP... user" />
-            <marker date="1538706801702" expanded="true" signature="1545:1590" ph="SELECT * FRO... userinformation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webBlog.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="404">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.user">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/connection.properties" />
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="433" selection-start-line="433" selection-end-line="433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/prod/connection.properties" />
+    <entry file="file://$PROJECT_DIR$/conf/dev/mysql-connection.properties" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/c.xml" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f73f641f-e326-477e-9bdc-1c458ca83258/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/c.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRACTICE_SQL">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRACTICE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/TESTING.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/PRACTICEServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/userinformation">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Properties.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/connection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/TESTING.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/PRACTICEServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="356">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/ArticlePOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/AccessDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="100" selection-start-line="98" selection-start-column="100" selection-end-line="98" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

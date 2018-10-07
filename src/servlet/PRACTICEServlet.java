@@ -19,6 +19,7 @@ public class PRACTICEServlet extends HttpServlet{
             AccessDAO dao = new AccessDAO();
             System.out.println("Trying to use the DAO");
         System.out.println(dao.getLoginFromDataBase("Bob"));
+            System.out.println("Did that work??");
 
     }catch(SQLException e){e.getMessage();}
 

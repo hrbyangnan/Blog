@@ -8,8 +8,9 @@ public class PRACTICE_TestDAO {
     public void start(){
         try{
             AccessDAO dao = new AccessDAO();
+            System.out.println("Try to access database");
             System.out.println(dao.getLoginFromDataBase("Bob"));
-
+            System.out.println("Database was accessed");
         }catch(SQLException e){e.getMessage();}
 
     }
