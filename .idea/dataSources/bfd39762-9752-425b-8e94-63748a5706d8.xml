@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@db.sporadic.nz">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
     </root>
@@ -43,17 +43,17 @@
     <table id="36" parent="3" name="userinformation"/>
     <column id="37" parent="4" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="38" parent="4" name="word">
       <Position>2</Position>
-      <DataType>VARCHAR(27)|12</DataType>
+      <DataType>VARCHAR(27)|12s</DataType>
     </column>
     <column id="39" parent="4" name="definition">
       <Position>3</Position>
-      <DataType>VARCHAR(206)|12</DataType>
+      <DataType>VARCHAR(206)|12s</DataType>
     </column>
     <key id="40" parent="4" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -62,32 +62,32 @@
     </key>
     <column id="41" parent="5" name="ArticleId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="42" parent="5" name="UserId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="43" parent="5" name="ArticleTitle">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="44" parent="5" name="ArticleContent">
       <Position>4</Position>
-      <DataType>VARCHAR(1000)|12</DataType>
+      <DataType>VARCHAR(1000)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="45" parent="5" name="PubTime">
       <Position>5</Position>
-      <DataType>DATETIME(19)|93</DataType>
+      <DataType>DATETIME(19)|93s</DataType>
     </column>
     <column id="46" parent="5" name="picPath">
       <Position>6</Position>
-      <DataType>VARCHAR(1000)|12</DataType>
+      <DataType>VARCHAR(1000)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="47" parent="5" name="PRIMARY">
@@ -104,25 +104,25 @@
     </foreign-key>
     <column id="49" parent="6" name="artistid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="50" parent="6" name="fname">
       <Position>2</Position>
-      <DataType>VARCHAR(30)|12</DataType>
+      <DataType>VARCHAR(30)|12s</DataType>
     </column>
     <column id="51" parent="6" name="lname">
       <Position>3</Position>
-      <DataType>VARCHAR(30)|12</DataType>
+      <DataType>VARCHAR(30)|12s</DataType>
     </column>
     <column id="52" parent="6" name="phone">
       <Position>4</Position>
-      <DataType>VARCHAR(9)|12</DataType>
+      <DataType>VARCHAR(9)|12s</DataType>
     </column>
     <column id="53" parent="6" name="country">
       <Position>5</Position>
-      <DataType>CHAR(2)|1</DataType>
+      <DataType>CHAR(2)|1s</DataType>
     </column>
     <key id="54" parent="6" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -131,28 +131,28 @@
     </key>
     <column id="55" parent="7" name="CommentId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="56" parent="7" name="ArticleId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="57" parent="7" name="CommentContent">
       <Position>3</Position>
-      <DataType>VARCHAR(200)|12</DataType>
+      <DataType>VARCHAR(200)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="58" parent="7" name="UserId">
       <Position>4</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="59" parent="7" name="UserName">
       <Position>5</Position>
-      <DataType>VARCHAR(255)|12</DataType>
+      <DataType>VARCHAR(255)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="60" parent="7" name="fk-Comment-Article">
@@ -168,12 +168,12 @@
     </key>
     <column id="63" parent="8" name="artistid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="64" parent="8" name="songid">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="65" parent="8" name="PRIMARY">
@@ -198,17 +198,17 @@ songid</ColNames>
     </foreign-key>
     <column id="68" parent="9" name="comment_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="69" parent="9" name="comment">
       <Position>2</Position>
-      <DataType>TEXT(65535)|-1</DataType>
+      <DataType>TEXT(65535)|-1s</DataType>
     </column>
     <column id="70" parent="9" name="article_ID">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <key id="71" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -224,24 +224,24 @@ songid</ColNames>
     </foreign-key>
     <column id="73" parent="10" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="74" parent="10" name="title">
       <Position>2</Position>
-      <DataType>VARCHAR(100)|12</DataType>
+      <DataType>VARCHAR(100)|12s</DataType>
     </column>
     <column id="75" parent="10" name="director">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="76" parent="10" name="checked_out_by">
       <Position>4</Position>
-      <DataType>VARCHAR(100)|12</DataType>
+      <DataType>VARCHAR(100)|12s</DataType>
     </column>
     <column id="77" parent="10" name="rate">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <key id="78" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -257,20 +257,20 @@ songid</ColNames>
     </foreign-key>
     <column id="80" parent="11" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="81" parent="11" name="title">
       <Position>2</Position>
-      <DataType>VARCHAR(200)|12</DataType>
+      <DataType>VARCHAR(200)|12s</DataType>
     </column>
     <column id="82" parent="11" name="author_id">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <column id="83" parent="11" name="content">
       <Position>4</Position>
-      <DataType>TEXT(65535)|-1</DataType>
+      <DataType>TEXT(65535)|-1s</DataType>
     </column>
     <key id="84" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -279,24 +279,24 @@ songid</ColNames>
     </key>
     <column id="85" parent="12" name="customer_name">
       <Position>1</Position>
-      <DataType>VARCHAR(100)|12</DataType>
+      <DataType>VARCHAR(100)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="86" parent="12" name="gender">
       <Position>2</Position>
-      <DataType>VARCHAR(6)|12</DataType>
+      <DataType>VARCHAR(6)|12s</DataType>
     </column>
     <column id="87" parent="12" name="year_born">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <column id="88" parent="12" name="joined">
       <Position>4</Position>
-      <DataType>VARCHAR(4)|12</DataType>
+      <DataType>VARCHAR(4)|12s</DataType>
     </column>
     <column id="89" parent="12" name="num_hires">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <key id="90" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -305,12 +305,12 @@ songid</ColNames>
     </key>
     <column id="91" parent="13" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="92" parent="13" name="content">
       <Position>2</Position>
-      <DataType>TEXT(65535)|-1</DataType>
+      <DataType>TEXT(65535)|-1s</DataType>
     </column>
     <key id="93" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -319,37 +319,37 @@ songid</ColNames>
     </key>
     <column id="94" parent="14" name="username">
       <Position>1</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="95" parent="14" name="first_name">
       <Position>2</Position>
-      <DataType>VARCHAR(20)|12</DataType>
+      <DataType>VARCHAR(20)|12s</DataType>
     </column>
     <column id="96" parent="14" name="last_name">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="97" parent="14" name="email">
       <Position>4</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="98" parent="15" name="username">
       <Position>1</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="99" parent="15" name="first_name">
       <Position>2</Position>
-      <DataType>VARCHAR(20)|12</DataType>
+      <DataType>VARCHAR(20)|12s</DataType>
     </column>
     <column id="100" parent="15" name="last_name">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="101" parent="15" name="email">
       <Position>4</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <key id="102" parent="15" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -358,22 +358,22 @@ songid</ColNames>
     </key>
     <column id="103" parent="16" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="104" parent="16" name="code">
       <Position>2</Position>
-      <DataType>CHAR(2)|1</DataType>
+      <DataType>CHAR(2)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="105" parent="16" name="name">
       <Position>3</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
     </column>
     <column id="106" parent="16" name="isGreat">
       <Position>4</Position>
-      <DataType>TINYINT(3)|-6</DataType>
+      <DataType>TINYINT(3)|-6s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
     </column>
@@ -384,16 +384,16 @@ songid</ColNames>
     </key>
     <column id="108" parent="17" name="genreid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="109" parent="17" name="genretitle">
       <Position>2</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="110" parent="17" name="lnn">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <key id="111" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -402,21 +402,21 @@ songid</ColNames>
     </key>
     <column id="112" parent="18" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="113" parent="18" name="fname">
       <Position>2</Position>
-      <DataType>VARCHAR(30)|12</DataType>
+      <DataType>VARCHAR(30)|12s</DataType>
     </column>
     <column id="114" parent="18" name="lname">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="115" parent="18" name="bio">
       <Position>4</Position>
-      <DataType>VARCHAR(240)|12</DataType>
+      <DataType>VARCHAR(240)|12s</DataType>
     </column>
     <key id="116" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -425,16 +425,16 @@ songid</ColNames>
     </key>
     <column id="117" parent="19" name="artid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="118" parent="19" name="title">
       <Position>2</Position>
-      <DataType>VARCHAR(1000)|12</DataType>
+      <DataType>VARCHAR(1000)|12s</DataType>
     </column>
     <column id="119" parent="19" name="body">
       <Position>3</Position>
-      <DataType>TEXT(65535)|-1</DataType>
+      <DataType>TEXT(65535)|-1s</DataType>
     </column>
     <key id="120" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -443,12 +443,12 @@ songid</ColNames>
     </key>
     <column id="121" parent="20" name="artistid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="122" parent="20" name="songid">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="123" parent="20" name="PRIMARY">
@@ -473,18 +473,18 @@ songid</ColNames>
     </foreign-key>
     <column id="126" parent="21" name="actor_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="127" parent="21" name="actor_fname">
       <Position>2</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="128" parent="21" name="actor_lname">
       <Position>3</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="129" parent="21" name="PRIMARY">
@@ -494,18 +494,18 @@ songid</ColNames>
     </key>
     <column id="130" parent="22" name="film_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="131" parent="22" name="film_title">
       <Position>2</Position>
-      <DataType>VARCHAR(128)|12</DataType>
+      <DataType>VARCHAR(128)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="132" parent="22" name="genre_name">
       <Position>3</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="133" parent="22" name="PRIMARY">
@@ -522,7 +522,7 @@ songid</ColNames>
     </foreign-key>
     <column id="135" parent="23" name="genre_name">
       <Position>1</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="136" parent="23" name="PRIMARY">
@@ -532,17 +532,17 @@ songid</ColNames>
     </key>
     <column id="137" parent="24" name="actor_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="138" parent="24" name="film_id">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="139" parent="24" name="role_id">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="140" parent="24" name="PRIMARY">
@@ -574,12 +574,12 @@ film_id</ColNames>
     </foreign-key>
     <column id="144" parent="25" name="film_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="145" parent="25" name="producer_id">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="146" parent="25" name="PRIMARY">
@@ -604,18 +604,18 @@ producer_id</ColNames>
     </foreign-key>
     <column id="149" parent="26" name="producer_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="150" parent="26" name="producer_fname">
       <Position>2</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="151" parent="26" name="producer_lname">
       <Position>3</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="152" parent="26" name="PRIMARY">
@@ -625,13 +625,13 @@ producer_id</ColNames>
     </key>
     <column id="153" parent="27" name="role_id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="154" parent="27" name="role_name">
       <Position>2</Position>
-      <DataType>VARCHAR(64)|12</DataType>
+      <DataType>VARCHAR(64)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="155" parent="27" name="PRIMARY">
@@ -641,25 +641,25 @@ producer_id</ColNames>
     </key>
     <column id="156" parent="28" name="producerid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="157" parent="28" name="fname">
       <Position>2</Position>
-      <DataType>VARCHAR(30)|12</DataType>
+      <DataType>VARCHAR(30)|12s</DataType>
     </column>
     <column id="158" parent="28" name="lname">
       <Position>3</Position>
-      <DataType>VARCHAR(30)|12</DataType>
+      <DataType>VARCHAR(30)|12s</DataType>
     </column>
     <column id="159" parent="28" name="phone">
       <Position>4</Position>
-      <DataType>VARCHAR(9)|12</DataType>
+      <DataType>VARCHAR(9)|12s</DataType>
     </column>
     <column id="160" parent="28" name="country">
       <Position>5</Position>
-      <DataType>CHAR(2)|1</DataType>
+      <DataType>CHAR(2)|1s</DataType>
     </column>
     <key id="161" parent="28" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -668,17 +668,17 @@ producer_id</ColNames>
     </key>
     <column id="162" parent="29" name="songid">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="163" parent="29" name="title">
       <Position>2</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="164" parent="29" name="producerid">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="165" parent="29" name="PRIMARY">
@@ -695,26 +695,26 @@ producer_id</ColNames>
     </foreign-key>
     <column id="167" parent="30" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="168" parent="30" name="dept">
       <Position>2</Position>
-      <DataType>CHAR(4)|1</DataType>
+      <DataType>CHAR(4)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="169" parent="30" name="num">
       <Position>3</Position>
-      <DataType>CHAR(3)|1</DataType>
+      <DataType>CHAR(3)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="170" parent="30" name="semester">
       <Position>4</Position>
-      <DataType>CHAR(1)|1</DataType>
+      <DataType>CHAR(1)|1s</DataType>
     </column>
     <column id="171" parent="30" name="mark">
       <Position>5</Position>
-      <DataType>CHAR(2)|1</DataType>
+      <DataType>CHAR(2)|1s</DataType>
     </column>
     <index id="172" parent="30" name="dept">
       <ColNames>dept
@@ -742,26 +742,26 @@ num</ColNames>
     </foreign-key>
     <column id="176" parent="31" name="dept">
       <Position>1</Position>
-      <DataType>CHAR(4)|1</DataType>
+      <DataType>CHAR(4)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="177" parent="31" name="num">
       <Position>2</Position>
-      <DataType>CHAR(3)|1</DataType>
+      <DataType>CHAR(3)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="178" parent="31" name="descrip">
       <Position>3</Position>
-      <DataType>VARCHAR(24)|12</DataType>
+      <DataType>VARCHAR(24)|12s</DataType>
     </column>
     <column id="179" parent="31" name="coord_no">
       <Position>4</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="180" parent="31" name="rep_id">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="181" parent="31" name="PRIMARY">
@@ -786,22 +786,22 @@ num</ColNames>
     </foreign-key>
     <column id="184" parent="32" name="staff_no">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="185" parent="32" name="fname">
       <Position>2</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="186" parent="32" name="lname">
       <Position>3</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="187" parent="32" name="office">
       <Position>4</Position>
-      <DataType>CHAR(8)|1</DataType>
+      <DataType>CHAR(8)|1s</DataType>
     </column>
     <key id="188" parent="32" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -810,26 +810,26 @@ num</ColNames>
     </key>
     <column id="189" parent="33" name="id">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="190" parent="33" name="fname">
       <Position>2</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="191" parent="33" name="lname">
       <Position>3</Position>
-      <DataType>VARCHAR(32)|12</DataType>
+      <DataType>VARCHAR(32)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="192" parent="33" name="country">
       <Position>4</Position>
-      <DataType>CHAR(2)|1</DataType>
+      <DataType>CHAR(2)|1s</DataType>
     </column>
     <column id="193" parent="33" name="mentor">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="194" parent="33" name="PRIMARY">
@@ -839,17 +839,17 @@ num</ColNames>
     </key>
     <column id="195" parent="34" name="dept">
       <Position>1</Position>
-      <DataType>CHAR(4)|1</DataType>
+      <DataType>CHAR(4)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="196" parent="34" name="num">
       <Position>2</Position>
-      <DataType>CHAR(3)|1</DataType>
+      <DataType>CHAR(3)|1s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="197" parent="34" name="staff_no">
       <Position>3</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="198" parent="34" name="PRIMARY">
@@ -874,23 +874,23 @@ staff_no</ColNames>
     </foreign-key>
     <column id="201" parent="35" name="UserId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="202" parent="35" name="UserName">
       <Position>2</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="203" parent="35" name="UserPasswd">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="204" parent="35" name="profilePath">
       <Position>4</Position>
-      <DataType>VARCHAR(1000)|12</DataType>
+      <DataType>VARCHAR(1000)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="205" parent="35" name="PRIMARY">
@@ -900,30 +900,30 @@ staff_no</ColNames>
     </key>
     <column id="206" parent="36" name="InformationId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="207" parent="36" name="UserId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="208" parent="36" name="NickName">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="209" parent="36" name="RealName">
       <Position>4</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="210" parent="36" name="Birthday">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <column id="211" parent="36" name="Country">
       <Position>6</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <index id="212" parent="36" name="fk1">
       <ColNames>UserId</ColNames>
