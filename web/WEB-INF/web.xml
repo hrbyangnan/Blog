@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>delete</servlet-name>
-        <servlet-class>servlet.DeleteServlet</servlet-class>
+        <servlet-class>ArticleServlet.DeleteArticleServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>delete</servlet-name>
@@ -14,7 +14,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>login</servlet-name>
-        <servlet-class>servlet.loginServlet</servlet-class>
+        <servlet-class>UserServlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -22,7 +22,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>register</servlet-name>
-        <servlet-class>servlet.registerServlet</servlet-class>
+        <servlet-class>UserServlet.RegisterUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>register</servlet-name>

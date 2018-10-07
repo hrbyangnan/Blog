@@ -144,4 +144,31 @@ public class ArticleDao {
         }
         return null;
     }
+    public Article findOneArticle(int articleId){
+        Integer i=articleId;
+        if(i==null){
+            return null;
+        }
+        String sql="select * from aricle where ArticleId=?";
+        try {
+            conn = DriverManager.getConnection(url,username,password);
+            PreparedStatement  ps= conn.prepareStatement(sql);
+            ps.setObject(1, articleId);
+            rs=ps.executeQuery();
+            if(rs.next()){
+                Article artc=new Article(rs.getInt("ArticleId"),rs.getInt("UserId"),rs.getString("ArticleName"),rs.getString("ArticleContent"));
+                return artc;
+            }
+        } catch (Exception e) {
+
+        }finally{
+            try {
+                conn.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
 }
