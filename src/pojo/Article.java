@@ -12,50 +12,9 @@ public class Article implements Serializable {
     private String articleContent;
     private String pubTime;
 
-    public Article() {
+    public Article(int articleId, int userId, String articleName, String articleContent) {
 
     }
-
-
-    public Article(int userId, String articleName, String articleContent,
-                   String pubTime) {
-        super();
-        this.userId = userId;
-        this.articleName = articleName;
-        this.articleContent = articleContent;
-        this.pubTime = pubTime;
-    }
-
-    public Article(int userId, String articleName, String articleContent) {
-        super();
-        this.userId = userId;
-        this.articleName = articleName;
-        this.articleContent = articleContent;
-    }
-
-
-    public Article(int articleId) {
-        super();
-        this.articleId = articleId;
-    }
-
-
-    public Article(int articleId, String articleContent) {
-        super();
-        this.articleId = articleId;
-        this.articleContent = articleContent;
-    }
-
-
-    public Article(int articleId, int userId, String articleName,
-                   String articleContent) {
-        super();
-        this.articleId = articleId;
-        this.userId = userId;
-        this.articleName = articleName;
-        this.articleContent = articleContent;
-    }
-
 
     public Article(int articleId, int userId, String articleName,
                    String articleContent, String pubTime) {

@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/CommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pojo/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/AddArticleServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/AddArticleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/registerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,6 +46,12 @@
         <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="aricle: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="comment: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -77,29 +75,29 @@
           <entry key="aricle" value="2" />
           <entry key="comment" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="14" />
-          <entry key="jsp" value="2" />
+          <entry key="java" value="20" />
+          <entry key="jsp" value="3" />
           <entry key="sql" value="2" />
           <entry key="user" value="1" />
           <entry key="userinformation" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="6" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="14" />
-          <entry key="JSP" value="2" />
+          <entry key="JAVA" value="20" />
+          <entry key="JSP" value="3" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="31" />
-          <entry key="java" value="501" />
+          <entry key="java" value="576" />
           <entry key="jsp" value="13" />
           <entry key="sql" value="258" />
           <entry key="txt" value="53" />
@@ -108,7 +106,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="501" />
+          <entry key="JAVA" value="576" />
           <entry key="JSP" value="13" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="SQL" value="258" />
@@ -131,41 +129,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="648">
+              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
               <folding>
-                <element signature="e#0#786#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,12 +165,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="-655">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2172#2181#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -189,15 +207,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
               <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -229,6 +238,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>section</find>
+      <find>selectO</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -254,11 +269,12 @@
         <option value="$PROJECT_DIR$/src/servlet/DeleteServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteArticleServlet.java" />
-        <option value="$PROJECT_DIR$/src/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Article.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Comment.java" />
       </list>
     </option>
   </component>
@@ -349,7 +365,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538885014674" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538899648458" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/NecoYang-projectteamtwo-64bdb8047ab0/NecoYang-projectteamtwo-64bdb8047ab0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -532,7 +548,7 @@
       <updated>1538624325584</updated>
       <workItem from="1538624331178" duration="7431000" />
       <workItem from="1538686100179" duration="8662000" />
-      <workItem from="1538705166025" duration="8064000" />
+      <workItem from="1538705166025" duration="10065000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538688896963</created>
@@ -562,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538814478329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new servlet and pojo files.">
+      <created>1538887201916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538887201916</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24157000" />
+    <option name="totallyTimeSpent" value="26158000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,7 +674,8 @@
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="create dao files" />
     <MESSAGE value="new servlet and pojo files.&#10;new dao for test." />
-    <option name="LAST_COMMIT_MESSAGE" value="new servlet and pojo files.&#10;new dao for test." />
+    <MESSAGE value="new servlet and pojo files." />
+    <option name="LAST_COMMIT_MESSAGE" value="new servlet and pojo files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -678,13 +702,6 @@
     <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.comment" />
     <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.userinformation" />
     <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.user" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/996099ec/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.aricle" />
     <entry file="file://$PROJECT_DIR$/webBlog.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,62 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -781,10 +742,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        <state relative-caret-position="-655">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2172#2181#0" expanded="true" />
@@ -792,13 +851,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
