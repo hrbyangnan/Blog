@@ -37,7 +37,7 @@ public class UserDaoImp implements UserDao {
         }
 
     @Override
-    public void register(User user) throws SQLException {
+    public boolean register(User user) throws SQLException {
         //add user add password to user table
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, profilePath) VALUES (?,?,?);")) {
             stmt.setString(1, user.getName());
@@ -54,7 +54,7 @@ public class UserDaoImp implements UserDao {
             stmt.setString(4,user.getCountry());
             stmt.executeUpdate();
         }
-
+return false;
     }
     @Override
     public boolean delete(int id) {
@@ -82,4 +82,4 @@ public class UserDaoImp implements UserDao {
         return thisUser;
     }
     }
-}
+
