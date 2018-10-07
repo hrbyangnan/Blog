@@ -2,9 +2,11 @@ package dao;
 
 import pojo.User;
 
-public interface UserDao {
-    public boolean login(String name, String UserPasswd);
-    public boolean register(User user);
-    public boolean delete(int id);
+import java.sql.SQLException;
 
+public interface UserDao {
+    public String login(String name) throws SQLException;
+    public void register(User user) throws SQLException;
+    public boolean delete(int id) throws SQLException;
+public User getUserInfo(int userID) throws SQLException;
 }
