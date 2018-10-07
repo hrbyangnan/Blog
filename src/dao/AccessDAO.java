@@ -23,13 +23,24 @@ public class AccessDAO implements AutoCloseable{
 
 
     //This method takes a username and "password" and adds it to the database
-    public void setNewUser(String name, String password) throws SQLException {
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd) VALUES (?,?);")) {
-            stmt.setString(1, name);
-            stmt.setString(2, password);
-
+    public void setNewUser(User thisUser) throws SQLException {
+        //add user add password to user table
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, profilePath) VALUES (?,?,?);")) {
+            stmt.setString(1, thisUser.getName());
+            stmt.setString(2, thisUser.getPassword());
+//TODO check about profile path...
+            stmt.setString(3,"?");
             stmt.executeUpdate();
         }
+        // add user and info to information table
+        try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country) VALUES (?,?,?,?);")){
+            stmt.setString(1,thisUser.getName());
+            stmt.setString(2,thisUser.getRealName());
+            stmt.setInt(3, thisUser.getBirthday());
+            stmt.setString(4,thisUser.getCountry());
+            stmt.executeUpdate();
+        }
+
     }
 
     //This method gets a password for the login
@@ -72,8 +83,7 @@ public class AccessDAO implements AutoCloseable{
         return thisUser;
     }
 
-    public void postUserInfoToDatabase() throws SQLException {
-    }
+
     //This method gets a single article from the database based on the articleID and returns it as a POJO
 public ArticlePOJO getOneArticleFromDataBase(int articleID) throws SQLException {
         ArticlePOJO thisArticle;
@@ -99,7 +109,7 @@ public ArticlePOJO getOneArticleFromDataBase(int articleID) throws SQLException 
 //This method gets all articles from the database and returns them as an Array List of Article POJOs
 public List<ArticlePOJO> getAllArticlesFromDataBase() throws SQLException{
         List<ArticlePOJO> allArticles = new ArrayList<>();
-        try(PreparedStatement stmt=this.conn.prepareStatement("SELECT * FROM aricle")){
+        try(PreparedStatement stmt=this.conn.prepareStatement("SELECT * FROM article;")){
 
             try(ResultSet rs = stmt.executeQuery()){
                 while(rs.next()){
@@ -115,6 +125,16 @@ public List<ArticlePOJO> getAllArticlesFromDataBase() throws SQLException{
             }
         }return  allArticles;
 
+}
+
+public void postArticleToDatabase(ArticlePOJO thisArticle) throws SQLException{
+        try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO article(UserId,ArticleTitle,ArticleContent,PubTime,picPath ) VALUES(?,?,?,?,?);")){
+            stmt.setInt(1,thisArticle.getAuthorID());
+            stmt.setString(2,thisArticle.getTitle());
+            stmt.setString(3,thisArticle.getArticleContent());
+            stmt.setTimestamp(4,thisArticle.getPublicationTime());
+            stmt.setString(5,thisArticle.getPicPath());
+        }
 }
 
 
