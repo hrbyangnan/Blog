@@ -6,41 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_46_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PRACTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/ArticlePOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dac04fd-3214-483f-b8c5-fdb50f458649.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dac04fd-3214-483f-b8c5-fdb50f458649.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRACTICE_SQL" beforeDir="false" afterPath="$PROJECT_DIR$/PRACTICE_SQL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/blogs.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/HikariCP-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/json-simple-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/mysql-connector-java-5.1.46-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-api-1.8.0-beta2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-jdk14-1.8.0-beta2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRACTICE" beforeDir="false" afterPath="$PROJECT_DIR$/PRACTICE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/AccessDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AccessDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/connection.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/HikariCP-3.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/HikariCP-3.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/json-simple-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/json-simple-1.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/mysql-connector-java-5.1.46-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/slf4j-api-1.8.0-beta2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.8.0-beta2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/slf4j-jdk14-1.8.0-beta2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-jdk14-1.8.0-beta2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webBlog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,6 +44,51 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
         <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jmck074@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="jmck074: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="userinformation: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="aricle: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nyan779@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
+        <item name="nyan779: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="userinformation: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -138,14 +154,15 @@
     <session id="1335654375">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="PRACTICE" value="1" />
+          <entry key="PRACTICE" value="2" />
           <entry key="PRACTICE_SQL" value="2" />
           <entry key="c" value="1" />
           <entry key="class" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="11" />
+          <entry key="java" value="14" />
           <entry key="properties" value="3" />
           <entry key="sql" value="5" />
+          <entry key="user" value="1" />
           <entry key="userinformation" value="1" />
           <entry key="xml" value="3" />
         </counts>
@@ -153,12 +170,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="Database Element" value="1" />
+          <entry key="Database Element" value="2" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="4" />
-          <entry key="SQL" value="5" />
+          <entry key="SQL" value="6" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -174,47 +191,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2492" />
+          <entry key="PRACTICE" value="8" />
+          <entry key="java" value="3135" />
           <entry key="sql" value="21" />
+          <entry key="txt" value="223" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2492" />
-          <entry key="SQL" value="21" />
+          <entry key="JAVA" value="3135" />
+          <entry key="PLAIN_TEXT" value="223" />
+          <entry key="SQL" value="29" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.88414633">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/TESTING.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlet/PRACTICEServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -227,44 +224,32 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/user">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dao/AccessDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1666">
-                  <caret line="98" column="100" selection-start-line="98" selection-start-column="100" selection-end-line="98" selection-end-column="100" />
+                <state relative-caret-position="377">
+                  <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/entity/ArticlePOJO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blogs.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -287,15 +272,27 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/blogs.sql">
+            <entry file="file://$PROJECT_DIR$/src/entity/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -344,13 +341,13 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/c" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" />
         <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
-        <option value="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" />
         <option value="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" />
-        <option value="$PROJECT_DIR$/blogs.sql" />
         <option value="$PROJECT_DIR$/PRACTICE_SQL" />
-        <option value="$PROJECT_DIR$/PRACTICE" />
-        <option value="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" />
         <option value="$PROJECT_DIR$/src/entity/ArticlePOJO.java" />
+        <option value="$PROJECT_DIR$/blogs.sql" />
+        <option value="$PROJECT_DIR$/PRACTICE" />
+        <option value="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" />
+        <option value="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" />
         <option value="$PROJECT_DIR$/src/dao/AccessDAO.java" />
       </list>
     </option>
@@ -465,7 +462,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538895557137" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538903860594" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="C:/ICT coursework/industry_lab_testing" />
@@ -506,7 +503,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestsForAccessDAO">
+  <component name="RunManager" selected="Application.PRACTICE_TestDAO">
     <configuration name="PRACTICE_TestDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.PRACTICE_TestDAO" />
       <module name="webBlog" />
@@ -545,6 +542,22 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.TestsForAccessDAO" />
       <option name="METHOD_NAME" value="setLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsForAccessDAO.testGetAllArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.TestsForAccessDAO" />
+      <option name="METHOD_NAME" value="testGetAllArticles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -785,13 +798,15 @@
       <item itemvalue="JUnit.TestsForAccessDAO" />
       <item itemvalue="JUnit.TestsForAccessDAO.setLogin" />
       <item itemvalue="JUnit.TestsForAccessDAO.testGetUserInfo" />
+      <item itemvalue="JUnit.TestsForAccessDAO.testGetAllArticles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PRACTICE_TestDAO" />
+        <item itemvalue="JUnit.TestsForAccessDAO.testGetAllArticles" />
         <item itemvalue="JUnit.TestsForAccessDAO" />
         <item itemvalue="JUnit.TestsForAccessDAO.testGetUserInfo" />
         <item itemvalue="JUnit.TestsForAccessDAO.setLogin" />
-        <item itemvalue="Application.PRACTICE_TestDAO" />
       </list>
     </recent_temporary>
   </component>
@@ -810,7 +825,7 @@
       <workItem from="1538689899986" duration="20835000" />
       <workItem from="1538804830910" duration="139000" />
       <workItem from="1538805857776" duration="5983000" />
-      <workItem from="1538874557623" duration="11811000" />
+      <workItem from="1538874557623" duration="14885000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538695417248</created>
@@ -833,16 +848,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538702199643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added POJO for articles.&#10;Added methods to get articles from the database.&#10;Need to add methods to post stuff to database.&#10;May need to add methods to change items in database.">
+      <created>1538895660759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538895660759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsForAccessDAO - 2018.10.07 at 14h 32m 28s.xml">
-      <configuration name="TestsForAccessDAO" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestsForAccessDAO_setLogin - 2018.10.07 at 14h 34m 00s.xml">
-      <configuration name="TestsForAccessDAO.setLogin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestsForAccessDAO_testGetUserInfo - 2018.10.07 at 14h 42m 01s.xml">
       <configuration name="TestsForAccessDAO.testGetUserInfo" configurationId="JUnit" />
     </history-entry>
@@ -864,9 +880,18 @@
     <history-entry file="TestsForAccessDAO - 2018.10.07 at 14h 48m 22s.xml">
       <configuration name="TestsForAccessDAO" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetAllArticles - 2018.10.07 at 20h 02m 02s.xml">
+      <configuration name="TestsForAccessDAO.testGetAllArticles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetAllArticles - 2018.10.07 at 20h 03m 42s.xml">
+      <configuration name="TestsForAccessDAO.testGetAllArticles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestsForAccessDAO_testGetAllArticles - 2018.10.07 at 20h 06m 36s.xml">
+      <configuration name="TestsForAccessDAO.testGetAllArticles" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50622000" />
+    <option name="totallyTimeSpent" value="53696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -881,7 +906,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83943087" visible="true" weight="0.22684564" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83943087" visible="true" weight="0.22684564" />
       <window_info id="Structure" order="1" sideWeight="0.16025642" side_tool="true" weight="0.23020135" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -891,15 +916,15 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49936143" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7805369" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7798658" visible="true" weight="0.29461756" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4939394" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49127516" weight="0.40571427" />
+      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.490604" weight="0.40509915" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6610738" weight="0.3371105" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21946308" side_tool="true" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22013423" side_tool="true" visible="true" weight="0.29461756" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49832326" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -910,7 +935,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.0053691277" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.22214764" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -972,10 +997,10 @@
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="Added setNewUser in AccessDAO. Adds new name and password to database" />
     <MESSAGE value="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getUserInfo.&#10;Temporarily using database jmck074 in Hikari Connection Pool for testing. Properties file will need to be changed when we set up database/ or using otherdatabase" />
+    <MESSAGE value="Added POJO for articles.&#10;Added methods to get articles from the database.&#10;Need to add methods to post stuff to database.&#10;May need to add methods to change items in database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added POJO for articles.&#10;Added methods to get articles from the database.&#10;Need to add methods to post stuff to database.&#10;May need to add methods to change items in database." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/TESTING_sql" />
     <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.userinformation" />
     <entry file="das://table:/d72243b4/1dac04fd-3214-483f-b8c5-fdb50f458649/nyan779.user" />
     <entry file="das://table:/d72243b4/bfd39762-9752-425b-8e94-63748a5706d8/jmck074.article" />
@@ -1068,20 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRACTICE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1099,27 +1110,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/blogs.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
+    <entry file="file://$PROJECT_DIR$/PRACTICE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1133,10 +1134,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs.sql">
+    <entry file="file://$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/TestsForAccessDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,10 +1165,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://bfd39762-9752-425b-8e94-63748a5706d8/schema/jmck074/table/userinformation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/AccessDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="100" selection-start-line="98" selection-start-column="100" selection-end-line="98" selection-end-column="100" />
+        <state relative-caret-position="377">
+          <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

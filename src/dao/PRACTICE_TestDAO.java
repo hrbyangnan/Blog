@@ -9,7 +9,7 @@ public class PRACTICE_TestDAO {
         try{
             AccessDAO dao = new AccessDAO();
             System.out.println("Try to access database");
-            System.out.println(dao.getLoginFromDataBase("Bob"));
+            dao.setNewUser("Harry456","secretPassword");
             System.out.println("Database was accessed");
         }catch(SQLException e){e.getMessage();}
 

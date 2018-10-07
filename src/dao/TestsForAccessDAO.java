@@ -7,6 +7,8 @@ import org.junit.Test;
 import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 public class TestsForAccessDAO {
 
     private AccessDAO ourDAO;
@@ -20,10 +22,7 @@ public class TestsForAccessDAO {
     }
     }
 
-    /*@Test
-    public void setLogin() throws SQLException{
-        ourDAO.setNewUser("Jimbo","trees123");
-    }*/
+
 
     @Test
     public void testGetLogin() throws SQLException{
@@ -38,5 +37,7 @@ public class TestsForAccessDAO {
     }
 
     @Test
-    public void testGetAllArticles
+    public void testGetAllArticles() throws SQLException{
+        assertNotNull(ourDAO.getAllArticlesFromDataBase());
+    }
 }

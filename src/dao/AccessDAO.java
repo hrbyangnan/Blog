@@ -127,6 +127,7 @@ public List<ArticlePOJO> getAllArticlesFromDataBase() throws SQLException{
 
 }
 
+//This method should take an article in the form of a POJO and post it to the database
 public void postArticleToDatabase(ArticlePOJO thisArticle) throws SQLException{
         try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO article(UserId,ArticleTitle,ArticleContent,PubTime,picPath ) VALUES(?,?,?,?,?);")){
             stmt.setInt(1,thisArticle.getAuthorID());
