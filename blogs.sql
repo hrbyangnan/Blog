@@ -4,7 +4,7 @@
 # Date: 2018/10/4
 # Time: 17:38
 # To change this template use File | Settings | File Templates.
-
+use nyan779;
 DROP TABLE IF EXISTS `aricle`;
 CREATE TABLE `aricle` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
@@ -12,14 +12,14 @@ CREATE TABLE `aricle` (
   `ArticleTitle` varchar(50) NOT NULL,
   `ArticleContent` varchar(1000) NOT NULL,
   `PubTime` datetime DEFAULT NULL,
-  'picPath' varchar(1000) NOT NULL,
+  `PicPath` varchar(255) NOT NULL,
   PRIMARY KEY (`ArticleId`),
   KEY `fk-Ariticle-User` (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null);
-INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null);
+INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -44,16 +44,16 @@ CREATE TABLE `user` (
   `UserId` int(4) NOT NULL AUTO_INCREMENT,
   `UserName` varchar(50) NOT NULL,
   `UserPasswd` varchar(50) NOT NULL,
-  'profilePath' varchar(1000) NOT NULL,
+  `ProfilePath` varchar(255) NOT NULL,
   PRIMARY KEY (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `user` VALUES ('39', 'test1@google.com', '123');
-INSERT INTO `user` VALUES ('40', 'test2@google.com', '123');
-INSERT INTO `user` VALUES ('41', '123@google.com', '123');
-INSERT INTO `user` VALUES ('42', '123', '1');
-INSERT INTO `user` VALUES ('43', '1', '123');
+INSERT INTO `user` VALUES ('39', 'test1@google.com', '123','\imgFile\11.jpg');
+INSERT INTO `user` VALUES ('40', 'test2@google.com', '123','\imgFile\12.jpg');
+INSERT INTO `user` VALUES ('41', '123@google.com', '123','\imgFile\13.jpg');
+INSERT INTO `user` VALUES ('42', '123', '1','\imgFile\14.jpg');
+INSERT INTO `user` VALUES ('43', '1', '123','\imgFile\15.jpg');
 
 
 DROP TABLE IF EXISTS `userinformation`;
