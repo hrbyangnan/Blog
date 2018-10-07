@@ -7,18 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Made changes to DAta Access Objects">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/AccessDAO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PRACTICE_TestDAO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TestsForAccessDAO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/PRACTICEServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.html" afterPath="$PROJECT_DIR$/web/RegistrationForm.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -222,10 +211,10 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#2119#2120#0" expanded="true" />
                 <element signature="e#2147#2148#0" expanded="true" />
-                <marker date="1538952902291" expanded="true" signature="702:748" ph="SELECT UserP... user" />
-                <marker date="1538952902291" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
-                <marker date="1538952902291" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
-                <marker date="1538952902291" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
+                <marker date="1538953786602" expanded="true" signature="702:748" ph="SELECT UserP... user" />
+                <marker date="1538953786602" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
+                <marker date="1538953786602" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
+                <marker date="1538953786602" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
               </folding>
             </state>
           </provider>
@@ -596,7 +585,7 @@
       <workItem from="1538705166025" duration="11210000" />
       <workItem from="1538904961409" duration="352000" />
       <workItem from="1538946453166" duration="364000" />
-      <workItem from="1538950984987" duration="2725000" />
+      <workItem from="1538950984987" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538688896963</created>
@@ -661,11 +650,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538952287627</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made changes to DAta Access Objects">
+      <created>1538953749083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1538953749083</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30744000" />
+    <option name="totallyTimeSpent" value="30855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,7 +813,7 @@
         <state relative-caret-position="442">
           <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -835,7 +831,7 @@
         <state relative-caret-position="493">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1538950897805" expanded="true" signature="437:504" ph="insert into aricle... " />
             <marker date="1538950897805" expanded="true" signature="1262:1298" ph="delete from aricle... " />
             <marker date="1538950897805" expanded="true" signature="1822:1888" ph="update aricle... " />
@@ -902,7 +898,7 @@
         <state relative-caret-position="442">
           <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,7 +916,7 @@
         <state relative-caret-position="493">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1538950897805" expanded="true" signature="437:504" ph="insert into aricle... " />
             <marker date="1538950897805" expanded="true" signature="1262:1298" ph="delete from aricle... " />
             <marker date="1538950897805" expanded="true" signature="1822:1888" ph="update aricle... " />
@@ -956,10 +952,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2119#2120#0" expanded="true" />
             <element signature="e#2147#2148#0" expanded="true" />
-            <marker date="1538952902291" expanded="true" signature="702:748" ph="SELECT UserP... user" />
-            <marker date="1538952902291" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
-            <marker date="1538952902291" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
-            <marker date="1538952902291" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
+            <marker date="1538953786602" expanded="true" signature="702:748" ph="SELECT UserP... user" />
+            <marker date="1538953786602" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
+            <marker date="1538953786602" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
+            <marker date="1538953786602" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
           </folding>
         </state>
       </provider>
@@ -1033,7 +1029,7 @@
         <state relative-caret-position="442">
           <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,7 +1095,7 @@
         <state relative-caret-position="459">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1538950897805" expanded="true" signature="437:504" ph="insert into aricle... " />
             <marker date="1538950897805" expanded="true" signature="1262:1298" ph="delete from aricle... " />
             <marker date="1538950897805" expanded="true" signature="1822:1888" ph="update aricle... " />
@@ -1145,10 +1141,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2119#2120#0" expanded="true" />
             <element signature="e#2147#2148#0" expanded="true" />
-            <marker date="1538952902291" expanded="true" signature="702:748" ph="SELECT UserP... user" />
-            <marker date="1538952902291" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
-            <marker date="1538952902291" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
-            <marker date="1538952902291" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
+            <marker date="1538953786602" expanded="true" signature="702:748" ph="SELECT UserP... user" />
+            <marker date="1538953786602" expanded="true" signature="1324:1390" ph="INSERT INTO user... " />
+            <marker date="1538953786602" expanded="true" signature="1722:1805" ph="INSERT INTO userinformation... " />
+            <marker date="1538953786602" expanded="true" signature="2315:2360" ph="SELECT * FRO... userinformation" />
           </folding>
         </state>
       </provider>
