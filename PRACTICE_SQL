@@ -1,0 +1,76 @@
+/* I had some problems running the blogs.sql on my database so made this one just for testing, can be deleted - James */
+
+DROP TABLE IF EXISTS article;
+CREATE TABLE article (
+  ArticleId int(4) NOT NULL AUTO_INCREMENT,
+  UserId int(4) NOT NULL,
+  ArticleTitle varchar(50) NOT NULL,
+  ArticleContent varchar(1000) NOT NULL,
+  PubTime datetime DEFAULT NULL,
+  picPath varchar(1000) NOT NULL,
+  PRIMARY KEY (ArticleId),
+  FOREIGN KEY (UserId) REFERENCES user (UserId)
+);
+
+
+INSERT INTO article VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null);
+INSERT INTO article VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null);
+
+
+DROP TABLE IF EXISTS comment;
+CREATE TABLE comment (
+  CommentId int(4) NOT NULL AUTO_INCREMENT,
+  ArticleId int(4) NOT NULL,
+  CommentContent varchar(200) NOT NULL,
+  UserId int(4) NOT NULL,
+  UserName varchar(255) NOT NULL,
+  PRIMARY KEY (CommentId),
+  FOREIGN KEY (UserId) REFERENCES user (UserId),
+   FOREIGN KEY (ArticleId) REFERENCES article(ArticleId)
+) ;
+
+
+INSERT INTO `comment` VALUES ('4', '11', 'good', '39', 'test1@google.com');
+INSERT INTO `comment` VALUES ('5', '12', 'bad', '40', 'test2@google.com');
+
+
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+  UserId int(4) NOT NULL AUTO_INCREMENT,
+  UserName varchar(50) NOT NULL,
+  UserPasswd varchar(50) NOT NULL,
+  profilePath varchar(1000) NOT NULL,
+  PRIMARY KEY (UserId)
+) ;
+
+
+INSERT INTO user VALUES ('39', 'test1@google.com', '123','');
+INSERT INTO user VALUES ('40', 'test2@google.com', '123','');
+INSERT INTO user VALUES ('41', '123@google.com', '123','');
+INSERT INTO user VALUES ('42', '123', '1','');
+INSERT INTO user VALUES ('43', '1', '123','');
+INSERT INTO user (UserName, UserPasswd, profilePath) VALUES ('Bob','Unbreakable','');
+
+
+DROP TABLE IF EXISTS userinformation;
+CREATE TABLE userinformation (
+  InformationId int(4) NOT NULL AUTO_INCREMENT,
+  UserId int(4) NOT NULL,
+  NickName varchar(50) DEFAULT NULL,
+  RealName varchar(50) DEFAULT NULL,
+  Birthday int(8) DEFAULT NULL,
+  Country varchar(50) DEFAULT NULL,
+  PRIMARY KEY (InformationId),
+  KEY `fk1` (UserId)
+) ;
+
+
+INSERT INTO `userinformation` VALUES ('9', '39', 'test1','Tom', '19950101', 'NewZealand');
+INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'Australia');
+INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India');
+INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China');
+INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates');
+
+
+
+SELECT * FROM userinformation WHERE UserId = '39';

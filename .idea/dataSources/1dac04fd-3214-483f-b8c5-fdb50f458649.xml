@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="nyan779@db.sporadic.nz">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
     </root>
@@ -15,28 +15,28 @@
     <table id="7" parent="3" name="userinformation"/>
     <column id="8" parent="4" name="ArticleId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="9" parent="4" name="UserId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="10" parent="4" name="ArticleName">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="11" parent="4" name="ArticleContent">
       <Position>4</Position>
-      <DataType>VARCHAR(1000)|12</DataType>
+      <DataType>VARCHAR(1000)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="12" parent="4" name="PubTime">
       <Position>5</Position>
-      <DataType>DATETIME(19)|93</DataType>
+      <DataType>DATETIME(19)|93s</DataType>
     </column>
     <index id="13" parent="4" name="fk-Ariticle-User">
       <ColNames>UserId</ColNames>
@@ -48,28 +48,28 @@
     </key>
     <column id="15" parent="5" name="CommentId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="16" parent="5" name="ArticleId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="17" parent="5" name="CommentContent">
       <Position>3</Position>
-      <DataType>VARCHAR(200)|12</DataType>
+      <DataType>VARCHAR(200)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="18" parent="5" name="UserId">
       <Position>4</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="19" parent="5" name="UserName">
       <Position>5</Position>
-      <DataType>VARCHAR(255)|12</DataType>
+      <DataType>VARCHAR(255)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="20" parent="5" name="fk-Comment-Aricle">
@@ -85,18 +85,18 @@
     </key>
     <column id="23" parent="6" name="UserId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="24" parent="6" name="UserName">
       <Position>2</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="25" parent="6" name="UserPasswd">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="26" parent="6" name="PRIMARY">
@@ -106,30 +106,30 @@
     </key>
     <column id="27" parent="7" name="InformationId">
       <Position>1</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="28" parent="7" name="UserId">
       <Position>2</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="29" parent="7" name="NickName">
       <Position>3</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="30" parent="7" name="RealName">
       <Position>4</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <column id="31" parent="7" name="Birthday">
       <Position>5</Position>
-      <DataType>INT(10)|4</DataType>
+      <DataType>INT(10)|4s</DataType>
     </column>
     <column id="32" parent="7" name="Country">
       <Position>6</Position>
-      <DataType>VARCHAR(50)|12</DataType>
+      <DataType>VARCHAR(50)|12s</DataType>
     </column>
     <index id="33" parent="7" name="fk1">
       <ColNames>UserId</ColNames>
