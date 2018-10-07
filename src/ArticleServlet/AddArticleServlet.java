@@ -20,6 +20,7 @@ import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
     ArticleDao dao=new ArticleDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

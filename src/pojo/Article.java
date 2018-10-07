@@ -12,7 +12,7 @@ public class Article implements Serializable {
     private String articleContent;
     private String pubTime;
 
-    public Article(int articleId, int userId, String articleName, String articleContent) {
+    public Article(int articleId, String articleName, String articleContent) {
 
     }
 

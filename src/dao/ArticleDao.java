@@ -99,7 +99,7 @@ public class ArticleDao {
         List<Article> l = new ArrayList<Article>();
         try {
             while (rs.next()) {
-                Article artc = new Article(rs.getInt("ArticleId"), rs.getInt("UserId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
+                Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
                 l.add(artc);
             }
         } catch (Exception e) {
@@ -156,7 +156,7 @@ public class ArticleDao {
             ps.setObject(1, articleId);
             rs=ps.executeQuery();
             if(rs.next()){
-                Article artc=new Article(rs.getInt("ArticleId"),rs.getInt("UserId"),rs.getString("ArticleName"),rs.getString("ArticleContent"));
+                Article artc=new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"),rs.getString("ArticleContent"));
                 return artc;
             }
         } catch (Exception e) {
