@@ -30,17 +30,21 @@ public class RegisterUserServlet extends HttpServlet {
 
         System.out.println("Check that servlet doPost is loading");
 
-        String name = request.getParameter("name");
+        String userName=request.getParameter("username");
+
+        String firstName = request.getParameter("name");
+        String lastName=request.getParameter("lastName");
+
         String password = request.getParameter("password");
-        String realName = request.getParameter("realName");
+        String realName = firstName+" "+lastName;
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
         String information = request.getParameter("information");
 
         User user = new User();
-        user.setName(name);
-        user.setPassword(password);
+        user.setName(userName);
         user.setRealName(realName);
+        user.setPassword(password);
         user.setCountry(country);
         user.setBirthday(birthday);
         user.setInfomation(information);
@@ -49,7 +53,7 @@ public class RegisterUserServlet extends HttpServlet {
             UserDao ud = new UserDaoImp();
 
             if (ud.register(user)) {
-                request.setAttribute("username", name);
+                request.setAttribute("username", realName);
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
             } else {
 
