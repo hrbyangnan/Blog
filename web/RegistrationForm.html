@@ -330,17 +330,99 @@
                                         <input id="date" name="birthday" required="required" type="date">
                                     </div>
                                 </div>
-                                <div class="form-group row" style="width: 200px">
-                                    <label for="select" class="col-4 col-form-label">Choose Avatar</label>
+                                <div class="form-group row" style="width: 200px"  >
+                                    <label for="selectAvatar" class="col-4 col-form-label">Choose Avatar</label>
                                     <div class="col-8">
-                                        <select id="select" name="avatar" class="custom-select">
-                                            <option value="admin"></option>
-                                            <option value="admin">none</option>
-                                            <option value="admin">pic1</option>
-                                            <option value="admin">pic2</option>
-                                            <option value="admin">pic3</option>
-                                            <option value="admin">pic4</option>
-                                        </select>
+                                        <form id="selectAvatar" action="/register" method="post">
+                                            <table>
+                                                <tr>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/01.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="images/Avatars/01.png">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/02.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="images/Avatars/02.png">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/03.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="images/Avatars/03.png">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/04.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="04">
+                                                    </td>
+                                                </tr>
+                                                <tr><tr>
+                                                <td style="text-align: center; padding:10px">
+                                                    <img src="images/Avatars/05.png" style="width: 50px"><br>
+                                                    <input type="radio" name="avatar" value="05">
+                                                </td>
+                                                <td style="text-align: center; padding:10px">
+                                                    <img src="images/Avatars/06.png" style="width: 50px"><br>
+                                                    <input type="radio" name="avatar" value="06">
+                                                </td>
+                                                <td style="text-align: center; padding:10px">
+                                                    <img src="images/Avatars/07.png" style="width: 50px"><br>
+                                                    <input type="radio" name="avatar" value="07">
+                                                </td>
+                                                <td style="text-align: center; padding:10px">
+                                                    <img src="images/Avatars/08.png" style="width: 50px"><br>
+                                                    <input type="radio" name="avatar" value="08">
+                                                </td>
+                                            </tr>
+                                                <tr>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/09.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="09">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/10.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="10">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/11.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="11">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/12.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="12">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/13.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="13">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/14.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="14">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/15.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="15">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/16.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="16">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/17.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="17">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/18.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="18">
+                                                    </td>
+                                                    <td style="text-align: center; padding:10px">
+                                                        <img src="images/Avatars/19.png" style="width: 50px"><br>
+                                                        <input type="radio" name="avatar" value="19">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 200px">
@@ -372,7 +454,7 @@
                                 <div class="form-group row">
                                     <label for="publicinfo" class="col-4 col-form-label">Public Info</label>
                                     <div class="col-8">
-                                        <textarea id="publicinfo" name="publicinfo" cols="40" rows="4"></textarea>
+                                        <textarea id="publicinfo" name="information" cols="40" rows="4"  ></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
