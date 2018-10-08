@@ -30,6 +30,24 @@ public class LoginServlet extends HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
 
+        String plaintext=null;
 
+        UserDao ud = null;
+        try {
+            ud = new UserDaoImp();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            if(ud.login(name)==plaintext){
+            request.setAttribute("mes", "weilcome"+name);
+            request.getRequestDispatcher("/success.jsp").forward(request, response);}
+            else{
+                response.sendRedirect("index.jsp");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -13,12 +13,6 @@ public class LogoutServlet extends HttpServlet {
     }
 
 
-    public void destroy() {
-        super.destroy();
-
-    }
-
-
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String id = null;
@@ -33,9 +27,5 @@ public class LogoutServlet extends HttpServlet {
         this.doGet(request, response);
     }
 
-
-    public void init() throws ServletException {
-
-    }
 
 }

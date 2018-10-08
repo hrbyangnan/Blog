@@ -32,14 +32,14 @@ public class RegisterUserServlet extends HttpServlet {
 
         String userName = request.getParameter("username");
 
-        String firstName = request.getParameter("name");
+        String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
 
         String password = request.getParameter("password");
         String realName = firstName + " " + lastName;
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
-        String information = request.getParameter("information");
+        String information = request.getParameter("publicinfo");
 
         User user = new User();
         user.setName(userName);

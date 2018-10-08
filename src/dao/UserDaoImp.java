@@ -39,21 +39,25 @@ public class UserDaoImp implements UserDao {
     @Override
     public boolean register(User user) throws SQLException {
         //add user add password to user table
-        System.out.println("Trying to register");
+        System.out.println("Trying to register user 1");
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, profilePath) VALUES (?,?,?);")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
-//TODO check about profile path...
             stmt.setString(3, "?");
             stmt.executeUpdate();
+            System.out.println("Trying to register user 2");
         }
         // add user and info to information table
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country) VALUES (?,?,?,?);")) {
-            stmt.setString(1, user.getName());
-            stmt.setString(2, user.getRealName());
-            stmt.setString(3, user.getBirthday());
-            stmt.setString(4, user.getCountry());
+        System.out.println("Trying to register user info 1");
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Birthday, Country) VALUES (?,?,?,?,?);")) {
+            stmt.setInt(1, user.getId());
+            stmt.setString(2, user.getName());
+            stmt.setString(3, user.getRealName());
+            stmt.setString(4, user.getBirthday());
+            stmt.setString(5, user.getCountry());
+
             stmt.executeUpdate();
+
         }
         return false;
     }

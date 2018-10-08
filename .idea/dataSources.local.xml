@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="@db.sporadic.nz" uuid="cb3e11b2-ad7e-45b7-9583-0ae0efd1ee1e">
-      <database-info product="MySQL" version="5.5.5-10.1.34-MariaDB-0ubuntu0.18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+    <data-source name="nyan779@db.sporadic.nz" uuid="2a801f01-2d94-4777-96ca-5bd419a0470f">
+      <database-info product="MySQL" version="5.5.5-10.1.34-MariaDB-0ubuntu0.18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MARIADB" exact-version="0.18.4.1">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>nyan779</user-name>
-      <introspection-schemas>*:information_schema,nyan779</introspection-schemas>
+      <introspection-schemas>*:nyan779</introspection-schemas>
     </data-source>
   </component>
 </project>

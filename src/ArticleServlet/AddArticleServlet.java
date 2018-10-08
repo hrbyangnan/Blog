@@ -6,8 +6,6 @@
 //		To change this template use File | Settings | File Templates.
 //
 package ArticleServlet;
-
-
 import dao.ArticleDao;
 import pojo.Article;
 
