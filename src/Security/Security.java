@@ -6,7 +6,7 @@ public class Security {
     private static char[] hex = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     //todo get salt code
-    public static String salt() {
+    public static String getSaltCode() {
         Random random = new Random();
         StringBuilder sb = new StringBuilder(16);
         for (int i = 0; i < sb.capacity(); i++) {
@@ -16,8 +16,8 @@ public class Security {
     }
 
     //todo get hash+slat code
-    public static String getHashAndSalt(String salt, String password) {
-        String saltAndHash=null;
+    public static String getHashAndSaltCode(String salt, String password) {
+        String saltAndHash=salt+password;
         int arraySize = 11113;
         int hashAndSalt = 0;
         for (int i = 0; i < saltAndHash.length(); i++) {
@@ -28,6 +28,11 @@ public class Security {
 
         return hashAndSalt+"";
     }
+
+//    public static void main(String[] args) {
+//        String temp=getHashAndSaltCode(getSaltCode(),"123456");
+//        System.out.println(temp);
+//    }
 
 
 

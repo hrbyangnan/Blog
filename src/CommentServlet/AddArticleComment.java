@@ -1,4 +1,4 @@
-package ArticleServlet;
+package CommentServlet;
 
 
 import dao.ArticleDao;

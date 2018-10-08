@@ -57,7 +57,6 @@ public class UserDaoImp implements UserDao {
             stmt.setString(5, user.getCountry());
 
             stmt.executeUpdate();
-
         }
         return false;
     }
