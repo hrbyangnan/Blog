@@ -7,33 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/entity/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/servlet/DeleteServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/servlet/loginServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/servlet/registerServlet.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/HikariCP-3.0.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/json-simple-1.1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/jstl-1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/mysql-connector-java-5.1.46-bin.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-api-1.8.0-beta2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/lib/slf4j-jdk14-1.8.0-beta2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/HikariCP-3.0.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/json-simple-1.1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/jstl-1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/mysql-connector-java-5.1.46-bin.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/slf4j-api-1.8.0-beta2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/lib/slf4j-jdk14-1.8.0-beta2.jar" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dac04fd-3214-483f-b8c5-fdb50f458649.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" />
-      <change beforePath="$PROJECT_DIR$/webBlog.iml" afterPath="$PROJECT_DIR$/webBlog.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -209,8 +183,8 @@
       <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1981">
-              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="467">
+              <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
               <folding>
                 <marker date="1538957246000" expanded="true" signature="460:527" ph="insert into aricle... " />
                 <marker date="1538957246000" expanded="true" signature="1178:1214" ph="delete from aricle... " />
@@ -543,7 +517,7 @@
       <updated>1538624325584</updated>
       <workItem from="1538624331178" duration="7431000" />
       <workItem from="1538686100179" duration="1919000" />
-      <workItem from="1538950450400" duration="2781000" />
+      <workItem from="1538950450400" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538957438769</created>
@@ -552,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538957438769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Default Changelist">
+      <created>1538957520614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538957520614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12131000" />
+    <option name="totallyTimeSpent" value="12365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -568,15 +549,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.510661" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12100213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0074626864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -711,8 +692,8 @@
         <state relative-caret-position="102">
           <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding>
-            <marker date="1538957362000" expanded="true" signature="48153:48170" ph="..." />
-            <marker date="1538957362000" expanded="true" signature="48153:48201" ph="..." />
+            <marker date="1538957512000" expanded="true" signature="48495:48512" ph="..." />
+            <marker date="1538957512000" expanded="true" signature="48495:48543" ph="..." />
           </folding>
         </state>
       </provider>
@@ -831,8 +812,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1981">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="467">
+          <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding>
             <marker date="1538957246000" expanded="true" signature="460:527" ph="insert into aricle... " />
             <marker date="1538957246000" expanded="true" signature="1178:1214" ph="delete from aricle... " />
