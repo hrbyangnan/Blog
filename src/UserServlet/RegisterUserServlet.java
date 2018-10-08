@@ -35,6 +35,7 @@ public class RegisterUserServlet extends HttpServlet {
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
         String information = request.getParameter("information");
+        String avatar = request.getParameter("avatar");
 
         User user = new User();
         user.setName(name);
@@ -43,6 +44,7 @@ public class RegisterUserServlet extends HttpServlet {
         user.setCountry(country);
         user.setBirthday(birthday);
         user.setInfomation(information);
+        user.setAvatar(avatar);
 
 try {
     UserDao ud = new UserDaoImp();

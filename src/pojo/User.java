@@ -8,6 +8,7 @@ public class User {
     private String country;
     private String birthday;
     private String information;
+    private String avatar;
 
     public int getId() {
         return id;
@@ -65,7 +66,9 @@ public class User {
         this.information = infomation;
     }
 
+    public String getAvatar(){return avatar;}
 
+    public void setAvatar(String avatar) {this.avatar = avatar;}
 }
 
 

@@ -47,11 +47,12 @@ public class UserDaoImp implements UserDao {
             stmt.executeUpdate();
         }
         // add user and info to information table
-        try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country) VALUES (?,?,?,?);")){
+        try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country, Avatar) VALUES (?,?,?,?,?);")){
             stmt.setString(1,user.getName());
             stmt.setString(2,user.getRealName());
             stmt.setString(3, user.getBirthday());
             stmt.setString(4,user.getCountry());
+            stmt.setString(5,user.getAvatar());
             stmt.executeUpdate();
         }
 return false;
