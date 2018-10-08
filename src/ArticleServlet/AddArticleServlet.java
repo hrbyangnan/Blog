@@ -16,21 +16,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
-    ArticleDao dao=new ArticleDao();
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        String articleName=request.getParameter("articleName");
-        String articleContent=request.getParameter("articleContent");
-        int loginUserId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        Article newArticle=new Article(loginUserId,articleName,articleContent);
+        ArticleDao dao =  new ArticleDao();
+        String articleName = request.getParameter("articleName");
+        String articleContent = request.getParameter("articleContent");
+        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
+        Article newArticle = new Article(loginUserId, articleName, articleContent);
         dao.addArticle(newArticle);
-        List<Article> articles=dao.selectArtByUser(loginUserId);
-        request.getSession().setAttribute("userArticles",articles);
+        List<Article> articles = dao.selectArtByUser(loginUserId);
+        request.getSession().setAttribute("userArticles", articles);
         response.sendRedirect("article/articleList.jsp");
     }
 
