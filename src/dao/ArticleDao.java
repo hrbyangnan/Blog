@@ -19,8 +19,8 @@ public class ArticleDao {
         }
     }
 
-    PreparedStatement  ps= null;
-    ResultSet rs=null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
 
 
     //add article

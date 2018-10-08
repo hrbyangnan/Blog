@@ -104,9 +104,9 @@ public class CommentDao {
         List<Comment> l = new ArrayList<Comment>();
         try {
             while (rs.next()) {
-                Comment artc = new Comment(rs.getString("commentContent"),rs.getInt("commendID"),
+                Comment artc = new Comment(rs.getString("commentContent"), rs.getInt("commendID"),
                         rs.getInt("articleId"),
-                        rs.getInt("userId"),rs.getString("userName"));
+                        rs.getInt("userId"), rs.getString("userName"));
                 l.add(artc);
             }
         } catch (Exception e) {

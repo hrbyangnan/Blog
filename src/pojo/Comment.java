@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Comment implements Serializable {
 
-    public Comment(String commentContent,int commentId,  int articleId, int userId, String userName) {
+    public Comment(String commentContent, int commentId, int articleId, int userId, String userName) {
         this.commentId = commentId;
         this.commentContent = commentContent;
         this.articleId = articleId;

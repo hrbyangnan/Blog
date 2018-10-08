@@ -44,19 +44,20 @@ public class UserDaoImp implements UserDao {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
 //TODO check about profile path...
-            stmt.setString(3,"?");
+            stmt.setString(3, "?");
             stmt.executeUpdate();
         }
         // add user and info to information table
-        try(PreparedStatement stmt=this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country) VALUES (?,?,?,?);")){
-            stmt.setString(1,user.getName());
-            stmt.setString(2,user.getRealName());
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(NickName, RealName, Birthday, Country) VALUES (?,?,?,?);")) {
+            stmt.setString(1, user.getName());
+            stmt.setString(2, user.getRealName());
             stmt.setString(3, user.getBirthday());
-            stmt.setString(4,user.getCountry());
+            stmt.setString(4, user.getCountry());
             stmt.executeUpdate();
         }
         return false;
     }
+
     @Override
     public boolean delete(int id) {
         return false;
@@ -65,10 +66,10 @@ public class UserDaoImp implements UserDao {
     @Override
     public User getUserInfo(int userID) throws SQLException {
         User thisUser;
-        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM userinformation WHERE UserId =? ")){
-            stmt.setInt(1,userID);
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM userinformation WHERE UserId =? ")) {
+            stmt.setInt(1, userID);
 
-            try (ResultSet rs = stmt.executeQuery()){
+            try (ResultSet rs = stmt.executeQuery()) {
                 rs.next();
                 thisUser = new User();
                 //TODO using column indexes, but maybe better to change to column names?

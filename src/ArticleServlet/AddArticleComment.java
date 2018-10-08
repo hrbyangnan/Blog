@@ -36,8 +36,8 @@ public class AddArticleComment extends HttpServlet {
         User u = (User) request.getSession().getAttribute("user");
         String userName = u.getName();
         String CommentContent = request.getParameter("message");
-        int commentID=Integer.parseInt(request.getParameter("commentID"));
-        cdao.addComment(new Comment(CommentContent,commentID, articleId, userId, userName));
+        int commentID = Integer.parseInt(request.getParameter("commentID"));
+        cdao.addComment(new Comment(CommentContent, commentID, articleId, userId, userName));
 
         //
         response.sendRedirect("/BokeProject/ShowFriendArticle.do");

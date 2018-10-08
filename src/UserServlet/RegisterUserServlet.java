@@ -30,13 +30,13 @@ public class RegisterUserServlet extends HttpServlet {
 
         System.out.println("Check that servlet doPost is loading");
 
-        String userName=request.getParameter("username");
+        String userName = request.getParameter("username");
 
         String firstName = request.getParameter("name");
-        String lastName=request.getParameter("lastName");
+        String lastName = request.getParameter("lastName");
 
         String password = request.getParameter("password");
-        String realName = firstName+" "+lastName;
+        String realName = firstName + " " + lastName;
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
         String information = request.getParameter("information");
@@ -60,6 +60,8 @@ public class RegisterUserServlet extends HttpServlet {
                 response.sendRedirect("regSuccess.jsp");
             }
 
-        }catch(SQLException e){e.getMessage();}
+        } catch (SQLException e) {
+            e.getMessage();
+        }
     }
 }

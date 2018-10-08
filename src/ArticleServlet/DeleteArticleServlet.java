@@ -19,15 +19,16 @@ import java.io.IOException;
 import java.util.List;
 
 public class DeleteArticleServlet extends HttpServlet {
-    ArticleDao dao=new ArticleDao();
+    ArticleDao dao = new ArticleDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        int articleId=Integer.parseInt(request.getParameter("articleId"));
+        int articleId = Integer.parseInt(request.getParameter("articleId"));
         dao.deleteArticle(articleId);
-        int userId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        List<Article> articles=dao.selectArtByUser(userId);
-        request.getSession().setAttribute("userArticles",articles);
+        int userId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
+        List<Article> articles = dao.selectArtByUser(userId);
+        request.getSession().setAttribute("userArticles", articles);
         response.sendRedirect("article/articleList.jsp");
     }
 
