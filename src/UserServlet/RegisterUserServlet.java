@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Date;
 
 public class RegisterUserServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -25,6 +27,8 @@ public class RegisterUserServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        System.out.println("Check that servlet doPost is loading");
 
         String name = request.getParameter("name");
         String password = request.getParameter("password");
@@ -41,17 +45,17 @@ public class RegisterUserServlet extends HttpServlet {
         user.setBirthday(birthday);
         user.setInfomation(information);
 
+        try {
+            UserDao ud = new UserDaoImp();
 
-        UserDao ud = new UserDaoImp();
+            if (ud.register(user)) {
+                request.setAttribute("username", name);
+                request.getRequestDispatcher("/login.jsp").forward(request, response);
+            } else {
 
-        if(ud.register(user)){
-            request.setAttribute("username", name);
-            request.getRequestDispatcher("/login.jsp").forward(request, response);
-        }else{
+                response.sendRedirect("regSuccess.jsp");
+            }
 
-            response.sendRedirect("regSuccess.jsp");
-        }
-
-
+        }catch(SQLException e){e.getMessage();}
     }
 }

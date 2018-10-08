@@ -1,5 +1,6 @@
 package dao;
 
+
 import com.zaxxer.hikari.HikariDataSource;
 
 import java.io.IOException;
@@ -13,25 +14,30 @@ public class HikariConnectionPool {
 
     static {
 
-        Properties dbProps = new Properties();
+       /* Properties dbProps = new Properties();
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-
+        System.out.println("class loader is: " + classLoader.toString());
         // Loads a resource from the classpath. Can find files on:
         // /WEB-INF/lib, or
         // /WEB-INF/classes
-        try (InputStream input = classLoader.getResourceAsStream("mysql-connection.properties")) {
+        try (InputStream input = classLoader.getResourceAsStream("c.properties")){
+            //testing hikari is loading the connection properties file
 
+            System.out.println("Hikari has found " + input );
+            System.out.println(input);
             dbProps.load(input);
 
         } catch (IOException e) {
+            System.out.println("There is an error somewhere");
             e.printStackTrace();
-        }
+
+        }*/
 
         hds = new HikariDataSource();
-        hds.setJdbcUrl(dbProps.getProperty("url"));
+        hds.setJdbcUrl("jdbc:mysql://db.sporadic.nz:3306/nyan779");
         hds.setDriverClassName("com.mysql.jdbc.Driver");
-        hds.setUsername(dbProps.getProperty("user"));
-        hds.setPassword(dbProps.getProperty("password"));
+        hds.setUsername("nyan779");
+        hds.setPassword("ErrorThoroughlyExemplary");
         hds.setMaximumPoolSize(2);
     }
 

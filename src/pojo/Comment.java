@@ -4,10 +4,28 @@ import java.io.Serializable;
 
 public class Comment implements Serializable {
 
+    public Comment(String commentContent,int commentId,  int articleId, int userId, String userName) {
+        this.commentId = commentId;
+        this.commentContent = commentContent;
+        this.articleId = articleId;
+        this.userId = userId;
+        this.userName = userName;
+    }
+
+    private int commentId;
     private String commentContent;
     private int articleId;
     private int userId;
-    private int userName;
+    private String userName;
+
+    public int getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
+    }
+
 
     public String getCommentContent() {
         return commentContent;
@@ -33,11 +51,11 @@ public class Comment implements Serializable {
         this.userId = userId;
     }
 
-    public int getUserName() {
+    public String getUserName() {
         return userName;
     }
 
-    public void setUserName(int userName) {
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 }
