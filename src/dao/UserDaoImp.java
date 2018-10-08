@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class UserDaoImp implements UserDao {
 
     private final Connection conn;
-
+//james wants a comment here delete later
     //Use Hikari connection pool to access database
     public UserDaoImp() throws SQLException {
         System.out.println("trying to setup Hikari connection");
