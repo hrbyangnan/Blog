@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class RegisterUserServlet extends HttpServlet {
@@ -39,6 +41,17 @@ public class RegisterUserServlet extends HttpServlet {
         String password = request.getParameter("password");
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
+
+        SimpleDateFormat smt=new SimpleDateFormat("yyyy-MM-dd");
+
+        Date d=null;
+        try {
+            d=smt.parse(birthday);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
         String information = request.getParameter("publicinfo");
 
         User user = new User();
@@ -46,7 +59,7 @@ public class RegisterUserServlet extends HttpServlet {
         user.setRealName(realName);
         user.setPassword(password);
         user.setCountry(country);
-        user.setBirthday(birthday);
+        user.setBirthday(d);
         user.setInfomation(information);
 
         try {

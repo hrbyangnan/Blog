@@ -2,10 +2,7 @@ package dao;
 
 import pojo.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class UserDaoImp implements UserDao {
 
@@ -49,12 +46,14 @@ public class UserDaoImp implements UserDao {
         }
         // add user and info to information table
         System.out.println("Trying to register user info 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Birthday, Country) VALUES (?,?,?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Country, PublicInfo) VALUES (?,?,?,?,?);")) {
             stmt.setInt(1, user.getId());
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
-            stmt.setString(4, user.getBirthday());
-            stmt.setString(5, user.getCountry());
+            stmt.setDate(4, (java.sql.Date)user.getBirthday());
+            stmt.setString(4, user.getCountry());
+            stmt.setString(5, user.getInfomation());
+
 
             stmt.executeUpdate();
         }
@@ -79,7 +78,7 @@ public class UserDaoImp implements UserDao {
                 thisUser.setId(rs.getInt(2));
                 thisUser.setName(rs.getString(3));
                 thisUser.setRealName(rs.getString(4));
-                thisUser.setBirthday(rs.getString(5));
+                thisUser.setBirthday(rs.getDate(5));
                 thisUser.setCountry(rs.getString(6));
             }
 

@@ -64,13 +64,14 @@ CREATE TABLE `userinformation` (
   `RealName` varchar(50) DEFAULT NULL,
   `Birthday` int(8) DEFAULT NULL,
   `Country` varchar(50) DEFAULT NULL,
+  `PublicInfo` VARCHAR(500) DEFAULT NULL,
   PRIMARY KEY (`InformationId`),
   KEY `fk1` (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `userinformation` VALUES ('9', '39', 'test1','Tom', '19950101', 'NewZealand');
-INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'Australia');
-INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India');
-INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China');
-INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates');
+INSERT INTO `userinformation` VALUES ('9', '39', 'test1','Tom', '19950101', 'NewZealand','test information');
+INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'Australia','test information');
+INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India','test information');
+INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China','test information');
+INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates','test information');
