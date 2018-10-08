@@ -30,9 +30,7 @@ public class UserDaoImp implements UserDao {
                     rs.next();
                     plaintext = rs.getString(1);
                 }
-
             }
-
             return plaintext;
         }
 
