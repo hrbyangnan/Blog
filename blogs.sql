@@ -4,7 +4,7 @@
 # Date: 2018/10/4
 # Time: 17:38
 # To change this template use File | Settings | File Templates.
-use nyan779;
+
 DROP TABLE IF EXISTS `aricle`;
 CREATE TABLE `aricle` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
