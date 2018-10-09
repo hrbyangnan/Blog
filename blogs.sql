@@ -4,9 +4,9 @@
 # Date: 2018/10/4
 # Time: 17:38
 # To change this template use File | Settings | File Templates.
-use nyan779;
-DROP TABLE IF EXISTS `aricle`;
-CREATE TABLE `aricle` (
+
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE `article` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
   `UserId` int(4) NOT NULL,
   `ArticleTitle` varchar(50) NOT NULL,
@@ -18,8 +18,8 @@ CREATE TABLE `aricle` (
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
-INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
+INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -31,7 +31,7 @@ CREATE TABLE `comment` (
   `UserName` varchar(255) NOT NULL,
   PRIMARY KEY (`CommentId`),
   KEY `fk-Comment-User` (`UserId`),
-  KEY `fk-Comment-Aricle` (`ArticleId`)
+  KEY `fk-Comment-Aritcle` (`ArticleId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
