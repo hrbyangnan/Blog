@@ -47,6 +47,17 @@
         <url-pattern>/getAllArticles</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>createNewArticle</servlet-name>
+        <servlet-class>ArticleServlet.AddArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createNewArticle</servlet-name>
+        <url-pattern>/createArticles</url-pattern>
+    </servlet-mapping>
+
+
+
 
 </web-app>
 

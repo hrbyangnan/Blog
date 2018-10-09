@@ -26,11 +26,10 @@ public class LoginServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        String name = request.getParameter("name");
+        System.out.println("inside login servlet");
+        String name = request.getParameter("login");
         String password = request.getParameter("password");
 
-        String plaintext=null;
 
         UserDao ud = null;
         try {
@@ -40,8 +39,8 @@ public class LoginServlet extends HttpServlet {
         }
 
         try {
-            if(ud.login(name)==plaintext){
-            request.setAttribute("mes", "weilcome"+name);
+            if(ud.login(name).equals(password)){
+            request.setAttribute("mes", "welcome "+name);
             request.getRequestDispatcher("/success.jsp").forward(request, response);}
             else{
                 response.sendRedirect("index.jsp");
