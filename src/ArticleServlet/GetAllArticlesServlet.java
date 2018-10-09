@@ -25,6 +25,8 @@ public class GetAllArticlesServlet extends HttpServlet {
         }
     }
 
+    //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException{
 

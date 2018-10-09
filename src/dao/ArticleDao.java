@@ -180,6 +180,8 @@ public class ArticleDao {
         return null;
     }
 
+// This method gets article id, article name and article content from the database and returns a list of POJOs
+
     public List<Article> getAllArticles (){
         List<Article> articleList = new ArrayList<>();
         System.out.println("before try");
