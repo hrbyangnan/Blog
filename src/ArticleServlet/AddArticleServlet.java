@@ -6,6 +6,7 @@
 //		To change this template use File | Settings | File Templates.
 //
 package ArticleServlet;
+
 import dao.ArticleDao;
 import pojo.Article;
 
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
@@ -31,10 +33,15 @@ public class AddArticleServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        System.out.println("inside addarticle servlet");
+
         String articleName = request.getParameter("articleName");
         String articleContent = request.getParameter("articleContent");
-        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        Article newArticle = new Article(loginUserId, articleName, articleContent);
+//        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
+        int loginUserId = 123;
+        //temporary until login is set up
+        LocalDateTime pubTime = LocalDateTime.now();
+        Article newArticle = new Article(articleName, loginUserId, articleContent, pubTime);
         dao.addArticle(newArticle);
         List<Article> articles = dao.selectArtByUser(loginUserId);
         request.getSession().setAttribute("userArticles", articles);

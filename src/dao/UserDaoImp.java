@@ -4,7 +4,7 @@ import pojo.User;
 
 import java.sql.*;
 
-public class UserDaoImp implements UserDao {
+public class UserDaoImp implements UserDao,AutoCloseable {
 
     private final Connection conn;
 
@@ -84,6 +84,11 @@ public class UserDaoImp implements UserDao {
 
         }
         return thisUser;
+    }
+
+    @Override
+    public void close() throws Exception {
+        conn.close();
     }
 }
 

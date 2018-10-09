@@ -151,7 +151,7 @@
         <div class="col-sm-8">
             <hr>
             <a href="#"><h4><span class="glyphicon glyphicon-send"></span> POST NEW ENTRY</h4></a>
-            <form id="input">
+            <form id="input" method="post" action="/createArticles">
                 <label for="datetimepicker" class="col-12 col-form-label">publication date and time</label>
                 <input type="datetime-local" name="pubTime" value="2012-05-15 21:05" id="datetimepicker">
                 <br>
@@ -169,7 +169,7 @@
                 <input type="file" id="avatar" name="avatar"
                        accept="image/png, image/jpeg, video/webm, video/mp4">
                 <br>
-                <button type="button" class="btn btn-primary btn-sm">Publish</button>
+                <button type="submit" class="btn btn-primary btn-sm">Publish</button>
                 <br>
 
             </form>

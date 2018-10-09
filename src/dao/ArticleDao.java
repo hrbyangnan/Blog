@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ArticleDao {
+public class ArticleDao implements AutoCloseable {
     private final Connection conn;
 
     private PreparedStatement ps;
     private ResultSet rs;
 
-    public ArticleDao() throws SQLException{
+    public ArticleDao() throws SQLException {
         System.out.println("before connection");
         this.conn = HikariConnectionPool.getConnection();
         System.out.println("after connection");
@@ -29,17 +29,18 @@ public class ArticleDao {
 //    }
 
 
-
-
     //add article
     public void addArticle(Article artc) {
-        String sql = "insert into aricle(UserId,ArticleName,ArticleContent) values(?,?,?)";
+        String sql = "insert into aricle(UserId,ArticleName,ArticleContent,PubTime)  values(?,?,?,?)";
         try {
+            System.out.println("before prepared statement");
             PreparedStatement ps = conn.prepareStatement(sql);
+
             ps.setObject(1, artc.getUserId());
             ps.setObject(2, artc.getArticleName());
             ps.setObject(3, artc.getArticleContent());
-
+            ps.setObject(4, artc.getPubTime());
+            System.out.println("before execute update");
             ps.executeUpdate();
         } catch (Exception e) {
 
@@ -182,26 +183,38 @@ public class ArticleDao {
 
 // This method gets article id, article name and article content from the database and returns a list of POJOs
 
-    public List<Article> getAllArticles (){
+    public List<Article> getAllArticles() {
         List<Article> articleList = new ArrayList<>();
         System.out.println("before try");
-        try(PreparedStatement ps = conn.prepareStatement("select * from aricle;")){
+        try (PreparedStatement ps = conn.prepareStatement("select * from aricle;")) {
             System.out.println("inside try before query");
 
             ResultSet rs = ps.executeQuery();
 
-            while (rs.next()){
-                Article currentArticle = new Article(rs.getInt(1),rs.getString(3),rs.getString(4));
+            while (rs.next()) {
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4));
                 articleList.add(currentArticle);
             }
 //            articleList = translate(rs);
             System.out.println("inside try after query");
             return articleList;
-        }
-        catch (SQLException e){
+        } catch (SQLException e) {
             e.getMessage();
+        } finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
         }
-        return articleList;
+        return null;
     }
 
+    @Override
+    public void close() throws Exception {
+        conn.close();
+    }
 }
+
+

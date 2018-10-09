@@ -7,13 +7,8 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
       <user-name>group2</user-name>
-    </data-source>
-    <data-source name="@localhost" uuid="f73f641f-e326-477e-9bdc-1c458ca83258">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-    </data-source>
-    <data-source name="@localhost [2]" uuid="9ad74e2f-4e84-4e30-b144-09085ce48c48">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
   </component>
 </project>
