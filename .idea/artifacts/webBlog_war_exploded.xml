@@ -17,6 +17,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
           <element id="library" level="application" name="lib (2)" />
+          <element id="library" level="application" name="lib " />
         </element>
       </element>
     </root>
