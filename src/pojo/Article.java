@@ -13,6 +13,9 @@ public class Article implements Serializable {
     private String pubTime;
 
     public Article(int articleId, String articleName, String articleContent) {
+        this.articleName = articleName;
+        this.articleContent = articleContent;
+        this.articleId = articleId;
 
     }
 

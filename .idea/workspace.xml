@@ -6,11 +6,51 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Default Changelist">
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Created getAllArticles Servlet and jsp to display articles on a page">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blogs.sql" afterPath="$PROJECT_DIR$/blogs.sql" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/RegistrationForm.html" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/RegistrationForm.html" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.html" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.html" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/DeleteArticleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/DeleteArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/UpdateArticleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/UpdateArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LogoutServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/CommentDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/HikariConnectionPool.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/Comment.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/Comment.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/User.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/User.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/AddArticleServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/AddArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/DeleteArticleServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/DeleteArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/UpdateArticleServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/ArticleServlet/UpdateArticleServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LogoutServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/Comment.class" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/Comment.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/User.class" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/User.class" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/Article.java" afterPath="$PROJECT_DIR$/src/pojo/Article.java" />
+      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.html" afterPath="$PROJECT_DIR$/web/RegistrationForm.html" />
+      <change beforePath="$PROJECT_DIR$/web/Test.css" afterPath="$PROJECT_DIR$/web/Homepage.css" />
+      <change beforePath="$PROJECT_DIR$/web/Test.html" afterPath="$PROJECT_DIR$/web/Homepage.html" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/web/allArticles.jsp" afterPath="$PROJECT_DIR$/web/allArticles.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/personalPage.html" afterPath="$PROJECT_DIR$/web/personalPage.html" />
+      <change beforePath="$PROJECT_DIR$/webBlog.iml" afterPath="$PROJECT_DIR$/webBlog.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,17 +69,7 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ExecutionTargetDialog">
@@ -117,97 +147,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+              <folding>
+                <marker date="1539047034853" expanded="true" signature="593:639" ph="SELECT UserP... user" />
+                <marker date="1539047034853" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
+                <marker date="1539047034853" expanded="true" signature="1722:1817" ph="INSERT INTO userinformation... " />
+                <marker date="1539047034853" expanded="true" signature="2450:2495" ph="SELECT * FRO... userinformation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllArticlesServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allArticles.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateArticleServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="192" column="48" lean-forward="false" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
+              <folding>
+                <marker date="1539052336972" expanded="true" signature="701:768" ph="insert into aricle... " />
+                <marker date="1539052336972" expanded="true" signature="1419:1455" ph="delete from aricle... " />
+                <marker date="1539052336972" expanded="true" signature="1908:1974" ph="update aricle... " />
+                <marker date="1539052336972" expanded="true" signature="3169:3204" ph="select * fro... aricle" />
+                <marker date="1539052336972" expanded="true" signature="3946:3984" ph="select * fro... aricle" />
+                <marker date="1539052336972" expanded="true" signature="4771:4791" ph="select * fro... aricle" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/502f2408-59f2-42ac-8a92-a0059f331a2a/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="blogs.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogs.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="403">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aricle" pinned="false" current-in-tab="false">
-        <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.aricle">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment" pinned="false" current-in-tab="false">
-        <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.comment">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
-        <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userinformation" pinned="false" current-in-tab="false">
-        <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.userinformation">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Security.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Security/Security.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResetPassword.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Security/ResetPassword.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="510">
+              <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -219,6 +257,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -262,7 +301,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/servlet/ZhuceServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/entity/User.java" />
         <option value="$PROJECT_DIR$/src/servlet/registerServlet.java" />
@@ -271,11 +309,7 @@
         <option value="$PROJECT_DIR$/src/servlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
-        <option value="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" />
-        <option value="$PROJECT_DIR$/src/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/pojo/Comment.java" />
-        <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleComment.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
@@ -288,6 +322,15 @@
         <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
         <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/blogs.sql" />
+        <option value="$PROJECT_DIR$/web/Test.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Article.java" />
+        <option value="$PROJECT_DIR$/web/allArticles.jsp" />
       </list>
     </option>
   </component>
@@ -328,88 +371,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="webBlog_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ArticleServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UserServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -417,10 +432,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +443,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -736,11 +747,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539039213081</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created getAllArticles Servlet and jsp to display articles on a page">
+      <created>1539054407319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1539054407319</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45741000" />
+    <option name="totallyTimeSpent" value="53505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -756,10 +774,39 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.49583334" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3368532" sideWeight="0.1328125" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3368532" sideWeight="0.8671875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.4890625" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49093816" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33695653" sideWeight="0.5117271" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122068234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -767,26 +814,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33695653" sideWeight="0.48827294" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49093816" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15743756" sideWeight="0.4989339" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15743756" sideWeight="0.4989339" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -830,7 +870,8 @@
     <MESSAGE value="create methods for getting salt code and hash&amp;salt code." />
     <MESSAGE value="created ResetPassword files." />
     <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <MESSAGE value="Created getAllArticles Servlet and jsp to display articles on a page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created getAllArticles Servlet and jsp to display articles on a page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -847,32 +888,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://2a801f01-2d94-4777-96ca-5bd419a0470f/schema/nyan779/table/userinformation/index/fk1" />
-    <entry file="das://2a801f01-2d94-4777-96ca-5bd419a0470f/schema/nyan779/table/userinformation/index/primary" />
-    <entry file="das://2a801f01-2d94-4777-96ca-5bd419a0470f/schema/nyan779/table/userinformation" />
     <entry file="das://2a801f01-2d94-4777-96ca-5bd419a0470f/schema/nyan779/table/user" />
     <entry file="das://2a801f01-2d94-4777-96ca-5bd419a0470f/schema/nyan779/table/user/index/primary" />
     <entry file="jar://D:/develop/jdk1.8.0_172/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/Security.java" />
-    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.aricle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.aricle" />
+    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.comment" />
     <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,38 +905,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://index:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.userinformation.fk1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://index:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.userinformation.fk1" />
+    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.user" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/personalPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,11 +949,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Test.css">
+    <entry file="file://$PROJECT_DIR$/web/Homepage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -979,30 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pojo/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -1016,9 +989,6 @@
         <state relative-caret-position="391">
           <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
           <folding>
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
             <element signature="e#1097#1098#0" expanded="true" />
           </folding>
         </state>
@@ -1033,14 +1003,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/TESTING.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1072,14 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1088,108 +1042,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-          <folding>
-            <marker date="1539038638000" expanded="true" signature="593:639" ph="SELECT UserP... user" />
-            <marker date="1539038638000" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
-            <marker date="1539038638000" expanded="true" signature="1722:1817" ph="INSERT INTO userinformation... " />
-            <marker date="1539038638000" expanded="true" signature="2450:2495" ph="SELECT * FRO... userinformation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/502f2408-59f2-42ac-8a92-a0059f331a2a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/996099ec/2a801f01-2d94-4777-96ca-5bd419a0470f/nyan779.userinformation" />
     <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <marker date="1538966240000" expanded="true" signature="651:688" ph="delete from comment... " />
-            <marker date="1538966240000" expanded="true" signature="1117:1206" ph="insert into Comment... " />
-            <marker date="1538966240000" expanded="true" signature="1992:2031" ph="select * fro... comment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1538966240000" expanded="true" signature="462:529" ph="insert into aricle... " />
-            <marker date="1538966240000" expanded="true" signature="1180:1216" ph="delete from aricle... " />
-            <marker date="1538966240000" expanded="true" signature="1669:1735" ph="update aricle... " />
-            <marker date="1538966240000" expanded="true" signature="2930:2965" ph="select * fro... aricle" />
-            <marker date="1538966240000" expanded="true" signature="3707:3745" ph="select * fro... aricle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.aricle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.aricle" />
+    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.user" />
+    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.comment" />
+    <entry file="das://table:/996099ec/502f2408-59f2-42ac-8a92-a0059f331a2a/group2.userinformation" />
     <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1210,10 +1079,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/Homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+          <folding>
+            <marker date="1539047034853" expanded="true" signature="593:639" ph="SELECT UserP... user" />
+            <marker date="1539047034853" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
+            <marker date="1539047034853" expanded="true" signature="1722:1817" ph="INSERT INTO userinformation... " />
+            <marker date="1539047034853" expanded="true" signature="2450:2495" ph="SELECT * FRO... userinformation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="510">
+          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bfd39762-9752-425b-8e94-63748a5706d8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/502f2408-59f2-42ac-8a92-a0059f331a2a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="192" column="48" lean-forward="false" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
+          <folding>
+            <marker date="1539052336972" expanded="true" signature="701:768" ph="insert into aricle... " />
+            <marker date="1539052336972" expanded="true" signature="1419:1455" ph="delete from aricle... " />
+            <marker date="1539052336972" expanded="true" signature="1908:1974" ph="update aricle... " />
+            <marker date="1539052336972" expanded="true" signature="3169:3204" ph="select * fro... aricle" />
+            <marker date="1539052336972" expanded="true" signature="3946:3984" ph="select * fro... aricle" />
+            <marker date="1539052336972" expanded="true" signature="4771:4791" ph="select * fro... aricle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1249,6 +1244,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>bootstrap</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

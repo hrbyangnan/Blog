@@ -9,18 +9,26 @@ import java.util.List;
 
 
 public class ArticleDao {
-    Connection conn;
+    private final Connection conn;
 
-    {
-        try {
-            conn = HikariConnectionPool.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    private PreparedStatement ps;
+    private ResultSet rs;
+
+    public ArticleDao() throws SQLException{
+        System.out.println("before connection");
+        this.conn = HikariConnectionPool.getConnection();
+        System.out.println("after connection");
     }
 
-    PreparedStatement ps = null;
-    ResultSet rs = null;
+//    {
+//        try {
+//            conn = HikariConnectionPool.getConnection();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+
 
 
     //add article
@@ -171,4 +179,27 @@ public class ArticleDao {
         }
         return null;
     }
+
+    public List<Article> getAllArticles (){
+        List<Article> articleList = new ArrayList<>();
+        System.out.println("before try");
+        try(PreparedStatement ps = conn.prepareStatement("select * from aricle;")){
+            System.out.println("inside try before query");
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()){
+                Article currentArticle = new Article(rs.getInt(1),rs.getString(3),rs.getString(4));
+                articleList.add(currentArticle);
+            }
+//            articleList = translate(rs);
+            System.out.println("inside try after query");
+            return articleList;
+        }
+        catch (SQLException e){
+            e.getMessage();
+        }
+        return articleList;
+    }
+
 }

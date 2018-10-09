@@ -16,10 +16,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class DeleteArticleServlet extends HttpServlet {
-    ArticleDao dao = new ArticleDao();
+    ArticleDao dao;
+
+    {
+        try {
+            dao = new ArticleDao();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

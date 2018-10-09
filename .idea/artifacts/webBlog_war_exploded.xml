@@ -7,6 +7,17 @@
         <element id="directory" name="classes">
           <element id="module-output" name="webBlog" />
         </element>
+        <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        <element id="library" level="project" name="lib" />
+        <element id="library" level="project" name="mysql-connector-java-5.1.46-bin" />
+        <element id="library" level="application" name="bootstrap" />
+        <element id="library" level="application" name="jquery" />
+        <element id="library" level="application" name="lib (2)" />
+        <element id="library" level="application" name="platform" />
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="application" name="lib (2)" />
+        </element>
       </element>
     </root>
   </artifact>
