@@ -6,8 +6,6 @@
 //		To change this template use File | Settings | File Templates.
 //
 package ArticleServlet;
-
-
 import dao.ArticleDao;
 import pojo.Article;
 
@@ -19,18 +17,18 @@ import java.io.IOException;
 import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
-    ArticleDao dao=new ArticleDao();
+    ArticleDao dao = new ArticleDao();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String articleName=request.getParameter("articleName");
-        String articleContent=request.getParameter("articleContent");
-        int loginUserId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        Article newArticle=new Article(loginUserId,articleName,articleContent);
+        String articleName = request.getParameter("articleName");
+        String articleContent = request.getParameter("articleContent");
+        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
+        Article newArticle = new Article(loginUserId, articleName, articleContent);
         dao.addArticle(newArticle);
-        List<Article> articles=dao.selectArtByUser(loginUserId);
-        request.getSession().setAttribute("userArticles",articles);
+        List<Article> articles = dao.selectArtByUser(loginUserId);
+        request.getSession().setAttribute("userArticles", articles);
         response.sendRedirect("article/articleList.jsp");
     }
 

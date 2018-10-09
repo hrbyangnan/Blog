@@ -9,12 +9,15 @@ import java.util.List;
 
 
 public class ArticleDao {
-    String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql:";
-    String username = "";
-    String password = "";
+    Connection conn;
 
-    Connection conn = null;
+    {
+        try {
+            conn = HikariConnectionPool.getConnection();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -24,9 +27,6 @@ public class ArticleDao {
     public void addArticle(Article artc) {
         String sql = "insert into aricle(UserId,ArticleName,ArticleContent) values(?,?,?)";
         try {
-            Class.forName(driver);
-            conn = DriverManager.getConnection(url,username,password);
-
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, artc.getUserId());
             ps.setObject(2, artc.getArticleName());
@@ -52,7 +52,6 @@ public class ArticleDao {
         }
         String sql = "delete from aricle where ArticleId=?";
         try {
-            conn = DriverManager.getConnection(url,username,password);
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, articleId);
 
@@ -75,7 +74,7 @@ public class ArticleDao {
 
         String sql = "update aricle set ArticleName=?,ArticleContent=? where ArticleId=?";
         try {
-            conn = DriverManager.getConnection(url,username,password);
+
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, artc.getArticleName());
             ps.setObject(2, artc.getArticleContent());
@@ -92,7 +91,6 @@ public class ArticleDao {
             }
         }
     }
-
 
 
     private List<Article> translate(ResultSet rs) {
@@ -115,26 +113,27 @@ public class ArticleDao {
         return l;
 
     }
-    public List<Article> selectArtByUser(int userId){
-        Integer i=userId;
-        if(i==null){
+
+    public List<Article> selectArtByUser(int userId) {
+        Integer i = userId;
+        if (i == null) {
             return null;
         }
-        String sql="select * from aricle where UserId=?";
+        String sql = "select * from aricle where UserId=?";
         try {
-            conn = DriverManager.getConnection(url,username,password);
-            PreparedStatement  ps= conn.prepareStatement(sql);
+
+            PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, userId);
-            rs=ps.executeQuery();
-            List<Article> articleList=translate(rs);
-            if(articleList!=null){
+            rs = ps.executeQuery();
+            List<Article> articleList = translate(rs);
+            if (articleList != null) {
                 return articleList;
-            }else{
+            } else {
                 return null;
             }
         } catch (Exception e) {
 
-        }finally{
+        } finally {
             try {
                 conn.close();
             } catch (SQLException e) {
@@ -144,24 +143,25 @@ public class ArticleDao {
         }
         return null;
     }
-    public Article findOneArticle(int articleId){
-        Integer i=articleId;
-        if(i==null){
+
+    public Article findOneArticle(int articleId) {
+        Integer i = articleId;
+        if (i == null) {
             return null;
         }
-        String sql="select * from aricle where ArticleId=?";
+        String sql = "select * from aricle where ArticleId=?";
         try {
-            conn = DriverManager.getConnection(url,username,password);
-            PreparedStatement  ps= conn.prepareStatement(sql);
+
+            PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, articleId);
-            rs=ps.executeQuery();
-            if(rs.next()){
-                Article artc=new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"),rs.getString("ArticleContent"));
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
                 return artc;
             }
         } catch (Exception e) {
 
-        }finally{
+        } finally {
             try {
                 conn.close();
             } catch (SQLException e) {

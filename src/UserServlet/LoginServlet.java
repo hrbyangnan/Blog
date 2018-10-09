@@ -30,19 +30,24 @@ public class LoginServlet extends HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
 
+        String plaintext=null;
 
-/*try {
-    UserDao ud = new UserDaoImp();
+        UserDao ud = null;
+        try {
+            ud = new UserDaoImp();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-    if (ud.login(name)) {
-        request.setAttribute("xiaoxi", "welcome" + name);
-        request.getRequestDispatcher("/success.jsp").forward(request, response);
-    } else {
-        response.sendRedirect("index.jsp");
+        try {
+            if(ud.login(name)==plaintext){
+            request.setAttribute("mes", "weilcome"+name);
+            request.getRequestDispatcher("/success.jsp").forward(request, response);}
+            else{
+                response.sendRedirect("index.jsp");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
-}catch(SQLException e){"This threw an SQL Exception"}
-
-    }
-
-}*/
-    }}
+}

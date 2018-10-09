@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class RegisterUserServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -29,34 +32,49 @@ public class RegisterUserServlet extends HttpServlet {
 
         System.out.println("Check that servlet doPost is loading");
 
-        String name = request.getParameter("name");
+        String userName = request.getParameter("username");
+
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+
+        String realName = firstName + " " + lastName;
         String password = request.getParameter("password");
-        String realName = request.getParameter("realName");
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
-        String information = request.getParameter("information");
-        String avatar = request.getParameter("avatar");
+
+        SimpleDateFormat smt=new SimpleDateFormat("yyyy-MM-dd");
+
+        Date d=null;
+        try {
+            d=smt.parse(birthday);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        String information = request.getParameter("publicinfo");
 
         User user = new User();
-        user.setName(name);
-        user.setPassword(password);
+        user.setName(userName);
         user.setRealName(realName);
+        user.setPassword(password);
         user.setCountry(country);
-        user.setBirthday(birthday);
+        user.setBirthday(d);
         user.setInfomation(information);
-        user.setAvatar(avatar);
 
-try {
-    UserDao ud = new UserDaoImp();
+        try {
+            UserDao ud = new UserDaoImp();
 
-    if (ud.register(user)) {
-        request.setAttribute("username", name);
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
-    } else {
+            if (ud.register(user)) {
+                request.setAttribute("username", realName);
+                request.getRequestDispatcher("/login.jsp").forward(request, response);
+            } else {
 
-        response.sendRedirect("regSuccess.jsp");
-    }
+                response.sendRedirect("regSuccess.jsp");
+            }
 
-}catch(SQLException e){e.getMessage();}
+        } catch (SQLException e) {
+            e.getMessage();
+        }
     }
 }

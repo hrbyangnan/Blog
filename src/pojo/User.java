@@ -1,12 +1,14 @@
 package pojo;
 
+import java.util.Date;
+
 public class User {
     private int id;
     private String name;
     private String password;
     private String realName;
     private String country;
-    private String birthday;
+    private Date birthday;
     private String information;
     private String avatar;
 
@@ -50,12 +52,12 @@ public class User {
         this.country = country;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public Date getBirthday() {
+        return  birthday;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setBirthday(Date birthday) {
+        this.birthday =  birthday;
     }
 
     public String getInfomation() {
