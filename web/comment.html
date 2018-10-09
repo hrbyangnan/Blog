@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>comment form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+    #respond {
+        margin-top: 40px;
+        padding: 50px;
+    }
+
+    #respond input[type='text'],
+    #respond input[type='email']{
+        margin-bottom: 10px;
+        display: block;
+        width: 50%;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+
+        border-radius: 5px;
+        height: 50px;
+        line-height: 1.4em;
+
+    }
+    #respond textarea {
+        margin-bottom: 10px;
+        display: block;
+        width: 50%;
+        height: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+
+        border-radius: 5px;
+        line-height: 1.4em;
+
+    }
+    .card-inner{
+        margin-left: 4rem;
+    }
+
+</style>
+</head>
+<body>
+<!--------------------------------comment------------------------------------------------------------------->
+<div class="container">
+    <h2 class="text-center">Comment Form</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="./images/Avatars/02.png" class="img img-rounded img-fluid"/>
+                    <p class="text-secondary text-center">15 Minutes Ago</p>
+                </div>
+                <div class="col-md-10">
+                    <p>
+                        <a class="float-left" href="personalPage.html"><strong>User name</strong></a>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p>Lorem Ipsum is simply dummy text of the pr make  but also the
+                        leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>
+                        <a class="float-right btn btn-outline-primary ml-2"> <i class="reply"></i> Reply</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card card-inner">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="./images/Avatars/01.png" class="img img-rounded img-fluid"/>
+                            <p class="text-secondary text-center">15 Minutes Ago</p>
+                        </div>
+                        <div class="col-md-10">
+                            <p><a href="personalPage.html"><strong>User name</strong></a></p>
+                            <p>Lorem Ipsum is simply dummy text of the pr make  but also the
+                                leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing
+                                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>
+                                <a class="float-right btn btn-outline-primary ml-2">  <i class="reply"></i> Reply</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------------->
+<!--------------------------------comment form-------------------------------------------------------------->
+<div id="respond">
+<h3>Leave a Comment</h3>
+    <form action="" method="post" id="commentform">
+
+        <label for="comment_author" class="required">Your name</label>
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+        <label for="email" class="required">Your email</label>
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+
+        <label for="comment" class="required">Your message</label>
+        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+        <input name="submit" type="submit" value="Submit comment" />
+
+    </form>
+</div>
+<!---------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>
+
+
+
