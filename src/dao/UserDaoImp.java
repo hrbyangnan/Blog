@@ -46,7 +46,7 @@ public class UserDaoImp implements UserDao {
         }
         // add user and info to information table
         System.out.println("Trying to register user info 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Country, PublicInfo) VALUES (?,?,?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
             stmt.setInt(1, user.getId());
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());

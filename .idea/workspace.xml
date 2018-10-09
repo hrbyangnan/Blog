@@ -6,32 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/avatar-form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/comment.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/01.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/04.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/05.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/06.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/07.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/08.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/09.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/11.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/12.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/13.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/14.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/15.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/17.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/18.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/Avatars/19.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/ccnoncomlogo.png" />
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="new html files for Anna.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.html" afterPath="$PROJECT_DIR$/web/RegistrationForm.html" />
-      <change beforePath="$PROJECT_DIR$/web/personalPage.html" afterPath="$PROJECT_DIR$/web/personalPage.html" />
+      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalPage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="personalPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/personalPage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -173,6 +153,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="48" column="144" lean-forward="true" selection-start-line="48" selection-start-column="144" selection-end-line="48" selection-end-column="144" />
+              <folding>
+                <marker date="1539045212000" expanded="true" signature="593:639" ph="SELECT UserP... user" />
+                <marker date="1539045212000" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
+                <marker date="1539045212000" expanded="true" signature="1722:1828" ph="INSERT INTO userinformation... " />
+                <marker date="1539045212000" expanded="true" signature="2461:2506" ph="SELECT * FRO... userinformation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -203,26 +208,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddArticleComment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CommentServlet/AddArticleComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteCommentServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CommentServlet/DeleteCommentServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -291,7 +276,6 @@
         <option value="$PROJECT_DIR$/src/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/pojo/Comment.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleComment.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
@@ -303,6 +287,7 @@
         <option value="$PROJECT_DIR$/src/pojo/User.java" />
         <option value="$PROJECT_DIR$/blogs.sql" />
         <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
       </list>
     </option>
   </component>
@@ -751,11 +736,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539043822828</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new html files for Anna.">
+      <created>1539045022515</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1539045022515</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44836000" />
+    <option name="totallyTimeSpent" value="45176000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,6 +760,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.51119405" order="10" side_tool="true" content_ui="tabs" />
@@ -789,7 +782,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33695653" sideWeight="0.48827294" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.48880598" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -870,7 +863,8 @@
     <MESSAGE value="created ResetPassword files." />
     <MESSAGE value="New group database account" />
     <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <MESSAGE value="new html files for Anna." />
+    <option name="LAST_COMMIT_MESSAGE" value="new html files for Anna." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,14 +946,6 @@
             <marker date="1538966240000" expanded="true" signature="2930:2965" ph="select * fro... aricle" />
             <marker date="1538966240000" expanded="true" signature="3707:3745" ph="select * fro... aricle" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,19 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <marker date="1539038638000" expanded="true" signature="593:639" ph="SELECT UserP... user" />
-            <marker date="1539038638000" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
-            <marker date="1539038638000" expanded="true" signature="1722:1817" ph="INSERT INTO userinformation... " />
-            <marker date="1539038638000" expanded="true" signature="2450:2495" ph="SELECT * FRO... userinformation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1178,14 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1238,6 +1203,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="144" lean-forward="true" selection-start-line="48" selection-start-column="144" selection-end-line="48" selection-end-column="144" />
+          <folding>
+            <marker date="1539045212000" expanded="true" signature="593:639" ph="SELECT UserP... user" />
+            <marker date="1539045212000" expanded="true" signature="1232:1298" ph="INSERT INTO user... " />
+            <marker date="1539045212000" expanded="true" signature="1722:1828" ph="INSERT INTO userinformation... " />
+            <marker date="1539045212000" expanded="true" signature="2461:2506" ph="SELECT * FRO... userinformation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding />
         </state>
       </provider>

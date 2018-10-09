@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal">
-    <data-source name="nyan779@db.sporadic.nz" uuid="2a801f01-2d94-4777-96ca-5bd419a0470f">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <introspection-schemas>*:nyan779</introspection-schemas>
-    </data-source>
-  </component>
-</project>
