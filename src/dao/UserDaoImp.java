@@ -47,13 +47,13 @@ public class UserDaoImp implements UserDao, AutoCloseable {
         }
         // add user and info to information table
         System.out.println("Trying to register user info 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Country, PublicInfo) VALUES (?,?,?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
             stmt.setInt(1, user.getId());
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
             stmt.setDate(4, (java.sql.Date) user.getBirthday());
-            stmt.setString(4, user.getCountry());
-            stmt.setString(5, user.getInfomation());
+            stmt.setString(5, user.getCountry());
+            stmt.setString(6, user.getInfomation());
 
 
             stmt.executeUpdate();

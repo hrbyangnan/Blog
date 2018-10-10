@@ -64,7 +64,7 @@ CREATE TABLE `userinformation` (
   `UserId` int(4) NOT NULL,
   `NickName` varchar(50) DEFAULT NULL,
   `RealName` varchar(50) DEFAULT NULL,
-  `Birthday` int(8) DEFAULT NULL,
+  `Birthday` date DEFAULT NULL,
   `Country` varchar(50) DEFAULT NULL,
   `PublicInfo` VARCHAR(500) DEFAULT NULL,
   PRIMARY KEY (`InformationId`),
