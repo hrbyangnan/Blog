@@ -25,5 +25,6 @@
     <orderEntry type="library" name="lib (2)" level="application" />
     <orderEntry type="library" name="lib (2)" level="application" />
     <orderEntry type="library" name="lib " level="application" />
+    <orderEntry type="library" name="lib" level="application" />
   </component>
 </module>

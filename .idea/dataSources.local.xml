@@ -2,16 +2,26 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="jmck074@db.sporadic.nz" uuid="502f2408-59f2-42ac-8a92-a0059f331a2a">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
     </data-source>
     <data-source name="group2@db.sporadic.nz" uuid="29647915-10b0-496f-aa1f-3440ad20c35a">
-      <database-info product="MySQL" version="5.5.5-10.1.34-MariaDB-0ubuntu0.18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <database-info product="MySQL" version="5.5.5-10.1.34-MariaDB-0ubuntu0.18.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MARIADB" exact-version="5.5.5">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <user-name>group2</user-name>
       <introspection-schemas>*:group2</introspection-schemas>
+    </data-source>
+    <data-source name="fitznz_team2@mysql11.iol.co.nz" uuid="d3e2fed6-8636-46ed-9931-281db897228d">
+      <database-info product="MySQL" version="5.1.73-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MYSQL" exact-version="5.1.73">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>fitznz_group2</user-name>
+      <introspection-schemas>*:@</introspection-schemas>
     </data-source>
   </component>
 </project>

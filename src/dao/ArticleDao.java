@@ -41,6 +41,8 @@ public class ArticleDao implements AutoCloseable {
             ps.setString(3, artc.getArticleContent());
 //            ps.setTime(4, artc.getPubTime());
             System.out.println("before execute update");
+            System.out.println(ps + "");
+            //NOT REACHING HERE
             ps.executeUpdate();
             System.out.println("after execute update");
         } catch (Exception e) {
