@@ -41,6 +41,7 @@ public class RegisterUserServlet extends HttpServlet {
         String password = request.getParameter("password");
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
+        String Email=request.getParameter("Email");
 
         SimpleDateFormat smt=new SimpleDateFormat("yyyy-MM-dd");
 
@@ -61,6 +62,7 @@ public class RegisterUserServlet extends HttpServlet {
         user.setCountry(country);
         user.setBirthday(d);
         user.setInfomation(information);
+        user.setEmail(Email);
 
         try {
             UserDao ud = new UserDaoImp();

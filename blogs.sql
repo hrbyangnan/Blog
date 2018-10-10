@@ -44,16 +44,18 @@ CREATE TABLE `user` (
   `UserId` int(4) NOT NULL AUTO_INCREMENT,
   `UserName` varchar(50) NOT NULL,
   `UserPasswd` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL ,
   `ProfilePath` varchar(255) NOT NULL,
-  PRIMARY KEY (`UserId`)
+  PRIMARY KEY (`UserId`),
+  UNIQUE (Email)
 ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `user` VALUES ('39', 'test1@google.com', '123','\imgFile\11.jpg');
-INSERT INTO `user` VALUES ('40', 'test2@google.com', '123','\imgFile\12.jpg');
-INSERT INTO `user` VALUES ('41', '123@google.com', '123','\imgFile\13.jpg');
-INSERT INTO `user` VALUES ('42', '123', '1','\imgFile\14.jpg');
-INSERT INTO `user` VALUES ('43', '1', '123','\imgFile\15.jpg');
+INSERT INTO `user` VALUES ('39', 'test1@google.com', '123','123@G.COM','\imgFile\11.jpg');
+INSERT INTO `user` VALUES ('40', 'test2@google.com', '123','13@G.COM','\imgFile\12.jpg');
+INSERT INTO `user` VALUES ('41', '123@google.com', '123','125@G.COM','\imgFile\13.jpg');
+INSERT INTO `user` VALUES ('42', '123', '1','153@G.COM','\imgFile\14.jpg');
+INSERT INTO `user` VALUES ('43', '1', '123','163@G.COM','\imgFile\15.jpg');
 
 
 DROP TABLE IF EXISTS `userinformation`;

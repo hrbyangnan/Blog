@@ -37,10 +37,11 @@ public class UserDaoImp implements UserDao,AutoCloseable {
     public boolean register(User user) throws SQLException {
         //add user add password to user table
         System.out.println("Trying to register user 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, profilePath) VALUES (?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email,profilePath) VALUES (?,?,?,?);")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
-            stmt.setString(3, "?");
+            stmt.setString(3,user.getEmail());
+            stmt.setString(4, "?");
             stmt.executeUpdate();
             System.out.println("Trying to register user 2");
         }
