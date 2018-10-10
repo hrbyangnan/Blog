@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="jmck074@db.sporadic.nz" uuid="502f2408-59f2-42ac-8a92-a0059f331a2a">
+    <data-source source="LOCAL" name="fitznz_team2@mysql11.iol.co.nz" uuid="6b2e8861-78fd-4a9d-81f1-12cfc63bf622">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://db.sporadic.nz:3306/jmck074</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="group2@db.sporadic.nz" uuid="29647915-10b0-496f-aa1f-3440ad20c35a">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://db.sporadic.nz:3306/group2</jdbc-url>
+      <jdbc-url>jdbc:mysql://mysql11.iol.co.nz:3306/fitznz_team2</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
