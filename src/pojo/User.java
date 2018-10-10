@@ -11,6 +11,15 @@ public class User {
     private Date birthday;
     private String information;
     private String avatar;
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -53,11 +62,11 @@ public class User {
     }
 
     public Date getBirthday() {
-        return  birthday;
+        return birthday;
     }
 
     public void setBirthday(Date birthday) {
-        this.birthday =  birthday;
+        this.birthday = birthday;
     }
 
     public String getInfomation() {
@@ -68,9 +77,13 @@ public class User {
         this.information = infomation;
     }
 
-    public String getAvatar(){return avatar;}
+    public String getAvatar() {
+        return avatar;
+    }
 
-    public void setAvatar(String avatar) {this.avatar = avatar;}
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 }
 
 

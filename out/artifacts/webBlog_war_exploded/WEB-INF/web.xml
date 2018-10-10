@@ -58,6 +58,31 @@
 
 
 
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>UserServlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>addComment</servlet-name>
+        <servlet-class>CommentServlet.AddArticleComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addComment</servlet-name>
+        <url-pattern>/addComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteComment</servlet-name>
+        <servlet-class>CommentServlet.DeleteCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteComment</servlet-name>
+        <url-pattern>/deleteComment</url-pattern>
+    </servlet-mapping>
 </web-app>
 

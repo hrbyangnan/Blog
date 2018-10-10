@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="fitznz_team2@mysql11.iol.co.nz" uuid="6b2e8861-78fd-4a9d-81f1-12cfc63bf622">
+    <data-source source="LOCAL" name="group2@db.sporadic.nz" uuid="4ee089f7-ec9f-4f89-966e-988787a0cbac">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql11.iol.co.nz:3306/fitznz_team2</jdbc-url>
+      <jdbc-url>jdbc:mysql://db.sporadic.nz:3306/group2</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

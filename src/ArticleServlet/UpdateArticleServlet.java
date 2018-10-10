@@ -24,6 +24,9 @@ public class UpdateArticleServlet extends HttpServlet {
         }
     }
 
+    public UpdateArticleServlet() throws SQLException {
+    }
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

@@ -5,8 +5,8 @@
 # Time: 17:38
 # To change this template use File | Settings | File Templates.
 
-DROP TABLE IF EXISTS `aricle`;
-CREATE TABLE `aricle` (
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE `article` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
   `UserId` int(4) NOT NULL,
   `ArticleTitle` varchar(50),
@@ -18,9 +18,11 @@ CREATE TABLE `aricle` (
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
-INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
-INSERT INTO `aricle` VALUES ('52', '41', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
+INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
+INSERT INTO `article` VALUES ('52', '41', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -32,7 +34,7 @@ CREATE TABLE `comment` (
   `UserName` varchar(255) NOT NULL,
   PRIMARY KEY (`CommentId`),
   KEY `fk-Comment-User` (`UserId`),
-  KEY `fk-Comment-Aricle` (`ArticleId`)
+  KEY `fk-Comment-Aritcle` (`ArticleId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
@@ -45,16 +47,17 @@ CREATE TABLE `user` (
   `UserId` int(4) NOT NULL AUTO_INCREMENT,
   `UserName` varchar(50) NOT NULL,
   `UserPasswd` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL ,
   `ProfilePath` varchar(255) NOT NULL,
   PRIMARY KEY (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `user` VALUES ('39', 'test1@google.com', '123','\imgFile\11.jpg');
-INSERT INTO `user` VALUES ('40', 'test2@google.com', '123','\imgFile\12.jpg');
-INSERT INTO `user` VALUES ('41', '123@google.com', '123','\imgFile\13.jpg');
-INSERT INTO `user` VALUES ('42', '123', '1','\imgFile\14.jpg');
-INSERT INTO `user` VALUES ('43', '1', '123','\imgFile\15.jpg');
+INSERT INTO `user` VALUES ('39', 'test1@google.com', '123','123@G.COM','\imgFile\11.jpg');
+INSERT INTO `user` VALUES ('40', 'test2@google.com', '123','13@G.COM','\imgFile\12.jpg');
+INSERT INTO `user` VALUES ('41', '123@google.com', '123','125@G.COM','\imgFile\13.jpg');
+INSERT INTO `user` VALUES ('42', '123', '1','153@G.COM','\imgFile\14.jpg');
+INSERT INTO `user` VALUES ('43', '1', '123','163@G.COM','\imgFile\15.jpg');
 
 
 DROP TABLE IF EXISTS `userinformation`;
@@ -63,7 +66,7 @@ CREATE TABLE `userinformation` (
   `UserId` int(4) NOT NULL,
   `NickName` varchar(50) DEFAULT NULL,
   `RealName` varchar(50) DEFAULT NULL,
-  `Birthday` int(8) DEFAULT NULL,
+  `Birthday` date DEFAULT NULL,
   `Country` varchar(50) DEFAULT NULL,
   `PublicInfo` VARCHAR(500) DEFAULT NULL,
   PRIMARY KEY (`InformationId`),
@@ -77,6 +80,17 @@ INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203',
 INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China','test information');
 INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates','test information');
 
+DROP TABLE IF EXISTS `photo`;
+CREATE TABLE `photo` (
+  `photoId` int(4) NOT NULL AUTO_INCREMENT,
+  `UserId` int(4) NOT NULL,
+  `photoUrl` VARCHAR(500) DEFAULT NULL,
+  PRIMARY KEY (`photoId`),
+  KEY `fk1` (`UserId`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+INSERT INTO `photo` VALUES ('1', '42', '123.jpg');
+INSERT INTO `photo` VALUES ('2', '43','234.jpg');
 
 INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(39,"title","content");
 INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(40,"title","content")

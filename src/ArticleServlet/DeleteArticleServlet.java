@@ -7,7 +7,6 @@
 //
 package ArticleServlet;
 
-
 import dao.ArticleDao;
 import pojo.Article;
 
@@ -29,6 +28,10 @@ public class DeleteArticleServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    public DeleteArticleServlet() throws SQLException {
+    }
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

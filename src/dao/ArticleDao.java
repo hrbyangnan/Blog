@@ -31,7 +31,7 @@ public class ArticleDao implements AutoCloseable {
 
     //add article
     public void addArticle(Article artc) {
-        String sql = "INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(?,?,?);";
+        String sql = "INSERT INTO article(UserId,ArticleTitle,ArticleContent)  VALUES(?,?,?);";
         System.out.println("before prepared statement");
         try (PreparedStatement ps = conn.prepareStatement(sql)){
 
@@ -217,5 +217,3 @@ public class ArticleDao implements AutoCloseable {
         this.conn.close();
     }
 }
-
-

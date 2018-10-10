@@ -40,8 +40,8 @@ public class LoginServlet extends HttpServlet {
 
         try {
             if(ud.login(name).equals(password)){
-            request.setAttribute("mes", "welcome "+name);
-            request.getRequestDispatcher("/success.jsp").forward(request, response);}
+                request.setAttribute("mes", "welcome "+name);
+                request.getRequestDispatcher("/success.jsp").forward(request, response);}
             else{
                 response.sendRedirect("index.jsp");
             }

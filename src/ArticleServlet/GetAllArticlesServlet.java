@@ -39,10 +39,6 @@ public class GetAllArticlesServlet extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
         dispatcher.forward(request,response);
 
-
-
-
-
     }
 
 }
