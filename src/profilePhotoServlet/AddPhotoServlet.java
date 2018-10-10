@@ -1,14 +1,14 @@
-package PhotoServlet;
+package profilePhotoServlet;
 
 
 
-import dao.PhotoDao;
+import dao.ProfilePhotoDao;
 import org.apache.commons.fileupload.FileItemIterator;
 import org.apache.commons.fileupload.FileItemStream;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.fileupload.util.Streams;
-import pojo.Photo;
+import pojo.ProfilePhoto;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,11 +18,7 @@ import java.io.*;
 import java.util.List;
 
 public class AddPhotoServlet extends HttpServlet {
-	PhotoDao dao = new PhotoDao();
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	ProfilePhotoDao dao = new ProfilePhotoDao();
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -72,7 +68,7 @@ public class AddPhotoServlet extends HttpServlet {
 								String upPath = path + "\\" + url;
 								System.out.println("ApacheOperation.doPost()-------------fileName--------------------");
 								System.out.println(url);							
-								Photo photo=new Photo(loginUserId,url);
+								ProfilePhoto photo=new ProfilePhoto(loginUserId,url);
 								dao.addPhoto(photo);
 								flag="OK";
 								OutputStream os = new FileOutputStream(upPath);
@@ -90,7 +86,7 @@ public class AddPhotoServlet extends HttpServlet {
 						}
 					}
 					
-					List<Photo> photos=dao.selectByUser(loginUserId);
+					List<ProfilePhoto> photos=dao.selectByUser(loginUserId);
 					request.getSession().setAttribute("photos",photos);
 					response.sendRedirect("/BokeProject/photo/photo.jsp");
 				} catch (FileUploadException e) {

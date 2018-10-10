@@ -1,7 +1,7 @@
-package PhotoServlet;
+package profilePhotoServlet;
 
-import dao.PhotoDao;
-import pojo.Photo;
+import dao.ProfilePhotoDao;
+import pojo.ProfilePhoto;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,9 +12,7 @@ import java.util.List;
 
 
 public class ShowPhotosServlet extends HttpServlet {
-	PhotoDao dao=new PhotoDao();
-
-	private static final long serialVersionUID = 1L;
+	ProfilePhotoDao dao=new ProfilePhotoDao();
 
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -23,7 +21,7 @@ public class ShowPhotosServlet extends HttpServlet {
 
 		
 		int loginUserId=Integer.parseInt(request.getSession().getAttribute("userId").toString());//传递参数值
-		List<Photo> photos=dao.selectByUser(loginUserId);
+		List<ProfilePhoto> photos=dao.selectByUser(loginUserId);
 		request.getSession().setAttribute("photos",photos);
 		response.sendRedirect("photo/photo.jsp");
 	}

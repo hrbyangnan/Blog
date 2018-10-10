@@ -1,6 +1,6 @@
 package dao;
 
-import pojo.Photo;
+import pojo.ProfilePhoto;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,17 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class PhotoDao {
+public class ProfilePhotoDao {
     Connection conn = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
 
     //add photo
-    public void addPhoto(Photo p) {
+    public void addPhoto(ProfilePhoto p) {
         if (p == null) {
             return;
         }
-        Photo photo = (Photo) p;
+        ProfilePhoto photo = (ProfilePhoto) p;
         String sql = "insert into Photo(UserId,Url) values(?,?)";
         try {
             this.conn = HikariConnectionPool.getConnection();
@@ -42,7 +42,7 @@ public class PhotoDao {
     }
 
     //delete photo
-    public Photo deletePhoto(Photo p) {
+    public ProfilePhoto deletePhoto(ProfilePhoto p) {
         if (p == null || p.getPhotoId() == 0) {
             return null;
         }
@@ -71,7 +71,7 @@ public class PhotoDao {
     }
 
     //select photo
-    public List<Photo> selectAll() {
+    public List<ProfilePhoto> selectAll() {
         String sql = "select *from Photo";
         try {
             this.conn = HikariConnectionPool.getConnection();
@@ -93,7 +93,7 @@ public class PhotoDao {
     }
 
     //select user's photo
-    public List<Photo> selectByUser(int userId) {
+    public List<ProfilePhoto> selectByUser(int userId) {
         String sql = "select *from Photo where userId=?";
         try {
             this.conn = HikariConnectionPool.getConnection();
@@ -116,12 +116,12 @@ public class PhotoDao {
     }
 
     // translate result
-    private List<Photo> translate(ResultSet rs) {
+    private List<ProfilePhoto> translate(ResultSet rs) {
 
-        List<Photo> l = new ArrayList<Photo>();
+        List<ProfilePhoto> l = new ArrayList<ProfilePhoto>();
         try {
             while (rs.next()) {
-                Photo photo = new Photo(rs.getInt("PhotoId"), rs.getInt("UserId"), rs.getString("Url"));
+                ProfilePhoto photo = new ProfilePhoto(rs.getInt("PhotoId"), rs.getInt("UserId"), rs.getString("Url"));
                 l.add(photo);
 
 

@@ -1,26 +1,26 @@
 package pojo;
 
-public class Photo {
+public class ProfilePhoto {
 	
 	private int photoId;
 	private int userId;
 	private String url;
-	public Photo(){
+	public ProfilePhoto(){
 		
 	}
 	
-	public Photo(int photoId){
+	public ProfilePhoto(int photoId){
 		super();
 		this.photoId=photoId;
 	}
 	
-	public Photo(int userId, String url){
+	public ProfilePhoto(int userId, String url){
 		super();
 		this.userId=userId;
 		this.url=url;	
 	}
 	
-	public Photo(int photoId, int userId, String url){
+	public ProfilePhoto(int photoId, int userId, String url){
 		super();
 		this.photoId=photoId;
 		this.userId=userId;
