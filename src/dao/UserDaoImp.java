@@ -4,7 +4,7 @@ import pojo.User;
 
 import java.sql.*;
 
-public class UserDaoImp implements UserDao,AutoCloseable {
+public class UserDaoImp implements UserDao, AutoCloseable {
 
     private final Connection conn;
 
@@ -37,10 +37,10 @@ public class UserDaoImp implements UserDao,AutoCloseable {
     public boolean register(User user) throws SQLException {
         //add user add password to user table
         System.out.println("Trying to register user 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email,profilePath) VALUES (?,?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email, ProfilePath) VALUES (?,?,?,?);")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
-            stmt.setString(3,user.getEmail());
+            stmt.setString(3, user.getEmail());
             stmt.setString(4, "?");
             stmt.executeUpdate();
             System.out.println("Trying to register user 2");
@@ -51,7 +51,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
             stmt.setInt(1, user.getId());
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
-            stmt.setDate(4, (java.sql.Date)user.getBirthday());
+            stmt.setDate(4, (java.sql.Date) user.getBirthday());
             stmt.setString(4, user.getCountry());
             stmt.setString(5, user.getInfomation());
 

@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 public class RegisterUserServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -40,19 +40,22 @@ public class RegisterUserServlet extends HttpServlet {
         String realName = firstName + " " + lastName;
         String password = request.getParameter("password");
         String country = request.getParameter("country");
-        String birthday = request.getParameter("birthday");
-        String Email=request.getParameter("Email");
 
-        SimpleDateFormat smt=new SimpleDateFormat("yyyy-MM-dd");
+        String birthday=request.getParameter("birthday");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        java.util.Date d = null;
 
-        Date d=null;
         try {
-            d=smt.parse(birthday);
+            d = format.parse(birthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
+        java.sql.Date date = new java.sql.Date(d.getTime());
 
+
+
+        String email = request.getParameter("email");
         String information = request.getParameter("publicinfo");
 
         User user = new User();
@@ -60,9 +63,9 @@ public class RegisterUserServlet extends HttpServlet {
         user.setRealName(realName);
         user.setPassword(password);
         user.setCountry(country);
-        user.setBirthday(d);
+        user.setBirthday(date);
         user.setInfomation(information);
-        user.setEmail(Email);
+        user.setEmail(email);
 
         try {
             UserDao ud = new UserDaoImp();

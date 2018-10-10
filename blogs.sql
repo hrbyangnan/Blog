@@ -46,8 +46,8 @@ CREATE TABLE `user` (
   `UserPasswd` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL ,
   `ProfilePath` varchar(255) NOT NULL,
-  PRIMARY KEY (`UserId`),
-  UNIQUE (Email)
+  PRIMARY KEY (`UserId`)
+
 ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 
