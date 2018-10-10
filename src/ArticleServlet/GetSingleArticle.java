@@ -10,9 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
-public class GetAllArticlesServlet extends HttpServlet {
+public class GetSingleArticle extends HttpServlet {
+
+
+
     ArticleDao dao;
 
     {
@@ -26,19 +28,20 @@ public class GetAllArticlesServlet extends HttpServlet {
     //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException{
+            throws ServletException, IOException {
 
-        System.out.println("inside get all articles");
+        System.out.println("inside get single article");
 
-        List<Article> articleList = dao.getAllArticles();
+        int id = 13;
+        Article art = dao.findOneArticle(id);
+        request.getSession().setAttribute("SingleArticle",art);
 
-        System.out.println("after article list method... " + articleList.size());
+        System.out.println("after article list method... " );
 
-        request.getSession().setAttribute("AllArticlesPojo",articleList);
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
         dispatcher.forward(request,response);
-
 
 
 
@@ -46,3 +49,4 @@ public class GetAllArticlesServlet extends HttpServlet {
     }
 
 }
+

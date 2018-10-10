@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    position: relative;
+    position: relative !important;
     min-height: 50px;
     margin-bottom: 20px;
     border: 0px solid transparent;

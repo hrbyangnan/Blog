@@ -42,7 +42,7 @@ public class AddArticleServlet extends HttpServlet {
         int loginUserId = 39;
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
-        Article newArticle = new Article(articleName, loginUserId, articleContent);
+        Article newArticle = new Article(loginUserId, articleName, articleContent);
         dao.addArticle(newArticle);
         List<Article> articles = dao.selectArtByUser(loginUserId);
         request.getSession().setAttribute("userArticles", articles);
