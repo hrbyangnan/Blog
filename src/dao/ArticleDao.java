@@ -41,6 +41,8 @@ public class ArticleDao implements AutoCloseable {
             ps.setString(3, artc.getArticleContent());
 //            ps.setTime(4, artc.getPubTime());
             System.out.println("before execute update");
+            System.out.println(ps + "");
+            //NOT REACHING HERE
             ps.executeUpdate();
             System.out.println("after execute update");
         } catch (Exception e) {
@@ -165,10 +167,10 @@ public class ArticleDao implements AutoCloseable {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, articleId);
             rs = ps.executeQuery();
-            if (rs.next()) {
+            rs.next();
                 Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
                 return artc;
-            }
+
         } catch (Exception e) {
 
         } finally {
@@ -196,7 +198,7 @@ public class ArticleDao implements AutoCloseable {
                 Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4));
                 articleList.add(currentArticle);
             }
-//            articleList = translate(rs);
+            articleList = translate(rs);
             System.out.println("inside try after query");
             return articleList;
         } catch (SQLException e) {

@@ -1,0 +1,36 @@
+.pointer {cursor: pointer;}
+
+body {
+    font-family: "Bookman Old Style", sans-serif;
+    text-decoration-color: #1a1a1a;
+    font-size: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-default{
+    background-color: #f5f4ee !important;
+    text-decoration-color: #211d12 !important;
+}
+.navbar-default li:hover {
+    text-decoration-color: #000000 !important;
+}
+.nav {
+    text-decoration-color: #1a1a1a !important;
+}
+
+#logoimg{
+    width:70%;
+    z-index:2;
+}
+
+
+
+
+
