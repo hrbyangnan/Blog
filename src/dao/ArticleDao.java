@@ -31,7 +31,7 @@ public class ArticleDao implements AutoCloseable {
 
     //add article
     public void addArticle(Article artc) {
-        String sql = "INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(?,?,?);";
+        String sql = "INSERT INTO article(UserId,ArticleTitle,ArticleContent)  VALUES(?,?,?);";
         System.out.println("before prepared statement");
         try (PreparedStatement ps = conn.prepareStatement(sql)){
 
@@ -60,7 +60,7 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return;
         }
-        String sql = "delete from aricle where ArticleId=?";
+        String sql = "delete from article where ArticleId=?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, articleId);
@@ -82,7 +82,7 @@ public class ArticleDao implements AutoCloseable {
     //undate article
     public void updateArticle(Article artc) {
 
-        String sql = "update aricle set ArticleName=?,ArticleContent=? where ArticleId=?";
+        String sql = "update article set ArticleName=?,ArticleContent=? where ArticleId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -129,7 +129,7 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return null;
         }
-        String sql = "select * from aricle where UserId=?";
+        String sql = "select * from article where UserId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -159,7 +159,7 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return null;
         }
-        String sql = "select * from aricle where ArticleId=?";
+        String sql = "select * from article where ArticleId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -187,7 +187,7 @@ public class ArticleDao implements AutoCloseable {
     public List<Article> getAllArticles() {
         List<Article> articleList = new ArrayList<>();
         System.out.println("before try");
-        try (PreparedStatement ps = conn.prepareStatement("select * from aricle;")) {
+        try (PreparedStatement ps = conn.prepareStatement("select * from article;")) {
             System.out.println("inside try before query");
 
             ResultSet rs = ps.executeQuery();
