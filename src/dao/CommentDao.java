@@ -1,5 +1,7 @@
 package dao;
 
+import pojo.Comment;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,10 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-import pojo.Comment;
-
-public class CommentDao {
+public class CommentDao implements AutoCloseable {
     private final Connection conn;
 
     //Use Hikari connection pool to access database
@@ -123,4 +122,8 @@ public class CommentDao {
 
     }
 
+    @Override
+    public void close() throws Exception {
+        conn.close();
+    }
 }

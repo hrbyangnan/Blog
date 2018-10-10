@@ -75,3 +75,15 @@ INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'A
 INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India','test information');
 INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China','test information');
 INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates','test information');
+
+DROP TABLE IF EXISTS `photo`;
+CREATE TABLE `photo` (
+  `photoId` int(4) NOT NULL AUTO_INCREMENT,
+  `UserId` int(4) NOT NULL,
+  `photoUrl` VARCHAR(500) DEFAULT NULL,
+  PRIMARY KEY (`photoId`),
+  KEY `fk1` (`UserId`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+INSERT INTO `photo` VALUES ('1', '42', '123.jpg');
+INSERT INTO `photo` VALUES ('2', '43','234.jpg');

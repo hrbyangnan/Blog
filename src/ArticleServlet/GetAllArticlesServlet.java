@@ -13,15 +13,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class GetAllArticlesServlet extends HttpServlet {
-    ArticleDao dao;
+    ArticleDao dao = new ArticleDao();
 
-    {
-        try {
-            dao = new ArticleDao();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public GetAllArticlesServlet() throws SQLException {
     }
+
 
     //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
 

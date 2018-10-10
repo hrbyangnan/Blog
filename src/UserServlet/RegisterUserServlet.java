@@ -42,15 +42,14 @@ public class RegisterUserServlet extends HttpServlet {
         String country = request.getParameter("country");
         String birthday = request.getParameter("birthday");
 
-        String str = birthday;
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        java.util.Date d = null;
+        SimpleDateFormat smt=new SimpleDateFormat("yyyy-MM-dd");
+
+        Date d=null;
         try {
-            d = format.parse(str);
+            d=smt.parse(birthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        java.sql.Date date=new java.sql.Date(d.getTime());
 
 
         String information = request.getParameter("publicinfo");
@@ -60,9 +59,8 @@ public class RegisterUserServlet extends HttpServlet {
         user.setRealName(realName);
         user.setPassword(password);
         user.setCountry(country);
-        user.setBirthday(date);
+        user.setBirthday(d);
         user.setInfomation(information);
-
 
         try {
             UserDao ud = new UserDaoImp();
@@ -80,4 +78,3 @@ public class RegisterUserServlet extends HttpServlet {
         }
     }
 }
-

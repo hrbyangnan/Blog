@@ -4,7 +4,7 @@ import pojo.User;
 
 import java.sql.*;
 
-public class UserDaoImp implements UserDao {
+public class UserDaoImp implements UserDao,AutoCloseable {
 
     private final Connection conn;
 
@@ -46,7 +46,7 @@ public class UserDaoImp implements UserDao {
         }
         // add user and info to information table
         System.out.println("Trying to register user info 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName, Country, PublicInfo) VALUES (?,?,?,?,?);")) {
             stmt.setInt(1, user.getId());
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
@@ -84,6 +84,11 @@ public class UserDaoImp implements UserDao {
 
         }
         return thisUser;
+    }
+
+    @Override
+    public void close() throws Exception {
+        this.conn.close();
     }
 }
 
