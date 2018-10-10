@@ -88,7 +88,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
 
     @Override
     public void close() throws Exception {
-        conn.close();
+        this.conn.close();
     }
 }
 

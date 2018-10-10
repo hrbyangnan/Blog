@@ -20,11 +20,11 @@ public class Article implements Serializable {
 
     }
 
-    public Article (String articleName, int userId, String articleContent, LocalDateTime pubTime){
+    public Article (String articleName, int userId, String articleContent){
         this.userId = userId;
         this.articleName = articleName;
         this.articleContent = articleContent;
-        this.pubTime = pubTime;
+//        this.pubTime = pubTime;
 
     }
 

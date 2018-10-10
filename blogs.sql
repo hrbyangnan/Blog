@@ -9,10 +9,10 @@ DROP TABLE IF EXISTS `aricle`;
 CREATE TABLE `aricle` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
   `UserId` int(4) NOT NULL,
-  `ArticleTitle` varchar(50) NOT NULL,
-  `ArticleContent` varchar(1000) NOT NULL,
+  `ArticleTitle` varchar(50),
+  `ArticleContent` varchar(1000),
   `PubTime` datetime DEFAULT NULL,
-  `PicPath` varchar(255) NOT NULL,
+  `PicPath` varchar(255),
   PRIMARY KEY (`ArticleId`),
   KEY `fk-Ariticle-User` (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
@@ -20,6 +20,7 @@ CREATE TABLE `aricle` (
 
 INSERT INTO `aricle` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
 INSERT INTO `aricle` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
+INSERT INTO `aricle` VALUES ('52', '41', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -75,3 +76,7 @@ INSERT INTO `userinformation` VALUES ('10', '40', 'test2','Jack', '19680913', 'A
 INSERT INTO `userinformation` VALUES ('11', '41', 'test3','Michael', '19760203', 'India','test information');
 INSERT INTO `userinformation` VALUES ('12', '42', 'test4','Betty', '20151209', 'China','test information');
 INSERT INTO `userinformation` VALUES ('13', '43','test5','Susan', '19851026', 'UnitedStates','test information');
+
+
+INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(39,"title","content");
+INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(40,"title","content")

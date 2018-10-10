@@ -27,6 +27,7 @@ public class AddArticleServlet extends HttpServlet {
             dao = new ArticleDao();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("inside articleservlet catch");
         }
     }
 
@@ -38,14 +39,14 @@ public class AddArticleServlet extends HttpServlet {
         String articleName = request.getParameter("articleName");
         String articleContent = request.getParameter("articleContent");
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        int loginUserId = 123;
+        int loginUserId = 39;
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
-        Article newArticle = new Article(articleName, loginUserId, articleContent, pubTime);
+        Article newArticle = new Article(articleName, loginUserId, articleContent);
         dao.addArticle(newArticle);
         List<Article> articles = dao.selectArtByUser(loginUserId);
         request.getSession().setAttribute("userArticles", articles);
-        response.sendRedirect("article/articleList.jsp");
+        response.sendRedirect("personalPage.html");
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
