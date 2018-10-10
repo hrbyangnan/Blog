@@ -29,7 +29,67 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
+    <!--<servlet>-->
+        <!--<servlet-name>test</servlet-name>-->
+        <!--<servlet-class>servlet.PRACTICEServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>test</servlet-name>-->
+        <!--<url-pattern>/test</url-pattern>-->
+    <!--</servlet-mapping>-->
 
+    <servlet>
+        <servlet-name>getAll</servlet-name>
+        <servlet-class>ArticleServlet.GetAllArticlesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getAll</servlet-name>
+        <url-pattern>/getAllArticles</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>createNewArticle</servlet-name>
+        <servlet-class>ArticleServlet.AddArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createNewArticle</servlet-name>
+        <url-pattern>/createArticles</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateArticle</servlet-name>
+        <servlet-class>ArticleServlet.UpdateArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateArticle</servlet-name>
+        <url-pattern>/updateArticle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>UserServlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addComment</servlet-name>
+        <servlet-class>CommentServlet.AddArticleComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addComment</servlet-name>
+        <url-pattern>/addComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteComment</servlet-name>
+        <servlet-class>CommentServlet.DeleteCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteComment</servlet-name>
+        <url-pattern>/deleteComment</url-pattern>
+    </servlet-mapping>
 </web-app>
 
