@@ -56,6 +56,15 @@
         <url-pattern>/createArticles</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>getSingleArticle</servlet-name>
+        <servlet-class>ArticleServlet.GetSingleArticle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getSingleArticle</servlet-name>
+        <url-pattern>/getSingle</url-pattern>
+    </servlet-mapping>
+
 
 
     <servlet>

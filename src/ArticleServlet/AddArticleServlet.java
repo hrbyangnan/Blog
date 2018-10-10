@@ -20,16 +20,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
-    ArticleDao dao;
 
-    {
-        try {
-            dao = new ArticleDao();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("inside articleservlet catch");
-        }
-    }
+
+
+
+
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -43,10 +39,19 @@ public class AddArticleServlet extends HttpServlet {
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
         Article newArticle = new Article(loginUserId, articleName, articleContent);
-        dao.addArticle(newArticle);
-        List<Article> articles = dao.selectArtByUser(loginUserId);
-        request.getSession().setAttribute("userArticles", articles);
-        response.sendRedirect("personalPage.html");
+        try(ArticleDao dao =new ArticleDao()) {
+            dao.addArticle(newArticle);
+            List<Article> articles = dao.selectArtByUser(loginUserId);
+
+            request.getSession().setAttribute("userArticles", articles);
+            response.sendRedirect("personalPage.html");
+        } catch(SQLException e) {
+            e.printStackTrace();
+            System.out.println("inside articleservlet catch");
+        } catch(Exception e)  {
+        }
+
+
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
