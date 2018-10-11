@@ -98,3 +98,5 @@ INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(40,"title","conte
 ALTER TABLE article  ADD RealName VARCHAR(50);
 
 INSERT INTO article (UserId,ArticleTitle,ArticleContent,RealName)VALUES(42,'This is a title','I am putting some text in here something something something it is a string, will this even work','Steve Holt');
+
+SELECT * FROM article WHERE ArticleId=53

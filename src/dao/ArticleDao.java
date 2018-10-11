@@ -12,7 +12,7 @@ public class ArticleDao implements AutoCloseable {
     private final Connection conn;
 
     private PreparedStatement ps;
-    private ResultSet rs;
+    //private ResultSet rs;
 
     public ArticleDao() throws SQLException {
         System.out.println("before connection");
@@ -134,7 +134,7 @@ public class ArticleDao implements AutoCloseable {
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, userId);
-            rs = ps.executeQuery();
+            ResultSet rs = ps.executeQuery();
             List<Article> articleList = translate(rs);
             if (articleList != null) {
                 return articleList;
@@ -161,14 +161,20 @@ public class ArticleDao implements AutoCloseable {
         }
         String sql = "select * from article where ArticleId=?";
         try {
-
+            System.out.println("Trying to get one article - James");
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setObject(1, articleId);
-            rs = ps.executeQuery();
-            if (rs.next()) {
-                Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
-                return artc;
-            }
+
+            ps.setInt(1, articleId);
+            System.out.println(ps+" James mucking around");
+            ResultSet rs = ps.executeQuery();
+            System.out.println("Query has been executed - James");
+            //rs.next();
+            Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
+            System.out.println(rs.getInt("ArticleId"));
+            System.out.println(rs.getString("ArticleName"));
+            System.out.println(rs.getString("ArticleContent"));
+            return artc;
+
         } catch (Exception e) {
 
         } finally {
