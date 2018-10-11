@@ -134,10 +134,11 @@ User author = (User) userSession.getAttribute("userInfo"); %>
         articlesByUser = ad.selectArtByUser(author.getId());
         System.out.printf("If we are the length is " + articlesByUser.size());
         userSession.setAttribute("userArticles", articlesByUser);
-    }
-    //List<Article> articles = (List) userSession.getAttribute("userArticles");
-for(Article a: articlesByUser){ %>
-        <div class="col-sm-8">
+    }%>
+
+    <div class="col-sm-8">
+   <% for(Article a: articlesByUser){ %>
+
             <h2><%=a.getArticleName()%></h2>
             <h5><%=a.getPubTime()%></h5>
             <div class="fakeimg">Fake Image</div>
