@@ -93,4 +93,6 @@ INSERT INTO `photo` VALUES ('1', '42', '123.jpg');
 INSERT INTO `photo` VALUES ('2', '43','234.jpg');
 
 INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(39,"title","content");
-INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(40,"title","content")
+INSERT INTO aricle(UserId,ArticleTitle,ArticleContent)  VALUES(40,"title","content");
+
+ALTER TABLE article  ADD RealName VARCHAR(50);

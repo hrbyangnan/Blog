@@ -193,7 +193,7 @@ public class ArticleDao implements AutoCloseable {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4));
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4),rs.getString(7));
                 articleList.add(currentArticle);
             }
 //            articleList = translate(rs);

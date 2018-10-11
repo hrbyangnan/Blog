@@ -76,8 +76,8 @@
                         <p class="card-text"><%=a.getArticleContent()%></p>
                     </div>
                     <div class="card-footer text-muted">
-                        Posted on <%=a.getPubTime()%> by
-                        <a href="#"><%=a.getUserId()%></a>
+                        Posted on <%if(a.getPubTime()!= null){%><%=a.getPubTime()%><% }else{%>Once upon a time<%}%>  by
+                        <a href="#"><%=a.getRealName()%></a>
                     </div>
                 </div>
             </div>

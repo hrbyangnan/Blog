@@ -18,8 +18,11 @@
           <element id="library" level="project" name="lib" />
           <element id="library" level="application" name="lib (2)" />
           <element id="library" level="application" name="lib " />
+          <element id="library" level="project" name="commons-fileupload-1.3.3" />
+          <element id="library" level="project" name="mail" />
         </element>
       </element>
+      <element id="module-output" name="webBlog" />
     </root>
   </artifact>
 </component>
