@@ -20,7 +20,10 @@
           <element id="library" level="application" name="lib " />
           <element id="library" level="project" name="commons-fileupload-1.3.3" />
           <element id="library" level="project" name="mail" />
+          <element id="library" level="project" name="lib (3)" />
+          <element id="library" level="project" name="lib (2)" />
         </element>
+        <element id="module-output" name="webBlog" />
       </element>
       <element id="module-output" name="webBlog" />
     </root>
