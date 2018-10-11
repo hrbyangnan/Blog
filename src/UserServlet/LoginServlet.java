@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
 
                 userSession.setAttribute("userInfo", current);
                 System.out.println("before page");
-                request.getRequestDispatcher("personalPage.html").forward(request, response);
+                request.getRequestDispatcher("personalpage.jsp").forward(request, response);
             } else {
                 response.sendRedirect("index.jsp");
             }

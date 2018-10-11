@@ -29,14 +29,14 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
-    <servlet>
+   <!-- <servlet>
         <servlet-name>test</servlet-name>
         <servlet-class>servlet.PRACTICEServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/test</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 
     <servlet>
         <servlet-name>getAll</servlet-name>

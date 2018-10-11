@@ -44,7 +44,7 @@ public class AddArticleServlet extends HttpServlet {
         newArticle.setRealName(author.getRealName());
         newArticle.setUserId(author.getId());
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        int loginUserId = 39;
+        int loginUserId = author.getId();
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
         //
@@ -54,7 +54,7 @@ public class AddArticleServlet extends HttpServlet {
             List<Article> articles = dao.selectArtByUser(loginUserId);
 
             request.getSession().setAttribute("userArticles", articles);
-            response.sendRedirect("personalPage.html");
+            response.sendRedirect("personalpage.jsp");
         } catch(SQLException e) {
             e.printStackTrace();
             System.out.println("inside articleservlet catch");
