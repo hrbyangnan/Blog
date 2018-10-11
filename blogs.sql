@@ -102,3 +102,7 @@ INSERT INTO article (UserId,ArticleTitle,ArticleContent,RealName)VALUES(42,'This
 SELECT * FROM article WHERE ArticleId=53
 
 SELECT * FROM user JOIN userinformation WHERE UserName='alias' AND NickName ='alias';
+
+SELECT * FROM article WHERE UserId=49;
+
+SELECT * FROM user JOIN userinformation WHERE UserName='Alias' AND NickName ='Alias';

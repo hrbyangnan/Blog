@@ -127,16 +127,21 @@ public class ArticleDao implements AutoCloseable {
 
     public List<Article> selectArtByUser(int userId) {
         Integer i = userId;
+        List<Article> articleList = new ArrayList<>();
+        System.out.println("This is the id we passed in:"+i);
         if (i == null) {
             return null;
         }
         String sql = "SELECT * FROM article WHERE UserId=?";
-        try {
+        try (PreparedStatement ps = conn.prepareStatement(sql)){
 
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setObject(1, userId);
+
+            ps.setObject(1, i);
             ResultSet rs = ps.executeQuery();
-            List<Article> articleList = translate(rs);
+            while (rs.next()) {
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getString(7));
+                articleList.add(currentArticle);
+            }
             if (articleList != null) {
                 return articleList;
             } else {
@@ -152,7 +157,7 @@ public class ArticleDao implements AutoCloseable {
                 e.printStackTrace();
             }
         }
-        return null;
+        return articleList;
     }
 
     public Article findOneArticle(int articleId) {

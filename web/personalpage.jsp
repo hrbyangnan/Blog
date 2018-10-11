@@ -1,4 +1,7 @@
-<%--
+<%@ page import="pojo.Article" %>
+<%@ page import="pojo.User" %>
+<%@ page import="java.util.List" %>
+<%@ page import="dao.ArticleDao" %><%--
   Created by IntelliJ IDEA.
   User: Jacob
   Date: 12-10-2018
@@ -80,6 +83,9 @@
 </head>
 <body>
 <!----------------------------------------------Navbar header------------------------------------------->
+<% HttpSession userSession = request.getSession();
+User author = (User) userSession.getAttribute("userInfo"); %>
+
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -91,7 +97,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropbtn" onclick="myFunction()">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> userName</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <%= author.getRealName()%></a></li>
                 <ul class="dropdown-menu">
                     <li><a href="#">Page1</a></li>
                     <li><a href="#">Page2</a></li>
@@ -116,27 +122,30 @@
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
             <div class="fakeimg">Fake Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-
+            <p><%= author.getInfomation() %></p>
+            <p>The user ID we are trying to use is... <%= author.getId()%>%></p>
 
             <hr class="hidden-sm hidden-md hidden-lg">
         </div>
+<% List<Article> articlesByUser;
+    try(ArticleDao ad = new ArticleDao()) {
+        System.out.println("Are we getting articles");
+
+        articlesByUser = ad.selectArtByUser(author.getId());
+        System.out.printf("If we are the length is " + articlesByUser.size());
+        userSession.setAttribute("userArticles", articlesByUser);
+    }
+    //List<Article> articles = (List) userSession.getAttribute("userArticles");
+for(Article a: articlesByUser){ %>
         <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
+            <h2><%=a.getArticleName()%></h2>
+            <h5><%=a.getPubTime()%></h5>
             <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco.</p>
+
+            <p><%=a.getArticleContent()%></p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco.</p>
+            <p> test loop</p>
+<% } %>
         </div>
     </div>
 </div>

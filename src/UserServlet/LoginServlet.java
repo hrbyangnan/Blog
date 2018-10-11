@@ -52,12 +52,22 @@ public class LoginServlet extends HttpServlet {
 
                 userSession.setAttribute("userInfo", current);
                 System.out.println("before page");
+
+                //Try get articles by user here????
+                /*List<Article> articlesByUser;
+                try(ArticleDao ad = new ArticleDao()){
+                    System.out.println("Are we getting articles");
+
+                     articlesByUser = ad.selectArtByUser(current.getId());
+                    System.out.printf("If we are the length is "+articlesByUser.size());
+userSession.setAttribute("userArticles", articlesByUser);}*/
+
                 request.getRequestDispatcher("personalpage.jsp").forward(request, response);
             } else {
                 response.sendRedirect("index.jsp");
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }catch(Exception e){e.getMessage(); e.getStackTrace();}
     }
 }
