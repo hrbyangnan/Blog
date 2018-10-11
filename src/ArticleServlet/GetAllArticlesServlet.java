@@ -36,7 +36,7 @@ public class GetAllArticlesServlet extends HttpServlet {
 
         request.getSession().setAttribute("AllArticlesPojo",articleList);
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/indextesting.jsp");
         dispatcher.forward(request,response);
 
     }
