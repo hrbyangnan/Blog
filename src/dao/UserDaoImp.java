@@ -69,8 +69,9 @@ public class UserDaoImp implements UserDao,AutoCloseable {
 
     public User getUserInfo(String userName) throws SQLException {
         User thisUser;
-        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM user WHERE UserName =?")) {
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM user JOIN userinformation WHERE UserName=? AND NickName =?;")) {
             stmt.setString(1, userName);
+            stmt.setString(2,userName);
 
             try (ResultSet rs = stmt.executeQuery()) {
                 rs.next();
@@ -78,9 +79,9 @@ public class UserDaoImp implements UserDao,AutoCloseable {
                 //TODO using column indexes, but maybe better to change to column names?
                 thisUser.setId(rs.getInt(1));
                 thisUser.setName(rs.getString(2));
-//                thisUser.setRealName(rs.getString(4));
-//                thisUser.setBirthday(rs.getDate(5));
-//                thisUser.setCountry(rs.getString(6));
+                thisUser.setRealName(rs.getString(9));
+                thisUser.setBirthday(rs.getDate(10));
+                thisUser.setCountry(rs.getString(11));
             }
 
         }

@@ -49,9 +49,10 @@ public class LoginServlet extends HttpServlet {
                 userSession.setAttribute("login", true);
                 System.out.println("login set to true");
                 User current = ud.getUserInfo(name);
+
                 userSession.setAttribute("userInfo", current);
                 System.out.println("before page");
-                request.getRequestDispatcher("logintest.jsp").forward(request, response);
+                request.getRequestDispatcher("personalPage.html").forward(request, response);
             } else {
                 response.sendRedirect("index.jsp");
             }

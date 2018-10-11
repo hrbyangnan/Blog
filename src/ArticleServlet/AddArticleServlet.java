@@ -9,11 +9,13 @@ package ArticleServlet;
 
 import dao.ArticleDao;
 import pojo.Article;
+import pojo.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
@@ -29,15 +31,18 @@ public class AddArticleServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        HttpSession userSession = request.getSession();
+        System.out.println("try to get author attributes from session inside add article");
+        User author = (User) userSession.getAttribute("userInfo");
+        System.out.println(author.getRealName());
         System.out.println("inside addarticle servlet");
         Article newArticle= new Article();
         newArticle.setArticleName(request.getParameter("articleName"));
         newArticle.setArticleContent(request.getParameter("articleContent"));
-        
 
-        //newArticle.setRealName(((User)request.getAttribute("userInfo")).getRealName());
-        //newArticle.setUserId(((User)request.getAttribute("userInfo")).getId());
+        System.out.println(author.getRealName());
+        newArticle.setRealName(author.getRealName());
+        newArticle.setUserId(author.getId());
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = 39;
         //temporary until login is set up
