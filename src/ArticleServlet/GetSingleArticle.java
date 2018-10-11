@@ -32,11 +32,12 @@ public class GetSingleArticle extends HttpServlet {
 
         System.out.println("inside get single article");
 
-        int id = 13;
+        int id = 11;
         Article art = dao.findOneArticle(id);
+        System.out.println(art.getArticleName()+"this is in the servlet - James");
         request.getSession().setAttribute("SingleArticle",art);
 
-        System.out.println("after article list method... " );
+        System.out.println("after article method... " );
 
 
 

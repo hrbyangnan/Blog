@@ -31,17 +31,17 @@ public class AddArticleServlet extends HttpServlet {
             throws ServletException, IOException {
 
         System.out.println("inside addarticle servlet");
+        Article newArticle= new Article();
+        newArticle.setArticleName(request.getParameter("articleName"));
+        newArticle.setArticleContent(request.getParameter("articleContent"));
 
-        String articleName = request.getParameter("articleName");
-        String articleContent = request.getParameter("articleContent");
-        //
-        String realName = request.getParameter("realName");
+        newArticle.setRealName(request.getParameter("realName"));
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = 39;
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
         //
-        Article newArticle = new Article(loginUserId, articleName, articleContent, realName);
+        //Article newArticle = new Article(loginUserId, articleName, articleContent, realName);
         try(ArticleDao dao =new ArticleDao()) {
             dao.addArticle(newArticle);
             List<Article> articles = dao.selectArtByUser(loginUserId);

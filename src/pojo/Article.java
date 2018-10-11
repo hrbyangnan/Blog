@@ -14,6 +14,8 @@ public class Article implements Serializable {
     private LocalDateTime pubTime;
     private String realName;
 
+    public Article(){super();}
+
     public Article(int articleId, String articleName, String articleContent) {
         this.articleName = articleName;
         this.articleContent = articleContent;
@@ -89,6 +91,6 @@ public class Article implements Serializable {
 
     public String getRealName(){return realName;}
 
-    public void setRealName(){this.realName = realName;}
+    public void setRealName(String realName){this.realName = realName;}
 
 }

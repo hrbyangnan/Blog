@@ -33,7 +33,7 @@ public class ArticleDao implements AutoCloseable {
     public void addArticle(Article artc) {
         String sql = "INSERT INTO article(UserId,ArticleTitle,ArticleContent)  VALUES(?,?,?);";
         System.out.println("before prepared statement");
-        try (PreparedStatement ps = conn.prepareStatement(sql)){
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
 
 
             ps.setInt(1, artc.getUserId());
@@ -60,7 +60,7 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return;
         }
-        String sql = "delete from article where ArticleId=?";
+        String sql = "DELETE FROM article WHERE ArticleId=?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, articleId);
@@ -82,7 +82,7 @@ public class ArticleDao implements AutoCloseable {
     //undate article
     public void updateArticle(Article artc) {
 
-        String sql = "update article set ArticleName=?,ArticleContent=? where ArticleId=?";
+        String sql = "UPDATE article SET ArticleName=?,ArticleContent=? WHERE ArticleId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -129,7 +129,7 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return null;
         }
-        String sql = "select * from article where UserId=?";
+        String sql = "SELECT * FROM article WHERE UserId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -159,23 +159,31 @@ public class ArticleDao implements AutoCloseable {
         if (i == null) {
             return null;
         }
-        String sql = "select * from article where ArticleId=?";
+        String sql = "SELECT * FROM article WHERE ArticleId=?";
+        Article artc = new Article();
+        artc.setArticleName("Placeholder");
         try {
             System.out.println("Trying to get one article - James");
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setInt(1, articleId);
-            System.out.println(ps+" James mucking around");
+            System.out.println(ps + " James mucking around");
             ResultSet rs = ps.executeQuery();
-            System.out.println("Query has been executed - James");
-            //rs.next();
-            Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
-            System.out.println(rs.getInt("ArticleId"));
-            System.out.println(rs.getString("ArticleName"));
-            System.out.println(rs.getString("ArticleContent"));
+
+
+            while (rs.next()) {
+
+                artc.setArticleId(rs.getInt(1));
+                artc.setArticleName(rs.getString(3));
+             artc.setArticleContent(rs.getString(4));
+                System.out.println(rs.getInt(1));
+                System.out.println(rs.getString(3));
+                System.out.println(rs.getString(4));
+            }
             return artc;
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
+            System.out.println("We are throwing an SQL exception, I don;t know why");
 
         } finally {
             try {
@@ -185,7 +193,7 @@ public class ArticleDao implements AutoCloseable {
                 e.printStackTrace();
             }
         }
-        return null;
+        return artc;
     }
 
 // This method gets article id, article name and article content from the database and returns a list of POJOs
@@ -193,13 +201,13 @@ public class ArticleDao implements AutoCloseable {
     public List<Article> getAllArticles() {
         List<Article> articleList = new ArrayList<>();
         System.out.println("before try");
-        try (PreparedStatement ps = conn.prepareStatement("select * from article;")) {
+        try (PreparedStatement ps = conn.prepareStatement("SELECT * FROM article;")) {
             System.out.println("inside try before query");
 
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4),rs.getString(7));
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getString(7));
                 articleList.add(currentArticle);
             }
 //            articleList = translate(rs);
