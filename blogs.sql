@@ -9,12 +9,14 @@ DROP TABLE IF EXISTS `article`;
 CREATE TABLE `article` (
   `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
   `UserId` int(4) NOT NULL,
+  'RealName' VARCHAR(50),
   `ArticleTitle` varchar(50),
   `ArticleContent` varchar(1000),
   `PubTime` datetime DEFAULT NULL,
   `PicPath` varchar(255),
   PRIMARY KEY (`ArticleId`),
-  KEY `fk-Ariticle-User` (`UserId`)
+  KEY `fk-Ariticle-User` (`UserId`),
+  FOREIGN KEY ('RealName') REFERENCES userInformation ('RealName')
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 

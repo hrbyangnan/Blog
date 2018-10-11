@@ -12,6 +12,7 @@ public class Article implements Serializable {
     private String articleName;
     private String articleContent;
     private LocalDateTime pubTime;
+    private String realName;
 
     public Article(int articleId, String articleName, String articleContent) {
         this.articleName = articleName;
@@ -38,6 +39,13 @@ public class Article implements Serializable {
         this.pubTime = pubTime;
     }
 
+    //This constructor adds realName but does not include everything for posting an article
+    public Article(int userId, String articleName, String articleContent, String realName){
+        this.userId=userId;
+        this.articleName=articleName;
+        this.articleContent=articleContent;
+        this.realName=realName;
+    }
 
     public int getArticleId() {
         return articleId;
@@ -79,5 +87,8 @@ public class Article implements Serializable {
         this.pubTime = pubTime;
     }
 
+    public String getRealName(){return realName;}
 
-}  
+    public void setRealName(){this.realName = realName;}
+
+}

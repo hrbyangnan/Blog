@@ -34,11 +34,14 @@ public class AddArticleServlet extends HttpServlet {
 
         String articleName = request.getParameter("articleName");
         String articleContent = request.getParameter("articleContent");
+        //
+        String realName = request.getParameter("realName");
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = 39;
         //temporary until login is set up
         LocalDateTime pubTime = LocalDateTime.now();
-        Article newArticle = new Article(loginUserId, articleName, articleContent);
+        //
+        Article newArticle = new Article(loginUserId, articleName, articleContent, realName);
         try(ArticleDao dao =new ArticleDao()) {
             dao.addArticle(newArticle);
             List<Article> articles = dao.selectArtByUser(loginUserId);
