@@ -34,8 +34,10 @@ public class AddArticleServlet extends HttpServlet {
         Article newArticle= new Article();
         newArticle.setArticleName(request.getParameter("articleName"));
         newArticle.setArticleContent(request.getParameter("articleContent"));
+        
 
-        newArticle.setRealName(request.getParameter("realName"));
+        //newArticle.setRealName(((User)request.getAttribute("userInfo")).getRealName());
+        //newArticle.setUserId(((User)request.getAttribute("userInfo")).getId());
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = 39;
         //temporary until login is set up

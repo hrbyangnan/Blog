@@ -31,10 +31,11 @@ public class HikariConnectionPool {
         }*/
 
         hds = new HikariDataSource();
-        hds.setJdbcUrl("jdbc:mysql://mysql11.iol.co.nz/fitznz_team2");
+
+        hds.setJdbcUrl("jdbc:mysql://db.sporadic.nz:3306/group2");
         hds.setDriverClassName("com.mysql.jdbc.Driver");
-        hds.setUsername("fitznz_group2");
-        hds.setPassword("321coffee");
+        hds.setUsername("group2");
+        hds.setPassword("DivideAndConquer");
         hds.setMaximumPoolSize(10);
     }
 

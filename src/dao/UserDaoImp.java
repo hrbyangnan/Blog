@@ -66,21 +66,21 @@ public class UserDaoImp implements UserDao,AutoCloseable {
         return false;
     }
 
-    @Override
-    public User getUserInfo(int userID) throws SQLException {
+
+    public User getUserInfo(String userName) throws SQLException {
         User thisUser;
-        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM userinformation WHERE UserId =? ")) {
-            stmt.setInt(1, userID);
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM user WHERE UserName =?")) {
+            stmt.setString(1, userName);
 
             try (ResultSet rs = stmt.executeQuery()) {
                 rs.next();
                 thisUser = new User();
                 //TODO using column indexes, but maybe better to change to column names?
-                thisUser.setId(rs.getInt(2));
-                thisUser.setName(rs.getString(3));
-                thisUser.setRealName(rs.getString(4));
-                thisUser.setBirthday(rs.getDate(5));
-                thisUser.setCountry(rs.getString(6));
+                thisUser.setId(rs.getInt(1));
+                thisUser.setName(rs.getString(2));
+//                thisUser.setRealName(rs.getString(4));
+//                thisUser.setBirthday(rs.getDate(5));
+//                thisUser.setCountry(rs.getString(6));
             }
 
         }
