@@ -122,8 +122,7 @@
             <img class="card-img-top" src="./images/AucklandCityNight.jpg" alt="" width="100%">
             <div class="card-block">
               <h4 class="card-title">Post Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa.</p>
+              <p class="card-text"></p>
               <a class="btn btn-default" href="#">Read More</a>
             </div>
           </div>
