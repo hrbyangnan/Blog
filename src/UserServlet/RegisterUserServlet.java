@@ -75,7 +75,7 @@ public class RegisterUserServlet extends HttpServlet {
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
             } else {
 
-                response.sendRedirect("regSuccess.jsp");
+                response.sendRedirect("index.jsp");
             }
 
         } catch (SQLException e) {

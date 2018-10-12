@@ -38,9 +38,9 @@
             <ul class="nav navbar-nav">
                 <li><a href = "index.jsp" class= pointer><span class="glyphicon glyphicon-home"></span> Home</a></li>
 
-                <li><a href="/getAllArticles"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
+                <li><a href="allArticles.jsp"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
 
-                <li><a href="personalPage.html"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
+                <li><a href="personalPage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <form class="navbar-form navbar-left">

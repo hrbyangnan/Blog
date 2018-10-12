@@ -93,7 +93,7 @@ User author = (User) userSession.getAttribute("userInfo"); %>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="Test.html" class=pointer><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="index.jsp" class=pointer><span class="glyphicon glyphicon-home"></span> Home</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropbtn" onclick="myFunction()">
@@ -104,7 +104,7 @@ User author = (User) userSession.getAttribute("userInfo"); %>
                     <li><a href="#">Page3</a></li>
                 </ul>
                 </li>
-                <li><a href="Test.html"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+                <li><a href="logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
                 <li><a class=pointer onclick="document.getElementById('search').style.display='block'"><span
                         class="glyphicon glyphicon-search"></span></a></li>
             </ul>
