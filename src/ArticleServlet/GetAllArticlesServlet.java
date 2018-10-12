@@ -32,7 +32,6 @@ public class GetAllArticlesServlet extends HttpServlet {
 
         List<Article> articleList = dao.getAllArticles();
 
-        System.out.println("after article list method... " + articleList.size());
 
         request.getSession().setAttribute("AllArticlesPojo",articleList);
 

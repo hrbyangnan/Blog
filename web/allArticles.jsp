@@ -61,8 +61,8 @@
 </nav>
 <br>
 <br>
-<%
-    List<Article> articleList = (List<Article>) request.getSession().getAttribute("AllArticlesPojo");
+<%  HttpSession userSession = request.getSession();
+    List<Article> articleList = (List<Article>) userSession.getAttribute("AllArticlesPojo");
     for (Article a : articleList) {%>
 <section id="blogContent">
     <div class="container">

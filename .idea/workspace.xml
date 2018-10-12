@@ -6,21 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Altered JSP to show new articles by author. We don;t think it should work but it does.">
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Tidied up html files and jsp files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/TESTING.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/personalPage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/web/Homepage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/TESTING.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
       <change beforePath="$PROJECT_DIR$/web/allArticles.jsp" afterPath="$PROJECT_DIR$/web/allArticles.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/avatar-form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personalPage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/personalpage.jsp" afterPath="$PROJECT_DIR$/web/personalpage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,8 +193,18 @@
       <file leaf-file-name="personalpage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="124" column="48" lean-forward="true" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+            <state relative-caret-position="170">
+              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="displayArticle.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -214,18 +213,38 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-153">
               <caret line="48" column="60" lean-forward="true" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationForm.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegistrationForm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
               <caret line="876" column="42" lean-forward="true" selection-start-line="876" selection-start-column="42" selection-end-line="876" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllArticlesServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allArticles.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -251,36 +270,6 @@
                 <marker date="1539227908969" expanded="true" signature="1141:1230" ph="insert into Comment... " />
                 <marker date="1539227908969" expanded="true" signature="2016:2055" ph="select * fro... comment" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateArticleServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddArticleComment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CommentServlet/AddArticleComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteCommentServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CommentServlet/DeleteCommentServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -372,15 +361,15 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/web/displayArticle.jsp" />
-        <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
         <option value="$PROJECT_DIR$/blogs.sql" />
         <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/allArticles.jsp" />
         <option value="$PROJECT_DIR$/web/personalpage.jsp" />
         <option value="$PROJECT_DIR$/web/avatar-form.html" />
+        <option value="$PROJECT_DIR$/web/allArticles.jsp" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
       </list>
     </option>
   </component>
@@ -667,7 +656,7 @@
     </configuration>
     <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8282/index.jsp" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="webBlog:war exploded">
@@ -936,11 +925,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539296960889</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Tidied up html files and jsp files">
+      <created>1539308731188</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539308731188</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99892000" />
+    <option name="totallyTimeSpent" value="100908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1099,7 +1095,8 @@
     <MESSAGE value="Added Anna's personal jsp page" />
     <MESSAGE value="changed get single article jsp to Anna's" />
     <MESSAGE value="Altered JSP to show new articles by author. We don;t think it should work but it does." />
-    <option name="LAST_COMMIT_MESSAGE" value="Altered JSP to show new articles by author. We don;t think it should work but it does." />
+    <MESSAGE value="Tidied up html files and jsp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidied up html files and jsp files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1280,13 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1314,14 +1304,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,14 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="38" column="93" lean-forward="false" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
           <folding />
         </state>
       </provider>
@@ -1441,6 +1415,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="876" column="42" lean-forward="true" selection-start-line="876" selection-start-column="42" selection-end-line="876" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -1449,26 +1431,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
+    <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="124" column="48" lean-forward="true" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+        <state relative-caret-position="313">
+          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-153">
           <caret line="48" column="60" lean-forward="true" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
+    <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="876" column="42" lean-forward="true" selection-start-line="876" selection-start-column="42" selection-end-line="876" selection-end-column="42" />
+        <state relative-caret-position="170">
+          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
