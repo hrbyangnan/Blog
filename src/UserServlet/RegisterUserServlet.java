@@ -76,6 +76,8 @@ public class RegisterUserServlet extends HttpServlet {
         String birthday = null;
         String fileName = null;
         String realName = null;
+        String email=null;
+        String information=null;
 
         try {
             List<FileItem> fileItems = upload.parseRequest(request);
@@ -106,9 +108,18 @@ public class RegisterUserServlet extends HttpServlet {
                     if (fi.getFieldName().equals("birthday")) {
                         birthday = fi.getString();
                     }
+                    if (fi.getFieldName().equals("email")) {
+                        email = fi.getString();
+                    }
+                    if (fi.getFieldName().equals("information")) {
+                        information = fi.getString();
+                    }
                     realName = firstName + " " + lastName;
                 }
             }
+
+//            String email = request.getParameter("email");
+//            String information = request.getParameter("publicinfo");
 
         } catch (Exception e) {
             throw new ServletException(e);
@@ -128,8 +139,7 @@ public class RegisterUserServlet extends HttpServlet {
         java.sql.Date date = new java.sql.Date(d.getTime());
 
 
-        String email = request.getParameter("email");
-        String information = request.getParameter("publicinfo");
+
 
         User user = new User();
         user.setName(userName);

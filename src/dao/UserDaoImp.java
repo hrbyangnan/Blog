@@ -27,7 +27,6 @@ public class UserDaoImp implements UserDao,AutoCloseable {
                 rs.next();
                 plaintext = rs.getString(1);
             }
-
         }
 
         return plaintext;
