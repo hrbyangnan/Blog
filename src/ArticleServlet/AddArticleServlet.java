@@ -18,15 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class AddArticleServlet extends HttpServlet {
-
-
-
-
-
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,9 +31,22 @@ public class AddArticleServlet extends HttpServlet {
         User author = (User) userSession.getAttribute("userInfo");
         System.out.println(author.getRealName());
         System.out.println("inside addarticle servlet");
+
+
         Article newArticle= new Article();
         newArticle.setArticleName(request.getParameter("articleName"));
         newArticle.setArticleContent(request.getParameter("articleContent"));
+        String pubTime=request.getParameter("pubTime");
+        SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd HH:mm");
+        java.util.Date d = null;
+        try {
+            d = format.parse(pubTime);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        java.sql.Time date = new java.sql.Time(d.getTime());
+        newArticle.setPubTime(date);
 
         System.out.println(author.getRealName());
         newArticle.setRealName(author.getRealName());
@@ -46,7 +54,7 @@ public class AddArticleServlet extends HttpServlet {
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = author.getId();
         //temporary until login is set up
-        LocalDateTime pubTime = LocalDateTime.now();
+
         //
         //Article newArticle = new Article(loginUserId, articleName, articleContent, realName);
         try(ArticleDao dao =new ArticleDao()) {

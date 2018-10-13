@@ -1,7 +1,7 @@
 package pojo;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Article implements Serializable {
     /**
@@ -11,7 +11,26 @@ public class Article implements Serializable {
     private int userId;
     private String articleName;
     private String articleContent;
-    private LocalDateTime pubTime;
+    private Date pubTime;
+    private String picPath;
+
+    public String getPicPath() {
+        return picPath;
+    }
+
+    public void setPicPath(String picPath) {
+        this.picPath = picPath;
+    }
+
+    public Article(int articleId, int userId, String articleName, String articleContent, Date pubTime, String realName) {
+        this.articleId = articleId;
+        this.userId = userId;
+        this.articleName = articleName;
+        this.articleContent = articleContent;
+        this.pubTime = pubTime;
+        this.realName = realName;
+    }
+
     private String realName;
 
     public Article(){super();}
@@ -32,7 +51,7 @@ public class Article implements Serializable {
     }
 
     public Article(int articleId, int userId, String articleName,
-                   String articleContent, LocalDateTime pubTime) {
+                   String articleContent, Date pubTime) {
         super();
         this.articleId = articleId;
         this.userId = userId;
@@ -81,11 +100,11 @@ public class Article implements Serializable {
         this.articleContent = articleContent;
     }
 
-    public LocalDateTime getPubTime() {
+    public Date getPubTime() {
         return pubTime;
     }
 
-    public void setPubTime(LocalDateTime pubTime) {
+    public void setPubTime(Date pubTime) {
         this.pubTime = pubTime;
     }
 
