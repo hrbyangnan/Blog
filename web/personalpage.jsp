@@ -170,7 +170,7 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
         <div class="col-sm-8">
             <hr>
             <a href="#"><h4><span class="glyphicon glyphicon-send"></span> POST NEW ENTRY</h4></a>
-            <form id="input" method="post" action="/createArticles">
+            <form ENCTYPE="multipart/form-data" id="input" method="post" action="/createArticles">
                 <label for="datetimepicker" class="col-12 col-form-label">publication date and time</label>
                 <input type="datetime" name="pubTime" value="2018-10-10 18:00" id="datetimepicker">
                 <br>
