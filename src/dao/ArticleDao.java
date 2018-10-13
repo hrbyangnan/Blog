@@ -62,8 +62,7 @@ public class ArticleDao implements AutoCloseable {
             return;
         }
         String sql = "DELETE FROM article WHERE ArticleId=?";
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
+        try(PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setObject(1, articleId);
 
 

@@ -8,10 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profilePhotoServlet/AddPhotoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profilePhotoServlet/DeletePhotoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profilePhotoServlet/ShowPhotosServlet.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,7 +219,7 @@
           <entry key="class" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="14" />
+          <entry key="java" value="20" />
           <entry key="jsp" value="4" />
           <entry key="user" value="1" />
         </counts>
@@ -229,22 +230,22 @@
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="20" />
           <entry key="JSP" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="241" />
+          <entry key="java" value="296" />
           <entry key="jsp" value="114" />
-          <entry key="txt" value="85" />
+          <entry key="txt" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="241" />
+          <entry key="JAVA" value="296" />
           <entry key="JSP" value="114" />
-          <entry key="PLAIN_TEXT" value="85" />
+          <entry key="PLAIN_TEXT" value="112" />
         </counts>
       </usages-collector>
     </session>
@@ -255,75 +256,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="136" column="17" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://b67fd53c-e7c0-4946-b795-b88a80e4edb3/schema/group2/table/article">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1234">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1804#1805#0" expanded="true" />
-                <element signature="e#1838#1839#0" expanded="true" />
-                <element signature="e#1979#1980#0" expanded="true" />
-                <element signature="e#2016#2017#0" expanded="true" />
-                <element signature="e#2169#2170#0" expanded="true" />
-                <element signature="e#2199#2200#0" expanded="true" />
-                <element signature="e#2252#2253#0" expanded="true" />
-                <element signature="e#2290#2291#0" expanded="true" />
-                <element signature="e#3182#3183#0" expanded="true" />
-                <element signature="e#3213#3214#0" expanded="true" />
-                <element signature="e#3261#3262#0" expanded="true" />
-                <element signature="e#3301#3302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="1332">
+              <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -331,17 +267,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="126">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetSingleArticle.java">
+        <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="37" column="63" lean-forward="true" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+            <state relative-caret-position="432">
+              <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -358,8 +294,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
+            <state relative-caret-position="90">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -456,15 +410,16 @@
         <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
         <option value="$PROJECT_DIR$/web/signup.jsp" />
         <option value="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
         <option value="$PROJECT_DIR$/web/Homepage.css" />
         <option value="$PROJECT_DIR$/web/allArticles.jsp" />
         <option value="$PROJECT_DIR$/web/displayArticle.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/pojo/Article.java" />
-        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/web/personalpage.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" />
       </list>
     </option>
   </component>
@@ -569,7 +524,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539426738160" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539427457946" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -782,7 +737,7 @@
       <workItem from="1539251337524" duration="3416000" />
       <workItem from="1539386718944" duration="15141000" />
       <workItem from="1539416450430" duration="704000" />
-      <workItem from="1539421593797" duration="5074000" />
+      <workItem from="1539421593797" duration="5893000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538688896963</created>
@@ -980,11 +935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539426209214</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="delete users' DAO file.">
+      <created>1539426863080</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1539426863080</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127855000" />
+    <option name="totallyTimeSpent" value="128674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1124,7 +1086,8 @@
     <MESSAGE value="fix addArticle date bug." />
     <MESSAGE value="uploading article photo is completed." />
     <MESSAGE value="change article Dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="change article Dao" />
+    <MESSAGE value="delete users' DAO file." />
+    <option name="LAST_COMMIT_MESSAGE" value="delete users' DAO file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1250,9 +1213,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/Homepage.html" />
-    <entry file="das://table:/d72243b4/29647915-10b0-496f-aa1f-3440ad20c35a/group2.article" />
-    <entry file="das://table:/d72243b4/29647915-10b0-496f-aa1f-3440ad20c35a/group2.aricle" />
     <entry file="das://table:/d72243b4/29647915-10b0-496f-aa1f-3440ad20c35a/group2.comment" />
     <entry file="das://table:/d72243b4/29647915-10b0-496f-aa1f-3440ad20c35a/group2.user" />
     <entry file="das://table:/d72243b4/29647915-10b0-496f-aa1f-3440ad20c35a/group2.userinformation" />
@@ -1262,13 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1282,13 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1374,13 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1505,13 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1535,15 +1467,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profilePhotoServlet/AddPhotoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="35" column="75" lean-forward="true" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profilePhotoServlet/DeletePhotoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profilePhotoServlet/ShowPhotosServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="1332">
+          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
     </entry>
