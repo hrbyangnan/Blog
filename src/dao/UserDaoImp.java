@@ -70,6 +70,12 @@ public class UserDaoImp implements UserDao,AutoCloseable {
 
     @Override
     public boolean delete(int id) {
+        String sql = "delete  from user where id="+id;
+        try {
+            PreparedStatement stmt = this.conn.prepareStatement(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
