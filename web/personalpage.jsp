@@ -128,7 +128,7 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
         <div class="col-sm-4">
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
+            <img src="<%=author.getProfilePhoto()%>" height="150">
             <p><%= author.getInfomation() %></p>
             <p>The user ID we are trying to use is... <%= author.getId()%>%></p>
 

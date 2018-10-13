@@ -2,9 +2,12 @@ package dao;
 
 import pojo.User;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-public class UserDaoImp implements UserDao,AutoCloseable {
+public class UserDaoImp implements UserDao, AutoCloseable {
 
     private final Connection conn;
 
@@ -45,12 +48,13 @@ public class UserDaoImp implements UserDao,AutoCloseable {
             stmt.executeUpdate();
             System.out.println("Trying to register user 2");
         }
-        try(PreparedStatement stmt=this.conn.prepareStatement("SELECT LAST_INSERT_ID()" )){
-            try (ResultSet rs  =stmt.executeQuery()){
-            rs.next();
-            idPlaceholder = rs.getInt(1);
+        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT LAST_INSERT_ID()")) {
+            try (ResultSet rs = stmt.executeQuery()) {
+                rs.next();
+                idPlaceholder = rs.getInt(1);
                 System.out.println(idPlaceholder);
-        }}
+            }
+        }
         // add user and info to information table
         System.out.println("Trying to register user info 1");
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
@@ -69,7 +73,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
 
     @Override
     public boolean delete(int id) {
-        String sql = "delete  from user where id="+id;
+        String sql = "delete  from user where id=" + id;
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
         } catch (SQLException e) {
@@ -83,7 +87,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
         User thisUser;
         try (PreparedStatement stmt = this.conn.prepareStatement("SELECT * FROM user JOIN userinformation WHERE UserName=? AND NickName =?;")) {
             stmt.setString(1, userName);
-            stmt.setString(2,userName);
+            stmt.setString(2, userName);
 
             try (ResultSet rs = stmt.executeQuery()) {
                 rs.next();
@@ -91,12 +95,15 @@ public class UserDaoImp implements UserDao,AutoCloseable {
                 //TODO using column indexes, but maybe better to change to column names?
                 thisUser.setId(rs.getInt(1));
                 thisUser.setName(rs.getString(2));
+                thisUser.setProfilePhoto(rs.getString(5));
                 thisUser.setRealName(rs.getString(9));
                 thisUser.setBirthday(rs.getDate(10));
                 thisUser.setCountry(rs.getString(11));
+                thisUser.setInfomation(rs.getString(12));
             }
 
         }
+
         return thisUser;
     }
 
