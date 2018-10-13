@@ -1,10 +1,12 @@
-<%--
+<%@ page import="pojo.User" %><%--
   Created by IntelliJ IDEA.
   User: Neco Yang
   Date: 2018/10/4
   Time: 16:38
   To change this template use File | Settings | File Templates.
 --%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -27,6 +29,9 @@
 
   <body>
   <!----------------------------------------------Navbar header------------------------------------------->
+  <% HttpSession userSession = request.getSession();
+    User author = (User) userSession.getAttribute("userInfo");%>
+
   <nav class="navbar navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -38,7 +43,7 @@
 
           <li><a href="/getAllArticles"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
 
-          <li><a href="personalPage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
+          <li><a href="personalpage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-left">
@@ -51,12 +56,16 @@
               </div>
             </div>
           </form>
+          <% if(author==null){%>
           <li><a href = "RegistrationForm.html" class= pointer><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
           <li><a class = pointer onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<%} else{%><li><a href="#"><%=author.getRealName()%></a></li>
+          <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li><%}%>
         </ul>
       </div>
     </div>
   </nav>
+
   <!------------------------------------------------------------------------------------------------------>
   <!----------------------------------------------Jumbotron title----------------------------------------->
   <div class="container">
@@ -110,7 +119,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor. Aenean massa.</p>
               <form action="getSingle" method="get">
-              <%--<a class="btn btn-default" name="13"  href="#">Read More</a>--%>
+                <%--<a class="btn btn-default" name="13"  href="#">Read More</a>--%>
                 <button type="submit" name="id" class="btn btn-primary">Read More</button>
               </form>
             </div>
@@ -373,5 +382,5 @@
   <!------------------------------------------------------------------------------------------------------>
 
   </body>
-  </html>
+</html>
 

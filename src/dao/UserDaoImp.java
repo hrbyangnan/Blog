@@ -36,6 +36,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
     @Override
     public boolean register(User user) throws SQLException {
         //add user add password to user table
+        int idPlaceholder;
         System.out.println("Trying to register user 1");
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email, ProfilePath) VALUES (?,?,?,?);")) {
             stmt.setString(1, user.getName());
@@ -45,10 +46,16 @@ public class UserDaoImp implements UserDao,AutoCloseable {
             stmt.executeUpdate();
             System.out.println("Trying to register user 2");
         }
+        try(PreparedStatement stmt=this.conn.prepareStatement("SELECT LAST_INSERT_ID()" )){
+            try (ResultSet rs  =stmt.executeQuery()){
+            rs.next();
+            idPlaceholder = rs.getInt(1);
+                System.out.println(idPlaceholder);
+        }}
         // add user and info to information table
         System.out.println("Trying to register user info 1");
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
-            stmt.setInt(1, user.getId());
+            stmt.setInt(1, idPlaceholder);
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
             stmt.setDate(4, (java.sql.Date) user.getBirthday());

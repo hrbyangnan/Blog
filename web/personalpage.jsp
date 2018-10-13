@@ -1,7 +1,9 @@
 <%@ page import="pojo.Article" %>
 <%@ page import="pojo.User" %>
 <%@ page import="java.util.List" %>
-<%@ page import="dao.ArticleDao" %><%--
+<%@ page import="dao.ArticleDao" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %><%--
   Created by IntelliJ IDEA.
   User: Jacob
   Date: 12-10-2018
@@ -16,7 +18,7 @@
     <title>personal page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Test.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script>
         $('#datetimepicker').datetimepicker({
@@ -46,7 +48,7 @@
     <style>
 
         #search {
-            background: whitesmoke none repeat scroll 0 0;
+            background: white none repeat scroll 0 0;
             border-radius: 5px;
             border: #34495E;
             margin: 10px auto 10px;
@@ -84,7 +86,16 @@
 <body>
 <!----------------------------------------------Navbar header------------------------------------------->
 <% HttpSession userSession = request.getSession();
-User author = (User) userSession.getAttribute("userInfo"); %>
+User author = (User) userSession.getAttribute("userInfo");
+if(author==null){%>You have not signed in yet. Please login or register. You should be redirected in 2 seconds.
+<script>
+    setTimeout(function(){document.location="/index.jsp";}, 2000);
+    </script>
+
+<!---->
+<%
+        System.out.println("Trying to redirect");
+        }else{%>
 
 <nav class="navbar navbar-inverse">
     <div class="container">
@@ -98,13 +109,9 @@ User author = (User) userSession.getAttribute("userInfo"); %>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropbtn" onclick="myFunction()">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> <%= author.getRealName()%></a></li>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Page1</a></li>
-                    <li><a href="#">Page2</a></li>
-                    <li><a href="#">Page3</a></li>
-                </ul>
-                </li>
-                <li><a href="logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+
+
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
                 <li><a class=pointer onclick="document.getElementById('search').style.display='block'"><span
                         class="glyphicon glyphicon-search"></span></a></li>
             </ul>
@@ -145,7 +152,7 @@ User author = (User) userSession.getAttribute("userInfo"); %>
 
             <p><%=a.getArticleContent()%></p>
             <br>
-            <p> test loop</p>
+
 <% } %>
         </div>
     </div>
@@ -156,13 +163,7 @@ User author = (User) userSession.getAttribute("userInfo"); %>
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <div class="list-group " style="padding-top: 73px">
-                <a href="#" class="list-group-item list-group-item-action">Media</a>
-                <a href="#" class="list-group-item list-group-item-action">Post</a>
-                <a href="#" class="list-group-item list-group-item-action">Comments</a>
-                <a href="#" class="list-group-item list-group-item-action">Appearance</a>
-                <a href="#" class="list-group-item list-group-item-action">Settings</a>
-            </div>
+
         </div>
         <!------------------------------------------------------------------------------------------------------>
         <!----------------------------------------Post New Entry------------------------------------------------>
@@ -214,32 +215,15 @@ User author = (User) userSession.getAttribute("userInfo"); %>
 <!---------------------------------------Blog Footer---------------------------------------------------->
 <section id="blogFooter">
     <footer class="area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="footer-title"><strong>Team</strong></div>
-                    <br>
-                    <p><a href="#">About</a></p>
-                    <p><a href="#">FAQ</a></p>
-                    <p><a href="#">Legal & Privacy</a></p>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="footer-title"><strong>Quick Links</strong></div>
-                    <br>
-                    <p><a href="#">News</a></p>
-                    <p><a href="#">Contact us</a></p>
-                </div>
-            </div>
-            <div class="row">
+
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
                     <br>
                     <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
                 </div>
-            </div>
-        </div>
+
     </footer>
 </section>
 <!------------------------------------------------------------------------------------------------------>
 
 </body>
-</html>
+</html><%}%>

@@ -1,5 +1,5 @@
 <%@ page import="pojo.Article" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="pojo.User" %><%--
   Created by IntelliJ IDEA.
   User: Jacob
   Date: 11-10-2018
@@ -28,6 +28,8 @@
 
 <body>
 <!----------------------------------------------Navbar header------------------------------------------->
+<% HttpSession userSession = request.getSession();
+    User author = (User) userSession.getAttribute("userInfo");%>
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -52,9 +54,11 @@
                         </div>
                     </div>
                 </form>
+                <% if(author==null){%>
                 <li><a href = "RegistrationForm.html" class= pointer><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a class = pointer onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+                <%} else{%><li><a href="#"><%=author.getRealName()%></a></li>
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li><%}%>            </ul>
         </div>
     </div>
 </nav>

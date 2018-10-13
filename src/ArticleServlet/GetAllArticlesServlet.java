@@ -14,7 +14,7 @@ import java.util.List;
 
 public class GetAllArticlesServlet extends HttpServlet {
     ArticleDao dao;
-
+    List<Article> articleList;
     {
         try {
             dao = new ArticleDao();
@@ -29,11 +29,11 @@ public class GetAllArticlesServlet extends HttpServlet {
         throws ServletException, IOException{
 
         System.out.println("inside get all articles");
+if(articleList==null){
+        articleList = dao.getAllArticles();}
 
-        List<Article> articleList = dao.getAllArticles();
 
-
-        request.getSession().setAttribute("AllArticlesPojo",articleList);
+        request.setAttribute("AllArticlesPojo",articleList);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
         dispatcher.forward(request,response);

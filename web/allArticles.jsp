@@ -1,5 +1,6 @@
-<%@ page import="java.util.List" %>
-<%@ page import="pojo.Article" %><%--
+<%@ page import="pojo.Article" %>
+<%@ page import="pojo.User" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: kfit706
   Date: 9/10/2018
@@ -29,6 +30,8 @@
 
 <body>
 <!----------------------------------------------Navbar header------------------------------------------->
+<% HttpSession userSession = request.getSession();
+    User author = (User) userSession.getAttribute("userInfo");%>
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -38,9 +41,9 @@
             <ul class="nav navbar-nav">
                 <li><a href = "index.jsp" class= pointer><span class="glyphicon glyphicon-home"></span> Home</a></li>
 
-                <li><a href="allArticles.jsp"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
+                <li><a href="/getAllArticles"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
 
-                <li><a href="personalPage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
+                <li><a href="personalpage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <form class="navbar-form navbar-left">
@@ -53,16 +56,20 @@
                         </div>
                     </div>
                 </form>
+                <% if(author==null){%>
                 <li><a href = "RegistrationForm.html" class= pointer><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a class = pointer onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <%} else{%><li><a href="#"><%=author.getRealName()%></a></li>
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li><%}%>
             </ul>
         </div>
     </div>
 </nav>
 <br>
 <br>
-<%  HttpSession userSession = request.getSession();
-    List<Article> articleList = (List<Article>) userSession.getAttribute("AllArticlesPojo");
+<%
+    List<Article> articleList = (List<Article>) request.getAttribute("AllArticlesPojo");
+    if(articleList!=null){
     for (Article a : articleList) {%>
 <section id="blogContent">
     <div class="container">
@@ -71,7 +78,7 @@
 
                 <div class="card mb-4">
                     <img class="card-img-top" src="./images/MichaelSalvage%20%20.jpg" alt="Card image cap">
-                    <div class="card-body">
+                    <div class="card-body" >
                         <h2 class="card-title"><%=a.getArticleName()%></h2>
                         <p class="card-text"><%=a.getArticleContent()%></p>
                     </div>
@@ -84,8 +91,11 @@
         </div>
     </div>
 </section>
+
 <%
-    }
+    }}else{%>
+      There has been an error and the article list is empty.
+    <%}
 %>
 <!------------------------------------------------------------------------------------------------------>
 <!----------------------------------------------Blog Footer--------------------------------------------->

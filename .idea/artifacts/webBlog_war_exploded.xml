@@ -26,6 +26,7 @@
         <element id="module-output" name="webBlog" />
       </element>
       <element id="module-output" name="webBlog" />
+      <element id="library" level="application" name="HikariCP-3.0.0" />
     </root>
   </artifact>
 </component>
