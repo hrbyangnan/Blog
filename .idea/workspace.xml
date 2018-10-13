@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/personalpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/personalpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/RegistrationForm.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -234,18 +234,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="java" value="594" />
-          <entry key="jsp" value="119" />
-          <entry key="txt" value="210" />
+          <entry key="html" value="8" />
+          <entry key="java" value="616" />
+          <entry key="jsp" value="121" />
+          <entry key="txt" value="296" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="594" />
-          <entry key="JSP" value="119" />
-          <entry key="PLAIN_TEXT" value="210" />
+          <entry key="HTML" value="8" />
+          <entry key="JAVA" value="616" />
+          <entry key="JSP" value="121" />
+          <entry key="PLAIN_TEXT" value="296" />
         </counts>
       </usages-collector>
     </session>
@@ -267,8 +267,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="88" column="2" lean-forward="true" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+            <state relative-caret-position="2158">
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
             </state>
           </provider>
         </entry>
@@ -291,20 +291,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="860" column="55" selection-start-line="860" selection-start-column="55" selection-end-line="860" selection-end-column="55" />
+            <state relative-caret-position="216">
+              <caret line="556" column="94" lean-forward="true" selection-start-line="556" selection-start-column="94" selection-end-line="556" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+            <state relative-caret-position="700">
+              <caret line="96" column="50" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -459,11 +459,11 @@
         <option value="$PROJECT_DIR$/src/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" />
-        <option value="$PROJECT_DIR$/web/RegistrationForm.html" />
         <option value="$PROJECT_DIR$/src/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/personalpage.jsp" />
         <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
+        <option value="$PROJECT_DIR$/web/personalpage.jsp" />
+        <option value="$PROJECT_DIR$/web/RegistrationForm.html" />
       </list>
     </option>
   </component>
@@ -574,7 +574,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539431019308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539431357413" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -787,7 +787,7 @@
       <workItem from="1539251337524" duration="3416000" />
       <workItem from="1539386718944" duration="15141000" />
       <workItem from="1539416450430" duration="704000" />
-      <workItem from="1539421593797" duration="9154000" />
+      <workItem from="1539421593797" duration="9712000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1538688896963</created>
@@ -1020,11 +1020,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539429901239</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Profile photo and user's information are already showed in personalpage.jsp .">
+      <created>1539431095505</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1539431095505</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131935000" />
+    <option name="totallyTimeSpent" value="132493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,7 +1046,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1049,8 +1056,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.32979852" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4696162" weight="0.29641694" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840426" visible="true" weight="0.33116177" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4696162" visible="true" weight="0.29641694" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840426" weight="0.33116177" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32899022" />
@@ -1067,7 +1074,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.11353944" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.11353944" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.25462964" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1140,7 +1147,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comment pojo and dao files." />
     <MESSAGE value="do some changes in loginServlet,logoutServlet." />
     <MESSAGE value="create methods for getting salt code and hash&amp;salt code." />
     <MESSAGE value="created ResetPassword files." />
@@ -1165,7 +1171,8 @@
     <MESSAGE value=" profile photo's DAO file." />
     <MESSAGE value="temp" />
     <MESSAGE value="Uploading profile photo is finished in registrationForm.html." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploading profile photo is finished in registrationForm.html." />
+    <MESSAGE value="Profile photo and user's information are already showed in personalpage.jsp ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile photo and user's information are already showed in personalpage.jsp ." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1554,20 +1561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="860" column="55" selection-start-line="860" selection-start-column="55" selection-end-line="860" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="88" column="2" lean-forward="true" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1618,8 +1611,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+        <state relative-caret-position="700">
+          <caret line="96" column="50" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2158">
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="556" column="94" lean-forward="true" selection-start-line="556" selection-start-column="94" selection-end-line="556" selection-end-column="94" />
         </state>
       </provider>
     </entry>
