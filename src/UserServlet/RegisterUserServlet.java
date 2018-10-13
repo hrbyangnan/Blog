@@ -139,6 +139,7 @@ public class RegisterUserServlet extends HttpServlet {
         user.setBirthday(date);
         user.setInfomation(information);
         user.setEmail(email);
+        user.setProfilePhoto(picPath);
 
         try {
             UserDao ud = new UserDaoImp();

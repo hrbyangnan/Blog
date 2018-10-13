@@ -12,6 +12,23 @@ public class User {
     private String information;
     private String avatar;
     private String email;
+    private String profilePhoto;
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
+    }
+
+    public String getProfilePhoto() {
+        return profilePhoto;
+    }
+
+    public void setProfilePhoto(String profilePhoto) {
+        this.profilePhoto = profilePhoto;
+    }
 
     public String getEmail() {
         return email;

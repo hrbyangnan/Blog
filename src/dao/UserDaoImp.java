@@ -42,7 +42,7 @@ public class UserDaoImp implements UserDao,AutoCloseable {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getEmail());
-            stmt.setString(4, "?");
+            stmt.setString(4, user.getProfilePhoto());
             stmt.executeUpdate();
             System.out.println("Trying to register user 2");
         }
