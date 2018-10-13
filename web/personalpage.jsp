@@ -148,7 +148,7 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
 
             <h2><%=a.getArticleName()%></h2>
             <h5><%=a.getPubTime()%></h5>
-            <div class="fakeimg">Fake Image</div>
+                 <img src="<%=a.getPicPath()%>" height="300">
 
             <p><%=a.getArticleContent()%></p>
             <br>

@@ -33,13 +33,13 @@ public class ArticleDao implements AutoCloseable {
     public void addArticle(Article artc) {
         String sql = "INSERT INTO article(UserId,ArticleTitle,ArticleContent,PubTime,PicPath,RealName)  VALUES(?,?,?,?,?,?);";
         System.out.println("before prepared statement");
-        try (PreparedStatement ps = conn.prepareStatement(sql)){
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, artc.getUserId());
             ps.setString(2, artc.getArticleName());
             ps.setString(3, artc.getArticleContent());
             ps.setTimestamp(4, new Timestamp(artc.getPubTime().getTime()));
-            ps.setString(5,artc.getPicPath());
-            ps.setString(6,artc.getRealName());
+            ps.setString(5, artc.getPicPath());
+            ps.setString(6, artc.getRealName());
 //            ps.setTime(4, artc.getPubTime());
             System.out.println("before execute update");
             ps.executeUpdate();
@@ -83,13 +83,14 @@ public class ArticleDao implements AutoCloseable {
     //undate article
     public void updateArticle(Article artc) {
 
-        String sql = "UPDATE article SET ArticleName=?,ArticleContent=? WHERE ArticleId=?";
+        String sql = "UPDATE article SET ArticleTitle=?,ArticleContent=?,PubTime=?,PicPath=? WHERE ArticleId=?";
         try {
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setObject(1, artc.getArticleName());
             ps.setObject(2, artc.getArticleContent());
-            ps.setObject(3, artc.getArticleId());
+            ps.setObject(3, artc.getPubTime());
+            ps.setObject(4, artc.getPicPath());
             ps.executeUpdate();
         } catch (Exception e) {
 
@@ -128,18 +129,18 @@ public class ArticleDao implements AutoCloseable {
     public List<Article> selectArtByUser(int userId) {
         Integer i = userId;
         List<Article> articleList = new ArrayList<>();
-        System.out.println("This is the id we passed in:"+i);
+        System.out.println("This is the id we passed in:" + i);
         if (i == null) {
             return null;
         }
         String sql = "SELECT * FROM article WHERE UserId=?";
-        try (PreparedStatement ps = conn.prepareStatement(sql)){
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
 
 
             ps.setObject(1, i);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getString(7));
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getDate(5), rs.getString(6), rs.getString(7));
                 articleList.add(currentArticle);
             }
             if (articleList != null) {
@@ -181,10 +182,12 @@ public class ArticleDao implements AutoCloseable {
 
                 artc.setArticleId(rs.getInt(1));
                 artc.setArticleName(rs.getString(3));
-             artc.setArticleContent(rs.getString(4));
-                System.out.println(rs.getInt(1));
-                System.out.println(rs.getString(3));
-                System.out.println(rs.getString(4));
+                artc.setArticleContent(rs.getString(4));
+                artc.setPubTime(rs.getDate(5));
+                artc.setPicPath(rs.getString(6));
+                artc.setRealName(rs.getString(7));
+
+
             }
             return artc;
 
@@ -213,7 +216,7 @@ public class ArticleDao implements AutoCloseable {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getString(7));
+                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getDate(5), rs.getString(6), rs.getString(7));
                 articleList.add(currentArticle);
             }
 //            articleList = translate(rs);

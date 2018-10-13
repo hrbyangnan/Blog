@@ -14,6 +14,17 @@ public class Article implements Serializable {
     private Date pubTime;
     private String picPath;
 
+
+    public Article(int articleId, String articleName, String articleContent, Date pubTime, String picPath, String realName) {
+        this.articleId = articleId;
+
+        this.articleName = articleName;
+        this.articleContent = articleContent;
+        this.pubTime = pubTime;
+        this.picPath = picPath;
+        this.realName = realName;
+    }
+
     public String getPicPath() {
         return picPath;
     }
@@ -33,7 +44,9 @@ public class Article implements Serializable {
 
     private String realName;
 
-    public Article(){super();}
+    public Article() {
+        super();
+    }
 
     public Article(int articleId, String articleName, String articleContent) {
         this.articleName = articleName;
@@ -42,7 +55,7 @@ public class Article implements Serializable {
 
     }
 
-    public Article (String articleName, int userId, String articleContent){
+    public Article(String articleName, int userId, String articleContent) {
         this.userId = userId;
         this.articleName = articleName;
         this.articleContent = articleContent;
@@ -61,11 +74,11 @@ public class Article implements Serializable {
     }
 
     //This constructor adds realName but does not include everything for posting an article
-    public Article(int userId, String articleName, String articleContent, String realName){
-        this.userId=userId;
-        this.articleName=articleName;
-        this.articleContent=articleContent;
-        this.realName=realName;
+    public Article(int userId, String articleName, String articleContent, String realName) {
+        this.userId = userId;
+        this.articleName = articleName;
+        this.articleContent = articleContent;
+        this.realName = realName;
     }
 
     public int getArticleId() {
@@ -108,8 +121,12 @@ public class Article implements Serializable {
         this.pubTime = pubTime;
     }
 
-    public String getRealName(){return realName;}
+    public String getRealName() {
+        return realName;
+    }
 
-    public void setRealName(String realName){this.realName = realName;}
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
 
 }
