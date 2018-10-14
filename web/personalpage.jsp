@@ -1,3 +1,7 @@
+
+
+<!DOCTYPE html>
+<html>
 <%@ page import="pojo.Article" %>
 <%@ page import="pojo.User" %>
 <%@ page import="java.util.List" %>
@@ -11,9 +15,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<!DOCTYPE html>
-<html>
 <head>
     <title>personal page</title>
     <meta charset="utf-8">
@@ -47,8 +48,34 @@
     </script>
     <style>
 
+        .button:hover {
+            border-top-color: #28597a;
+            background: #28597a;
+            color: #ccc;
+        }
+
+        .button:active {
+            border-top-color: #1b435e;
+            background: #1b435e;
+        }
+
+        .divform {
+            border: 2px solid #a1a1a1;
+            padding: 10px 40px;
+            background: #ccccff;
+            width: 800px;
+            border-radius: 25px;
+        }
+
+        .divarticle {
+            border: 2px solid #a1a1a1;
+            padding: 10px 40px;
+            background: #dddddd;
+            width: 800px;
+        }
+
         #search {
-            background: white none repeat scroll 0 0;
+            background: whitesmoke none repeat scroll 0 0;
             border-radius: 5px;
             border: #34495E;
             margin: 10px auto 10px;
@@ -134,6 +161,7 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
 
             <hr class="hidden-sm hidden-md hidden-lg">
         </div>
+
 <% List<Article> articlesByUser;
     try(ArticleDao ad = new ArticleDao()) {
         System.out.println("Are we getting articles");
@@ -143,18 +171,45 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
         userSession.setAttribute("userArticles", articlesByUser);
     }%>
 
-    <div class="col-sm-8">
-   <% for(Article a: articlesByUser){ %>
 
-            <h2><%=a.getArticleName()%></h2>
-            <h5><%=a.getPubTime()%></h5>
-                 <img src="<%=a.getPicPath()%>" height="300">
-
-            <p><%=a.getArticleContent()%></p>
-            <br>
-
-<% } %>
+        <div class="col-sm-8">
+            <div class="divform">
+                <form id="input" method="post" action="/createArticles">
+                    <input type="hidden" name="action" value=""> <input
+                        type="hidden" name="id" value="">
+                    <table>
+                        <tr><label for="datetimepicker" class="col-12 col-form-label">publication date and time</label>
+                            <input type="datetime-local" name="pubTime" value="2012-05-15 21:05" id="datetimepicker">
+                            <br></tr>
+                        <tr>
+                            <td>Article Title:</td>
+                            <label for="text" class="col-12 col-form-label">Enter Title here</label>
+                            <input id="text" name="articleName" placeholder="Enter Title here" class="form-control here"
+                                   required="required" type="text">
+                            <br></td>
+                        </tr>
+                        <tr>
+                            <td>Article Content:</td>
+                            <td><label for="textarea" class="col-12 col-form-label">Visual Editor</label>
+                                <br>
+                                <textarea id="textarea" name="articleContent" cols="100" rows="9"
+                                          class="form-control"></textarea>
+                                <br></td>
+                        </tr>
+                        <tr>
+                            <label for="avatar"></label>
+                            <input type="file" id="avatar" name="avatar"
+                                   accept="image/png, image/jpeg, video/webm, video/mp4">
+                        </tr>
+                        <tr>
+                            <td colspan="1"><input class="btn btn-primary btn-sm" type="submit" class="button"
+                                                   value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
+
     </div>
 </div>
 <!------------------------------------------------------------------------------------------------------>
@@ -163,38 +218,45 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-
+            <div class="list-group " style="padding-top: 73px">
+                <a href="#" class="list-group-item list-group-item-action">Media</a>
+                <a href="#" class="list-group-item list-group-item-action">Post</a>
+                <a href="#" class="list-group-item list-group-item-action">Edit</a>
+                <a href="editUserInformation.jsp" class="list-group-item list-group-item-action">Edit Profile</a>
+            </div>
         </div>
+
+            <div class="col-sm-8">
+                <hr>
+                <% for(Article a: articlesByUser){ %>
+                <div class="divarticle">
+                    <form action="" method="post">
+                        <input type="hidden" name="action" value="delete"> <input
+                            type="hidden" name="id" value="<%= author.getId()%>"> <input
+                            type="submit" class="button" value="Delete Article">
+                    </form>
+                    <h2><%=a.getArticleName()%></h2>
+                    <<h5><%=a.getPubTime()%></h5>
+                    <img src="<%=a.getPicPath()%>" height="300">
+
+                    <p><%=a.getArticleContent()%></p>
+                    <br>
+                    <form action="" method="post">
+                        <input type="hidden" name="action" value="edit"> <input
+                            type="hidden" name="id" value="<%= author.getId()%>"> <input
+                            type="submit" class="button" value="Edit Article">
+                    </form>
+                </div>
+                <br>
+                <% } %>
+            </div>
+
         <!------------------------------------------------------------------------------------------------------>
         <!----------------------------------------Post New Entry------------------------------------------------>
-        <div class="col-sm-8">
-            <hr>
-            <a href="#"><h4><span class="glyphicon glyphicon-send"></span> POST NEW ENTRY</h4></a>
-            <form ENCTYPE="multipart/form-data" id="input" method="post" action="/createArticles">
-                <label for="datetimepicker" class="col-12 col-form-label">publication date and time</label>
-                <input type="datetime" name="pubTime" value="2018-10-10 18:00" id="datetimepicker">
-                <br>
-                <br>
-                <label for="text" class="col-12 col-form-label">Enter Title here</label>
-                <input id="text" name="articleName" placeholder="Enter Title here" class="form-control here"
-                       required="required" type="text">
-                <br>
-                <label for="textarea" class="col-12 col-form-label">Visual Editor</label>
-                <br>
-                <textarea id="textarea" name="articleContent" cols="30" rows="9" class="form-control"></textarea>
-                <br>
 
-                <label for="avatar"></label>
-                <input type="file" id="avatar" name="avatar"
-                       accept="image/png, image/jpeg, video/webm, video/mp4">
-                <br>
-                <button type="submit" class="btn btn-primary btn-sm">Publish</button>
-                <br>
-
-            </form>
-        </div>
     </div>
 </div>
+
 <!--------------------------------------search modal---------------------------------------------------->
 <div id="search" class="modal">
     <form id="navbarSearch">
