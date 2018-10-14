@@ -5,24 +5,6 @@
 # Time: 17:38
 # To change this template use File | Settings | File Templates.
 
-DROP TABLE IF EXISTS `article`;
-CREATE TABLE `article` (
-  `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
-  `UserId` int(4) NOT NULL,
-  'RealName' VARCHAR(50),
-  `ArticleTitle` varchar(50),
-  `ArticleContent` varchar(1000),
-  `PubTime` datetime DEFAULT NULL,
-  `PicPath` varchar(255),
-  PRIMARY KEY (`ArticleId`),
-  KEY `fk-Ariticle-User` (`UserId`),
-  FOREIGN KEY ('RealName') REFERENCES userInformation ('RealName')
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
-
-
-INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
-INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
-INSERT INTO `article` VALUES ('52', '41', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
 
 
 DROP TABLE IF EXISTS `comment`;
@@ -88,6 +70,25 @@ CREATE TABLE `photo` (
   PRIMARY KEY (`photoId`),
   KEY `fk1` (`UserId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `article`;
+
+CREATE TABLE `article` (
+  `ArticleId` int(4) NOT NULL AUTO_INCREMENT,
+  `UserId` int(4) NOT NULL,
+  'RealName' VARCHAR(50),
+  `ArticleTitle` varchar(50),
+  `ArticleContent` varchar(1000),
+  `PubTime` datetime DEFAULT NULL,
+  `PicPath` varchar(255),
+  PRIMARY KEY (`ArticleId`),
+  KEY `fk-Ariticle-User` (`UserId`),
+  FOREIGN KEY ('RealName') REFERENCES userInformation ('RealName')
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `article` VALUES ('11', '40', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
+INSERT INTO `article` VALUES ('12', '39', 'test1 Article', '<h1>Article</h1>\r\n', null,'\imgFile\2.jpg');
+INSERT INTO `article` VALUES ('52', '41', 'test2 Article', '<h2 style=\"font-style:italic;\">&nbsp;&nbsp;&nbsp;Article</h2>\r\n', null,'\imgFile\1.jpg');
 
 INSERT INTO `photo` VALUES ('1', '42', '123.jpg');
 INSERT INTO `photo` VALUES ('2', '43','234.jpg');

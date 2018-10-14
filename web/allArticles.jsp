@@ -80,6 +80,10 @@
                     <img class="card-img-top" src="./images/MichaelSalvage%20%20.jpg" alt="Card image cap">
                     <div class="card-body" >
                         <h2 class="card-title"><%=a.getArticleName()%></h2>
+
+
+
+
                         <p class="card-text"><%=a.getArticleContent()%></p>
                     </div>
                     <div class="card-footer text-muted">
