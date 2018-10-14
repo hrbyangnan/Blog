@@ -29,9 +29,10 @@ public class GetAllArticlesServlet extends HttpServlet {
         throws ServletException, IOException{
 
         System.out.println("inside get all articles");
+
 if(articleList==null){
         articleList = dao.getAllArticles();}
-
+        System.out.println("When the servlet is called the article list size is:"+articleList.size());
 
         request.setAttribute("AllArticlesPojo",articleList);
 

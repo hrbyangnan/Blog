@@ -213,9 +213,18 @@ public class ArticleDao implements AutoCloseable {
             System.out.println("inside try before query");
 
             ResultSet rs = ps.executeQuery();
-
+            System.out.println("query has been executed");
             while (rs.next()) {
-                Article currentArticle = new Article(rs.getInt(1), rs.getString(3), rs.getString(4), rs.getDate(5), rs.getString(6), rs.getString(7));
+                System.out.println("Trying to add an article");
+                Article currentArticle = new Article();
+                currentArticle.setArticleId(rs.getInt(1));
+                currentArticle.setUserId(rs.getInt(2));
+                currentArticle.setRealName(rs.getString(3));
+                currentArticle.setArticleName(rs.getString(4));
+                currentArticle.setArticleContent(rs.getString(5));
+                currentArticle.setPubTime(rs.getDate(6));
+                currentArticle.setPicPath(rs.getString(7));
+                System.out.println("An article has been created...");
                 articleList.add(currentArticle);
             }
 //            articleList = translate(rs);
@@ -231,7 +240,8 @@ public class ArticleDao implements AutoCloseable {
                 e.printStackTrace();
             }
         }
-        return null;
+        System.out.println("This is in getAllArticles method in dao but it shouldn't be reached");
+        return articleList;
     }
 
     @Override
