@@ -319,29 +319,29 @@
     </section>
     <!------------------------------------------------------------------------------------------------------>
     <!---------------------------------------------blog footer---------------------------------------------->
-    <section id="blogFooter">
-      <footer class="area">
+<section id="blogFooter">
+    <footer class="area">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-              <div class="footer-title"><strong>Team Two</strong></div>
-              <br>
-              <p><a href="#">About</a></p>
-              <p><a href="#">FAQ</a></p>
-              <p><a href="#">Legal & Privacy</a></p>
-              <p><a href="#">Contact us</a></p>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div class="footer-title"><strong>Team Two</strong></div>
+                    <br>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Legal & Privacy</a></p>
+                    <p><a href="#">Contact us</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6"></div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6"></div>
-          </div>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-              <br>
-              <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                    <br>
+                    <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
-    </section>
+    </footer>
+</section>
     <!------------------------------------------------------------------------------------------------------>
     <!----------------------------------------------Login Modal--------------------------------------------->
     <div id="id02" class="modal">
