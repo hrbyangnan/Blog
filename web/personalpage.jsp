@@ -168,13 +168,13 @@ if(author==null){%>You have not signed in yet. Please login or register. You sho
 
         articlesByUser = ad.selectArtByUser(author.getId());
         System.out.printf("If we are the length is " + articlesByUser.size());
-        userSession.setAttribute("userArticles", articlesByUser);
+        //userSession.setAttribute("userArticles", articlesByUser);
     }%>
 
 
         <div class="col-sm-8">
             <div class="divform">
-                <form id="input" method="post" action="/createArticles">
+                <form ENCTYPE="multipart/form-data" id="input" method="post" action="/createArticles">
                     <input type="hidden" name="action" value=""> <input
                         type="hidden" name="id" value="">
                     <table>
