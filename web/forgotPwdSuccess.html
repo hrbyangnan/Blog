@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+</head>
+<script>
+    setTimeout(function () {
+        document.location = "/index.jsp";
+    }, 2000);
+</script>
+<body>
+<br><nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand d-flex w-25 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+            <li class="nav-item">
+                <a class="nav-link" href="/getAllArticles">Article Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gallery.jsp">Media Gallery</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-center">
+            <li>
+                <form class="form-inline" action="/searchResult.jsp" id="searchField">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search articles">
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+
+            <% if(author==null){%>
+            <li class="nav-item">
+                <a href = "RegistrationForm.jsp" class="nav-link"> Sign Up</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
+            </li>
+
+            <%} else{%>
+            <li class="nav-item">
+                <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%></a>
+            </li>
+            <% if(author.getId()== 62){%>
+            <li class="nav-item"><a class="nav-link" href = "adminPage.jsp" class= pointer> Admin Page</a></li>
+            <%}%>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Sign Out</a>
+            </li><%}%>
+        </ul>
+
+    </div>
+</nav>
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+<h2>send mail success!</h2>
+
+    </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+<div class="jumbotron text-center" id="jumbo" style="margin-top: 150px">
+    <p><a href="#">About</a></p>
+    <p><a href="#">FAQ</a></p>
+    <p><a href="#">Contact us</a></p>
+    <br>
+    <br>
+    <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
+</div>
+</body>
+</html>
