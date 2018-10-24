@@ -15,13 +15,7 @@ import java.util.List;
 public class GetAllArticlesServlet extends HttpServlet {
     ArticleDao dao;
     List<Article> articleList;
-    {
-        try {
-            dao = new ArticleDao();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
+
 
     //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
 
@@ -30,12 +24,18 @@ public class GetAllArticlesServlet extends HttpServlet {
 
         System.out.println("inside get all articles");
 
-if(articleList==null){
-        articleList = dao.getAllArticles();}
-        System.out.println("When the servlet is called the article list size is:"+articleList.size());
+//It's important that the ArticleDao instance is created in try with resources, otherwise there will be an SQLException thrown the second time we run it, though I'm not sure why
+            try(
+                ArticleDao dao = new ArticleDao()){
 
-        request.setAttribute("AllArticlesPojo",articleList);
 
+         articleList = dao.getAllArticles();
+            System.out.println("When the servlet is called the article list size is:" + articleList.size());
+
+            request.setAttribute("AllArticlesPojo", articleList);
+        }catch (SQLException e){e.getMessage();}catch (Exception e){
+            System.out.println("Autocloseable exception???");
+        }
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
         dispatcher.forward(request,response);
 

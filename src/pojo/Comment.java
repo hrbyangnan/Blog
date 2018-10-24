@@ -3,6 +3,14 @@ package pojo;
 import java.io.Serializable;
 
 public class Comment implements Serializable {
+    private int commentId;
+    private String commentContent;
+    private int articleId;
+    private int userId;
+    private String userName;
+    private int visible;
+
+
 
     public Comment(String commentContent, int commentId, int articleId, int userId, String userName) {
         this.commentId = commentId;
@@ -11,12 +19,19 @@ public class Comment implements Serializable {
         this.userId = userId;
         this.userName = userName;
     }
+    public Comment(String commentContent,  int articleId, int userId, String userName) {
 
-    private int commentId;
-    private String commentContent;
-    private int articleId;
-    private int userId;
-    private String userName;
+        this.commentContent = commentContent;
+        this.articleId = articleId;
+        this.userId = userId;
+        this.userName = userName;
+    }
+
+
+
+    public Comment() {
+
+    }
 
     public int getCommentId() {
         return commentId;
@@ -57,5 +72,12 @@ public class Comment implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+    public int getVisible() {
+        return visible;
+    }
+
+    public void setVisible(int visible) {
+        this.visible = visible;
     }
 }

@@ -3,15 +3,15 @@ package CommentServlet;
 
 import dao.ArticleDao;
 import dao.CommentDao;
-import pojo.Comment;
+import pojo.Article;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
 public class DeleteCommentServlet extends HttpServlet {
 
@@ -24,22 +24,55 @@ public class DeleteCommentServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        int articleId = Integer.parseInt(request.getParameter("superID"));
+        try (CommentDao dao = new CommentDao()) {
 
-        int commentId = Integer.parseInt(request.getParameter("commentId"));
-        int articleId = Integer.parseInt(request.getSession()
-                .getAttribute("articleId").toString());
-        cDao.deleteComment(commentId);
+            int commentId = Integer.parseInt(request.getParameter("cID"));
 
-        List<Comment> comments = cDao.selectComByArt(articleId);
-        request.getSession().setAttribute("comments", comments);
+            dao.deleteComment(commentId);
 
-        response.sendRedirect("article/articleDemo.jsp");
-    }
+        } catch (SQLException e) {
+            System.out.println("delete in "+e);
+        } catch (Exception e) {
+            System.out.println("delete in "+e);
+        }
+        try (ArticleDao adao = new ArticleDao()){
+            Article art = adao.findOneArticle(articleId);
+            System.out.println(art.getArticleName() + "this is in the delete comment servlet - ");
+            request.setAttribute("SingleArticle", art);
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+
+        }catch(SQLException e) {
+            e.printStackTrace();
+            System.out.println("inside delete catch");
+        } catch(Exception e)  {
+        }
+
+        //This line seems necessary at moment but not 100% sure why
+        //request.setAttribute("param2",40);
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
+        dispatcher.forward(request,response);}
+
+
+
+        public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        this.doGet(request, response);
-    }
+     }
 
 }
+
+//        int commentId = (int) request.getAttribute("cID");
+//        int articleId = (int) request.getAttribute("superID");
+//
+//        List<Comment> comments = cDao.selectComByArt(articleId);
+//        cDao.deleteComment(commentId);
+//
+//        System.out.println(" you are in delete comments");
+//        request.setAttribute("comments", comments);
+//        System.out.println(" you are in no attri comments");
+//
+//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
+//        dispatcher.forward(request,response);
+

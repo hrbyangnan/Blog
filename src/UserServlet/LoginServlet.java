@@ -8,7 +8,6 @@
 package UserServlet;
 
 
-import dao.UserDao;
 import dao.UserDaoImp;
 import pojo.User;
 
@@ -17,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws IOException {
         System.out.println("inside login servlet");
         String name = request.getParameter("login");
         String password = request.getParameter("password");
@@ -35,39 +35,52 @@ public class LoginServlet extends HttpServlet {
         HttpSession userSession = request.getSession(true);
 //        userSession.setAttribute("login", false);
 
-        UserDao ud = null;
-        try {
-            ud = new UserDaoImp();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
-        try {
+        try (UserDaoImp ud = new UserDaoImp()){
             assert ud != null;
             if (ud.login(name).equals(password)) {
                 //check this syntax does set login to true
+                response.getWriter().write("success");
                 userSession.setAttribute("login", true);
                 System.out.println("login set to true");
+
                 User current = ud.getUserInfo(name);
 
                 userSession.setAttribute("userInfo", current);
                 System.out.println("before page");
-
-                //Try get articles by user here????
-                /*List<Article> articlesByUser;
-                try(ArticleDao ad = new ArticleDao()){
-                    System.out.println("Are we getting articles");
-
-                     articlesByUser = ad.selectArtByUser(current.getId());
-                    System.out.printf("If we are the length is "+articlesByUser.size());
-userSession.setAttribute("userArticles", articlesByUser);}*/
+                try{
+                    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (UnsupportedLookAndFeelException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                JOptionPane.showMessageDialog(null, "Login success!");
 
                 request.getRequestDispatcher("personalpage.jsp").forward(request, response);
-            } else {
+            } else  {
+                JOptionPane.showMessageDialog(null, "Incorrect username or password!");
                 response.sendRedirect("index.jsp");
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            try{
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } catch (IllegalAccessException ce) {
+                e.printStackTrace();
+            } catch (InstantiationException ce) {
+                e.printStackTrace();
+            } catch (UnsupportedLookAndFeelException ce) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException ce) {
+                e.printStackTrace();
+            }
+            JOptionPane.showMessageDialog(null, "Incorrect username or password!");
+            response.sendRedirect("index.jsp");
         }catch(Exception e){e.getMessage(); e.getStackTrace();}
     }
 }

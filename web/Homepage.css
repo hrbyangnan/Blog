@@ -3,49 +3,52 @@ body {
 }
 
 .pointer {
-    cursor: pointer;
+    cursor: pointer!important;
 }
-
-
 
 /*************************************************Navbar header********************************************************/
 .navbar-inverse {
-    background-color: #34495E;
-    border-color: #34495E;
+    background-color: #003e54;
 }
-
+.nav-item:hover{
+     cursor: pointer;
+}
 .navbar {
     position: relative !important;
     min-height: 50px;
     margin-bottom: 20px;
-    border: 0px solid transparent;
-    border-radius: 0px;
+    /*border: 0px solid transparent;*/
+    /*border-radius: 0px;*/
 
 }
+#pointer {cursor: pointer!important;}
+
 
 .navbar-brand {
-
     float: left;
     height: auto;
-    padding: 10px 10px;
-    font-size: 18px;
-    line-height: 20px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #F39C12;
+    color: #fffafa;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    background-color: #009688;
+    background-color: rgba(0, 62, 84, 0.62);
 }
+.nav-item{
+    padding-right:13px;
+    color:#fffafa;
+}
+
+
 
 /**********************************************************************************************************************/
 /****************************************Transparent NavBar************************************************************/
 
 section {
     max-width: 1190px;
-    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    /*mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);*/
     margin: 0 auto;
     padding: 32px 0;
 
@@ -53,7 +56,7 @@ section {
 
 section ul {
     text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);*/
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
@@ -100,8 +103,8 @@ section ul li a:hover {
 }
 
 .btn.btn-default {
-    background-color: #5db4c0;
-    color: #fff;
+    background-color: #003e54;
+    color: #fffafa;
     border-radius: 0;
     border: none;
     padding: 13px 20px;
@@ -120,16 +123,22 @@ section ul li a:hover {
 /**********************************************************************************************************************/
 /***********************************************Blog Footer************************************************************/
 
-#blogFooter {
-    background-color: #f6f6f6;
-    padding-top: 0px;
+#jumbo {
+    background-color: #003e54;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:0;
 }
 
-.area {
-    margin-top: 100px;
-    padding-top: 10px;
+#jumbo > p {
+    color: #fffafa;
+    font-size: medium;
 }
 
+#jumbo > p > a {
+    color: #fffafa;
+}
 /**********************************************************************************************************************/
 /******************************************Login Form******************************************************************/
 .form-heading {
@@ -163,14 +172,14 @@ section ul li a:hover {
 }
 
 .forgot a {
-    color: #777777;
+    color: #003e54;
     font-size: 14px;
     text-decoration: underline;
 }
 
 .login-form .btn.btn-primary {
-    background: #009688 none repeat scroll 0 0;
-    border-color: #009688;
+    background: #003e54 none repeat scroll 0 0;
+    border-color: #003e54;
     color: #ffffff;
     font-size: 14px;
     width: 100%;
@@ -192,6 +201,11 @@ section ul li a:hover {
     text-align: center;
     margin: 24px 0 52px 0;
     position: relative;
+}
+
+
+body {
+    font-family: "Palatino Linotype", serif;
 }
 
 /**********************************************************************************************************************/

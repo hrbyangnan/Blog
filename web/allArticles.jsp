@@ -1,5 +1,7 @@
 <%@ page import="pojo.Article" %>
 <%@ page import="pojo.User" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: kfit706
@@ -9,14 +11,25 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    Date nowDate=new Date();
+%>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Articles</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--%>
     <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
     <script>
         var modal = document.getElementById('id02');
@@ -26,43 +39,61 @@
             }
         }
     </script>
+
 </head>
 
 <body>
 <!----------------------------------------------Navbar header------------------------------------------->
 <% HttpSession userSession = request.getSession();
     User author = (User) userSession.getAttribute("userInfo");%>
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Blog Name</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href = "index.jsp" class= pointer><span class="glyphicon glyphicon-home"></span> Home</a></li>
 
-                <li><a href="/getAllArticles"><span class="glyphicon glyphicon-th-large"></span> Archives</a></li>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand d-flex w-25 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+            <li class="nav-item">
+                <a class="nav-link" href="/getAllArticles">Article Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gallery">Media Gallery</a>
+            </li>
 
-                <li><a href="personalpage.jsp"><span class="glyphicon glyphicon-user"></span> Author Page</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-left">
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-center">
+            <li>
+                <form class="form-inline" action="SearchArticle" id="searchField">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-                        </div>
+                        <input type="text" name="info" class="form-control" placeholder="Search articles">
                     </div>
                 </form>
-                <% if(author==null){%>
-                <li><a href = "RegistrationForm.html" class= pointer><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a class = pointer onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                <%} else{%><li><a href="#"><%=author.getRealName()%></a></li>
-                <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li><%}%>
-            </ul>
-        </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+
+            <% if(author==null){%>
+            <li class="nav-item">
+                <a href = "RegistrationForm.jsp" class="nav-link"> Sign Up</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
+            </li>
+
+            <%} else{%>
+            <li class="nav-item">
+                <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%></a>
+            </li>
+            <% if(author.getId()== 62){%>
+            <li class="nav-item"><a class="nav-link" href = "adminPage.jsp" class= pointer> Admin Page</a></li>
+            <%}%>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Sign Out</a>
+            </li><%}%>
+        </ul>
+
     </div>
 </nav>
 <br>
@@ -70,19 +101,25 @@
 <%
     List<Article> articleList = (List<Article>) request.getAttribute("AllArticlesPojo");
     if(articleList!=null){
-    for (Article a : articleList) {%>
+        System.out.println(articleList.size()+ " is the size of the article list");
+        for (Article a : articleList) { if (a.getPubTime().getTime()< nowDate.getTime()&&(a.getVisible()==1)){%>
 <section id="blogContent">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-
                 <div class="card mb-4">
-                    <img class="card-img-top" src="./images/MichaelSalvage%20%20.jpg" alt="Card image cap">
+                    <% if(a.getAllPicPaths().size()>0){
+                        System.out.println("Trying to get pictures from getAllpicPAth");
+                        for(String pic: (a.getAllPicPaths())){ %>
+
+                    <img class="card-img-top" src="<%=pic%>" alt="Card image cap">
+
+                    <%}}
+                    else {%>
+                    <img class="card-img-top" src="<%=a.getPicPath()%>" alt="Card image cap"> <%System.out.println("Else statement, when trying to show all pictures");}%>
+
                     <div class="card-body" >
-                        <h2 class="card-title"><%=a.getArticleName()%></h2>
-
-
-
+                        <a href="/getSingle?param1=<%=a.getArticleId()%>"><h2 class="card-title"><%=a.getArticleName()%></h2></a>
 
                         <p class="card-text"><%=a.getArticleContent()%></p>
                     </div>
@@ -97,35 +134,20 @@
 </section>
 
 <%
-    }}else{%>
-      There has been an error and the article list is empty.
-    <%}
+        }}}else{%>
+There has been an error and the article list is empty.
+<%}
 %>
 <!------------------------------------------------------------------------------------------------------>
 <!----------------------------------------------Blog Footer--------------------------------------------->
-<section id="blogFooter">
-    <footer class="area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="footer-title"><strong>Team Two</strong></div>
-                    <br>
-                    <p><a href="#">About</a></p>
-                    <p><a href="#">FAQ</a></p>
-                    <p><a href="#">Legal & Privacy</a></p>
-                    <p><a href="#">Contact us</a></p>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6"></div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                    <br>
-                    <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</section>
+<div class="jumbotron text-center" id="jumbo" style="margin-top: 150px">
+    <p><a href="#">About</a></p>
+    <p><a href="#">FAQ</a></p>
+    <p><a href="#">Contact us</a></p>
+    <br>
+    <br>
+    <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
+</div>
 <!----------------------------------------------Login Modal--------------------------------------------->
 <div id="id02" class="modal">
     <div class="container">

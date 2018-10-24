@@ -12,15 +12,17 @@ import dao.UserDaoImp;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.json.JSONObject;
 import pojo.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import javax.swing.*;
+import java.io.*;
+import java.net.URL;
+import java.nio.charset.Charset;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -30,6 +32,7 @@ import java.util.List;
 public class RegisterUserServlet extends HttpServlet {
     private File uploadsFolder;
     private File tempFolder;
+    private final String myKey="6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM";
 
 
     @Override
@@ -58,6 +61,12 @@ public class RegisterUserServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+
+//        if (!isCaptchaValid("6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM", code)) {
+//            System.out.println("error!");
+//        } else if (isCaptchaValid("6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM", code)) {
+
+
         System.out.println("Check that servlet doPost is loading");
         DiskFileItemFactory factory = new DiskFileItemFactory();
         factory.setSizeThreshold(4 * 1024);
@@ -74,10 +83,17 @@ public class RegisterUserServlet extends HttpServlet {
         String password = null;
         String country = null;
         String birthday = null;
+        String avatarPath = null;
         String fileName = null;
         String realName = null;
-        String email=null;
-        String information=null;
+        String email = null;
+        String information = null;
+        String reCAPTCHACode = null;
+
+        String random = String.valueOf((int)(Math.random()*(9999-1000+1))+1000);
+
+
+
 
         try {
             List<FileItem> fileItems = upload.parseRequest(request);
@@ -86,9 +102,10 @@ public class RegisterUserServlet extends HttpServlet {
 
             for (FileItem fi : fileItems) {
                 if (!fi.isFormField()) {
+                    if(fi.getSize()>1){
                     fileName = fi.getName();
-                    fullsizeImagefile = new File(uploadsFolder, fileName);
-                    fi.write(fullsizeImagefile);
+                    fullsizeImagefile = new File(uploadsFolder, random+"_"+fileName);
+                    fi.write(fullsizeImagefile);}
                 } else if (fi.getFieldName() != null) {
                     if (fi.getFieldName().equals("username")) {
                         userName = fi.getString();
@@ -108,62 +125,119 @@ public class RegisterUserServlet extends HttpServlet {
                     if (fi.getFieldName().equals("birthday")) {
                         birthday = fi.getString();
                     }
+                    if (fi.getFieldName().equals("avatar")){
+                        avatarPath = fi.getString();
+                    }
                     if (fi.getFieldName().equals("email")) {
                         email = fi.getString();
                     }
                     if (fi.getFieldName().equals("information")) {
                         information = fi.getString();
                     }
+                    if (fi.getFieldName().equals("g-recaptcha-response")) {
+                        reCAPTCHACode = fi.getString();
+                    }
+
                     realName = firstName + " " + lastName;
                 }
             }
 
-//            String email = request.getParameter("email");
-//            String information = request.getParameter("publicinfo");
 
         } catch (Exception e) {
             throw new ServletException(e);
         }
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        java.util.Date d = null;
-
-        String picPath = "/Uploaded_Profile/" + fileName;
-
-        try {
-            d = format.parse(birthday);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        java.sql.Date date = new java.sql.Date(d.getTime());
+        if (isCaptchaValid(myKey, reCAPTCHACode)) {
+            System.out.println("rekey success");
 
 
 
 
-        User user = new User();
-        user.setName(userName);
-        user.setRealName(realName);
-        user.setPassword(password);
-        user.setCountry(country);
-        user.setBirthday(date);
-        user.setInfomation(information);
-        user.setEmail(email);
-        user.setProfilePhoto(picPath);
-
-        try {
-            UserDao ud = new UserDaoImp();
-
-            if (ud.register(user)) {
-                request.setAttribute("username", realName);
-                request.getRequestDispatcher("personalpage.jsp").forward(request, response);
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            java.util.Date d = null;
+String picPath="";
+            if (fileName != null) {
+                 picPath = "/Uploaded_Profile/" + random+"_"+fileName;
             } else {
+                 picPath = avatarPath;
+            }
+            System.out.println(picPath);
 
-                response.sendRedirect("index.jsp");
+            try {
+                d = format.parse(birthday);
+            } catch (ParseException e) {
+                e.printStackTrace();
             }
 
-        } catch (SQLException e) {
-            e.getMessage();
+            java.sql.Date date = new java.sql.Date(d.getTime());
+
+
+            User user = new User();
+            user.setName(userName);
+            user.setRealName(realName);
+            user.setPassword(password);
+            user.setCountry(country);
+            user.setBirthday(date);
+            user.setInfomation(information);
+            user.setEmail(email);
+            user.setProfilePhoto(picPath);
+
+            try {
+                UserDao ud = new UserDaoImp();
+
+                if (ud.register(user)) {
+                    request.setAttribute("username", realName);
+                    try{
+                        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    } catch (InstantiationException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedLookAndFeelException e) {
+                        e.printStackTrace();
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                    JOptionPane.showMessageDialog(null, "Success!");
+                    request.getRequestDispatcher("personalpage.jsp").forward(request, response);
+                } else {
+
+                    response.sendRedirect("index.jsp");
+                }
+
+            } catch (SQLException e) {
+                e.getMessage();
+            }
+        }
+        else{
+            response.sendRedirect("recaptchaIsRequired.jsp");
+        }
+
+    }
+
+
+
+
+    public static boolean isCaptchaValid(String secretKey, String response) {
+        try {
+            String url = "https://www.google.com/recaptcha/api/siteverify?"
+                    + "secret=" + secretKey
+                    + "&response=" + response;
+            InputStream res = new URL(url).openStream();
+            BufferedReader rd = new BufferedReader(new InputStreamReader(res, Charset.forName("UTF-8")));
+
+            StringBuilder sb = new StringBuilder();
+            int cp;
+            while ((cp = rd.read()) != -1) {
+                sb.append((char) cp);
+            }
+            String jsonText = sb.toString();
+            res.close();
+
+            JSONObject json = new JSONObject(jsonText);
+            return json.getBoolean("success");
+        } catch (Exception e) {
+            return false;
         }
     }
 }

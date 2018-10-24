@@ -2,8 +2,9 @@ package pojo;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
-public class Article implements Serializable {
+public class Article implements Serializable{
     /**
      *
      */
@@ -13,7 +14,17 @@ public class Article implements Serializable {
     private String articleContent;
     private Date pubTime;
     private String picPath;
+    private List<String> allPicPaths;
+    private int visible;
+    private List<String> media;
 
+    public int getVisible() {
+        return visible;
+    }
+
+    public void setVisible(int visible) {
+        this.visible = visible;
+    }
 
     public Article(int articleId, String articleName, String articleContent, Date pubTime, String picPath, String realName) {
         this.articleId = articleId;
@@ -129,4 +140,19 @@ public class Article implements Serializable {
         this.realName = realName;
     }
 
+    public List<String> getAllPicPaths() {
+        return allPicPaths;
+    }
+
+    public void setAllPicPaths(List<String> allPicPaths) {
+        this.allPicPaths = allPicPaths;
+    }
+
+    public List<String> getMedia() {
+        return media;
+    }
+
+    public void setMedia(List<String> media) {
+        this.media = media;
+    }
 }

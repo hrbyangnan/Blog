@@ -13,6 +13,16 @@ public class User {
     private String avatar;
     private String email;
     private String profilePhoto;
+    private String randomCode;
+
+
+    public String getRandomCode() {
+        return randomCode;
+    }
+
+    public void setRandomCode(String randomCode) {
+        this.randomCode = randomCode;
+    }
 
     public String getInformation() {
         return information;
