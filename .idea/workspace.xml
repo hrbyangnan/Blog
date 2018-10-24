@@ -7,27 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Final">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webBlog_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3__2_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3__2_.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__3_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib__3_.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mail.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_46_bin.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_46_bin.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blogs.sql" afterPath="$PROJECT_DIR$/blogs.sql" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/RegistrationForm.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.css" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.css" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.html" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/Test.html" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" />
@@ -58,39 +39,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/Article.class" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/Article.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/Comment.class" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/Comment.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/pojo/User.class" afterPath="$PROJECT_DIR$/out/production/webBlog/pojo/User.class" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/GetSingleArticle.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/GetSingleArticle.java" />
-      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/CommentServlet/AddArticleComment.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/CommentServlet/DeleteCommentServlet.java" afterPath="$PROJECT_DIR$/src/CommentServlet/DeleteCommentServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/Security/ResetPassword.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Security/Security.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CommentDao.java" afterPath="$PROJECT_DIR$/src/dao/CommentDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" afterPath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/pojo/Article.java" afterPath="$PROJECT_DIR$/src/pojo/Article.java" />
-      <change beforePath="$PROJECT_DIR$/src/pojo/Comment.java" afterPath="$PROJECT_DIR$/src/pojo/Comment.java" />
-      <change beforePath="$PROJECT_DIR$/src/pojo/ProfilePhoto.java" afterPath="$PROJECT_DIR$/src/pojo/ProfilePhoto.java" />
-      <change beforePath="$PROJECT_DIR$/src/pojo/User.java" afterPath="$PROJECT_DIR$/src/pojo/User.java" />
-      <change beforePath="$PROJECT_DIR$/web/Homepage.css" afterPath="$PROJECT_DIR$/web/Homepage.css" />
-      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/c" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/c.properties" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/web/allArticles.jsp" afterPath="$PROJECT_DIR$/web/allArticles.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/comment.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/displayArticle.jsp" afterPath="$PROJECT_DIR$/web/displayArticle.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personalpage.jsp" afterPath="$PROJECT_DIR$/web/personalpage.jsp" />
-      <change beforePath="$PROJECT_DIR$/webBlog.iml" afterPath="$PROJECT_DIR$/webBlog.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -404,12 +352,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="433">
               <caret line="326" column="2" lean-forward="false" selection-start-line="326" selection-start-column="2" selection-end-line="326" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForgotPwdServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Administrative/ForgotPwdServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPhotosServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddPhotosServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#3001#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alternativeAddArticleServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/alternativeAddArticleServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#3567#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -651,36 +643,25 @@
         <subPane>
           <expand>
             <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Multimedia" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrative" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Annafinalcss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Annafinalcss" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleServlet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -977,14 +958,7 @@
       <workItem from="1540412532861" duration="561000" />
       <workItem from="1540414041303" duration="610000" />
       <workItem from="1540423420396" duration="864000" />
-      <workItem from="1540424433236" duration="100000" />
-    </task>
-    <task id="LOCAL-00029" summary="Changed index.jsp">
-      <created>1539559621646</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1539559621646</updated>
+      <workItem from="1540424433236" duration="156000" />
     </task>
     <task id="LOCAL-00030" summary="Changed personalpage.jsp">
       <created>1539561496947</created>
@@ -1322,11 +1296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540365692262</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Final">
+      <created>1540424550337</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1540424550337</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410766000" />
+    <option name="totallyTimeSpent" value="410822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1637,20 +1618,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="199" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1715,7 +1682,6 @@
     <entry file="file://$PROJECT_DIR$/web/recaptchaIsRequired.html" />
     <entry file="das://c75938fc-f2d4-4557-addc-2238c7eebbdb/schema/group2/table/user" />
     <entry file="file://$PROJECT_DIR$/web/forgotPwdSuccess.html" />
-    <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/ForgotPwdUIServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/LoginUIServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/ResetPasswordServlet.java" />
@@ -1724,7 +1690,6 @@
     <entry file="file://$PROJECT_DIR$/web/editComment.jsp" />
     <entry file="file://$PROJECT_DIR$/web/forgotpass.jsp" />
     <entry file="file://$PROJECT_DIR$/web/forgotPassword.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/Administrative/ForgotPwdServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/GenerateLinkUtils.java" />
     <entry file="file://$PROJECT_DIR$/web/RegistrationForm.jsp" />
     <entry file="file://$PROJECT_DIR$/web/resetpass.jsp" />
@@ -1787,6 +1752,42 @@
         <state relative-caret-position="433">
           <caret line="326" column="2" lean-forward="false" selection-start-line="326" selection-start-column="2" selection-end-line="326" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Administrative/ForgotPwdServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddPhotosServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/alternativeAddArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3567#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
