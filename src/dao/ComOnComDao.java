@@ -221,7 +221,7 @@ public class ComOnComDao implements AutoCloseable {
     }
     public String getPicPath(int userId) throws SQLException {
         String path=null;
-        try (PreparedStatement ps = conn.prepareStatement("select photoUrl from user WHERE UserId=?;")) {
+        try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {
             ps.setInt(1, userId);
             try(ResultSet rs=ps.executeQuery()){
                 rs.next();

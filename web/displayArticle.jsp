@@ -6,6 +6,7 @@
 <%@ page import="pojo.CommentOnComment" %>
 <%@ page import="dao.ComOnComDao" %>
 <%@ page import="java.sql.SQLException" %>
+<%@ page import="dao.ArticleDao" %>
 <%--
   Created by IntelliJ IDEA.
   User: Jacob
@@ -32,7 +33,9 @@
 
 
     <style>
-        .navbar {min-height:32px !important}
+        .navbar {
+            min-height: 32px !important
+        }
 
         .toggle-content {
             display: none;
@@ -43,7 +46,7 @@
         }
 
         .divcomments {
-            border: 2px solid rgba(34,34,34,0.75);
+            border: 2px solid rgba(34, 34, 34, 0.75);
             padding: 5px 40px 10px;
             background: #dddddd;
             width: 860px;
@@ -51,7 +54,7 @@
         }
 
         .innerDivcomments {
-            border: 2px solid rgba(34,34,34,0.75);
+            border: 2px solid rgba(34, 34, 34, 0.75);
             padding: 10px 40px 10px;
             background: #dddddd;
             width: 600px;
@@ -99,7 +102,6 @@
         body {
             background-color: #eeeeee;
         }
-
 
         .gedf-wrapper {
             margin-top: 0.97rem;
@@ -181,25 +183,27 @@
         </ul>
         <ul class="navbar-nav ml-auto w-100 justify-content-end">
 
-            <% if(author==null){%>
+            <% if (author == null) {%>
             <li class="nav-item">
-                <a href = "RegistrationForm.jsp" class="nav-link"> Sign Up</a>
+                <a href="RegistrationForm.jsp" class="nav-link"> Sign Up</a>
             </li>
             <li class="nav-item">
 
                 <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
             </li>
 
-            <%} else{%>
+            <%} else {%>
             <li class="nav-item">
-                <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%></a>
+                <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%>
+                </a>
             </li>
-            <% if(author.getId()== 62){%>
-            <li class="nav-item"><a class="nav-link" href = "adminPage.jsp" class= pointer> Admin Page</a></li>
+            <% if (author.getId() == 62) {%>
+            <li class="nav-item"><a class="nav-link" href="adminPage.jsp" class=pointer> Admin Page</a></li>
             <%}%>
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Sign Out</a>
-            </li><%}%>
+            </li>
+            <%}%>
         </ul>
 
     </div>
@@ -210,26 +214,35 @@
 <div class="container-fluid gedf-wrapper">
     <div class="row">
         <%Article singleArticle = (Article) request.getAttribute("SingleArticle");%>
-        <%String path = (String) request.getAttribute("path");%>
-        <%String path1 = (String) request.getAttribute("path1");%>
+        <div class="col-md-1">
+            <% String articleAvatar = null;
+                try (ArticleDao ad = new ArticleDao()) {
+                    System.out.println(singleArticle.getUserId() + " SingleArticle.getUserId()");
+                    articleAvatar = ad.getPicPath(singleArticle.getUserId());
+                    System.out.println("arti" + articleAvatar);
+                } catch (SQLException e) {
+                    e.getMessage();
+                    System.out.println(e + " exception loading article avatar");
+                }%>
 
-        <div class="col-md-1"></div>
+        </div>
         <div class="col-md-10 gedf-main">
             <div class="card gedf-card">
                 <div class="card-header">
-                    <div class="mr-2">
-                        <%--<img class="rounded-circle" width="45" src="<%=path%>">--%>
-                    </div>
-                    <div class="ml-2">
-                        <h2 class="card-title"><%=singleArticle.getArticleName()%>
+
+
+                        <h2 class="card-title"><img src="<%=articleAvatar%>"  style="width: 50px">
+                            <%=singleArticle.getArticleName()%>
                         </h2>
-                    </div>
+
                 </div>
                 <div class="card-body">
                     <p><%=singleArticle.getArticleContent()%>
                     </p>
                     <br>
-                    <div class="h5 m-0"><strong><%="Posted on " + singleArticle.getPubTime() + " by " + singleArticle.getRealName()%></strong></div>
+                    <div class="h5 m-0">
+                        <strong><%="Posted on " + singleArticle.getPubTime() + " by " + singleArticle.getRealName()%>
+                        </strong></div>
                     <% if (singleArticle.getAllPicPaths().size() > 0) {
                         System.out.println("Trying to get pictures from getAllpicPAth");
                         for (String pic : (singleArticle.getAllPicPaths())) { %>
@@ -266,7 +279,6 @@
                     %>
                 </div>
                 <div class="card-footer">
-                    <%--<button class="toggle" href="#example1" type="submit"><span class="glyphicon glyphicon-send"></span> Summit comment</button>--%>
                     <% if (author != null) {%>
                     <a class="toggle" href="#example1" class="card-link"><i class="fa fa-comment"></i> Comment</a>
                     <%}%>
@@ -274,6 +286,7 @@
             </div>
         </div>
         <div class="col-md-1"></div>
+
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -296,7 +309,8 @@
                                     <table>
                                         <tr>
                                             <label for="comment" class="required"></label>
-                                            <textarea name="commentContent" id="comment" style="width: 100%" type ="text" rows="5" cols="90"
+                                            <textarea name="commentContent" id="comment" style="width: 100%" type="text"
+                                                      rows="5" cols="90"
                                                       placeholder="What are you thinking?"></textarea>
                                             <br>
                                             <input type="hidden" name="artID"
@@ -305,7 +319,6 @@
                                                     id="submitComment"> Submit comment
                                             </button>
 
-                                            <%--<input name="submit" type="submit" value="Submit comment"/>--%>
                                         </tr>
                                     </table>
                                 </form>
@@ -318,14 +331,13 @@
             </div>
         </div>
         <div class="col-md-1"></div>
+
     </div>
 </div>
 
 <!--------------------------------comment gets displayed here---------------------------------------------------------->
-<br>
 
-<div class="container">
-    <div class="card-body">
+<div class="container" style="margin-left:11%;">
         <% List<Comment> commentsByUser;
             try (CommentDao ad = new CommentDao()) {
                 System.out.println("Are we getting comments");
@@ -339,35 +351,37 @@
                 commentOnCommentByUser = ad.selectComByCom(a.getCommentId());
                 System.out.println(commentOnCommentByUser.size() + "is the size of the comoncombyuserlist");
                 userSession.setAttribute("userCommentsOnComments", commentOnCommentByUser);
-             }
+            }
         %>
-        <div class="row">
-            <div id="commentOnCommentContent">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <%--<p><a class="toggle" href="#example">Comment on Comment</a></p>--%>
-                </div>
-                <div class="col-md-1"></div>
+        <%--<div class="row">--%>
+        <%--<div id="commentOnCommentContent">--%>
+        <%--<div class="col-md-2"></div>--%>
+        <%--<div class="col-md-10">--%>
+        <%--</div>--%>
 
-            </div>
-        </div>
-        <div class="row">
+        <%--</div>--%>
+        <%--</div>--%>
+            <div class="row" style="padding:0;">
             <div class="col-md-1">
-                <% String commenterAvatar=null;
-                    try(CommentDao cd = new CommentDao()){
-                    commenterAvatar = cd.getPicPath(a.getUserId());
-                }catch(SQLException e){e.getMessage();}%>
+                <% String commenterAvatar = null;
+                    try (CommentDao cd = new CommentDao()) {
+                        commenterAvatar = cd.getPicPath(a.getUserId());
+                    } catch (SQLException e) {
+                        e.getMessage();
+                    }%>
 
-                <img src="<%=commenterAvatar%>" class="img img-rounded img-fluid" style="width:30%">
-                <p class="text-secondary text-center">Some Time Ago</p>
+                <img src="<%=commenterAvatar%>" style="width: 50px">
             </div>
             <div class="col-md-10">
+
                 <div class="clearfix"></div>
                 <div class="divcomments">
                     <br>
-                    <p><a><strong><%=a.getUserName()%></strong></a></p>
+                    <p><a><strong><%=a.getUserName()%>
+                    </strong></a></p>
                     <br>
-                    <p><%=a.getCommentContent()%></p>
+                    <p><%=a.getCommentContent()%>
+                    </p>
                     <form action="/deleteComment" method="get">
                         <input type="hidden" name="cID" value="<%= a.getCommentId()%>">
                         <input type="hidden" name="superID" value="<%= singleArticle.getArticleId()%>">
@@ -376,14 +390,7 @@
                         <%}%>
                     </form>
                     <br>
-                    <%--<form action="/editComments" method="post">--%>
-                    <%--<input type="hidden" name="commentContent" value="<%=a.getCommentContent()%>">--%>
-                    <%--<input type="hidden" name="id" value="<%= a.getCommentId()%>">--%>
-                    <%--<input type="submit" class="button" value="Edit Comment">--%>
-                    <%--</form>--%>
-                    <%--<p><a class="toggle" href="#<%= a.getCommentId()%>">Comment on Comment</a></p>--%>
 
-                    <%-------------------------------------------------------------------------------------------------------------------%>
                     <div class="card gedf-card">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
@@ -392,66 +399,56 @@
                                 </li>
                             </ul>
                         </div>
-                    <div class="card-body">
-                    <div class="tab-pane fade show active">
+                        <div class="card-body" style="margin: 0;">
+                            <div class="tab-pane fade show active">
 
-                    <%---------------------%>
-                    <form id="#example" method="post" action="/addCommentOnComment">
-                    <table>
-                     <tr>
-                     <% if (author != null) {%>
-                     <label for="ComOnCom" class="required"></label>
-                     <textarea name="ComOnCom" id="ComOnCom" type="text" rows="4" cols="80"></textarea>
-                     <input type="hidden" name="cID" value="<%=a.getCommentId()%>">
-                     <input type="hidden" name="superID" value="<%=a.getArticleId()%>">
-                     <input name="submit" type="submit" value="Submit Comment"/>
-                      <%}%>
-                      </tr>
-                      </table>
-                      </form>
-                      <%-------------------------%>
-                      </div>
-                      </div>
+                                <%---------------------%>
+                                <form id="#example" method="post" action="/addCommentOnComment">
+                                    <table>
+                                        <tr>
+                                            <% if (author != null) {%>
+                                            <label for="ComOnCom" class="required"></label>
+                                            <textarea name="ComOnCom" id="ComOnCom" type="text" rows="4"
+                                                      cols="80"></textarea>
+                                            <input type="hidden" name="cID" value="<%=a.getCommentId()%>">
+                                            <input type="hidden" name="superID" value="<%=a.getArticleId()%>">
+                                            <input name="submit" type="submit" value="Submit Comment"/>
+                                            <%}%>
+                                        </tr>
+                                    </table>
+                                </form>
                             </div>
-                    <!--------------------------------------------------------------------------------------------------------------------->
+                        </div>
+                    </div>
                     <br>
                     <br>
-                    <br>
+
                     <!--------------------------------------------------------------------------------------------------------------------->
                     <!--------------------------------------------------------------------------------------------------------------------->
                     <div class="row">
-                        <% System.out.println("Are we reaching...... ");%>
                         <% for (CommentOnComment ab : commentOnCommentByUser) {
                             if (ab.getVisible() == 1) {%>
 
-                        <% System.out.println("Are we getting Comment In Comment................. ");%>
                         <div class="col-md-1">
-                            <img src="<%=path1%>"
-                                 class="img img-rounded img-fluid" style="width:30%">
-                            <p class="text-secondary text-center">Some Time Ago</p>
+                            <% String comoncomAvatar = null;
+                                try (CommentDao cd = new CommentDao()) {
+                                    comoncomAvatar = cd.getPicPath(a.getUserId());
+                                } catch (SQLException e) {
+                                    e.getMessage();
+                                }%>
+                             <img src="<%=comoncomAvatar%>" style="width: 50px">
                         </div>
                         <div class="col-md-10">
                             <div class="clearfix"></div>
                             <div class="innerDivcomments">
                                 <p><a><strong><%= ab.getUserName()%>
                                 </strong></a></p>
-
-                                <%--<form action="/deleteComOnCom" method="get">--%>
-                                <%--<input type="hidden" name="ComOnComID" value="<%= ab.getCommentId()%>">--%>
-                                <%--<input type="submit" class="button" value="Delete Comment">--%>
-                                <%--</form>--%>
-                                <p><%=ab.getCommentContent()%></p>
-                                <% System.out.println("does it reach here: " + ab.getCommentContent()); %>
-
-                                <%--<form action="/editComOnCom" method="post">--%>
-                                <%--<input type="hidden" name="ComOnComContent" value="<%=ab.getCommentContent()%>">--%>
-                                <%--<input type="hidden" name="ComOnComID" value="<%= ab.getCommentId()%>">--%>
-                                <%--<input type="submit" class="button" value="Edit Comment">--%>
-                                <%--</form>--%>
+                                <p><%=ab.getCommentContent()%>
+                                </p>
                             </div>
                             <br>
                         </div>
-                        <div class="col-md-2"></div>
+                        <div class="col-md-1"></div>
 
                         <% }
                         } %>
@@ -462,12 +459,10 @@
                 <br>
                 <br>
             </div>
-            <div class="col-md-1"></div>
-        </div>
+            </div>
         <% }
         }%>
     </div>
-</div>
 
 
 <!----------------------------------------------Blog Footer------------------------------------------------------------>
@@ -489,13 +484,12 @@
                           title="Close Modal">&times;</span>
                 </div>
                 <div class="panel">
-                    <h2>Admin Login</h2>
+                    <h2>User Login</h2>
                     <p>Please enter your username and password</p>
                 </div>
                 <form id="Login" action="/login" method="post">
                     <div class="group">
-                        <input type="text" name="login" class="form-control" id="inputUsername"
-                               placeholder="Username">
+                        <input type="text" name="login" class="form-control" id="inputUsername" placeholder="Username">
                     </div>
 
                     <div class="group">
@@ -503,7 +497,7 @@
                                placeholder="Password">
                     </div>
                     <div class="forgot">
-                        <a href=#>Forgot password?</a>
+                        <a href=forgotPassword.jsp>Forgot password?</a>
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
@@ -511,7 +505,6 @@
         </div>
     </div>
 </div>
-<%--------------------------------------------------------------------------------------------------------------------%>
 
 </body>
 </html>

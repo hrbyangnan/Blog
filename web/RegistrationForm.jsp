@@ -20,7 +20,27 @@
 
     <script>
 
+        var toggle = function (elem) {
+            elem.classList.toggle('is-visible');
+        };
 
+        document.addEventListener('click', function (event) {
+
+            if (!event.target.classList.contains('toggle')) return;
+            event.preventDefault();
+            var content = document.querySelector(event.target.hash);
+            if (!content) return;
+            toggle(content);
+
+        }, false);
+
+
+        var modal = document.getElementById('id02');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
     </script>
 
@@ -76,12 +96,18 @@
 
         </ul>
         <ul class="navbar-nav ml-auto w-100 justify-content-center">
+
             <li>
                 <form class="form-inline" action="SearchArticle" id="searchField">
                     <div class="input-group">
                         <input type="text" name="info" class="form-control" placeholder="Search articles">
                     </div>
                 </form>
+            </li>
+            <li class="nav-item">
+             </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
             </li>
         </ul>
 
@@ -497,6 +523,37 @@
     <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
 </div>
 <!------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------Login Modal------------------------------------------------------------>
+<div id="id02" class="modal">
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="imgContainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+                </div>
+                <div class="panel">
+                    <h2>User Login</h2>
+                    <p>Please enter your username and password</p>
+                </div>
+                <form id="Login" action="/login" method="post">
+                    <div class="group">
+                        <input type="text" name="login" class="form-control" id="inputUsername" placeholder="Username">
+                    </div>
+
+                    <div class="group">
+                        <input type="password" name="password" class="form-control" id="inputPassword"
+                               placeholder="Password">
+                    </div>
+                    <div class="forgot">
+                        <a href=forgotPassword.jsp>Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!------------------------------------------------------------------------------------------------------>
 
 </body>

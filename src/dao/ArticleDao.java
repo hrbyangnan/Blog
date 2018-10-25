@@ -192,6 +192,7 @@ public class ArticleDao implements AutoCloseable {
                 artc.setRealName(rs.getString(3));
                 artc.setAllPicPaths(getPicPaths(artc.getArticleId()));
                 artc.setMedia(getMediaPaths(artc.getArticleId()));
+                artc.setUserId(rs.getInt(2));
 
             }
             return artc;
@@ -414,7 +415,17 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
         }catch (SQLException e){
             System.out.println("Tried to delete old media");}
     }
-
+    public String getPicPath(int userId) throws SQLException {
+        String path=null;
+        try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {
+            ps.setInt(1, userId);
+            try(ResultSet rs=ps.executeQuery()){
+                rs.next();
+                path=rs.getString(1);
+            }
+        }
+        return path;
+    }
     @Override
     public void close() throws Exception {
         this.conn.close();
