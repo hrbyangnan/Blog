@@ -169,45 +169,52 @@
 
 <!------------------------------------------------------------------------------------------------------>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand d-flex w-50 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+    <a class="navbar-brand" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
             <li class="nav-item">
                 <a class="nav-link" href="/getAllArticles">Article Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/gallery">Media Gallery</a>
             </li>
-            <%--<li>--%>
-            <%--<a class="nav-link" href="personalpage.jsp"> <%=author.getRealName()%></a>--%>
-            <%--</li>--%>
+
         </ul>
-        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+        <ul class="navbar-nav ml-auto w-100 justify-content-center">
             <li>
-                <form class="form-inline" action="/searchResult.jsp" id="searchField">
+                <form class="form-inline" action="SearchArticle" id="searchField">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search articles">
+                        <input type="text" name="info" class="form-control" placeholder="Search articles">
                     </div>
                 </form>
             </li>
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+
             <% if(author==null){%>
             <li class="nav-item">
-                <a href = "RegistrationForm.html" class="nav-link"> Sign Up</a>
+                <a href = "RegistrationForm.jsp" class="nav-link"> Sign Up</a>
             </li>
             <li class="nav-item">
 
-                <a class="pointer" class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a></li>
+                <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
+            </li>
+
             <%} else{%>
             <li class="nav-item">
                 <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%></a>
             </li>
+            <% if(author.getId()== 62){%>
+            <li class="nav-item"><a class="nav-link" href = "adminPage.jsp" class= pointer> Admin Page</a></li>
+            <%}%>
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Sign Out</a>
             </li><%}%>
         </ul>
+
     </div>
 </nav>
 
@@ -269,7 +276,7 @@
 
 <!------------------------------------------------------------------------------------------------------>
 <!---------------------------------------Blog Footer---------------------------------------------------->
-<div class="jumbotron text-center" id="jumbo">
+<div class="jumbotron text-center" id="jumbo" style="margin-top: 500px">
     <p><a href="#">About</a></p>
     <p><a href="#">FAQ</a></p>
     <p><a href="#">Contact us</a></p>

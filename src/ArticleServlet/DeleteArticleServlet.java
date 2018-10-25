@@ -31,7 +31,8 @@ public class DeleteArticleServlet extends HttpServlet {
         try(ArticleDao dao = new ArticleDao()){
 
         int articleId = Integer.parseInt(request.getParameter("articleID"));
-
+dao.deleteOldPhotos(articleId);
+dao.deleteOldMedia(articleId);
         dao.deleteArticle(articleId);
 
     }

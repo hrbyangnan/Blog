@@ -48,18 +48,6 @@ public class LoginServlet extends HttpServlet {
 
                 userSession.setAttribute("userInfo", current);
                 System.out.println("before page");
-                try{
-                    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (UnsupportedLookAndFeelException e) {
-                    e.printStackTrace();
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                JOptionPane.showMessageDialog(null, "Login success!");
 
                 request.getRequestDispatcher("personalpage.jsp").forward(request, response);
             } else  {
