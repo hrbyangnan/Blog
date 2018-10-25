@@ -13,7 +13,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
   <head>
-      <title>blog</title>
+      <title>The Hungry Traveller</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -22,7 +22,6 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
             id="bootstrap-css">
-      <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--%>
       <link rel="stylesheet" type="text/css" href="Homepage.css">
 
     <script>
@@ -44,9 +43,8 @@
 <body>
   <% HttpSession userSession = request.getSession();
     User author = (User) userSession.getAttribute("userInfo");%>
-
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand d-flex w-25 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+<nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,7 +61,7 @@
         <ul class="navbar-nav ml-auto w-100 justify-content-center">
                 <li>
                     <form class="form-inline" action="SearchArticle" id="searchField">
-                        <div class="input-group">
+                        <div class="input-group" id="searchbox">
                             <input type="text" name="info" class="form-control" placeholder="Search articles">
                         </div>
                     </form>
@@ -100,7 +98,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
-        <h1 class="text-center">Traveller's Blog</h1>
+        <h1 class="text-center"><img src="images/titleLogo.png" style="width:100%"></h1>
       </div>
     </div>
   </div>

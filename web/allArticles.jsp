@@ -106,7 +106,7 @@
 <section id="blogContent">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-sm-12">
                 <div class="card mb-4">
                     <% if(a.getAllPicPaths().size()>0){
                         System.out.println("Trying to get pictures from getAllpicPAth");
