@@ -474,7 +474,7 @@
     <p><a href="#">Contact us</a></p>
     <br>
     <br>
-    <p>Copyright © All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
+    <p>Copyright &copy; All Rights Reserved 2020 | Template Design & Development by Team-Two</p>
 </div>
 <!----------------------------------------------Login Modal------------------------------------------------------------>
 <div id="id02" class="modal">
