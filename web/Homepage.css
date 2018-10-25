@@ -1,44 +1,36 @@
 body {
-    background-color: #ECF0F1;
+    background-color: rgba(255, 250, 250, 0.11); !important;
 }
 
 .pointer {
-    cursor: pointer!important;
+    cursor: pointer !important;
 }
 
 /*************************************************Navbar header********************************************************/
-.navbar-inverse {
-    background-color: #003e54;
+
+
+.nav-item:hover {
+    cursor: pointer;
 }
-.nav-item:hover{
-     cursor: pointer;
-}
-.navbar {
-    position: relative !important;
-    min-height: 50px;
-    margin-bottom: 20px;
-    /*border: 0px solid transparent;*/
-    /*border-radius: 0px;*/
+
+#navbar {
+/*position: relative !important;*/
+min-height: 50px; !important;
+margin-bottom: 50px; !important;
 
 }
-#pointer {cursor: pointer!important;}
 
+#pointer {
+    cursor: pointer !important;
+}
 
 .navbar-brand {
     float: left;
     height: auto;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #fffafa;
-}
-
 .navbar-inverse .navbar-nav > li > a:hover {
-    background-color: rgba(0, 62, 84, 0.62);
-}
-.nav-item{
-    padding:20px;
-    color:#fffafa;
+    background-color: rgba(0, 57, 77, 0.62);
 }
 
 
@@ -68,7 +60,7 @@ section ul li a {
     padding: 18px;
     font-family: "Open Sans";
     text-transform: uppercase;
-    color: rgba(0, 51, 183, 0.5);
+    color: rgba(0, 57, 77, 0.7);
     font-size: 18px;
     text-decoration: none;
     display: block;
@@ -77,7 +69,7 @@ section ul li a {
 section ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
     background: rgba(41, 41, 41, 0.1);
-    color: rgba(0, 44, 154, 0.7);
+    color: rgba(0, 57, 77, 0.7);
 }
 
 /**********************************************************************************************************************/
@@ -96,8 +88,8 @@ section ul li a:hover {
 }
 
 #blog .card {
-    background-color: #FFF;
-    border: 1px solid #eceaea;
+    background-color: rgba(0, 57, 77, 0.16);
+    border: 1px solid rgba(0, 57, 77, 0.16);
     margin: 20px 0px;
     text-align: justify
 }
@@ -128,7 +120,7 @@ section ul li a:hover {
     padding: 20px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 #jumbo > p {
@@ -139,6 +131,7 @@ section ul li a:hover {
 #jumbo > p > a {
     color: #fffafa;
 }
+
 /**********************************************************************************************************************/
 /******************************************Login Form******************************************************************/
 .form-heading {
@@ -194,7 +187,7 @@ section ul li a:hover {
 }
 
 .login-form .btn.btn-primary.reset {
-    background: #009688 none repeat scroll 0 0;
+    background: #00394d none repeat scroll 0 0;
 }
 
 .imgContainer {
@@ -203,9 +196,21 @@ section ul li a:hover {
     position: relative;
 }
 
-
 body {
-    font-family: "Palatino Linotype", serif;
+    font-family: "Palatino Linotype", serif; !important;
 }
+
+
+#navbar {
+    background: #003e54; !important;
+    text-decoration-color: #fffafa;
+}
+.nav-item {
+    padding: 20px; !important;
+}
+#searchbox > input {
+    background-color: #bac9cf; !important;
+}
+
 
 /**********************************************************************************************************************/
