@@ -7,7 +7,6 @@
 package UserServlet;
 
 
-import dao.UserDao;
 import dao.UserDaoImp;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -183,8 +182,8 @@ String picPath="";
             user.setProfilePhoto(picPath);
 
             try {
-                UserDao ud = new UserDaoImp();
-
+                UserDaoImp ud = new UserDaoImp();
+if(ud.nameNotTaken(userName)){
                 if (ud.register(user)) {
                     request.setAttribute("username", realName);
                     try{
@@ -200,9 +199,9 @@ String picPath="";
                     }
                     JOptionPane.showMessageDialog(null, "Success!");
                     request.getRequestDispatcher("personalpage.jsp").forward(request, response);
-                } else {
+                }} else {
 
-                    response.sendRedirect("index.jsp");
+                    response.sendRedirect("RegistrationForm.jsp");
                 }
 
             } catch (SQLException e) {
