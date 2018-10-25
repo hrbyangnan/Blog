@@ -193,7 +193,7 @@ private ArrayList<String> mediaPaths;
                 dao.insertPhotoinf(articleNumber,"/Uploaded_Photos/"+random+"_"+path);
             }
             for(String path: mediaPaths){
-                dao.insertMediaInf(articleNumber,"/Uploaded_Multimedia/"+random+"_"+path);
+                dao.insertMediaInf(articleNumber,"/Uploaded_Multimedia/"+path);
             }
             System.out.println("If this prints the loop wasn;t the problem");
             //List<Article> articles = dao.selectArtByUser(loginUserId);

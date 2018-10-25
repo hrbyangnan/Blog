@@ -6,10 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="fixed col width article page">
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="James changed audio video file playbacks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/web/displayArticle.jsp" afterPath="$PROJECT_DIR$/web/displayArticle.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personalpage.jsp" afterPath="$PROJECT_DIR$/web/personalpage.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -324,13 +323,13 @@
     <favorites_list name="projectteamtwo" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.23750961">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="personalpage.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="6426">
                   <caret line="378" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
                   <folding />
                 </state>
@@ -398,11 +397,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="displayArticle.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="displayArticle.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="316">
                   <caret line="273" column="65" lean-forward="false" selection-start-line="273" selection-start-column="65" selection-end-line="273" selection-end-column="65" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddArticleServlet.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="195" column="73" lean-forward="false" selection-start-line="195" selection-start-column="73" selection-end-line="195" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
@@ -505,7 +514,6 @@
         <option value="$PROJECT_DIR$/src/ArticleServlet/SearchArticlesByArticleNameServlet.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/SearchArticlesByDateServlet.java" />
         <option value="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" />
-        <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/web/resetPasswordSuccess.html" />
         <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/web/adminPage.html" />
@@ -544,6 +552,7 @@
         <option value="$PROJECT_DIR$/web/allArticles.jsp" />
         <option value="$PROJECT_DIR$/web/personalpage.jsp" />
         <option value="$PROJECT_DIR$/web/displayArticle.jsp" />
+        <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
       </list>
     </option>
   </component>
@@ -621,6 +630,12 @@
               <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
@@ -977,13 +992,6 @@
       <workItem from="1540424939878" duration="6000" />
       <workItem from="1540426049486" duration="14860000" />
     </task>
-    <task id="LOCAL-00040" summary="our blog can send resetting password email now">
-      <created>1539747005881</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1539747005881</updated>
-    </task>
     <task id="LOCAL-00041" summary="Pack One: now we can reset users' password by the link sent from e-mail.">
       <created>1539759214202</created>
       <option name="number" value="00041" />
@@ -1320,11 +1328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540501086038</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="James changed audio video file playbacks">
+      <created>1540502301715</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1540502301715</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429970000" />
+    <option name="totallyTimeSpent" value="430546000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1337,6 +1352,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
@@ -1353,7 +1369,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3065032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3065032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.063432835" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1463,7 +1479,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pack Three: search by article title and username." />
     <MESSAGE value="Pack Three: search by article title pubtime and username." />
     <MESSAGE value="merged all for Monday" />
     <MESSAGE value="merged all for Monday update" />
@@ -1488,7 +1503,8 @@
     <MESSAGE value="fixed col width article page" />
     <MESSAGE value="added media button back to wysiwyg editor - Kim" />
     <MESSAGE value="change olive pic" />
-    <option name="LAST_COMMIT_MESSAGE" value="change olive pic" />
+    <MESSAGE value="James changed audio video file playbacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="James changed audio video file playbacks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1671,7 +1687,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Administrative/LoginUIServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/ResetPasswordServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/searchResult.jsp" />
     <entry file="file://$PROJECT_DIR$/web/AdminForgotPassword.jsp" />
@@ -1979,7 +1994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/personalpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="6426">
           <caret line="378" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
           <folding />
         </state>
@@ -1989,6 +2004,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="273" column="65" lean-forward="false" selection-start-line="273" selection-start-column="65" selection-end-line="273" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="195" column="73" lean-forward="false" selection-start-line="195" selection-start-column="73" selection-end-line="195" selection-end-column="73" />
           <folding />
         </state>
       </provider>
