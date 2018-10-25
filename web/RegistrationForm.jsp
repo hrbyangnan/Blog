@@ -450,7 +450,7 @@
                                     <label for="email" class="col-4 col-form-label">Email*</label>
                                     <div class="col-8">
                                         <input id="email" name="email" placeholder="Email" class="form-control here"
-                                               required="required" type="text">
+                                               required="required" type="email">
                                     </div>
                                 </div>
                                 <div class="form-group row">

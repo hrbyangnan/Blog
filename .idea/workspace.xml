@@ -6,14 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Final">
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="delete articles works with photos and media now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" />
       <change beforePath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" afterPath="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/web/editArticle.jsp" afterPath="$PROJECT_DIR$/web/editArticle.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/gallery.jsp" afterPath="$PROJECT_DIR$/web/gallery.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/RegistrationForm.jsp" afterPath="$PROJECT_DIR$/web/RegistrationForm.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/recaptchaIsRequired.html" afterPath="$PROJECT_DIR$/web/recaptchaIsRequired.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -327,11 +324,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteArticleServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeleteArticleServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="79">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recaptchaIsRequired.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/recaptchaIsRequired.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -366,16 +373,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -386,21 +383,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java">
+      <file leaf-file-name="RegistrationForm.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/RegistrationForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="456" column="108" lean-forward="true" selection-start-line="456" selection-start-column="108" selection-end-line="456" selection-end-column="108" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+      <file leaf-file-name="EmailUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            <state relative-caret-position="68">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -544,7 +541,6 @@
         <option value="$PROJECT_DIR$/src/Administrative/ForgotPwdServlet.java" />
         <option value="$PROJECT_DIR$/src/Administrative/ResetPasswordServlet.java" />
         <option value="$PROJECT_DIR$/web/forgotpass.jsp" />
-        <option value="$PROJECT_DIR$/web/RegistrationForm.jsp" />
         <option value="$PROJECT_DIR$/web/forgotPassword.jsp" />
         <option value="$PROJECT_DIR$/web/resetpass.jsp" />
         <option value="$PROJECT_DIR$/web/resetPassword.jsp" />
@@ -562,6 +558,7 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/editUserInformation.jsp" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java" />
+        <option value="$PROJECT_DIR$/web/RegistrationForm.jsp" />
       </list>
     </option>
   </component>
@@ -975,21 +972,7 @@
       <workItem from="1540423420396" duration="864000" />
       <workItem from="1540424433236" duration="499000" />
       <workItem from="1540424939878" duration="6000" />
-      <workItem from="1540426049486" duration="1545000" />
-    </task>
-    <task id="LOCAL-00032" summary="Reset password(Not finish)">
-      <created>1539590666407</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1539590666408</updated>
-    </task>
-    <task id="LOCAL-00033" summary="reCAPTCHA in jsp file.">
-      <created>1539591781418</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1539591781418</updated>
+      <workItem from="1540426049486" duration="2701000" />
     </task>
     <task id="LOCAL-00034" summary="reCAPTCHA in jsp file.">
       <created>1539594996770</created>
@@ -1320,11 +1303,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540424679822</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="delete articles works with photos and media now">
+      <created>1540427624763</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1540427624763</updated>
+    </task>
+    <task id="LOCAL-00082" summary="delete articles works with photos and media now">
+      <created>1540427900485</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1540427900485</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412733000" />
+    <option name="totallyTimeSpent" value="413889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1440,7 +1437,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Administrative interface:&#10;1. UserList and articleList can be showed.&#10;2. Resetting password is working." />
     <MESSAGE value="Package three: the articles that have future date are not be visible." />
     <MESSAGE value="merged Annas work in" />
     <MESSAGE value="administrative interface" />
@@ -1465,7 +1461,8 @@
     <MESSAGE value="changed to bootsrap 4" />
     <MESSAGE value="delete user works havent updated register user yet" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="delete articles works with photos and media now" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete articles works with photos and media now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1672,7 +1669,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adminPage.jsp" />
     <entry file="file://$PROJECT_DIR$/web/reset.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/recaptchaIsRequired.html" />
     <entry file="das://c75938fc-f2d4-4557-addc-2238c7eebbdb/schema/group2/table/user" />
     <entry file="file://$PROJECT_DIR$/web/forgotPwdSuccess.html" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/ForgotPwdUIServlet.java" />
@@ -1701,14 +1697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1925,8 +1913,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/DeleteArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="79">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/recaptchaIsRequired.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/RegistrationForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="456" column="108" lean-forward="true" selection-start-line="456" selection-start-column="108" selection-end-line="456" selection-end-column="108" />
           <folding />
         </state>
       </provider>
