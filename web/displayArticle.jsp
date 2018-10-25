@@ -5,6 +5,7 @@
 <%@ page import="dao.CommentDao" %>
 <%@ page import="pojo.CommentOnComment" %>
 <%@ page import="dao.ComOnComDao" %>
+<%@ page import="java.sql.SQLException" %>
 <%--
   Created by IntelliJ IDEA.
   User: Jacob
@@ -352,8 +353,13 @@
         </div>
         <div class="row">
             <div class="col-md-1">
-                <%--<img src="<%=path%>" class="img img-rounded img-fluid" style="width:30%">--%>
-                <%--<p class="text-secondary text-center">Some Time Ago</p>--%>
+                <% String commenterAvatar=null;
+                    try(CommentDao cd = new CommentDao()){
+                    commenterAvatar = cd.getPicPath(a.getUserId());
+                }catch(SQLException e){e.getMessage();}%>
+
+                <img src="<%=commenterAvatar%>" class="img img-rounded img-fluid" style="width:30%">
+                <p class="text-secondary text-center">Some Time Ago</p>
             </div>
             <div class="col-md-10">
                 <div class="clearfix"></div>
@@ -419,11 +425,11 @@
                             if (ab.getVisible() == 1) {%>
 
                         <% System.out.println("Are we getting Comment In Comment................. ");%>
-                        <%--<div class="col-md-1">--%>
-                            <%--<img src="<%=path1%>"--%>
-                                 <%--class="img img-rounded img-fluid" style="width:30%">--%>
-                            <%--<p class="text-secondary text-center">Some Time Ago</p>--%>
-                        <%--</div>--%>
+                        <div class="col-md-1">
+                            <img src="<%=path1%>"
+                                 class="img img-rounded img-fluid" style="width:30%">
+                            <p class="text-secondary text-center">Some Time Ago</p>
+                        </div>
                         <div class="col-md-10">
                             <div class="clearfix"></div>
                             <div class="innerDivcomments">

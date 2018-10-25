@@ -210,3 +210,5 @@ DROP TABLE IF EXISTS `article`;*/
 
 
 SELECT * FROM article WHERE RealName like '%Henry%' or ArticleTitle like '%Henry%' or PubTime like '%Henry%';
+
+select ProfilePath from user WHERE UserId=62;
