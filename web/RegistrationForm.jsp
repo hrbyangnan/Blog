@@ -114,6 +114,32 @@
     </div>
 </nav>
 <!------------------------------------------------------------------------------------------------------>
+<script>
+    window.onload = function(){
+        document.getElementById("username").onchange=function(){usernameCheckFunction()};
+
+        function usernameCheckFunction() {
+            console.log("after line 1 of function");
+            var xmlhttp = new XMLHttpRequest();
+            var username = (document.getElementById("username").value);
+            console.log(username);
+            var url = "exists.jsp?username=" + username;
+            console.log(url + "after url");
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                    document.getElementById("check").innerHTML = xmlhttp.responseText;
+                }
+            };
+            try {
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            } catch (e) {
+                alert("unable to connect to server");
+            }
+        }
+    };
+    console.log("inside script");
+</script>
 <!------------------------------------------------------------------------------------------------------>
 <div class="container">
     <div class="row">
@@ -132,12 +158,12 @@
                     <div class="row">
                         <div class="col-md-12">
 
-                            <form ENCTYPE="multipart/form-data" action="/register" method="post">
+                            <form ENCTYPE="multipart/form-data" action="/register" method="post" name="registerForm">
                                 <div class="form-group row">
                                     <label for="username" class="col-4 col-form-label">User Name*</label>
                                     <div class="col-8">
                                         <input id="username" name="username" placeholder="Username" required="required"
-                                               type="text">
+                                               type="text"/><span id="check"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">

@@ -31,7 +31,7 @@ import java.util.List;
 public class RegisterUserServlet extends HttpServlet {
     private File uploadsFolder;
     private File tempFolder;
-    private final String myKey="6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM";
+    private final String myKey = "6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM";
 
 
     @Override
@@ -89,9 +89,7 @@ public class RegisterUserServlet extends HttpServlet {
         String information = null;
         String reCAPTCHACode = null;
 
-        String random = String.valueOf((int)(Math.random()*(9999-1000+1))+1000);
-
-
+        String random = String.valueOf((int) (Math.random() * (9999 - 1000 + 1)) + 1000);
 
 
         try {
@@ -101,10 +99,11 @@ public class RegisterUserServlet extends HttpServlet {
 
             for (FileItem fi : fileItems) {
                 if (!fi.isFormField()) {
-                    if(fi.getSize()>1){
-                    fileName = fi.getName();
-                    fullsizeImagefile = new File(uploadsFolder, random+"_"+fileName);
-                    fi.write(fullsizeImagefile);}
+                    if (fi.getSize() > 1) {
+                        fileName = fi.getName();
+                        fullsizeImagefile = new File(uploadsFolder, random + "_" + fileName);
+                        fi.write(fullsizeImagefile);
+                    }
                 } else if (fi.getFieldName() != null) {
                     if (fi.getFieldName().equals("username")) {
                         userName = fi.getString();
@@ -124,7 +123,7 @@ public class RegisterUserServlet extends HttpServlet {
                     if (fi.getFieldName().equals("birthday")) {
                         birthday = fi.getString();
                     }
-                    if (fi.getFieldName().equals("avatar")){
+                    if (fi.getFieldName().equals("avatar")) {
                         avatarPath = fi.getString();
                     }
                     if (fi.getFieldName().equals("email")) {
@@ -150,15 +149,13 @@ public class RegisterUserServlet extends HttpServlet {
             System.out.println("rekey success");
 
 
-
-
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             java.util.Date d = null;
-String picPath="";
+            String picPath = "";
             if (fileName != null) {
-                 picPath = "/Uploaded_Profile/" + random+"_"+fileName;
+                picPath = "/Uploaded_Profile/" + random + "_" + fileName;
             } else {
-                 picPath = avatarPath;
+                picPath = avatarPath;
             }
             System.out.println(picPath);
 
@@ -183,23 +180,24 @@ String picPath="";
 
             try {
                 UserDaoImp ud = new UserDaoImp();
-if(ud.nameNotTaken(userName)){
-                if (ud.register(user)) {
-                    request.setAttribute("username", realName);
-                    try{
-                        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    } catch (InstantiationException e) {
-                        e.printStackTrace();
-                    } catch (UnsupportedLookAndFeelException e) {
-                        e.printStackTrace();
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
+                if (ud.nameNotTaken(userName)) {
+                    if (ud.register(user)) {
+                        request.setAttribute("username", realName);
+                        try {
+                            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                        } catch (IllegalAccessException e) {
+                            e.printStackTrace();
+                        } catch (InstantiationException e) {
+                            e.printStackTrace();
+                        } catch (UnsupportedLookAndFeelException e) {
+                            e.printStackTrace();
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                        JOptionPane.showMessageDialog(null, "Success!");
+                        request.getRequestDispatcher("personalpage.jsp").forward(request, response);
                     }
-                    JOptionPane.showMessageDialog(null, "Success!");
-                    request.getRequestDispatcher("personalpage.jsp").forward(request, response);
-                }} else {
+                } else {
 
                     response.sendRedirect("RegistrationForm.jsp");
                 }
@@ -207,14 +205,11 @@ if(ud.nameNotTaken(userName)){
             } catch (SQLException e) {
                 e.getMessage();
             }
-        }
-        else{
+        } else {
             response.sendRedirect("recaptchaIsRequired.jsp");
         }
 
     }
-
-
 
 
     public static boolean isCaptchaValid(String secretKey, String response) {

@@ -153,6 +153,22 @@ public class UserDaoImp implements UserDao, AutoCloseable {
             return true;
         }
     }
+    public boolean nameCheck(String uname) throws SQLException {
+        try {
+            PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM user WHERE UserName = ?");
+            ps.setString(1,uname);
+            ResultSet res = ps.executeQuery();
+            System.out.println(res);
+            if(res.first()){
+                System.out.print("User already exists");
+                return false;
+            }else{
+                System.out.print("User name is valid");
+                return true;
+            }        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } return true;
+    }
 
     @Override
     public User findUserByName(String userName) throws SQLException {
@@ -282,42 +298,15 @@ public class UserDaoImp implements UserDao, AutoCloseable {
         }
     }
 
-    //    public void updateUser(User user) throws SQLException {
-//
-//        System.out.println("About to try prepared statement.");
-//        try (PreparedStatement ps = conn.prepareStatement("UPDATE user SET UserName=?,UserPasswd=?,Email=?,ProfilePath=? WHERE UserId=?;")) {
-//            ps.setString(1, user.getName());
-//            ps.setString(2, user.getPassword());
-//            ps.setString(3, user.getEmail());
-//            ps.setString(4, user.getProfilePhoto());
-//            ps.executeUpdate();
-//            System.out.println("Trying to edit user ");
-//            ps.executeUpdate();
-//        } catch (Exception e) {
-//
-//        }
-//    }
-    //
     public boolean updateProfile(User user) throws SQLException {
-        //add user add password to user table
-//        int idPlaceholder;
         System.out.println("Trying to update user 1");
         try (PreparedStatement stmt = conn.prepareStatement("UPDATE user SET UserName=?,ProfilePath=? WHERE UserId=?;")) {
-//            try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email, ProfilePath) VALUES (?,?,?,?);")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getProfilePhoto());
             stmt.setInt(3, user.getId());
             stmt.executeUpdate();
             System.out.println("Trying to update user 2");
         }
-//        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT LAST_INSERT_ID()")) {
-//            try (ResultSet rs = stmt.executeQuery()) {
-//                rs.next();
-//                idPlaceholder = rs.getInt(1);
-//                System.out.println(idPlaceholder);
-//            }
-//        }
-        // add user and info to information table
         try(PreparedStatement stmt=conn.prepareStatement("UPDATE article SET RealName=? WHERE UserId=?;")){
             stmt.setString(1,user.getName());
             stmt.setInt(2,user.getId());
