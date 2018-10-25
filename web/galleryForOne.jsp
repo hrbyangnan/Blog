@@ -93,7 +93,7 @@
 
 <!------------------------------------------------------------------------------------------------------>
 
-
+<h3><a href="/gallery">Link to Main Gallery </a></h3>
 <div id="galleryContainer">
 
     <% Set<String> names =(Set<String>) request.getAttribute("thumbNames");
@@ -115,7 +115,7 @@
     </c:forEach>
 </div>
 
-<h3><a href="/gallery">Link to Main Gallery </a></h3>
+
 
 <div class="jumbotron text-center" id="jumbo" style="margin-top: 500px">
     <p><a href="#">About</a></p>

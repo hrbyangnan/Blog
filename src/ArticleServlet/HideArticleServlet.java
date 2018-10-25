@@ -9,6 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/*
+* Used by admin to hide articles
+* */
+
 public class HideArticleServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)

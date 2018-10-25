@@ -395,7 +395,7 @@
                 <div class='is-grouped'>
                  <span class="a">
                 <form action="/edit" method="post">
-                    <input type="hidden" name="scooby" value="<%=a.getArticleId()%>"> <input
+                    <input type="hidden" name="editArticleID" value="<%=a.getArticleId()%>"> <input
                         type="hidden" name="authorID" value="<%= author.getId()%>"> <input
                         type="submit" class="button" value="Edit Article">
                 </form>

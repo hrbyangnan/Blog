@@ -17,6 +17,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>blog</title>
     <meta charset="utf-8">
@@ -212,8 +213,11 @@
 <br>
 <!---------------------------------Article content--------------------------------------------------------------------->
 <div class="container-fluid gedf-wrapper">
+
+        <%Article singleArticle = (Article) request.getAttribute("SingleArticle");
+            %>
+
     <div class="row">
-        <%Article singleArticle = (Article) request.getAttribute("SingleArticle");%>
         <div class="col-md-1">
             <% String articleAvatar = null;
                 try (ArticleDao ad = new ArticleDao()) {
@@ -333,7 +337,6 @@
             </div>
         </div>
         <div class="col-md-1"></div>
-
     </div>
 </div>
 

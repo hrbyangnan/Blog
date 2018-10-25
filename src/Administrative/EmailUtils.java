@@ -13,6 +13,12 @@ import java.security.Security;
 import java.util.Date;
 import java.util.Properties;
 
+/*
+* This servlet is for resetting passwords. It sets the content of the email that is sent to the user .
+* It sends the sender information up to the server
+* */
+
+
 public class EmailUtils {
 
     private static final String FROM = "pgcgroup2@sina.com";

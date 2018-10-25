@@ -12,7 +12,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+* For resetting the password. Get username and doublechecks the new password is correct.
+* */
 
 public class ResetPasswordServlet extends HttpServlet {
 

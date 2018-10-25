@@ -334,7 +334,6 @@
                         <td><%=a.getVisible()%>
                         </td>
                         <td>
-                            <a href="">Edit</a>
                             <a href="HideArticleServlet?articleId=<%=a.getArticleId()%>">Hide</a>
                             <a href="ShowArticleServlet?articleId=<%=a.getArticleId()%>">Show</a>
                         </td>

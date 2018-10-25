@@ -90,7 +90,9 @@
 </nav>
 
 <!------------------------------------------------------------------------------------------------------>
-
+<% if(author!=null){%>
+<h3><a href="/galleryForOne?paramUserID=<%=author.getId()%>">Link to Individual Gallery </a></h3>
+<%}%>
 <div id="galleryContainer">
 
     <% String[] names =(String[]) request.getAttribute("thumbNames");
@@ -111,9 +113,7 @@
 
     </c:forEach>
 </div>
-<% if(author!=null){%>
-<h3><a href="/galleryForOne?paramUserID=<%=author.getId()%>">Link to Individual Gallery </a></h3>
-<%}%>
+
 
 <div class="jumbotron text-center" id="jumbo" style="margin-top: 500px">
     <p><a href="#">About</a></p>

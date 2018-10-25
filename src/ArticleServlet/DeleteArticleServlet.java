@@ -22,7 +22,7 @@ public class DeleteArticleServlet extends HttpServlet {
 
 
 
-   /* public DeleteArticleServlet() throws SQLException {
+   /* For deleting articles from the database, deletes  from articlePhoto and multimedia table first  to prevent foreign key conflicts then deletes from article table
     }*/
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)

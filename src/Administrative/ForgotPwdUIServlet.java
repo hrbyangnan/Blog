@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
+/*
+*This forwards the user to the forgot password jsp page
+ */
 public class ForgotPwdUIServlet extends HttpServlet {
 
 

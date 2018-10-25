@@ -13,13 +13,13 @@ import java.sql.SQLException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+//gets list of article pojos sorted by username, adds to session, opens JSP page (allArticles.jsp)
 
 public class SearchArticlesByUsernameServlet extends HttpServlet {
     ArticleDao dao;
     List<Article> articleList;
 
 
-    //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException{

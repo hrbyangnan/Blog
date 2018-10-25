@@ -58,23 +58,21 @@
 <% HttpSession userSession = request.getSession();
     User author = (User) userSession.getAttribute("userInfo");%>
 <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
-    <a class="navbar-brand d-flex w-50 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+    <a class="navbar-brand" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
             <li class="nav-item">
                 <a class="nav-link" href="/getAllArticles">Article Gallery</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/gallery.jsp">Media Gallery</a>
+                <a class="nav-link" href="/gallery">Media Gallery</a>
             </li>
-            <%--<li>--%>
-            <%--<a class="nav-link" href="personalpage.jsp"> <%=author.getRealName()%></a>--%>
-            <%--</li>--%>
+
         </ul>
-        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+        <ul class="navbar-nav ml-auto w-100 justify-content-center">
             <li>
                 <form class="form-inline" action="SearchArticle" id="searchField">
                     <div class="input-group" id="searchbox">
@@ -82,21 +80,30 @@
                     </div>
                 </form>
             </li>
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+
             <% if(author==null){%>
             <li class="nav-item">
                 <a href = "RegistrationForm.jsp" class="nav-link"> Sign Up</a>
             </li>
             <li class="nav-item">
 
-                <a class="pointer" class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a></li>
+                <a class="nav-link" onclick="document.getElementById('id02').style.display='block'"> Login</a>
+            </li>
+
             <%} else{%>
             <li class="nav-item">
                 <a class="nav-link" href="personalpage.jsp"><%=author.getRealName()%></a>
             </li>
+            <% if(author.getId()== 62){%>
+            <li class="nav-item"><a class="nav-link" href = "adminPage.jsp" class= pointer> Admin Page</a></li>
+            <%}%>
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Sign Out</a>
             </li><%}%>
         </ul>
+
     </div>
 </nav>
 <div>
@@ -151,7 +158,7 @@
 %>
 <!------------------------------------------------------------------------------------------------------>
 <!----------------------------------------------Blog Footer--------------------------------------------->
-<div class="jumbotron text-center" id="jumbo" style="margin-top: 150px">
+<div class="jumbotron text-center" id="jumbo" style="margin-bottom: 0px">
     <p><a href="#">About</a></p>
     <p><a href="#">FAQ</a></p>
     <p><a href="#">Contact us</a></p>

@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-
+/*
+* For the admin to set hidden articles back to visible
+* */
 public class ShowArticleServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)

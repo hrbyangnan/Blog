@@ -221,7 +221,7 @@
 
 <!---------------------------------------Page content--------------------------------------------------->
 <div class="container">
-    <% Article oldArticle = (Article) request.getAttribute("scooby");
+    <% Article oldArticle = (Article) request.getAttribute("editArticle");
         System.out.println("editArticle.jsp article ID is " + oldArticle.getArticleId());%>
 
 

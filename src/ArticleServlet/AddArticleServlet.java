@@ -28,6 +28,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* Add article servlet takes multipart form data, uploads any files to the server, and prepares information for entry into database
+* */
+
+
 public class AddArticleServlet extends HttpServlet {
     private File uploadsFolder;
     private File tempFolder;
@@ -42,7 +47,7 @@ private ArrayList<String> mediaPaths;
         super.init();
         initUploadFolder();
     }
-
+//Initialise folders for uploads
     public void initUploadFolder() {
         this.uploadsFolder = new File(getServletContext().getRealPath("/Uploaded_Photos"));
         if (!uploadsFolder.exists()) {
@@ -77,7 +82,8 @@ private ArrayList<String> mediaPaths;
         System.out.println("inside addarticle servlet");
 
 
-
+//Use Apache.commons file format for upload
+        //Create File factory to make upload easier
 
         DiskFileItemFactory factory = new DiskFileItemFactory();
         factory.setSizeThreshold(4 * 1024);
@@ -95,6 +101,8 @@ private ArrayList<String> mediaPaths;
         pathnames = new ArrayList<>();
         mediaPaths = new ArrayList<>();
 
+
+        //Parse form data, and then sort it by input data. Checking for image files, audio and video files and string inputs.
         try {
             List<FileItem> fileItems = upload.parseRequest(request);
             File fullsizeImagefile = null;
@@ -135,15 +143,12 @@ private ArrayList<String> mediaPaths;
                 }
             }
 
-           /* out.println("<img src=/Uploaded_Photos/" + fullsizeImagefile.getName() + " width=\"200\">");
-            out.println("Photo is already uploaded.");
 
-            System.out.println(fullsizeImagefile.getName());*/
         } catch (Exception e) {
             throw new ServletException(e);
         }
 
-
+//Converting publication date from string format to sql compatible date type
         //SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd HH:mm");
         SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
         System.out.println(pubTime);
@@ -163,7 +168,7 @@ private ArrayList<String> mediaPaths;
         java.sql.Time date = new java.sql.Time(d.getTime());
 
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
-
+//Create an empty Article POJO, then add attributes to it
         System.out.println("EEE");
         Article newArticle = new Article();
         newArticle.setArticleName(articleName);
@@ -181,8 +186,9 @@ private ArrayList<String> mediaPaths;
         int loginUserId = author.getId();
         //temporary until login is set up
         System.out.println("FFF");
-        //
-        //Article newArticle = new Article(loginUserId, articleName, articleContent, realName);
+
+
+        //Create instance of our article dao calls dao methods to put article info into database
         try (ArticleDao dao = new ArticleDao()) {
             dao.addArticle(newArticle);
             System.out.println("GGG");

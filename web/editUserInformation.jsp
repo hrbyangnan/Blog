@@ -70,8 +70,8 @@
 <!----------------------------------------------Navbar header------------------------------------------->
 
 <!------------------------------------------------------------------------------------------------------>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand d-flex w-25 mr-auto" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
+<nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.jsp"><img src="images/loogoo.png" style="height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -87,9 +87,9 @@
         </ul>
         <ul class="navbar-nav ml-auto w-100 justify-content-center">
             <li>
-                <form class="form-inline" action="/searchResult.jsp" id="searchField">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search articles">
+                <form class="form-inline" action="SearchArticle" id="searchField">
+                    <div class="input-group" id="searchbox">
+                        <input type="text" name="info" class="form-control" placeholder="Search articles">
                     </div>
                 </form>
             </li>

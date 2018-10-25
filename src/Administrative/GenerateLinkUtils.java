@@ -5,7 +5,9 @@ import pojo.User;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-
+/*
+*For the resetting password link If we send the link just including username it is not safe, so we try to use MD5 to increase security. So other users cannot put a username directly into reset password
+ */
 public class GenerateLinkUtils {
 	
 	private static final String CHECK_CODE = "checkCode";

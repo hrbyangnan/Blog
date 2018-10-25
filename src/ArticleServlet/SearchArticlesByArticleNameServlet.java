@@ -14,12 +14,15 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+
+//gets a sorted list of article pojos using dao search methods, adds to session, opens JSP page (allArticles.jsp)
+
 public class SearchArticlesByArticleNameServlet extends HttpServlet {
     ArticleDao dao;
     List<Article> articleList;
 
 
-    //gets list of article pojos, adds to session, opens JSP page (allArticles.jsp)
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException{
