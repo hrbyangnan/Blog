@@ -185,9 +185,9 @@
         tinymce.init({
             selector: '#content',
             height: 200,
-            plugins: 'fullscreen  link  powerpaste',
+            plugins: 'fullscreen link media powerpaste',
             menubar: false,
-            toolbar: 'formatselect | bold italic underline strikethrough forecolor | link |  alignleft aligncenter alignright alignjustify' +
+            toolbar: 'formatselect | bold italic underline strikethrough forecolor | link | media | alignleft aligncenter alignright alignjustify' +
                 ' | numlist bullist | removeformat'
         });
 
