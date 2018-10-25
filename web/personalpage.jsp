@@ -364,20 +364,22 @@
                 <% if (a.getMedia().size() > 0) {
                     System.out.println("Trying to get multimedia");
                     for (String item : (a.getMedia())) {
-                        if (item.toLowerCase().endsWith(".mp3")) {
+                        if (item.toLowerCase().endsWith(".mp3")||item.toLowerCase().endsWith(".wav")) {
                             System.out.println("Trying to find audio");%>
 
                 <audio controls>
                     <source src="<%=item%>" type="audio/mpeg">
+                    <source src="<%=item%>" type="audio/wav">
                     This audio type is not supported.
                 </audio>
                 <%
-                } else if (item.toLowerCase().endsWith(".mp4")) {
+                } else if (item.toLowerCase().endsWith(".mp4")||item.toLowerCase().endsWith(".ogg")) {
                     System.out.println("trying to find video");
                 %>
 
                 <video width="320" height="240" controls>
                     <source src="<%=item%>" type="video/mp4 ">
+                    <source src="<%=item%>" type="video/ogg" >
                     That video type is currently not supported
                 </video>
                 <%
