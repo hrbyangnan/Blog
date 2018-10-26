@@ -7,7 +7,35 @@
         <element id="directory" name="classes">
           <element id="module-output" name="webBlog" />
         </element>
+        <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        <element id="library" level="project" name="lib" />
+        <element id="library" level="project" name="mysql-connector-java-5.1.46-bin" />
+        <element id="library" level="application" name="bootstrap" />
+        <element id="library" level="application" name="jquery" />
+        <element id="library" level="application" name="lib (2)" />
+        <element id="library" level="application" name="platform" />
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="application" name="lib (2)" />
+          <element id="library" level="application" name="lib " />
+          <element id="library" level="project" name="commons-fileupload-1.3.3" />
+          <element id="library" level="project" name="mail" />
+          <element id="library" level="project" name="lib (3)" />
+          <element id="library" level="project" name="lib (2)" />
+          <element id="library" level="project" name="commons-fileupload-1.3.3 (2)" />
+          <element id="library" level="project" name="commons-io-2.5" />
+          <element id="module-output" name="webBlog" />
+          <element id="library" level="project" name="javax.mail" />
+          <element id="library" level="project" name="hibernate-core-4.1.12.Final" />
+          <element id="library" level="project" name="recaptcha4j-0.0.7" />
+          <element id="library" level="project" name="json-20140107" />
+        </element>
+        <element id="module-output" name="webBlog" />
+        <element id="library" level="application" name="HikariCP-3.0.0" />
       </element>
+      <element id="module-output" name="webBlog" />
+      <element id="library" level="application" name="HikariCP-3.0.0" />
+      <element id="library" level="project" name="lib" />
     </root>
   </artifact>
 </component>

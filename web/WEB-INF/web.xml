@@ -30,14 +30,299 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>test</servlet-name>
-        <servlet-class>servlet.PRACTICEServlet</servlet-class>
+        <servlet-name>getAll</servlet-name>
+        <servlet-class>ArticleServlet.GetAllArticlesServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>test</servlet-name>
-        <url-pattern>/test</url-pattern>
+        <servlet-name>getAll</servlet-name>
+        <url-pattern>/getAllArticles</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>createNewArticle</servlet-name>
+        <servlet-class>ArticleServlet.AddArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createNewArticle</servlet-name>
+        <url-pattern>/createArticles</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getSingleArticle</servlet-name>
+        <servlet-class>ArticleServlet.GetSingleArticle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getSingleArticle</servlet-name>
+        <url-pattern>/getSingle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchArticle</servlet-name>
+        <servlet-class>ArticleServlet.SearchArticlesByArticleNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchArticle</servlet-name>
+        <url-pattern>/SearchArticle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>UserServlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addComment</servlet-name>
+        <servlet-class>CommentServlet.AddArticleCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addComment</servlet-name>
+        <url-pattern>/addComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteComment</servlet-name>
+        <servlet-class>CommentServlet.DeleteCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteComment</servlet-name>
+        <url-pattern>/deleteComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addCommentOnComment</servlet-name>
+        <servlet-class>CommentServlet.AddCommentCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCommentOnComment</servlet-name>
+        <url-pattern>/addCommentOnComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForgotPwdServlet</servlet-name>
+        <servlet-class>Administrative.ForgotPwdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgotPwdServlet</servlet-name>
+        <url-pattern>/ForgotPwdServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet>-->
+        <!--<servlet-name>ForgotPwdUIServlet</servlet-name>-->
+        <!--<servlet-class>Administrative.ForgotPwdUIServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>ForgotPwdUIServlet</servlet-name>-->
+        <!--<url-pattern>/ForgotPwdUIServlet</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>ResetPassword</servlet-name>
+        <servlet-class>Administrative.ResetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetPassword</servlet-name>
+        <url-pattern>/ResetPassword</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>editArticles</servlet-name>
+        <servlet-class>ArticleServlet.UpdateArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editArticles</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateEditedArticle</servlet-name>
+        <servlet-class>ArticleServlet.UpdateArticleServlet_Part2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateEditedArticle</servlet-name>
+        <url-pattern>/updatePart2</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>editCom</servlet-name>
+        <servlet-class>CommentServlet.UpdateCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editCom</servlet-name>
+        <url-pattern>/editComments</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editComment</servlet-name>
+        <servlet-class>CommentServlet.UpdateCommentServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editComment</servlet-name>
+        <url-pattern>/updateComment2</url-pattern>
+    </servlet-mapping>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <servlet>
+        <servlet-name>editComOnCom</servlet-name>
+        <servlet-class>CommentServlet.UpdateCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editComOnCom</servlet-name>
+        <url-pattern>/editComOnCom</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editComOnCom2</servlet-name>
+        <servlet-class>CommentServlet.UpdateCommentServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editComOnCom2</servlet-name>
+        <url-pattern>/updateComOnCom2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteComOnCom</servlet-name>
+        <servlet-class>CommentServlet.DeleteComOnComServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteComOnCom</servlet-name>
+        <url-pattern>/deleteComOnCom</url-pattern>
+    </servlet-mapping>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <servlet>
+        <servlet-name>deleteUser</servlet-name>
+        <servlet-class>UserServlet.DeleteUserInformation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteUser</servlet-name>
+        <url-pattern>/deleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>editUser</servlet-name>
+        <servlet-class>UserServlet.EditUserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editUser</servlet-name>
+        <url-pattern>/editUser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ShowArticleServlet</servlet-name>
+        <servlet-class>ArticleServlet.ShowArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowArticleServlet</servlet-name>
+        <url-pattern>/ShowArticleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HideCommentServlet</servlet-name>
+        <servlet-class>CommentServlet.HideCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HideCommentServlet</servlet-name>
+        <url-pattern>/HideCommentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ShowCommentServlet</servlet-name>
+        <servlet-class>CommentServlet.ShowCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowCommentServlet</servlet-name>
+        <url-pattern>/ShowCommentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HideArticleServlet</servlet-name>
+        <servlet-class>ArticleServlet.HideArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HideArticleServlet</servlet-name>
+        <url-pattern>/HideArticleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowComOnComServlet</servlet-name>
+        <servlet-class>CommentServlet.ShowComOnComServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowComOnComServlet</servlet-name>
+        <url-pattern>/ShowComOnComServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HideComOnComServlet</servlet-name>
+        <servlet-class>CommentServlet.HideComOnComServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HideComOnComServlet</servlet-name>
+        <url-pattern>/HideComOnComServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RemoveUserServlet</servlet-name>
+        <servlet-class>UserServlet.RemoveUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveUserServlet</servlet-name>
+        <url-pattern>/RemoveUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchArticlesByArticleNameServlet</servlet-name>
+        <servlet-class>ArticleServlet.SearchArticlesByArticleNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchArticlesByArticleNameServlet</servlet-name>
+        <url-pattern>/SearchArticlesByArticleNameServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>SearchArticlesByUsernameServlet</servlet-name>
+    <servlet-class>ArticleServlet.SearchArticlesByUsernameServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>SearchArticlesByUsernameServlet</servlet-name>
+        <url-pattern>/SearchArticlesByUsernameServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchArticlesByDateServlet</servlet-name>
+        <servlet-class>ArticleServlet.SearchArticlesByDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchArticlesByDateServlet</servlet-name>
+        <url-pattern>/SearchArticlesByDateServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <servlet>
+        <servlet-name>Multimedia Gallery</servlet-name>
+        <servlet-class>Multimedia.Gallery</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Multimedia Gallery</servlet-name>
+        <url-pattern>/gallery</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Individual Gallery</servlet-name>
+        <servlet-class>Multimedia.GalleryForOneUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Individual Gallery</servlet-name>
+        <url-pattern>/galleryForOne</url-pattern>
+    </servlet-mapping>
 
 </web-app>
 

@@ -1,13 +1,52 @@
 package pojo;
 
+import java.util.Date;
+
 public class User {
     private int id;
     private String name;
     private String password;
     private String realName;
     private String country;
-    private String birthday;
+    private Date birthday;
     private String information;
+    private String avatar;
+    private String email;
+    private String profilePhoto;
+    private String randomCode;
+
+
+    public String getRandomCode() {
+        return randomCode;
+    }
+
+    public void setRandomCode(String randomCode) {
+        this.randomCode = randomCode;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
+    }
+
+    public String getProfilePhoto() {
+        return profilePhoto;
+    }
+
+    public void setProfilePhoto(String profilePhoto) {
+        this.profilePhoto = profilePhoto;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -49,11 +88,11 @@ public class User {
         this.country = country;
     }
 
-    public String getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
@@ -65,7 +104,13 @@ public class User {
         this.information = infomation;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
 
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 }
 
 

@@ -7,37 +7,42 @@
 //
 package ArticleServlet;
 
-
 import dao.ArticleDao;
-import pojo.Article;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+import java.sql.SQLException;
 
 public class DeleteArticleServlet extends HttpServlet {
-    ArticleDao dao=new ArticleDao();
+
+
+
+
+
+   /* For deleting articles from the database, deletes  from articlePhoto and multimedia table first  to prevent foreign key conflicts then deletes from article table
+    }*/
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        int articleId=Integer.parseInt(request.getParameter("articleId"));
-        dao.deleteArticle(articleId);
-        int userId=Integer.parseInt(request.getSession().getAttribute("userId").toString());
-        List<Article> articles=dao.selectArtByUser(userId);
-        request.getSession().setAttribute("userArticles",articles);
-        response.sendRedirect("article/articleList.jsp");
-    }
+        try(ArticleDao dao = new ArticleDao()){
 
+        int articleId = Integer.parseInt(request.getParameter("articleID"));
+    dao.deleteOldPhotos(articleId);
+    dao.deleteOldMedia(articleId);
+        dao.deleteArticle(articleId);
+
+    }
+        catch(SQLException e) {
+        e.printStackTrace();
+    }catch (Exception e){e.getMessage();}
+
+        response.sendRedirect("personalpage.jsp");}
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        String id = request.getParameter("id");
-        int userId = Integer.parseInt(id);
-
-
     }
 
 }
