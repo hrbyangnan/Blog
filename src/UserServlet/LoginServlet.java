@@ -20,6 +20,10 @@ import javax.swing.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
+
+/*
+* Check if password is correct, if so add user info to the session and forward to personal page.
+* */
 public class LoginServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

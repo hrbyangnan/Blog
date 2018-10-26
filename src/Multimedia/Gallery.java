@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
-
+/*
+* This servlet gets a string array of filenames from the server thumbnails folder and a multimediafolder (not from the database) and sends these arrays to a gallery.jsp
+* */
 public class Gallery extends HttpServlet {
 
      public void doPost(HttpServletRequest request, HttpServletResponse response){

@@ -19,6 +19,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
+/*
+* This servlet allows a user to edit their information. Similar to registration servlet, but uses existing User ID and doesn't require recaptcha
+* */
+
+
 public class EditUserInfoServlet extends HttpServlet {
 
 
@@ -31,7 +36,7 @@ public class EditUserInfoServlet extends HttpServlet {
             super.init();
             initUploadFolder();
         }
-
+//Get folder incase user uploads new profile image
         public void initUploadFolder() {
             this.uploadsFolder = new File(getServletContext().getRealPath("/Uploaded_Profile"));
             if (!uploadsFolder.exists()) {
@@ -59,23 +64,21 @@ public class EditUserInfoServlet extends HttpServlet {
             User author = (User)request.getSession().getAttribute("userInfo");
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
- String userId=null;
-            String userName = null;
+             String userName = null;
             String firstName = null;
             String lastName = null;
 
-            //String password = null;
+
             String country = null;
             String birthday = null;
             String avatarPath = null;
             String fileName = null;
             String realName = null;
-            String email = null;
-            String information = null;
-            //String reCAPTCHACode = null;
+             String information = null;
 
+            String random = String.valueOf((int) (Math.random() * (9999 - 1000 + 1)) + 1000);
 
-
+//Gets data from multipart form
 
             try {
                 List<FileItem> fileItems = upload.parseRequest(request);
@@ -86,12 +89,12 @@ public class EditUserInfoServlet extends HttpServlet {
                     if (!fi.isFormField()) {
                         if(fi.getSize()>1){
                         fileName = fi.getName();
-                        fullsizeImagefile = new File(uploadsFolder, fileName);
+                        fullsizeImagefile = new File(uploadsFolder, random+"_"+fileName);
                         fi.write(fullsizeImagefile);
                          }
 
                     } else if (fi.getFieldName() != null) {
-//                        if(fi.getFieldName().equals("userId")){userId=fi.getString();}
+//
                         if (fi.getFieldName().equals("username")) {
                             userName = fi.getString();
                         }
@@ -126,13 +129,13 @@ public class EditUserInfoServlet extends HttpServlet {
                 throw new ServletException(e);
             }
 
-
+//Convert birthdate into suitable format for SQL
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                 java.util.Date d = null;
                 String picPath="";
                 if (fileName != null) {
-                picPath = "/Uploaded_Profile/" + fileName;
-                System.out.println("inside Edit6");}else {
+                picPath = "/Uploaded_Profile/" + random+"_"+fileName;
+                 }else {
                     picPath = avatarPath;
                 }
 
@@ -144,6 +147,7 @@ public class EditUserInfoServlet extends HttpServlet {
 
                 java.sql.Date date = new java.sql.Date(d.getTime());
 
+                //Actually create a new User object then set with information taken from multipart form
                 User user = new User();
                 user.setId((author.getId()));
             user.setName(userName);
@@ -153,6 +157,7 @@ public class EditUserInfoServlet extends HttpServlet {
                 user.setInfomation(information);
                  user.setProfilePhoto(picPath);
 
+                 //Use updateProfile method in dao instance instead of creatUser method
                 try {
                     UserDao ud = new UserDaoImp();
 

@@ -6,8 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Made some comments, changed Scooby variable name to something more sensible">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Fixed bug with images, setup Hikari correctly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/ArticleServlet/AddArticleServlet.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" />
@@ -24,8 +23,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" />
-      <change beforePath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" afterPath="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
-      <change beforePath="$PROJECT_DIR$/web/allArticles.jsp" afterPath="$PROJECT_DIR$/web/allArticles.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/Multimedia/Gallery.java" afterPath="$PROJECT_DIR$/src/Multimedia/Gallery.java" />
+      <change beforePath="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" afterPath="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" />
+      <change beforePath="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" afterPath="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" afterPath="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -352,88 +359,164 @@
     <favorites_list name="projectteamtwo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="215" column="82" lean-forward="false" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
-              <folding>
-                <marker date="1540512514511" expanded="true" signature="543:654" ph="INSERT INTO article... " />
-                <marker date="1540512514511" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
-                <marker date="1540512514511" expanded="true" signature="1889:1977" ph="UPDATE article... " />
-                <marker date="1540512514511" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
-                <marker date="1540512514511" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
-                <marker date="1540512514511" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
-                <marker date="1540512514511" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
-                <marker date="1540512514511" expanded="true" signature="7609:7667" ph="INSERT INTO articlePhoto... " />
-                <marker date="1540512514511" expanded="true" signature="7951:8007" ph="INSERT INTO multimedia... " />
-                <marker date="1540512514511" expanded="true" signature="8312:8365" ph="SELECT photo... articlePhoto" />
-                <marker date="1540512514511" expanded="true" signature="8889:8940" ph="SELECT media... multimedia" />
-                <marker date="1540512514511" expanded="true" signature="9418:9464" ph="UPDATE article... " />
-                <marker date="1540512514511" expanded="true" signature="9712:9758" ph="UPDATE article... " />
-                <marker date="1540512514511" expanded="true" signature="10015:10099" ph="SELECT * FRO... article" />
-                <marker date="1540512514511" expanded="true" signature="11547:11668" ph="SELECT DISTI... articlePhoto" />
-                <marker date="1540512514511" expanded="true" signature="12195:12312" ph="SELECT DISTI... multimedia" />
-                <marker date="1540512514511" expanded="true" signature="12700:12742" ph="DELETE FROM articlePhoto... " />
-                <marker date="1540512514511" expanded="true" signature="13024:13064" ph="DELETE FROM multimedia... " />
-                <marker date="1540512514511" expanded="true" signature="13396:13439" ph="select Profi... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/connection.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allArticles.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="117" column="77" lean-forward="false" selection-start-line="117" selection-start-column="77" selection-end-line="117" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article" pinned="false" current-in-tab="false">
-        <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.article">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articlePhoto" pinned="false" current-in-tab="false">
-        <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.articlePhoto">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.71628994">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="GalleryForOneUser.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="14" column="77" lean-forward="false" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+                  <folding>
+                    <element signature="e#1651#1652#0" expanded="true" />
+                    <element signature="e#1691#1692#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ThumbnailGenerator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="9" column="115" lean-forward="false" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                  <folding>
+                    <marker date="1540516002828" expanded="true" signature="543:654" ph="INSERT INTO article... " />
+                    <marker date="1540516002828" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
+                    <marker date="1540516002828" expanded="true" signature="1889:1977" ph="UPDATE article... " />
+                    <marker date="1540516002828" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
+                    <marker date="1540516002828" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
+                    <marker date="1540516002828" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
+                    <marker date="1540516002828" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
+                    <marker date="1540516002828" expanded="true" signature="7705:7763" ph="INSERT INTO articlePhoto... " />
+                    <marker date="1540516002828" expanded="true" signature="8139:8195" ph="INSERT INTO multimedia... " />
+                    <marker date="1540516002828" expanded="true" signature="8597:8650" ph="SELECT photo... articlePhoto" />
+                    <marker date="1540516002828" expanded="true" signature="9272:9323" ph="SELECT media... multimedia" />
+                    <marker date="1540516002828" expanded="true" signature="9916:9962" ph="UPDATE article... " />
+                    <marker date="1540516002828" expanded="true" signature="10331:10377" ph="UPDATE article... " />
+                    <marker date="1540516002828" expanded="true" signature="10778:10862" ph="SELECT * FRO... article" />
+                    <marker date="1540516002828" expanded="true" signature="12310:12431" ph="SELECT DISTI... articlePhoto" />
+                    <marker date="1540516002828" expanded="true" signature="12958:13075" ph="SELECT DISTI... multimedia" />
+                    <marker date="1540516002828" expanded="true" signature="13517:13559" ph="DELETE FROM articlePhoto... " />
+                    <marker date="1540516002828" expanded="true" signature="13900:13940" ph="DELETE FROM multimedia... " />
+                    <marker date="1540516002828" expanded="true" signature="14362:14405" ph="select Profi... user" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="211" column="29" lean-forward="false" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RemoveUserServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DeleteUserInformation.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="13" column="170" lean-forward="false" selection-start-line="13" selection-start-column="170" selection-end-line="13" selection-end-column="170" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+                  <folding>
+                    <marker date="1540512514562" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
+                    <marker date="1540512514562" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
+                    <marker date="1540512514562" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
+                    <marker date="1540512514562" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
+                    <marker date="1540512514562" expanded="true" signature="4443:4496" ph="UPDATE comment... " />
+                    <marker date="1540512514562" expanded="true" signature="5253:5305" ph="SELECT Comme... comment" />
+                    <marker date="1540512514562" expanded="true" signature="5894:5940" ph="UPDATE comment... " />
+                    <marker date="1540512514562" expanded="true" signature="6302:6348" ph="UPDATE comment... " />
+                    <marker date="1540512514562" expanded="true" signature="6707:6805" ph="select Artic... article" />
+                    <marker date="1540512514562" expanded="true" signature="7301:7322" ph="SELECT * FRO... comment" />
+                    <marker date="1540512514562" expanded="true" signature="8076:8119" ph="select Profi... user" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EditUserInfoServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="10" column="100" lean-forward="false" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+                  <folding>
+                    <element signature="e#409#410#0" expanded="true" />
+                    <element signature="e#432#433#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="EditUserInfoServlet.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="66" column="1" lean-forward="false" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -516,9 +599,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/displayArticle.jsp" />
-        <option value="$PROJECT_DIR$/web/adminPage.jsp" />
-        <option value="$PROJECT_DIR$/web/searchResult.jsp" />
         <option value="$PROJECT_DIR$/web/editUserInformation.jsp" />
         <option value="$PROJECT_DIR$/web/gallery.jsp" />
         <option value="$PROJECT_DIR$/web/galleryForOne.jsp" />
@@ -555,18 +635,21 @@
         <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/ComOnComDao.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
-        <option value="$PROJECT_DIR$/src/Multimedia/Gallery.java" />
-        <option value="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" />
-        <option value="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" />
-        <option value="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
         <option value="$PROJECT_DIR$/blogs.sql" />
         <option value="$PROJECT_DIR$/src/dao/CommentDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
         <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/web/allArticles.jsp" />
+        <option value="$PROJECT_DIR$/src/Multimedia/Gallery.java" />
+        <option value="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" />
+        <option value="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
       </list>
     </option>
   </component>
@@ -655,6 +738,18 @@
               <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Multimedia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
@@ -1006,13 +1101,6 @@
       <workItem from="1540424939878" duration="6000" />
       <workItem from="1540426049486" duration="14860000" />
     </task>
-    <task id="LOCAL-00046" summary="Administrative interface:&#10;1. UserList and articleList can be showed.&#10;2. Resetting password is working.">
-      <created>1539850733446</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1539850733446</updated>
-    </task>
     <task id="LOCAL-00047" summary="Package three: the articles that have future date are not be visible.">
       <created>1539852893072</created>
       <option name="number" value="00047" />
@@ -1349,11 +1437,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540512533560</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Fixed bug with images, setup Hikari correctly">
+      <created>1540513895614</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1540513895614</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441517000" />
+    <option name="totallyTimeSpent" value="443640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1374,7 +1469,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17096166" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17096166" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13691376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1385,7 +1480,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26557377" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26557377" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19358894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1426,38 +1521,38 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05901639" sideWeight="0.33585477" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.33509833" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49924356" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11875945" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20324574" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13691376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.64605546" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.48827294" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.48827294" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.6649017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44153005" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0016393443" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27826086" sideWeight="0.6876333" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16187595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813852" sideWeight="0.6876333" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27047914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1493,7 +1588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="merged all for Monday update" />
     <MESSAGE value="bugs with edit registration" />
     <MESSAGE value="Reminder for incorrect username or password." />
     <MESSAGE value="Search and Sort might work." />
@@ -1518,7 +1612,8 @@
     <MESSAGE value="James changed audio video file playbacks" />
     <MESSAGE value="copyright logo" />
     <MESSAGE value="Made some comments, changed Scooby variable name to something more sensible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some comments, changed Scooby variable name to something more sensible" />
+    <MESSAGE value="Fixed bug with images, setup Hikari correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with images, setup Hikari correctly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1609,13 +1704,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java</url>
-          <line>17</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java</url>
-          <line>19</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
@@ -1645,13 +1740,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java</url>
-          <line>147</line>
+          <line>151</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java</url>
-          <line>58</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1677,38 +1772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/ShowComOnComServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateCommentServlet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateComOnComServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateComOnComServlet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetSingleArticle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1936,82 +1999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Multimedia/Gallery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2085">
-          <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="164" column="1" lean-forward="false" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2039,75 +2030,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <marker date="1540512514562" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
-            <marker date="1540512514562" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
-            <marker date="1540512514562" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
-            <marker date="1540512514562" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
-            <marker date="1540512514562" expanded="true" signature="4443:4496" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="5253:5305" ph="SELECT Comme... comment" />
-            <marker date="1540512514562" expanded="true" signature="5894:5940" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="6302:6348" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="6707:6805" ph="select Artic... article" />
-            <marker date="1540512514562" expanded="true" signature="7301:7322" ph="SELECT * FRO... comment" />
-            <marker date="1540512514562" expanded="true" signature="8076:8119" ph="select Profi... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/ShowCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CommentServlet/DeleteCommentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="215" column="82" lean-forward="false" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
-          <folding>
-            <marker date="1540512514511" expanded="true" signature="543:654" ph="INSERT INTO article... " />
-            <marker date="1540512514511" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
-            <marker date="1540512514511" expanded="true" signature="1889:1977" ph="UPDATE article... " />
-            <marker date="1540512514511" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
-            <marker date="1540512514511" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
-            <marker date="1540512514511" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
-            <marker date="1540512514511" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
-            <marker date="1540512514511" expanded="true" signature="7609:7667" ph="INSERT INTO articlePhoto... " />
-            <marker date="1540512514511" expanded="true" signature="7951:8007" ph="INSERT INTO multimedia... " />
-            <marker date="1540512514511" expanded="true" signature="8312:8365" ph="SELECT photo... articlePhoto" />
-            <marker date="1540512514511" expanded="true" signature="8889:8940" ph="SELECT media... multimedia" />
-            <marker date="1540512514511" expanded="true" signature="9418:9464" ph="UPDATE article... " />
-            <marker date="1540512514511" expanded="true" signature="9712:9758" ph="UPDATE article... " />
-            <marker date="1540512514511" expanded="true" signature="10015:10099" ph="SELECT * FRO... article" />
-            <marker date="1540512514511" expanded="true" signature="11547:11668" ph="SELECT DISTI... articlePhoto" />
-            <marker date="1540512514511" expanded="true" signature="12195:12312" ph="SELECT DISTI... multimedia" />
-            <marker date="1540512514511" expanded="true" signature="12700:12742" ph="DELETE FROM articlePhoto... " />
-            <marker date="1540512514511" expanded="true" signature="13024:13064" ph="DELETE FROM multimedia... " />
-            <marker date="1540512514511" expanded="true" signature="13396:13439" ph="select Profi... user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2148,6 +2075,183 @@
         <state relative-caret-position="408">
           <caret line="117" column="77" lean-forward="false" selection-start-line="117" selection-start-column="77" selection-end-line="117" selection-end-column="77" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/ShowCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/ShowComOnComServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateCommentServlet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateComOnComServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommentServlet/UpdateComOnComServlet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Multimedia/Gallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding>
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="77" lean-forward="false" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+          <folding>
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="115" lean-forward="false" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="170" lean-forward="false" selection-start-line="13" selection-start-column="170" selection-end-line="13" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="100" lean-forward="false" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="211" column="29" lean-forward="false" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <marker date="1540512514562" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
+            <marker date="1540512514562" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
+            <marker date="1540512514562" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
+            <marker date="1540512514562" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
+            <marker date="1540512514562" expanded="true" signature="4443:4496" ph="UPDATE comment... " />
+            <marker date="1540512514562" expanded="true" signature="5253:5305" ph="SELECT Comme... comment" />
+            <marker date="1540512514562" expanded="true" signature="5894:5940" ph="UPDATE comment... " />
+            <marker date="1540512514562" expanded="true" signature="6302:6348" ph="UPDATE comment... " />
+            <marker date="1540512514562" expanded="true" signature="6707:6805" ph="select Artic... article" />
+            <marker date="1540512514562" expanded="true" signature="7301:7322" ph="SELECT * FRO... comment" />
+            <marker date="1540512514562" expanded="true" signature="8076:8119" ph="select Profi... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1540516002828" expanded="true" signature="543:654" ph="INSERT INTO article... " />
+            <marker date="1540516002828" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
+            <marker date="1540516002828" expanded="true" signature="1889:1977" ph="UPDATE article... " />
+            <marker date="1540516002828" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
+            <marker date="1540516002828" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
+            <marker date="1540516002828" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
+            <marker date="1540516002828" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
+            <marker date="1540516002828" expanded="true" signature="7705:7763" ph="INSERT INTO articlePhoto... " />
+            <marker date="1540516002828" expanded="true" signature="8139:8195" ph="INSERT INTO multimedia... " />
+            <marker date="1540516002828" expanded="true" signature="8597:8650" ph="SELECT photo... articlePhoto" />
+            <marker date="1540516002828" expanded="true" signature="9272:9323" ph="SELECT media... multimedia" />
+            <marker date="1540516002828" expanded="true" signature="9916:9962" ph="UPDATE article... " />
+            <marker date="1540516002828" expanded="true" signature="10331:10377" ph="UPDATE article... " />
+            <marker date="1540516002828" expanded="true" signature="10778:10862" ph="SELECT * FRO... article" />
+            <marker date="1540516002828" expanded="true" signature="12310:12431" ph="SELECT DISTI... articlePhoto" />
+            <marker date="1540516002828" expanded="true" signature="12958:13075" ph="SELECT DISTI... multimedia" />
+            <marker date="1540516002828" expanded="true" signature="13517:13559" ph="DELETE FROM articlePhoto... " />
+            <marker date="1540516002828" expanded="true" signature="13900:13940" ph="DELETE FROM multimedia... " />
+            <marker date="1540516002828" expanded="true" signature="14362:14405" ph="select Profi... user" />
+          </folding>
         </state>
       </provider>
     </entry>

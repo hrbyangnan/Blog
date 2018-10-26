@@ -225,6 +225,8 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
         }return idPlaceholder;
     }
 
+
+    //This adds a filename for a photo and the corresponding articleID into the photo database
     public void insertPhotoinf(int articleID, String picpath) throws SQLException{
         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO articlePhoto (ArticleId,photoUrl) VALUES (?,?);")){
             stmt.setInt(1,articleID);
@@ -232,7 +234,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
             stmt.executeUpdate();
         }
     }
-
+    //This adds a filename for media and the corresponding articleID into the media database
     public void insertMediaInf(int articleID, String mediaPath) throws SQLException{
         try(PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO multimedia(ArticleId, mediaURL) VALUES (?,?);")){
             stmt.setInt(1,articleID);
@@ -240,7 +242,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
             stmt.executeUpdate();
         }
     }
-
+//This returns a list of photo filenames from the database corresponding to the desired articleID
     public List<String> getPicPaths(int articleID){
         List<String> allPaths = new ArrayList<>();
         try (PreparedStatement stmt = this.conn.prepareStatement("SELECT photoUrl from articlePhoto WHERE ArticleId = ?")){
@@ -254,6 +256,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
 
         return allPaths;
     }
+//This returns a list of media filenames from the database corresponding to the desired articleID
 
     public List<String> getMediaPaths(int articleID){
         List<String> allPaths = new ArrayList<>();
@@ -268,7 +271,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
 
         return allPaths;
     }
-
+//This sets the visibility parameter to 0 of a particular article (Visibility parameters: 1 is visble, 0 is hidden)
     public void HideArticle(int ArticleId) throws SQLException {
          try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET visible=? WHERE ArticleId=?;")){
 
@@ -280,6 +283,8 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
 
         }
     }
+
+    //This sets the visibility parameter to 1 of a particular article (Visibility parameters: 1 is visble, 0 is hidden)
     public void ShowArticle(int ArticleId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET visible=? WHERE ArticleId=?;")){
 
@@ -291,6 +296,10 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
 
         }
     }
+
+    /*
+    * Returns a list of articles based on whether the user search string is found in the articles title, date or author fields
+    * */
     public List<Article> SearchArticle(String info) {
 
         List<Article> articleList = new ArrayList<>();
@@ -355,7 +364,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
         }
 
     }
-
+//removes rows from photo database based on article id
     public void deleteOldPhotos(int id) {
         try(PreparedStatement ps = conn.prepareStatement("DELETE FROM articlePhoto WHERE ArticleId=?")){
              ps.setInt(1,id);
@@ -365,6 +374,7 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
             System.out.println("SQLException " + e.getMessage());
         }
     }
+    //removes rows from media database based on article id
     public void deleteOldMedia(int id) {
         try(PreparedStatement ps = conn.prepareStatement("DELETE FROM multimedia WHERE ArticleId=?")){
              ps.setInt(1,id);
@@ -374,6 +384,8 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
             System.out.println("SQLException " + e.getMessage());
         }
     }
+
+    //Gets the filename of the users profile image from the database based on the userID
     public String getPicPath(int userId) throws SQLException {
         String path=null;
         try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {

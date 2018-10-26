@@ -6,6 +6,10 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/*
+* Generates a thumbnail image for use in the multimedia gallery when a user submits an image as part of an article.
+* */
+
 public class ThumbnailGenerator {
 
     public static void generateThumb (File fullSize, String fullSizeFileName, File targetFolder)throws IOException {

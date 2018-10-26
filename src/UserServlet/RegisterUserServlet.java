@@ -27,6 +27,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
+/*
+ * This servlet allows a user to edit their information. Takes data from multipart form and passes into new User POJO to be put into database
+ * */
 
 public class RegisterUserServlet extends HttpServlet {
     private File uploadsFolder;
@@ -39,7 +42,7 @@ public class RegisterUserServlet extends HttpServlet {
         super.init();
         initUploadFolder();
     }
-
+    //Get folder for user to upload new profile image
     public void initUploadFolder() {
         this.uploadsFolder = new File(getServletContext().getRealPath("/Uploaded_Profile"));
         if (!uploadsFolder.exists()) {
@@ -82,10 +85,10 @@ public class RegisterUserServlet extends HttpServlet {
         String email = null;
         String information = null;
         String reCAPTCHACode = null;
-
+//get random number for filename
         String random = String.valueOf((int) (Math.random() * (9999 - 1000 + 1)) + 1000);
 
-
+//Gets data from multipart form
         try {
             List<FileItem> fileItems = upload.parseRequest(request);
             File fullsizeImagefile = null;
@@ -95,6 +98,7 @@ public class RegisterUserServlet extends HttpServlet {
                 if (!fi.isFormField()) {
                     if (fi.getSize() > 1) {
                         fileName = fi.getName();
+                        //Introduce random number so that one user doesn;t overwrite another users profile photo with the same filename
                         fullsizeImagefile = new File(uploadsFolder, random + "_" + fileName);
                         fi.write(fullsizeImagefile);
                     }
@@ -138,11 +142,11 @@ public class RegisterUserServlet extends HttpServlet {
         } catch (Exception e) {
             throw new ServletException(e);
         }
-
+//Calls recaptcha method to validate user is not a robot
         if (isCaptchaValid(myKey, reCAPTCHACode)) {
             System.out.println("rekey success");
 
-
+//Convert birthdate into suitable format for SQL
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             java.util.Date d = null;
             String picPath = "";
@@ -161,7 +165,7 @@ public class RegisterUserServlet extends HttpServlet {
 
             java.sql.Date date = new java.sql.Date(d.getTime());
 
-
+//Create a new user object then set with information taken from multipart form
             User user = new User();
             user.setName(userName);
             user.setRealName(realName);
@@ -205,7 +209,7 @@ public class RegisterUserServlet extends HttpServlet {
 
     }
 
-
+//Method for google recaptcha
     public static boolean isCaptchaValid(String secretKey, String response) {
         try {
             String url = "https://www.google.com/recaptcha/api/siteverify?"

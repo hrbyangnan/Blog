@@ -6,6 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+/*
+* Gets the session and sets User information session attribute  to null, redirect user to index page
+* */
 public class LogoutServlet extends HttpServlet {
 
     public LogoutServlet() {

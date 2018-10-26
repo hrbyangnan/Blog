@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/*
+* User can delete their own information by calling this servlet. The ID of the user is used to delete user information from database, then user is forwarded to index page
+* */
+
 public class DeleteUserInformation extends HttpServlet {
 
 

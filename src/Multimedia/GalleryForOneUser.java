@@ -11,6 +11,10 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Set;
 
+/*
+* Gets a set of filenames from the database  based on userID (Note: not from the server folders as in Gallery Servlet).
+* */
+
 public class GalleryForOneUser extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response){
