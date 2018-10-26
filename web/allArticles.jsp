@@ -115,7 +115,7 @@
                     <img class="card-img-top" src="<%=pic%>" alt="Card image cap">
 
                     <%}}
-                    else {%>
+                    else if(a.getPicPath()!=null && a.getPicPath().length()>1){%>
                     <img class="card-img-top" src="<%=a.getPicPath()%>" alt="Card image cap"> <%System.out.println("Else statement, when trying to show all pictures");}%>
 
                     <div class="card-body" >

@@ -250,7 +250,7 @@
 
     <servlet>
         <servlet-name>ShowComOnComServlet</servlet-name>
-        <servlet-class>CommentServlet.ShowComInComServlet</servlet-class>
+        <servlet-class>CommentServlet.ShowComOnComServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ShowComOnComServlet</servlet-name>
@@ -259,7 +259,7 @@
 
     <servlet>
         <servlet-name>HideComOnComServlet</servlet-name>
-        <servlet-class>CommentServlet.HideComInComServlet</servlet-class>
+        <servlet-class>CommentServlet.HideComOnComServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HideComOnComServlet</servlet-name>
