@@ -18,7 +18,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.*;
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -42,6 +41,7 @@ public class RegisterUserServlet extends HttpServlet {
         super.init();
         initUploadFolder();
     }
+
     //Get folder for user to upload new profile image
     public void initUploadFolder() {
         this.uploadsFolder = new File(getServletContext().getRealPath("/Uploaded_Profile"));
@@ -64,7 +64,7 @@ public class RegisterUserServlet extends HttpServlet {
             throws ServletException, IOException {
 
 
-         DiskFileItemFactory factory = new DiskFileItemFactory();
+        DiskFileItemFactory factory = new DiskFileItemFactory();
         factory.setSizeThreshold(4 * 1024);
         factory.setRepository(tempFolder);
         ServletFileUpload upload = new ServletFileUpload(factory);
@@ -181,18 +181,7 @@ public class RegisterUserServlet extends HttpServlet {
                 if (ud.nameNotTaken(userName)) {
                     if (ud.register(user)) {
                         request.setAttribute("username", realName);
-                        try {
-                            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                        } catch (IllegalAccessException e) {
-                            e.printStackTrace();
-                        } catch (InstantiationException e) {
-                            e.printStackTrace();
-                        } catch (UnsupportedLookAndFeelException e) {
-                            e.printStackTrace();
-                        } catch (ClassNotFoundException e) {
-                            e.printStackTrace();
-                        }
-                        JOptionPane.showMessageDialog(null, "Success!");
+
                         request.getRequestDispatcher("personalpage.jsp").forward(request, response);
                     }
                 } else {
@@ -209,7 +198,7 @@ public class RegisterUserServlet extends HttpServlet {
 
     }
 
-//Method for google recaptcha
+    //Method for google recaptcha
     public static boolean isCaptchaValid(String secretKey, String response) {
         try {
             String url = "https://www.google.com/recaptcha/api/siteverify?"

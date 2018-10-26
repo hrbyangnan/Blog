@@ -436,8 +436,8 @@
 
                         <div class="col-md-1">
                             <% String comoncomAvatar = null;
-                                try (CommentDao cd = new CommentDao()) {
-                                    comoncomAvatar = cd.getPicPath(a.getUserId());
+                                try (ComOnComDao cd = new ComOnComDao()) {
+                                    comoncomAvatar = cd.getPicPath(ab.getUserId());
                                 } catch (SQLException e) {
                                     e.getMessage();
                                 }%>

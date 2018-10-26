@@ -69,7 +69,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
 
             stmt.executeUpdate();
         }
-        return false;
+        return true;
     }
 
     @Override
