@@ -20,7 +20,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+* Takes data from edit.jsp page puts into article POJO and replaces old article in the database. Similar to add new article
+* */
 
 public class UpdateArticleServlet_Part2 extends HttpServlet {
 
@@ -165,123 +167,3 @@ public class UpdateArticleServlet_Part2 extends HttpServlet {
 
 
 
-
-//
-        /*String newTitle = request.getParameter("articleName");
-        String newContent = request.getParameter("articleContent");
-//      String newPubTime = request.getParameter("pubTime");
-        int id = Integer.parseInt(request.getParameter("oldArticleID"));
-
-
-        try (ArticleDao dao = new ArticleDao()) {
-            Article placeholderArticle = dao.findOneArticle(id);
-            placeholderArticle.setArticleName(newTitle);
-            System.out.println("The new name of the article should be: " + placeholderArticle.getArticleName());
-            System.out.println("Trying to update article #" + placeholderArticle.getArticleId());
-            placeholderArticle.setArticleContent(newContent);
-            System.out.println("Going to try to update");
-            dao.updateArticle(placeholderArticle);
-            System.out.println("Article should be updated");
-            response.sendRedirect("personalpage.jsp");
-        } catch (SQLException e) {
-            System.out.println("Threw an SQL exception");
-            e.getMessage();
-        } catch (Exception e) {
-            e.getMessage();
-        }
-    }
-
-}
-
-}}*/
-
-/*
-package ArticleServlet;
-
-import dao.ArticleDao;
-import pojo.Article;
-
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.sql.SQLException;
-
-
-public class UpdateArticleServlet_Part2 extends HttpServlet {
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
-//
-        String newTitle = request.getParameter("articleName");
-        String newContent = request.getParameter("articleContent");
-//      String newPubTime = request.getParameter("pubTime");
-        int id = Integer.parseInt(request.getParameter("oldArticleID"));
-
-
-        try (ArticleDao dao = new ArticleDao()) {
-            Article placeholderArticle = dao.findOneArticle(id);
-            placeholderArticle.setArticleName(newTitle);
-            System.out.println("The new name of the article should be: " + placeholderArticle.getArticleName());
-            System.out.println("Trying to update article #" + placeholderArticle.getArticleId());
-            placeholderArticle.setArticleContent(newContent);
-            System.out.println("Going to try to update");
-            dao.updateArticle(placeholderArticle);
-            System.out.println("Article should be updated");
-            response.sendRedirect("personalpage.jsp");
-        } catch (SQLException e) {
-            System.out.println("Threw an SQL exception");
-            e.getMessage();
-        } catch (Exception e) {
-            e.getMessage();
-        }
-    }
-
-
-}
-
-*/
-
-/*
-
-package ArticleServlet;
-
-import dao.ArticleDao;
-import pojo.Article;
-
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.sql.SQLException;
-
-
-public class UpdateArticleServlet_Part2 extends HttpServlet {
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
-//
-        String newTitle = request.getParameter("articleName");
-        String newContent = request.getParameter("articleContent");
-//      String newPubTime = request.getParameter("pubTime");
-        int id = Integer.parseInt(request.getParameter("oldArticleID"));
-
-
-        try (ArticleDao dao = new ArticleDao()) {
-            Article placeholderArticle = dao.findOneArticle(id);
-            placeholderArticle.setArticleName(newTitle);
-            System.out.println("The new name of the article should be: " + placeholderArticle.getArticleName());
-            System.out.println("Trying to update article #" + placeholderArticle.getArticleId());
-            placeholderArticle.setArticleContent(newContent);
-            System.out.println("Going to try to update");
-            dao.updateArticle(placeholderArticle);
-            System.out.println("Article should be updated");
-            response.sendRedirect("personalpage.jsp");
-        } catch (SQLException e) {
-            System.out.println("Threw an SQL exception");
-            e.getMessage();
-        } catch (Exception e) {
-            e.getMessage();
-        }
-    }
-
-
-}
-
-*/

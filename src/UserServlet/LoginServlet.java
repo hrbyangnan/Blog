@@ -28,12 +28,10 @@ public class LoginServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        System.out.println("inside login servlet");
-        String name = request.getParameter("login");
+         String name = request.getParameter("login");
         String password = request.getParameter("password");
 
         HttpSession userSession = request.getSession(true);
-//        userSession.setAttribute("login", false);
 
 
         try (UserDaoImp ud = new UserDaoImp()){
@@ -42,12 +40,10 @@ public class LoginServlet extends HttpServlet {
                 //check this syntax does set login to true
                 response.getWriter().write("success");
                 userSession.setAttribute("login", true);
-                System.out.println("login set to true");
 
                 User current = ud.getUserInfo(name);
 
                 userSession.setAttribute("userInfo", current);
-                System.out.println("before page");
 
                 request.getRequestDispatcher("personalpage.jsp").forward(request, response);
             } else  {

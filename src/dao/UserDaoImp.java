@@ -28,8 +28,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
             stmt.setString(1, name);
             System.out.println(stmt);
             try (ResultSet rs = stmt.executeQuery()) {
-                //For this method should be only one item, it will be in a table
-                rs.next();
+                 rs.next();
                 plaintext = rs.getString(1);
             }
         }
@@ -41,15 +40,13 @@ public class UserDaoImp implements UserDao, AutoCloseable {
     public boolean register(User user) throws SQLException {
         //add user add password to user table
         int idPlaceholder;
-        System.out.println("Trying to register user 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email, ProfilePath) VALUES (?,?,?,?);")) {
+         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO user(UserName, UserPasswd, Email, ProfilePath) VALUES (?,?,?,?);")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getEmail());
             stmt.setString(4, user.getProfilePhoto());
             stmt.executeUpdate();
-            System.out.println("Trying to register user 2");
-        }
+         }
         try (PreparedStatement stmt = this.conn.prepareStatement("SELECT LAST_INSERT_ID()")) {
             try (ResultSet rs = stmt.executeQuery()) {
                 rs.next();
@@ -58,8 +55,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
             }
         }
         // add user and info to information table
-        System.out.println("Trying to register user info 1");
-        try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
+         try (PreparedStatement stmt = this.conn.prepareStatement("INSERT INTO userinformation(UserId, NickName, RealName,Birthday, Country, PublicInfo) VALUES (?,?,?,?,?,?);")) {
             stmt.setInt(1, idPlaceholder);
             stmt.setString(2, user.getName());
             stmt.setString(3, user.getRealName());
@@ -122,8 +118,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
                 listOfAllUsers = new ArrayList<>();
                 while (rs.next()) {
                     User thisUser = new User();
-                    //TODO using column indexes, but maybe better to change to column names?
-                    thisUser.setId(rs.getInt(1));
+                     thisUser.setId(rs.getInt(1));
                     thisUser.setName(rs.getString(2));
                     thisUser.setProfilePhoto(rs.getString(5));
                     thisUser.setRealName(rs.getString(9));
@@ -142,7 +137,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
         try (PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM user WHERE UserName = ?")) {
             ps.setString(1, userName);
             ResultSet rs = ps.executeQuery();
-            //Ugly but use a counter, if there is something in the result set the counter should go up and return false i.e. name already taken
+            //if there is something in the result set the counter should go up and return false i.e. name already taken
             int i = 0;
             while (rs.next()) {
                 i = i + 1;
@@ -189,15 +184,12 @@ public class UserDaoImp implements UserDao, AutoCloseable {
 
     @Override
     public boolean changePassword(User user) throws SQLException {
-        System.out.println("changePassword 1");
-        String sql = "UPDATE user set UserPasswd=?  WHERE UserName=?";
+         String sql = "UPDATE user set UserPasswd=?  WHERE UserName=?";
         try (PreparedStatement stmt = this.conn.prepareStatement(sql)) {
 
-            System.out.println("changePassword 2");
-            stmt.setString(1, user.getPassword());
+             stmt.setString(1, user.getPassword());
             stmt.setString(2, user.getName());
-            System.out.println("changePassword 3");
-            stmt.executeUpdate();
+             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -241,8 +233,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
     }
 
     public void deleteUser(int userId) throws SQLException{
-        System.out.println("this is the id passed: "+ userId);
-        Integer i = userId;
+         Integer i = userId;
         if (i == null) {
             return;
         }
@@ -257,65 +248,56 @@ public class UserDaoImp implements UserDao, AutoCloseable {
         try (PreparedStatement ps = conn.prepareStatement(sql1)) {
             ps.setObject(1, userId);
             ps.executeUpdate();
-            System.out.println("sql1");
 
         } catch (Exception e) {
         }
         try (PreparedStatement ps = conn.prepareStatement(sql2)) {
             ps.setObject(1, userId);
             ps.executeUpdate();
-            System.out.println("sql2");
-        } catch (Exception e) {
+         } catch (Exception e) {
 
         }
         try (PreparedStatement ps = conn.prepareStatement(sql3)) {
             ps.setObject(1, userId);
             ps.executeUpdate();
-            System.out.println("sql3");
-        } catch (Exception e) {
+         } catch (Exception e) {
 
         }
         try (PreparedStatement ps = conn.prepareStatement(sql4)) {
             ps.setObject(1, userId);
             ps.executeUpdate();
-            System.out.println("sql4");
-        } catch (Exception e) {
+         } catch (Exception e) {
 
         }
         try (PreparedStatement ps = conn.prepareStatement(sql5)) {
             ps.setObject(1, userId);
             ps.executeUpdate();
-            System.out.println("sql5");
-        } catch (Exception e) {
+         } catch (Exception e) {
 
         } finally {
             try {
                 conn.close();
             } catch (SQLException e) {
 
-                System.out.println("inside DeleteUserInformation dao catch");
+                System.out.println("SQLException " + e.getMessage());
             }
         }
     }
 
     public boolean updateProfile(User user) throws SQLException {
-        System.out.println("Trying to update user 1");
-        try (PreparedStatement stmt = conn.prepareStatement("UPDATE user SET UserName=?,ProfilePath=? WHERE UserId=?;")) {
+         try (PreparedStatement stmt = conn.prepareStatement("UPDATE user SET UserName=?,ProfilePath=? WHERE UserId=?;")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getProfilePhoto());
             stmt.setInt(3, user.getId());
             stmt.executeUpdate();
-            System.out.println("Trying to update user 2");
-        }
+         }
         try(PreparedStatement stmt=conn.prepareStatement("UPDATE article SET RealName=? WHERE UserId=?;")){
             stmt.setString(1,user.getName());
             stmt.setInt(2,user.getId());
             stmt.executeUpdate();
-            System.out.println("updated articles which user wrote");
-        }
+         }
 
-        System.out.println("Trying to update user 3");
-        try (PreparedStatement stmt = conn.prepareStatement("UPDATE userinformation SET NickName=?, RealName=?,Birthday=?, Country=?, PublicInfo=? WHERE UserId=?;")) {
+         try (PreparedStatement stmt = conn.prepareStatement("UPDATE userinformation SET NickName=?, RealName=?,Birthday=?, Country=?, PublicInfo=? WHERE UserId=?;")) {
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getRealName());
             stmt.setDate(3, (java.sql.Date) user.getBirthday());
@@ -323,8 +305,7 @@ public class UserDaoImp implements UserDao, AutoCloseable {
             stmt.setString(5, user.getInfomation());
             stmt.setInt(6, user.getId());
             stmt.executeUpdate();
-            System.out.println("Trying to update user 4");
-        }
+         }
         return true;
     }
 

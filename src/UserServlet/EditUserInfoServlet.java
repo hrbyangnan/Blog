@@ -24,7 +24,6 @@ public class EditUserInfoServlet extends HttpServlet {
 
         private File uploadsFolder;
         private File tempFolder;
-       // private final String myKey="6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM";
 
 
         @Override
@@ -52,8 +51,7 @@ public class EditUserInfoServlet extends HttpServlet {
 
         public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            System.out.println("inside Edit1");
-            DiskFileItemFactory factory = new DiskFileItemFactory();
+             DiskFileItemFactory factory = new DiskFileItemFactory();
             factory.setSizeThreshold(4 * 1024);
             factory.setRepository(tempFolder);
             ServletFileUpload upload = new ServletFileUpload(factory);
@@ -61,8 +59,7 @@ public class EditUserInfoServlet extends HttpServlet {
             User author = (User)request.getSession().getAttribute("userInfo");
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
-            System.out.println("inside Edit2");
-String userId=null;
+ String userId=null;
             String userName = null;
             String firstName = null;
             String lastName = null;
@@ -78,7 +75,6 @@ String userId=null;
             //String reCAPTCHACode = null;
 
 
-            System.out.println("inside Edit3");
 
 
             try {
@@ -92,7 +88,7 @@ String userId=null;
                         fileName = fi.getName();
                         fullsizeImagefile = new File(uploadsFolder, fileName);
                         fi.write(fullsizeImagefile);
-                        System.out.println("inside Edit5");}
+                         }
 
                     } else if (fi.getFieldName() != null) {
 //                        if(fi.getFieldName().equals("userId")){userId=fi.getString();}
@@ -105,9 +101,7 @@ String userId=null;
                         if (fi.getFieldName().equals("lastName")) {
                             lastName = fi.getString();
                         }
-                       /* if (fi.getFieldName().equals("password")) {
-                            password = fi.getString();
-                        }*/
+
                         if (fi.getFieldName().equals("country")) {
                             country = fi.getString();
                         }
@@ -117,16 +111,11 @@ String userId=null;
                         if (fi.getFieldName().equals("avatar")){
                             avatarPath = fi.getString();
                         }
-//                        if (fi.getFieldName().equals("email")) {
-//                            email = fi.getString();
-//                        }
+
                         if (fi.getFieldName().equals("information")) {
                             information = fi.getString();
                         }
-                       /* if (fi.getFieldName().equals("g-recaptcha-response")) {
-                            reCAPTCHACode = fi.getString();
-                        }*/
-                        System.out.println("inside Edit4");
+
 
                         realName = firstName + " " + lastName;
                     }
@@ -137,8 +126,7 @@ String userId=null;
                 throw new ServletException(e);
             }
 
-            /*if (isCaptchaValid(myKey, reCAPTCHACode)) {
-                System.out.println("rekey success");*/
+
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                 java.util.Date d = null;
                 String picPath="";
@@ -160,13 +148,10 @@ String userId=null;
                 user.setId((author.getId()));
             user.setName(userName);
                 user.setRealName(realName);
-               // user.setPassword(password);
-                user.setCountry(country);
+                 user.setCountry(country);
                 user.setBirthday(date);
                 user.setInfomation(information);
-//                user.setEmail(email);
-                user.setProfilePhoto(picPath);
-                System.out.println("inside Edit7");
+                 user.setProfilePhoto(picPath);
 
                 try {
                     UserDao ud = new UserDaoImp();
@@ -177,7 +162,6 @@ String userId=null;
                         request.getSession().setAttribute("userInfo", user);
                         request.getRequestDispatcher("personalpage.jsp").forward(request, response);
                     } else {
-                        System.out.println("inside Edit9");
 
                         response.sendRedirect("index.jsp");
                     }

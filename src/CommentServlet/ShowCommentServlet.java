@@ -8,7 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-
+/*
+ * Allows an admin to make visible a hidden comment. Gets id from request object and creates instance of dao and passes id into  method.
+ * */
 public class ShowCommentServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)

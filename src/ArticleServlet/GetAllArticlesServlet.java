@@ -33,8 +33,12 @@ public class GetAllArticlesServlet extends HttpServlet {
             System.out.println("When the servlet is called the article list size is:" + articleList.size());
 
             request.setAttribute("AllArticlesPojo", articleList);
-        }catch (SQLException e){e.getMessage();}catch (Exception e){
-            System.out.println("Autocloseable exception???");
+        }
+        catch (SQLException e){
+                System.out.println(e.getMessage());
+            }
+        catch (Exception e){
+            System.out.println(e.getMessage());
         }
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/allArticles.jsp");
         dispatcher.forward(request,response);

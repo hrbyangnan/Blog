@@ -15,7 +15,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-
+/*
+ * Allowss a user to add a comment to a comment. Gets user information  from session and gets comment content and relevant article id  and parent comment id from httprequest object. Then calls dao method to add comment to the database, then refreshes the page
+ *
+ * */
 public class AddCommentCommentServlet extends HttpServlet {
      public AddCommentCommentServlet() throws SQLException {
         super();
@@ -58,7 +61,7 @@ public class AddCommentCommentServlet extends HttpServlet {
         }
         try (ArticleDao adao = new ArticleDao()){
             Article art = adao.findOneArticle(articleId);
-            System.out.println(art.getArticleName() + "this is in the servlet - James");
+            System.out.println(art.getArticleName() + "this is in the servlet ");
             request.setAttribute("SingleArticle", art);
 
 

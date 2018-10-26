@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+/*
+ * We created this method to edit comments on comments but realised it was not necessary for the brief.
+ * Left in incase of future upgrade.
+ * */
+
 
 public class UpdateCommentServlet extends HttpServlet {
     public UpdateCommentServlet() throws SQLException {

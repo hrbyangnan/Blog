@@ -13,8 +13,7 @@ import java.util.TreeSet;
 public class ArticleDao implements AutoCloseable {
     private final Connection conn;
 
-    //private PreparedStatement ps;
-    //private ResultSet rs;
+
 
     public ArticleDao() throws SQLException {
         System.out.println("before connection");
@@ -22,20 +21,11 @@ public class ArticleDao implements AutoCloseable {
         System.out.println("after connection");
     }
 
-//    {
-//        try {
-//            conn = HikariConnectionPool.getConnection();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
-
-    //add article
+    // inserts article
     public void addArticle(Article artc) {
         String sql = "INSERT INTO article(UserId,ArticleTitle,ArticleContent,PubTime,PicPath,RealName,visible)  VALUES(?,?,?,?,?,?,?);";
-        System.out.println("before prepared statement");
-        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, artc.getUserId());
             ps.setString(2, artc.getArticleName());
             ps.setString(3, artc.getArticleContent());
@@ -43,11 +33,8 @@ public class ArticleDao implements AutoCloseable {
             ps.setString(5, artc.getPicPath());
             ps.setString(6, artc.getRealName());
             ps.setInt(7,artc.getVisible());
-//            ps.setTime(4, artc.getPubTime());
-            System.out.println("before execute update");
-            ps.executeUpdate();
-            System.out.println("after execute update");
-        } catch (Exception e) {
+             ps.executeUpdate();
+         } catch (Exception e) {
 
         }
     }
@@ -76,30 +63,20 @@ public class ArticleDao implements AutoCloseable {
         }
     }
 
-    //undate article
+    //update article
     public void updateArticle(Article artc) throws SQLException {
 
-        String sql = "UPDATE article SET ArticleTitle=?,ArticleContent=?,PubTime=?,PicPath=? WHERE ArticleId=?";
-        System.out.println("About to try prepared statement");
-        try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET ArticleTitle=?,ArticleContent=?,PubTime=?,PicPath=? WHERE ArticleId=?;")){
+         try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET ArticleTitle=?,ArticleContent=?,PubTime=?,PicPath=? WHERE ArticleId=?;")){
 
 
             ps.setObject(1, artc.getArticleName());
-            System.out.println("Inside the DAO trying to use "+ artc.getArticleName());
-            ps.setObject(2, artc.getArticleContent());
+             ps.setObject(2, artc.getArticleContent());
             ps.setObject(3, artc.getPubTime());
             ps.setObject(4, artc.getPicPath());
             ps.setInt(5,artc.getArticleId());
-            //Note to James also need to make changes for multiple images
-            System.out.println("SQL is about to be executed");
-            ps.executeUpdate();
-            System.out.println("SQL has been executed inside dao still");
-        }
+             ps.executeUpdate();
+         }
     }
-
-
-
-
 
 
     private List<Article> translate(ResultSet rs) {
@@ -123,17 +100,15 @@ public class ArticleDao implements AutoCloseable {
 
     }
 
+    // This returns a list of articles by using user id
     public List<Article> selectArtByUser(int userId) {
         Integer i = userId;
         List<Article> articleList = new ArrayList<>();
-        System.out.println("This is the id we passed in:" + i);
-        if (i == null) {
+         if (i == null) {
             return null;
         }
         String sql = "SELECT * FROM article WHERE UserId=?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-
-
             ps.setObject(1, i);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -161,26 +136,20 @@ public class ArticleDao implements AutoCloseable {
         return articleList;
     }
 
+    // This method gets one article by using article id
+
     public Article findOneArticle(int articleId) {
         Integer i = articleId;
 
         if (i == null) {
             return null;
         }
-        String sql = "SELECT * FROM article WHERE ArticleId=?";
 
         Article artc = new Article();
         artc.setArticleName("Placeholder");
-        System.out.println("Trying to get one article - James");
-
         try (PreparedStatement ps=conn.prepareStatement("SELECT * FROM article WHERE ArticleId=?")){
-
-
-            System.out.println("Statement has been prepared");
-            ps.setInt(1, i);
-            System.out.println(ps + " James mucking around");
-            ResultSet rs = ps.executeQuery();
-            System.out.println("find one article has been executed");
+             ps.setInt(1, i);
+             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
 
@@ -198,18 +167,17 @@ public class ArticleDao implements AutoCloseable {
             return artc;
 
         } catch (SQLException e) {
-            System.out.println("We are throwing an SQL exception, I don;t know why");
+            System.out.println("exception "+ e);
 
         }
         return artc;
     }
 
-// This method gets article id, article name and article content from the database and returns a list of POJOs
+// This method gets a list of articles
 
     public List<Article> getAllArticles() {
         List<Article> articleList = new ArrayList<>();
-        System.out.println("before try");
-        try (PreparedStatement ps = conn.prepareStatement("SELECT * FROM article;")) {
+         try (PreparedStatement ps = conn.prepareStatement("SELECT * FROM article;")) {
 
 
             ResultSet rs = ps.executeQuery();
@@ -225,12 +193,10 @@ public class ArticleDao implements AutoCloseable {
                 currentArticle.setPubTime(rs.getDate(6));
                 currentArticle.setPicPath(rs.getString(7));
                 currentArticle.setVisible(rs.getInt(8));
-                //System.out.println(getPicPaths(140));
-                currentArticle.setAllPicPaths(getPicPaths(currentArticle.getArticleId()));
+                 currentArticle.setAllPicPaths(getPicPaths(currentArticle.getArticleId()));
 currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
                 articleList.add(currentArticle);
             }
-//            articleList = translate(rs);
 
             return articleList;
         } catch (SQLException e) {
@@ -243,20 +209,16 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
                 e.printStackTrace();
             }
         }
-        System.out.println("This is in getAllArticles method in dao but it shouldn't be reached");
-        return articleList;
+         return articleList;
     }
 
-
-
+//Because the article id is generated by the database as autoincrement it is not present in this article POJO.
+// We need to get this article ID to use to insert into the photo and media tables
     public int getLastID() throws SQLException{
         int idPlaceholder;
-        System.out.println("Inside dao trying to get lastID");
-        try (PreparedStatement stmt = this.conn.prepareStatement("SELECT MAX(ArticleId) FROM article")) {
-            System.out.println("Prepared statement");
-            try (ResultSet rs = stmt.executeQuery()) {
-                System.out.println("Statement executed");
-                rs.next();
+         try (PreparedStatement stmt = this.conn.prepareStatement("SELECT MAX(ArticleId) FROM article")) {
+             try (ResultSet rs = stmt.executeQuery()) {
+                 rs.next();
                 idPlaceholder = rs.getInt(1);
                 System.out.println(idPlaceholder);
             }
@@ -308,14 +270,11 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
     }
 
     public void HideArticle(int ArticleId) throws SQLException {
-        System.out.println("hide 1");
-        try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET visible=? WHERE ArticleId=?;")){
-            System.out.println("hide 2");
+         try (PreparedStatement ps = conn.prepareStatement("UPDATE article SET visible=? WHERE ArticleId=?;")){
 
             ps.setInt(1, 0);
-            System.out.println("hide 3");
             ps.setInt(2, ArticleId);
-            System.out.println("hide 4");
+
 
             ps.executeUpdate();
 
@@ -399,21 +358,21 @@ currentArticle.setMedia(getMediaPaths(currentArticle.getArticleId()));
 
     public void deleteOldPhotos(int id) {
         try(PreparedStatement ps = conn.prepareStatement("DELETE FROM articlePhoto WHERE ArticleId=?")){
-            System.out.println("Could be a problem delete old files");
-            ps.setInt(1,id);
+             ps.setInt(1,id);
 
             ps.executeUpdate();
         }catch (SQLException e){
-            System.out.println("Tried to delete old photos");}
+            System.out.println("SQLException " + e.getMessage());
+        }
     }
     public void deleteOldMedia(int id) {
         try(PreparedStatement ps = conn.prepareStatement("DELETE FROM multimedia WHERE ArticleId=?")){
-            System.out.println("Could be a problem delete old media");
-            ps.setInt(1,id);
+             ps.setInt(1,id);
 
             ps.executeUpdate();
-        }catch (SQLException e){
-            System.out.println("Tried to delete old media");}
+        }catch (SQLException e) {
+            System.out.println("SQLException " + e.getMessage());
+        }
     }
     public String getPicPath(int userId) throws SQLException {
         String path=null;

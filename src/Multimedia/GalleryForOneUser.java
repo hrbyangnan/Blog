@@ -16,14 +16,12 @@ public class GalleryForOneUser extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response){
         try{
             int userID = Integer.parseInt(request.getParameter("paramUserID"));
-            System.out.println("Gallery for single User servlet");
-                /*File folder = new File(getServletContext().getRealPath("/Thumbnails"));
+                 /*File folder = new File(getServletContext().getRealPath("/Thumbnails"));
                 File mediaFolder = new File (getServletContext().getRealPath("/Uploaded_Multimedia"));*/
             try(ArticleDao aDao = new ArticleDao();) {
                 Set<String> thumbNames = aDao.getPicPathsByUser(userID);
                 Set<String> mediaNames = aDao.getMediaPathsByUser(userID);
-                System.out.println(thumbNames.size() + " is the size of the names list");
-                request.setAttribute("thumbNames", thumbNames);
+                 request.setAttribute("thumbNames", thumbNames);
                 request.setAttribute("mediaNames", mediaNames);
             }catch (SQLException e){e.getMessage();}
             catch(Exception e){e.getMessage();}

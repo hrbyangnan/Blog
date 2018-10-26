@@ -3,7 +3,6 @@ package CommentServlet;
 
 import dao.ArticleDao;
 import dao.CommentDao;
-import dao.ProfilePhotoDao;
 import pojo.Article;
 import pojo.Comment;
 import pojo.User;
@@ -18,11 +17,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+/*
+* Allowss a user to add a comment to an article. Gets user information  from session and gets comment content and relevant article id from httprequest object. Then calls dao method to add comment to the database, then refreshes the page
+*
+* */
+
 public class AddArticleCommentServlet extends HttpServlet {
-    ArticleDao adao = new ArticleDao();
-    CommentDao cdao = new CommentDao();
-    ProfilePhotoDao pdao = new ProfilePhotoDao();
-Comment comment;
+
     public AddArticleCommentServlet() throws SQLException {
         super();
     }
@@ -32,7 +33,7 @@ Comment comment;
         HttpSession userSession = request.getSession();
         System.out.println("try to get author attributes from session inside add comment");
         User author = (User) userSession.getAttribute("userInfo");
-        Article article = (Article) userSession.getAttribute("SingleArticle");
+       // Article article = (Article) userSession.getAttribute("SingleArticle");
 
         System.out.println("inside addComments servlet " + author.getRealName());
         Comment newComment = new Comment();
@@ -41,15 +42,9 @@ Comment comment;
         newComment.setUserName(author.getName());//2
         newComment.setUserId(author.getId());//3
         int  articleId   =   Integer.parseInt(request.getParameter("artID")) ;
-        System.out.println("article id we are using in add comment to article servlet is : "+ articleId);
-        System.out.println("I am trying to pass " + articleId + " as ID inside comments Servlet");
- //        int articleId = 67;//4
+         System.out.println("I am trying to pass " + articleId + " as ID inside comments Servlet");
         newComment.setArticleId(articleId);
-//        int commentID = request.getParameter();
         userSession.setAttribute("newComment",newComment);
-//        comment = cdao.findOneComment(articleId);
-//        System.out.println(comment.getCommentId() + "this is in the servlet - James");
-//        request.setAttribute("SingleComment", comment);
 
 
 
@@ -70,8 +65,9 @@ Comment comment;
         }
         try (ArticleDao adao = new ArticleDao()){
             Article art = adao.findOneArticle(articleId);
-            System.out.println(art.getArticleName() + "this is in the servlet - James");
+            System.out.println(art.getArticleName() + "this is in the servlet");
             request.setAttribute("SingleArticle", art);
+            //The jsp page we are redirecting to requires param2 and it should not be null; 9999 is a dummy value that is overwritten elsewhere
             request.setAttribute("param2",9999);
 
         } catch(SQLException e) {
@@ -83,7 +79,7 @@ Comment comment;
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
         dispatcher.forward(request,response);
     }
-//    CommentContent, commentID, articleId, userId, userName
+
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -95,15 +91,3 @@ Comment comment;
 
 
 
-//    int articleId = Integer.parseInt(request.getParameter("articleId"));
-//    int userId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
-//        request.getSession().setAttribute("articleId", articleId);
-//
-//                User u = (User) request.getSession().getAttribute("user");
-//                String userName = u.getName();
-//                String CommentContent = request.getParameter("message");
-//                int commentID = Integer.parseInt(request.getParameter("commentID"));
-//                cdao.addComment(new Comment( CommentContent, commentID, articleId, userId, userName));
-//                request.setAttribute("cdao", cdao);
-//                System.out.println("before display articles inside AddArticleCommentServlet");
-//                response.sendRedirect("displayArticle.jsp");

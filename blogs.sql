@@ -97,7 +97,7 @@ CREATE TABLE `article` (
   `PicPath` varchar(255),
   PRIMARY KEY (`ArticleId`),
   KEY `fk-Ariticle-User` (`UserId`),
-  FOREIGN KEY ('RealName') REFERENCES userInformation ('RealName')
+  FOREIGN KEY ('RealName') REFERENCES userinformation ('RealName')
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 INSERT INTO article VALUES ('12', '62','Henry Smith','Hotel de la Paix ', '<p>The Hotel de la Paix is a hotel in Switzerland . Located on the Quai du Mont-Blanc in Geneva , on the shores of Lake Geneva , it has been part of the Concorde Hotels & Resorts group since 2003 . </p>
@@ -208,9 +208,3 @@ CREATE TABLE `articlePhoto` (
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 DROP TABLE IF EXISTS `article`;*/
 
-
-SELECT * FROM article WHERE RealName like '%Henry%' or ArticleTitle like '%Henry%' or PubTime like '%Henry%';
-
-select ProfilePath from user WHERE UserId=62;
-
-SELECT * FROM article WHERE ArticleId=12;

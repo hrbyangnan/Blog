@@ -23,31 +23,25 @@ public class CommentDao implements AutoCloseable {
     PreparedStatement ps = null;
     ResultSet rs = null;
 
-
+// Servlet calls this dao method to delete comment from database
     public void deleteComment(int commentId) {
-        System.out.println("1:vb");
-        Integer i = commentId;
+         Integer i = commentId;
         if (i == null) {
             return;
         }
 
-        System.out.println("2:vb");
-        String sql1 = "DELETE FROM commentInComment WHERE FatherCommentId=?";
+         String sql1 = "DELETE FROM commentInComment WHERE FatherCommentId=?";
         String sql2 = "DELETE FROM comment WHERE CommentId=?";
 
         try (PreparedStatement ps = conn.prepareStatement(sql1)) {
-            System.out.println("3:vb " + ps);
-            ps.setObject(1, commentId);
-            System.out.println("4:vb " + ps);
-            ps.executeUpdate();
+             ps.setObject(1, commentId);
+             ps.executeUpdate();
         } catch (Exception e) {
 
         }
         try (PreparedStatement ps = conn.prepareStatement(sql2)) {
-            System.out.println("5:vb " + ps);
-            ps.setObject(1, commentId);
-            System.out.println("6:vb " + ps);
-            ps.executeUpdate();
+             ps.setObject(1, commentId);
+             ps.executeUpdate();
         } catch (Exception e) {
 
         } finally {
@@ -61,39 +55,31 @@ public class CommentDao implements AutoCloseable {
     }
 
 
+// This method gets comment from the user and adds it to the database
     public void addComment(Comment artc) {
-        System.out.println("before insert CommentDAO");
 
         String sql = "INSERT INTO comment(ArticleId,CommentContent,UserId,UserName) values(?,?,?,?)";
-        System.out.println("after insert CommentDAO");
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-//            ps.setInt(1, artc.getCommentId());
-            ps.setInt(1, artc.getArticleId());
-            System.out.println("1: " + artc.getArticleId());
+             ps.setInt(1, artc.getArticleId());
 
             ps.setString(2, artc.getCommentContent());
-            System.out.println("2: " + artc.getCommentContent());
 
             ps.setInt(3, artc.getUserId());
-            System.out.println("3: " + artc.getUserId());
 
             ps.setString(4, artc.getUserName());
-            System.out.println("4: " + artc.getUserName());
 
             ps.executeUpdate();
         } catch (Exception e) {
-            System.out.println("inside catch CommentDAO");
+            System.out.println("Exception " + e.getMessage());
 
         }
     }
 
-    // select all commend of one article
-
+    // to get all comment of one article by using article id
     public List<Comment> selectComByArt(int articleId) {
         Integer i = articleId;
         List<Comment> comments = new ArrayList<>();
-        System.out.println("This is the id we passed in:" + i);
 
         if (i == null) {
             return null;
@@ -154,54 +140,54 @@ public class CommentDao implements AutoCloseable {
 
     }
 
+    /*
+     * We created this method to edit comments on comments but realised it was not necessary for the brief.
+     * Left in incase of future upgrade.
+     * */
     public void updateComment(Comment comm) throws SQLException {
 
-        System.out.println("About to try prepared statement");
-        try (PreparedStatement ps = conn.prepareStatement("UPDATE comment SET CommentContent=? WHERE CommentId=?;")) {
+         try (PreparedStatement ps = conn.prepareStatement("UPDATE comment SET CommentContent=? WHERE CommentId=?;")) {
 
             ps.setObject(1, comm.getCommentContent());
             System.out.println("content: " + comm.getCommentContent());
             System.out.println("id: " + comm.getCommentId());
 
-            System.out.println("SQL is about to be executed for update comment..");
-            ps.executeUpdate();
-            System.out.println("SQL has been executed inside dao still");
-        } catch (SQLException e) {
-            System.out.println("We are throwing e ");
+             ps.executeUpdate();
+         } catch (SQLException e) {
+             System.out.println("SQLException " + e.getMessage());
 
         }
     }
-
+    /*
+     * We created this method to edit comments on comments but realised it was not necessary for the brief.
+     * Left in incase of future upgrade.
+     * */
     public Comment findOneComment(int commentId) {
         Integer i = commentId;
 
         if (i == null) {
             return null;
         }
-
         Comment com = new Comment();
-        System.out.println("Trying to get one com dao");
 
         try (PreparedStatement ps = conn.prepareStatement("SELECT CommentContent FROM comment WHERE CommentId=?")) {
 
-            System.out.println("Statement has been prepared");
-            System.out.println("value of commentId: " + commentId);
-            ps.setInt(1, i);
-            System.out.println("value of commentId: " + i);
-            ResultSet rs = ps.executeQuery();
-            System.out.println("find one comment has been executed");
-            while (rs.next()) {
+             ps.setInt(1, i);
+             ResultSet rs = ps.executeQuery();
+             while (rs.next()) {
                 com.setCommentContent(rs.getString(1));
             }
             return com;
 
         } catch (SQLException e) {
-            System.out.println("We are throwing an SQL exception, I don;t know why");
-
+            System.out.println("SQLException " + e.getMessage());
         }
         return com;
     }
 
+    /*
+     * Allows an admin to make visible a hidden comment. Gets comment id and updates the database
+     * */
     public void HideComment(int commentId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE comment SET visible=? WHERE CommentId=?;")) {
 
@@ -213,6 +199,9 @@ public class CommentDao implements AutoCloseable {
         }
     }
 
+    /*
+     * Allows an admin to make hidden comment visible. Gets comment id and updates the database
+     * */
     public void ShowComment(int commentId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE comment SET visible=? WHERE CommentId=?;")) {
 
@@ -222,6 +211,8 @@ public class CommentDao implements AutoCloseable {
 
         }
     }
+
+    //Gets comment id and gets article title for the table of admin interface
     public String getArticleTitle(int commentId) throws SQLException {
         String title=null;
         try (PreparedStatement ps = conn.prepareStatement("select ArticleTitle from article,comment WHERE article.ArticleId=comment.ArticleId and CommentId=?;")) {
@@ -237,6 +228,8 @@ public class CommentDao implements AutoCloseable {
         }
         return title;
     }
+
+    //gets all the comments
     public List<Comment> getAllComments() throws SQLException {
         List<Comment> commentList = new ArrayList<>();
 
@@ -252,29 +245,15 @@ public class CommentDao implements AutoCloseable {
                 c.setVisible(rs.getInt(6));
                 commentList.add(c);
             }
-//            articleList = translate(rs);
-            System.out.println("inside try after query");
-            return commentList;
-//        }
-// catch (SQLException e) {
-//            e.getMessage();
-//        } finally {
-//            try {
-//                conn.close();
-//            } catch (SQLException e) {
-//
-//                e.printStackTrace();
-//            }
-//        }
-//        System.out.println("This is in getAllArticles method in dao but it shouldn't be reached");
-//        return commentList;
+              return commentList;
+
         }
     }
 
+    //gets the avatar of user by using user id for article, comment, and comments on comments
     public String getPicPath(int userId) throws SQLException {
         String path=null;
-        System.out.println("get Picpath");
-        try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {
+         try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {
             ps.setInt(1, userId);
             try(ResultSet rs=ps.executeQuery()){
                 rs.next();

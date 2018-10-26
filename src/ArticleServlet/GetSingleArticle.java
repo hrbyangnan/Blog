@@ -40,7 +40,11 @@ public class GetSingleArticle extends HttpServlet {
         System.out.println("after article method... ");
 //This line is necessary for comments but delete if we find a better way
            // request.setAttribute("param2",9999);
-    }catch (SQLException e){e.getMessage();}catch (Exception f){f.getMessage();}
+    }catch (SQLException e){
+            e.getMessage();}
+            catch (Exception f){
+                System.out.println(f.getMessage());
+        }
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
         dispatcher.forward(request,response);

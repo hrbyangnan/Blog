@@ -48,29 +48,23 @@ public class ComOnComDao implements AutoCloseable {
 
 
     public void addCommentOnComment(CommentOnComment artc) {
-        System.out.println("before insert CommentOnCommentDAO");
 
         String sql = "INSERT INTO commentInComment(FatherCommentId,CommentContent,UserId,UserName) values(?,?,?,?)";
-        System.out.println("after insert CommentOnCommentDAO");
 
         try(PreparedStatement ps = conn.prepareStatement(sql)) {
              ps.setInt(1, artc.getFatherCommentId());
-            System.out.println("a: " + artc.getFatherCommentId());
 
             ps.setString(2, artc.getCommentContent());
-            System.out.println("b: " + artc.getCommentContent());
 
             ps.setInt(3, artc.getUserId());
-            System.out.println("c: " + artc.getUserId());
 
             ps.setString(4, artc.getUserName());
-            System.out.println("d: " + artc.getUserName());
 
            // ps.setInt(5,1);
 
             ps.executeUpdate();
         } catch (Exception e) {
-            System.out.println("inside catch CommentOnComment");
+            System.out.println("Exception " + e.getMessage());
 
         }
     }
@@ -79,7 +73,6 @@ public class ComOnComDao implements AutoCloseable {
     public List<CommentOnComment> selectComByCom(int commentId) {
         Integer i = commentId;
         List<CommentOnComment>commentinCommentList = new ArrayList<>();
-        System.out.println("This is the id we passed in: " + i);
 
         if (i == null) {
             return null;
@@ -116,23 +109,18 @@ public class ComOnComDao implements AutoCloseable {
         }
 
         CommentOnComment com = new CommentOnComment();
-        System.out.println("Trying to get one com dao");
 
         try (PreparedStatement ps=conn.prepareStatement("SELECT CommentContent FROM commentInComment WHERE CommentId=?")){
 
-            System.out.println("Statement has been prepared.");
-            System.out.println("value of ComOnComID: " + commentId);
-            ps.setInt(1, i);
-            System.out.println("value of ComOnComID: " +   i);
-            ResultSet rs = ps.executeQuery();
-            System.out.println("find one comment has been executed");
-            while (rs.next()) {
+             ps.setInt(1, i);
+             ResultSet rs = ps.executeQuery();
+             while (rs.next()) {
                 com.setCommentContent(rs.getString(1));
             }
             return com;
 
         } catch (SQLException e) {
-            System.out.println("We are throwing an SQL exception ComOnCom, I don;t know why");
+            System.out.println("SQLException " + e.getMessage());
 
         }
         return com;
@@ -180,9 +168,7 @@ public class ComOnComDao implements AutoCloseable {
 
                 commentOnCommentList.add(cc);
             }
-//            articleList = translate(rs);
-            System.out.println("inside try after query");
-            return commentOnCommentList;
+              return commentOnCommentList;
         } catch (SQLException e) {
             e.getMessage();
         } finally {
@@ -193,8 +179,7 @@ public class ComOnComDao implements AutoCloseable {
                 e.printStackTrace();
             }
         }
-        System.out.println("This is in getAllArticles method in dao but it shouldn't be reached");
-        return commentOnCommentList;
+         return commentOnCommentList;
     }
     public void HideComOnCom(int comOnComId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE commentInComment SET visible=? WHERE CommentId=?;")){

@@ -89,15 +89,13 @@ private ArrayList<String> mediaPaths;
         factory.setSizeThreshold(4 * 1024);
         factory.setRepository(tempFolder);
         ServletFileUpload upload = new ServletFileUpload(factory);
-        System.out.println("AAA");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String articleName = null;
         String articleContent = null;
         String pubTime = null;
         String fileName = null;
-        System.out.println("BBB");
-        String random = String.valueOf((int)(Math.random()*(9999-1000+1))+1000);
+         String random = String.valueOf((int)(Math.random()*(9999-1000+1))+1000);
         pathnames = new ArrayList<>();
         mediaPaths = new ArrayList<>();
 
@@ -107,8 +105,7 @@ private ArrayList<String> mediaPaths;
             List<FileItem> fileItems = upload.parseRequest(request);
             File fullsizeImagefile = null;
 
-            System.out.println("CCC");
-            for (FileItem fi : fileItems) {
+             for (FileItem fi : fileItems) {
                 if (!fi.isFormField()) {
                     //if filename null don't do this
                     if(fi.getSize()>1){
@@ -129,8 +126,7 @@ private ArrayList<String> mediaPaths;
                         mediaPaths.add(random+"_"+fileName);
 
                     }}
-                    System.out.println("got to here..");
-                } else if (fi.getFieldName() != null) {
+                 } else if (fi.getFieldName() != null) {
                     if (fi.getFieldName().equals("articleName")) {
                         articleName = fi.getString();
                     }
@@ -153,8 +149,7 @@ private ArrayList<String> mediaPaths;
         SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
         System.out.println(pubTime);
         java.util.Date d = null;
-        System.out.println("DDD");
-        String picPath = "";
+         String picPath = "";
         if(fileName!=null){
          picPath = "/Uploaded_Photos/" + random+"_"+fileName;}
 
@@ -169,7 +164,7 @@ private ArrayList<String> mediaPaths;
 
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
 //Create an empty Article POJO, then add attributes to it
-        System.out.println("EEE");
+
         Article newArticle = new Article();
         newArticle.setArticleName(articleName);
         System.out.println(newArticle.getArticleName());
@@ -185,15 +180,13 @@ private ArrayList<String> mediaPaths;
 //        int loginUserId = Integer.parseInt(request.getSession().getAttribute("userId").toString());
         int loginUserId = author.getId();
         //temporary until login is set up
-        System.out.println("FFF");
 
 
         //Create instance of our article dao calls dao methods to put article info into database
         try (ArticleDao dao = new ArticleDao()) {
             dao.addArticle(newArticle);
-            System.out.println("GGG");
-            int articleNumber = dao.getLastID();
-            System.out.println("HHH articlenumber is "+articleNumber);
+             int articleNumber = dao.getLastID();
+            System.out.println(" articlenumber is "+articleNumber);
             //need to check for null
             for(String path: pathnames){
                 dao.insertPhotoinf(articleNumber,"/Uploaded_Photos/"+random+"_"+path);
@@ -201,11 +194,9 @@ private ArrayList<String> mediaPaths;
             for(String path: mediaPaths){
                 dao.insertMediaInf(articleNumber,"/Uploaded_Multimedia/"+path);
             }
-            System.out.println("If this prints the loop wasn;t the problem");
-            //List<Article> articles = dao.selectArtByUser(loginUserId);
+             //List<Article> articles = dao.selectArtByUser(loginUserId);
 
-            System.out.println("IIIi");
-            //request.getSession().setAttribute("userArticles", articles);
+             //request.getSession().setAttribute("userArticles", articles);
             try{
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (IllegalAccessException e) {
@@ -221,7 +212,7 @@ private ArrayList<String> mediaPaths;
             response.sendRedirect("personalpage.jsp");
         }catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("inside articleservlet catch");
+            System.out.println("inside article servlet catch");
         } catch (Exception e) {
         }
 

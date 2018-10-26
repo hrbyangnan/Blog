@@ -8,17 +8,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-
-public class HideComInComServlet extends HttpServlet {
+/*
+* Allows an admin to make visible a hidden comment. Gets id from request object and passes to dao method.
+* */
+public class ShowComOnComServlet extends HttpServlet {
 
         public void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
 
             try(ComOnComDao dao = new ComOnComDao()){
+                String id=request.getParameter("comOnComId");
 
-                int ComOnComId = Integer.parseInt(request.getParameter("comOnComId"));
+                int ComOnComId = Integer.parseInt(id);
 
-                dao.HideComOnCom(ComOnComId);
+                dao.ShowComOnCom(ComOnComId);
 
             }
             catch(SQLException e) {

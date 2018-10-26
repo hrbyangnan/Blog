@@ -61,13 +61,7 @@ public class RegisterUserServlet extends HttpServlet {
             throws ServletException, IOException {
 
 
-//        if (!isCaptchaValid("6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM", code)) {
-//            System.out.println("error!");
-//        } else if (isCaptchaValid("6Le8EHUUAAAAALk08rXol2WnCXaIkCpjj-swXRIM", code)) {
-
-
-        System.out.println("Check that servlet doPost is loading");
-        DiskFileItemFactory factory = new DiskFileItemFactory();
+         DiskFileItemFactory factory = new DiskFileItemFactory();
         factory.setSizeThreshold(4 * 1024);
         factory.setRepository(tempFolder);
         ServletFileUpload upload = new ServletFileUpload(factory);

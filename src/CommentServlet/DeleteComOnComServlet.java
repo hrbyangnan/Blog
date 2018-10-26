@@ -9,6 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/*
+* We created this method to delete comments on comments but realised it was not necessary for the brief.
+* Left in incase of future upgrade.
+* */
+
+
 public class DeleteComOnComServlet extends HttpServlet {
 
     public DeleteComOnComServlet() throws SQLException {

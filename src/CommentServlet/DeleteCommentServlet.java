@@ -12,12 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-
+/*
+* Delete comment from database by creating dao instance and calling deletecomment method.
+* Then need to get correct article object and put into httprequest object siince we are loading displayPage.jsp which expects an article in the request object.
+ */
 public class DeleteCommentServlet extends HttpServlet {
 
 
     ArticleDao dao = new ArticleDao();
-    CommentDao cDao = new CommentDao();
 
     public DeleteCommentServlet() throws SQLException {
     }
@@ -38,7 +40,7 @@ public class DeleteCommentServlet extends HttpServlet {
         }
         try (ArticleDao adao = new ArticleDao()){
             Article art = adao.findOneArticle(articleId);
-            System.out.println(art.getArticleName() + "this is in the delete comment servlet - ");
+            System.out.println(art.getArticleName() + "this is in the delete comment servlet ");
             request.setAttribute("SingleArticle", art);
 
 
@@ -62,17 +64,4 @@ public class DeleteCommentServlet extends HttpServlet {
      }
 
 }
-
-//        int commentId = (int) request.getAttribute("cID");
-//        int articleId = (int) request.getAttribute("superID");
-//
-//        List<Comment> comments = cDao.selectComByArt(articleId);
-//        cDao.deleteComment(commentId);
-//
-//        System.out.println(" you are in delete comments");
-//        request.setAttribute("comments", comments);
-//        System.out.println(" you are in no attri comments");
-//
-//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/displayArticle.jsp");
-//        dispatcher.forward(request,response);
 

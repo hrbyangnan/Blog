@@ -9,6 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/*
+ * Administrator can hide comments . Gets comment id from request and passes it into dao method.
+ * */
+
 public class HideCommentServlet extends HttpServlet {
 
         public void doGet(HttpServletRequest request, HttpServletResponse response)
