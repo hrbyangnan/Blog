@@ -4,7 +4,7 @@ import pojo.User;
 
 import java.sql.SQLException;
 import java.util.List;
-
+//Interface for userDAO
 public interface UserDao {
     String login(String name) throws SQLException;
 

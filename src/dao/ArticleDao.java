@@ -79,26 +79,6 @@ public class ArticleDao implements AutoCloseable {
     }
 
 
-    private List<Article> translate(ResultSet rs) {
-        List<Article> l = new ArrayList<Article>();
-        try {
-            while (rs.next()) {
-                Article artc = new Article(rs.getInt("ArticleId"), rs.getString("ArticleName"), rs.getString("ArticleContent"));
-                l.add(artc);
-            }
-        } catch (Exception e) {
-
-        } finally {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-
-                e.printStackTrace();
-            }
-        }
-        return l;
-
-    }
 
     // This returns a list of articles by using user id
     public List<Article> selectArtByUser(int userId) {

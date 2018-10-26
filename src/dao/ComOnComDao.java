@@ -1,6 +1,5 @@
 package dao;
 
-import pojo.Comment;
 import pojo.CommentOnComment;
 
 import java.sql.Connection;
@@ -23,7 +22,10 @@ public class ComOnComDao implements AutoCloseable {
     PreparedStatement ps = null;
     ResultSet rs = null;
 
-
+    /*
+     * We created this method to edit comments on comments but realised it was not necessary for the brief.
+     * Left in incase of future upgrade.
+     * */
     public void deleteCommentOnComment(int commentId) {
         Integer i = commentId;
         if (i == null) {
@@ -46,7 +48,7 @@ public class ComOnComDao implements AutoCloseable {
         }
     }
 
-
+// Insert comment on comment information into database
     public void addCommentOnComment(CommentOnComment artc) {
 
         String sql = "INSERT INTO commentInComment(FatherCommentId,CommentContent,UserId,UserName) values(?,?,?,?)";
@@ -101,6 +103,8 @@ public class ComOnComDao implements AutoCloseable {
         }
         return commentinCommentList;
     }
+
+    //Finds particular commentoncomment from database using comment id
     public CommentOnComment findOneComment(int commentId) {
         Integer i = commentId;
 
@@ -127,30 +131,12 @@ public class ComOnComDao implements AutoCloseable {
     }
 
 
-    private List<Comment> translate(ResultSet rs) {
-        List<Comment> l = new ArrayList<Comment>();
-        try {
-            while (rs.next()) {
-                Comment artc = new Comment(rs.getString("commentContent"), rs.getInt("commendID"),
-                        rs.getInt("articleId"),
-                        rs.getInt("userId"), rs.getString("userName"));
-                l.add(artc);
-            }
-        } catch (Exception e) {
 
-        } finally {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-
-                e.printStackTrace();
-            }
-        }
-        return l;
-    }
     public void updateComment(CommentOnComment comm) throws SQLException {
 
     }
+
+    //return a list of comment on comments
     public List<CommentOnComment> getAllComoncom() {
         List<CommentOnComment> commentOnCommentList = new ArrayList<>();
 
@@ -181,6 +167,8 @@ public class ComOnComDao implements AutoCloseable {
         }
          return commentOnCommentList;
     }
+
+    //Admin can set visibility of comment to 0  ie hidden
     public void HideComOnCom(int comOnComId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE commentInComment SET visible=? WHERE CommentId=?;")){
 
@@ -192,7 +180,7 @@ public class ComOnComDao implements AutoCloseable {
 
         }
     }
-
+    //Admin can set visibility of comment to 1  ie visible
     public void ShowComOnCom(int comOnComId) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement("UPDATE commentInComment SET visible=? WHERE CommentId=?;")){
 
@@ -204,6 +192,7 @@ public class ComOnComDao implements AutoCloseable {
 
         }
     }
+    //get picture filename for user profile phot from userid
     public String getPicPath(int userId) throws SQLException {
         String path=null;
         try (PreparedStatement ps = conn.prepareStatement("select ProfilePath from user WHERE UserId=?;")) {

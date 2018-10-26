@@ -117,28 +117,7 @@ public class CommentDao implements AutoCloseable {
         return comments;
     }
 
-    private List<Comment> translate(ResultSet rs) {
-        List<Comment> l = new ArrayList<Comment>();
-        try {
-            while (rs.next()) {
-                Comment artc = new Comment(rs.getString("commentContent"), rs.getInt("commendID"),
-                        rs.getInt("articleId"),
-                        rs.getInt("userId"), rs.getString("userName"));
-                l.add(artc);
-            }
-        } catch (Exception e) {
 
-        } finally {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-
-                e.printStackTrace();
-            }
-        }
-        return l;
-
-    }
 
     /*
      * We created this method to edit comments on comments but realised it was not necessary for the brief.

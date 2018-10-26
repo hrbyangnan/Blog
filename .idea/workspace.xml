@@ -23,16 +23,12 @@
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/HikariConnectionPool.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" />
-      <change beforePath="$PROJECT_DIR$/src/Multimedia/Gallery.java" afterPath="$PROJECT_DIR$/src/Multimedia/Gallery.java" />
-      <change beforePath="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" afterPath="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" afterPath="$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" afterPath="$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/EditUserInfoServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/LogoutServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" />
       <change beforePath="$PROJECT_DIR$/src/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticleDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ComOnComDao.java" afterPath="$PROJECT_DIR$/src/dao/ComOnComDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CommentDao.java" afterPath="$PROJECT_DIR$/src/dao/CommentDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" afterPath="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -362,55 +358,67 @@
     <splitter split-orientation="horizontal" split-proportion="0.71628994">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GalleryForOneUser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java">
+          <file leaf-file-name="HikariConnectionPool.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="14" column="77" lean-forward="false" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding>
-                    <element signature="e#1651#1652#0" expanded="true" />
-                    <element signature="e#1691#1692#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ThumbnailGenerator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Multimedia/ThumbnailGenerator.java">
+          <file leaf-file-name="ProfilePhotoDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="9" column="115" lean-forward="false" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
-                  <folding />
+                <state relative-caret-position="1122">
+                  <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+                  <folding>
+                    <marker date="1540516988419" expanded="true" signature="587:632" ph="insert into photo... " />
+                    <marker date="1540516988419" expanded="true" signature="1239:1272" ph="delete from Photo... " />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ArticleDao.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                <state relative-caret-position="-1037">
+                  <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
                   <folding>
-                    <marker date="1540516002828" expanded="true" signature="543:654" ph="INSERT INTO article... " />
-                    <marker date="1540516002828" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
-                    <marker date="1540516002828" expanded="true" signature="1889:1977" ph="UPDATE article... " />
-                    <marker date="1540516002828" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
-                    <marker date="1540516002828" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
-                    <marker date="1540516002828" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
-                    <marker date="1540516002828" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
-                    <marker date="1540516002828" expanded="true" signature="7705:7763" ph="INSERT INTO articlePhoto... " />
-                    <marker date="1540516002828" expanded="true" signature="8139:8195" ph="INSERT INTO multimedia... " />
-                    <marker date="1540516002828" expanded="true" signature="8597:8650" ph="SELECT photo... articlePhoto" />
-                    <marker date="1540516002828" expanded="true" signature="9272:9323" ph="SELECT media... multimedia" />
-                    <marker date="1540516002828" expanded="true" signature="9916:9962" ph="UPDATE article... " />
-                    <marker date="1540516002828" expanded="true" signature="10331:10377" ph="UPDATE article... " />
-                    <marker date="1540516002828" expanded="true" signature="10778:10862" ph="SELECT * FRO... article" />
-                    <marker date="1540516002828" expanded="true" signature="12310:12431" ph="SELECT DISTI... articlePhoto" />
-                    <marker date="1540516002828" expanded="true" signature="12958:13075" ph="SELECT DISTI... multimedia" />
-                    <marker date="1540516002828" expanded="true" signature="13517:13559" ph="DELETE FROM articlePhoto... " />
-                    <marker date="1540516002828" expanded="true" signature="13900:13940" ph="DELETE FROM multimedia... " />
-                    <marker date="1540516002828" expanded="true" signature="14362:14405" ph="select Profi... user" />
+                    <marker date="1540516988147" expanded="true" signature="543:654" ph="INSERT INTO article... " />
+                    <marker date="1540516988147" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
+                    <marker date="1540516988147" expanded="true" signature="1889:1977" ph="UPDATE article... " />
+                    <marker date="1540516988147" expanded="true" signature="2565:2601" ph="SELECT * FRO... article" />
+                    <marker date="1540516988147" expanded="true" signature="4116:4155" ph="SELECT * FRO... article" />
+                    <marker date="1540516988147" expanded="true" signature="5127:5148" ph="SELECT * FRO... article" />
+                    <marker date="1540516988147" expanded="true" signature="6638:6672" ph="SELECT MAX(A... article" />
+                    <marker date="1540516988147" expanded="true" signature="7156:7214" ph="INSERT INTO articlePhoto... " />
+                    <marker date="1540516988147" expanded="true" signature="7590:7646" ph="INSERT INTO multimedia... " />
+                    <marker date="1540516988147" expanded="true" signature="8048:8101" ph="SELECT photo... articlePhoto" />
+                    <marker date="1540516988147" expanded="true" signature="8723:8774" ph="SELECT media... multimedia" />
+                    <marker date="1540516988147" expanded="true" signature="9367:9413" ph="UPDATE article... " />
+                    <marker date="1540516988147" expanded="true" signature="9782:9828" ph="UPDATE article... " />
+                    <marker date="1540516988147" expanded="true" signature="10229:10313" ph="SELECT * FRO... article" />
+                    <marker date="1540516988147" expanded="true" signature="11761:11882" ph="SELECT DISTI... articlePhoto" />
+                    <marker date="1540516988147" expanded="true" signature="12409:12526" ph="SELECT DISTI... multimedia" />
+                    <marker date="1540516988147" expanded="true" signature="12968:13010" ph="DELETE FROM articlePhoto... " />
+                    <marker date="1540516988147" expanded="true" signature="13351:13391" ph="DELETE FROM multimedia... " />
+                    <marker date="1540516988147" expanded="true" signature="13813:13856" ph="select Profi... user" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -425,6 +433,38 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="UserDaoImp.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="273" column="116" lean-forward="false" selection-start-line="273" selection-start-column="116" selection-end-line="273" selection-end-column="116" />
+                  <folding>
+                    <marker date="1540516988262" expanded="true" signature="820:866" ph="SELECT UserP... user" />
+                    <marker date="1540516988262" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
+                    <marker date="1540516988262" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
+                    <marker date="1540516988262" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
+                    <marker date="1540516988262" expanded="true" signature="3047:3081" ph="delete from article... " />
+                    <marker date="1540516988262" expanded="true" signature="3222:3264" ph="delete from userinformation... " />
+                    <marker date="1540516988262" expanded="true" signature="3405:3436" ph="delete from user... " />
+                    <marker date="1540516988262" expanded="true" signature="3798:3870" ph="SELECT * FRO... user" />
+                    <marker date="1540516988262" expanded="true" signature="4787:4824" ph="SELECT * FRO... user" />
+                    <marker date="1540516988262" expanded="true" signature="5428:5465" ph="SELECT * FRO... user" />
+                    <marker date="1540516988262" expanded="true" signature="6159:6195" ph="SELECT * FRO... user" />
+                    <marker date="1540516988262" expanded="true" signature="6668:6714" ph="UPDATE user... " />
+                    <marker date="1540516988262" expanded="true" signature="7265:7283" ph="SELECT * FRO... user" />
+                    <marker date="1540516988262" expanded="true" signature="8315:8349" ph="DELETE FROM article... " />
+                    <marker date="1540516988262" expanded="true" signature="8375:8409" ph="DELETE FROM comment... " />
+                    <marker date="1540516988262" expanded="true" signature="8435:8478" ph="DELETE FROM commentInComment... " />
+                    <marker date="1540516988262" expanded="true" signature="8504:8546" ph="DELETE FROM userinformation... " />
+                    <marker date="1540516988262" expanded="true" signature="8572:8603" ph="DELETE FROM user... " />
+                    <marker date="1540516988262" expanded="true" signature="9969:10024" ph="UPDATE user... " />
+                    <marker date="1540516988262" expanded="true" signature="10278:10322" ph="UPDATE article... " />
+                    <marker date="1540516988262" expanded="true" signature="10523:10623" ph="UPDATE userinformation... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="RemoveUserServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -435,33 +475,42 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DeleteUserInformation.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/UserServlet/DeleteUserInformation.java">
+          <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="13" column="170" lean-forward="false" selection-start-line="13" selection-start-column="170" selection-end-line="13" selection-end-column="170" />
-                  <folding />
+                <state relative-caret-position="388">
+                  <caret line="140" column="6" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="142" selection-end-column="9" />
+                  <folding>
+                    <marker date="1540516988322" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
+                    <marker date="1540516988322" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
+                    <marker date="1540516988322" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
+                    <marker date="1540516988322" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
+                    <marker date="1540516988322" expanded="true" signature="3805:3858" ph="UPDATE comment... " />
+                    <marker date="1540516988322" expanded="true" signature="4615:4667" ph="SELECT Comme... comment" />
+                    <marker date="1540516988322" expanded="true" signature="5256:5302" ph="UPDATE comment... " />
+                    <marker date="1540516988322" expanded="true" signature="5664:5710" ph="UPDATE comment... " />
+                    <marker date="1540516988322" expanded="true" signature="6069:6167" ph="select Artic... article" />
+                    <marker date="1540516988322" expanded="true" signature="6663:6684" ph="SELECT * FRO... comment" />
+                    <marker date="1540516988322" expanded="true" signature="7438:7481" ph="select Profi... user" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+          <file leaf-file-name="ComOnComDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/dao/ComOnComDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+                <state relative-caret-position="459">
+                  <caret line="194" column="60" lean-forward="false" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
                   <folding>
-                    <marker date="1540512514562" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
-                    <marker date="1540512514562" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
-                    <marker date="1540512514562" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
-                    <marker date="1540512514562" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
-                    <marker date="1540512514562" expanded="true" signature="4443:4496" ph="UPDATE comment... " />
-                    <marker date="1540512514562" expanded="true" signature="5253:5305" ph="SELECT Comme... comment" />
-                    <marker date="1540512514562" expanded="true" signature="5894:5940" ph="UPDATE comment... " />
-                    <marker date="1540512514562" expanded="true" signature="6302:6348" ph="UPDATE comment... " />
-                    <marker date="1540512514562" expanded="true" signature="6707:6805" ph="select Artic... article" />
-                    <marker date="1540512514562" expanded="true" signature="7301:7322" ph="SELECT * FRO... comment" />
-                    <marker date="1540512514562" expanded="true" signature="8076:8119" ph="select Profi... user" />
+                    <marker date="1540516988198" expanded="true" signature="993:1039" ph="delete from commentInComment... " />
+                    <marker date="1540516988198" expanded="true" signature="1539:1631" ph="INSERT INTO commentInComment... " />
+                    <marker date="1540516988198" expanded="true" signature="2375:2429" ph="SELECT * FRO... commentInComment" />
+                    <marker date="1540516988198" expanded="true" signature="3696:3757" ph="SELECT Comme... commentInComment" />
+                    <marker date="1540516988198" expanded="true" signature="4421:4451" ph="SELECT * FRO... commentInComment" />
+                    <marker date="1540516988198" expanded="true" signature="5457:5512" ph="UPDATE commentInComment... " />
+                    <marker date="1540516988198" expanded="true" signature="5822:5877" ph="UPDATE commentInComment... " />
+                    <marker date="1540516988198" expanded="true" signature="6211:6254" ph="select Profi... user" />
                   </folding>
                 </state>
               </provider>
@@ -473,29 +522,6 @@
                 <state relative-caret-position="68">
                   <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="10" column="100" lean-forward="false" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
-                  <folding>
-                    <element signature="e#409#410#0" expanded="true" />
-                    <element signature="e#432#433#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -599,8 +625,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/editUserInformation.jsp" />
-        <option value="$PROJECT_DIR$/web/gallery.jsp" />
         <option value="$PROJECT_DIR$/web/galleryForOne.jsp" />
         <option value="$PROJECT_DIR$/src/Administrative/EmailUtils.java" />
         <option value="$PROJECT_DIR$/src/Administrative/ForgotPwdUIServlet.java" />
@@ -633,12 +657,8 @@
         <option value="$PROJECT_DIR$/src/ArticleServlet/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/GetSingleArticle.java" />
         <option value="$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/ComOnComDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
         <option value="$PROJECT_DIR$/blogs.sql" />
-        <option value="$PROJECT_DIR$/src/dao/CommentDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/connection.properties" />
-        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
         <option value="$PROJECT_DIR$/web/allArticles.jsp" />
         <option value="$PROJECT_DIR$/src/Multimedia/Gallery.java" />
         <option value="$PROJECT_DIR$/src/Multimedia/GalleryForOneUser.java" />
@@ -650,6 +670,12 @@
         <option value="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
         <option value="$PROJECT_DIR$/src/UserServlet/RemoveUserServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/CommentDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/ComOnComDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/HikariConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/dao/ProfilePhotoDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
       </list>
     </option>
   </component>
@@ -1101,13 +1127,6 @@
       <workItem from="1540424939878" duration="6000" />
       <workItem from="1540426049486" duration="14860000" />
     </task>
-    <task id="LOCAL-00047" summary="Package three: the articles that have future date are not be visible.">
-      <created>1539852893072</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1539852893072</updated>
-    </task>
     <task id="LOCAL-00048" summary="Package three: the articles that have future date are not be visible.">
       <created>1539853702215</created>
       <option name="number" value="00048" />
@@ -1444,11 +1463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540513895614</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Fixed bug with images, setup Hikari correctly">
+      <created>1540516014359</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1540516014359</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443640000" />
+    <option name="totallyTimeSpent" value="444621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1716,13 +1742,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dao/ArticleDao.java</url>
-          <line>151</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dao/ArticleDao.java</url>
-          <line>158</line>
+          <line>138</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1932,73 +1958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ComOnComDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding>
-            <marker date="1540510412557" expanded="true" signature="849:895" ph="delete from commentInComment... " />
-            <marker date="1540510412557" expanded="true" signature="1341:1433" ph="INSERT INTO commentInComment... " />
-            <marker date="1540510412557" expanded="true" signature="2177:2231" ph="SELECT * FRO... commentInComment" />
-            <marker date="1540510412557" expanded="true" signature="3426:3487" ph="SELECT Comme... commentInComment" />
-            <marker date="1540510412557" expanded="true" signature="4744:4774" ph="SELECT * FRO... commentInComment" />
-            <marker date="1540510412557" expanded="true" signature="5721:5776" ph="UPDATE commentInComment... " />
-            <marker date="1540510412557" expanded="true" signature="6028:6083" ph="UPDATE commentInComment... " />
-            <marker date="1540510412557" expanded="true" signature="6356:6399" ph="select Profi... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <marker date="1540425769889" expanded="true" signature="587:632" ph="insert into photo... " />
-            <marker date="1540425769889" expanded="true" signature="1239:1272" ph="delete from Photo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="307" column="1" lean-forward="false" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
-          <folding>
-            <marker date="1540510412679" expanded="true" signature="760:806" ph="SELECT UserP... user" />
-            <marker date="1540510412679" expanded="true" signature="1289:1364" ph="INSERT INTO user... " />
-            <marker date="1540510412679" expanded="true" signature="1683:1706" ph="SELECT LAST_... " />
-            <marker date="1540510412679" expanded="true" signature="2032:2138" ph="INSERT INTO userinformation... " />
-            <marker date="1540510412679" expanded="true" signature="2659:2693" ph="delete from article... " />
-            <marker date="1540510412679" expanded="true" signature="2834:2876" ph="delete from userinformation... " />
-            <marker date="1540510412679" expanded="true" signature="3017:3048" ph="delete from user... " />
-            <marker date="1540510412679" expanded="true" signature="3289:3361" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="4259:4339" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="5212:5249" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="5808:5845" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="6484:6520" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="6954:7000" ph="UPDATE user... " />
-            <marker date="1540510412679" expanded="true" signature="7502:7520" ph="SELECT * FRO... user" />
-            <marker date="1540510412679" expanded="true" signature="8476:8510" ph="DELETE FROM article... " />
-            <marker date="1540510412679" expanded="true" signature="8536:8570" ph="DELETE FROM comment... " />
-            <marker date="1540510412679" expanded="true" signature="8596:8639" ph="DELETE FROM commentInComment... " />
-            <marker date="1540510412679" expanded="true" signature="8665:8707" ph="DELETE FROM userinformation... " />
-            <marker date="1540510412679" expanded="true" signature="8733:8764" ph="DELETE FROM user... " />
-            <marker date="1540510412679" expanded="true" signature="9994:10049" ph="UPDATE user... " />
-            <marker date="1540510412679" expanded="true" signature="10303:10347" ph="UPDATE article... " />
-            <marker date="1540510412679" expanded="true" signature="10548:10648" ph="UPDATE userinformation... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pojo/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -2043,16 +2002,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2207,50 +2156,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="-1037">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <marker date="1540512514562" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
-            <marker date="1540512514562" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
-            <marker date="1540512514562" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
-            <marker date="1540512514562" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
-            <marker date="1540512514562" expanded="true" signature="4443:4496" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="5253:5305" ph="SELECT Comme... comment" />
-            <marker date="1540512514562" expanded="true" signature="5894:5940" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="6302:6348" ph="UPDATE comment... " />
-            <marker date="1540512514562" expanded="true" signature="6707:6805" ph="select Artic... article" />
-            <marker date="1540512514562" expanded="true" signature="7301:7322" ph="SELECT * FRO... comment" />
-            <marker date="1540512514562" expanded="true" signature="8076:8119" ph="select Profi... user" />
+            <marker date="1540516988147" expanded="true" signature="543:654" ph="INSERT INTO article... " />
+            <marker date="1540516988147" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
+            <marker date="1540516988147" expanded="true" signature="1889:1977" ph="UPDATE article... " />
+            <marker date="1540516988147" expanded="true" signature="2565:2601" ph="SELECT * FRO... article" />
+            <marker date="1540516988147" expanded="true" signature="4116:4155" ph="SELECT * FRO... article" />
+            <marker date="1540516988147" expanded="true" signature="5127:5148" ph="SELECT * FRO... article" />
+            <marker date="1540516988147" expanded="true" signature="6638:6672" ph="SELECT MAX(A... article" />
+            <marker date="1540516988147" expanded="true" signature="7156:7214" ph="INSERT INTO articlePhoto... " />
+            <marker date="1540516988147" expanded="true" signature="7590:7646" ph="INSERT INTO multimedia... " />
+            <marker date="1540516988147" expanded="true" signature="8048:8101" ph="SELECT photo... articlePhoto" />
+            <marker date="1540516988147" expanded="true" signature="8723:8774" ph="SELECT media... multimedia" />
+            <marker date="1540516988147" expanded="true" signature="9367:9413" ph="UPDATE article... " />
+            <marker date="1540516988147" expanded="true" signature="9782:9828" ph="UPDATE article... " />
+            <marker date="1540516988147" expanded="true" signature="10229:10313" ph="SELECT * FRO... article" />
+            <marker date="1540516988147" expanded="true" signature="11761:11882" ph="SELECT DISTI... articlePhoto" />
+            <marker date="1540516988147" expanded="true" signature="12409:12526" ph="SELECT DISTI... multimedia" />
+            <marker date="1540516988147" expanded="true" signature="12968:13010" ph="DELETE FROM articlePhoto... " />
+            <marker date="1540516988147" expanded="true" signature="13351:13391" ph="DELETE FROM multimedia... " />
+            <marker date="1540516988147" expanded="true" signature="13813:13856" ph="select Profi... user" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticleDao.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="140" column="6" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="142" selection-end-column="9" />
+          <folding>
+            <marker date="1540516988322" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
+            <marker date="1540516988322" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
+            <marker date="1540516988322" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
+            <marker date="1540516988322" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
+            <marker date="1540516988322" expanded="true" signature="3805:3858" ph="UPDATE comment... " />
+            <marker date="1540516988322" expanded="true" signature="4615:4667" ph="SELECT Comme... comment" />
+            <marker date="1540516988322" expanded="true" signature="5256:5302" ph="UPDATE comment... " />
+            <marker date="1540516988322" expanded="true" signature="5664:5710" ph="UPDATE comment... " />
+            <marker date="1540516988322" expanded="true" signature="6069:6167" ph="select Artic... article" />
+            <marker date="1540516988322" expanded="true" signature="6663:6684" ph="SELECT * FRO... comment" />
+            <marker date="1540516988322" expanded="true" signature="7438:7481" ph="select Profi... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ComOnComDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="194" column="60" lean-forward="false" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
+          <folding>
+            <marker date="1540516988198" expanded="true" signature="993:1039" ph="delete from commentInComment... " />
+            <marker date="1540516988198" expanded="true" signature="1539:1631" ph="INSERT INTO commentInComment... " />
+            <marker date="1540516988198" expanded="true" signature="2375:2429" ph="SELECT * FRO... commentInComment" />
+            <marker date="1540516988198" expanded="true" signature="3696:3757" ph="SELECT Comme... commentInComment" />
+            <marker date="1540516988198" expanded="true" signature="4421:4451" ph="SELECT * FRO... commentInComment" />
+            <marker date="1540516988198" expanded="true" signature="5457:5512" ph="UPDATE commentInComment... " />
+            <marker date="1540516988198" expanded="true" signature="5822:5877" ph="UPDATE commentInComment... " />
+            <marker date="1540516988198" expanded="true" signature="6211:6254" ph="select Profi... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/HikariConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <marker date="1540516988419" expanded="true" signature="587:632" ph="insert into photo... " />
+            <marker date="1540516988419" expanded="true" signature="1239:1272" ph="delete from Photo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <caret line="273" column="116" lean-forward="false" selection-start-line="273" selection-start-column="116" selection-end-line="273" selection-end-column="116" />
           <folding>
-            <marker date="1540516002828" expanded="true" signature="543:654" ph="INSERT INTO article... " />
-            <marker date="1540516002828" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
-            <marker date="1540516002828" expanded="true" signature="1889:1977" ph="UPDATE article... " />
-            <marker date="1540516002828" expanded="true" signature="3114:3150" ph="SELECT * FRO... article" />
-            <marker date="1540516002828" expanded="true" signature="4665:4704" ph="SELECT * FRO... article" />
-            <marker date="1540516002828" expanded="true" signature="5676:5697" ph="SELECT * FRO... article" />
-            <marker date="1540516002828" expanded="true" signature="7187:7221" ph="SELECT MAX(A... article" />
-            <marker date="1540516002828" expanded="true" signature="7705:7763" ph="INSERT INTO articlePhoto... " />
-            <marker date="1540516002828" expanded="true" signature="8139:8195" ph="INSERT INTO multimedia... " />
-            <marker date="1540516002828" expanded="true" signature="8597:8650" ph="SELECT photo... articlePhoto" />
-            <marker date="1540516002828" expanded="true" signature="9272:9323" ph="SELECT media... multimedia" />
-            <marker date="1540516002828" expanded="true" signature="9916:9962" ph="UPDATE article... " />
-            <marker date="1540516002828" expanded="true" signature="10331:10377" ph="UPDATE article... " />
-            <marker date="1540516002828" expanded="true" signature="10778:10862" ph="SELECT * FRO... article" />
-            <marker date="1540516002828" expanded="true" signature="12310:12431" ph="SELECT DISTI... articlePhoto" />
-            <marker date="1540516002828" expanded="true" signature="12958:13075" ph="SELECT DISTI... multimedia" />
-            <marker date="1540516002828" expanded="true" signature="13517:13559" ph="DELETE FROM articlePhoto... " />
-            <marker date="1540516002828" expanded="true" signature="13900:13940" ph="DELETE FROM multimedia... " />
-            <marker date="1540516002828" expanded="true" signature="14362:14405" ph="select Profi... user" />
+            <marker date="1540516988262" expanded="true" signature="820:866" ph="SELECT UserP... user" />
+            <marker date="1540516988262" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
+            <marker date="1540516988262" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
+            <marker date="1540516988262" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
+            <marker date="1540516988262" expanded="true" signature="3047:3081" ph="delete from article... " />
+            <marker date="1540516988262" expanded="true" signature="3222:3264" ph="delete from userinformation... " />
+            <marker date="1540516988262" expanded="true" signature="3405:3436" ph="delete from user... " />
+            <marker date="1540516988262" expanded="true" signature="3798:3870" ph="SELECT * FRO... user" />
+            <marker date="1540516988262" expanded="true" signature="4787:4824" ph="SELECT * FRO... user" />
+            <marker date="1540516988262" expanded="true" signature="5428:5465" ph="SELECT * FRO... user" />
+            <marker date="1540516988262" expanded="true" signature="6159:6195" ph="SELECT * FRO... user" />
+            <marker date="1540516988262" expanded="true" signature="6668:6714" ph="UPDATE user... " />
+            <marker date="1540516988262" expanded="true" signature="7265:7283" ph="SELECT * FRO... user" />
+            <marker date="1540516988262" expanded="true" signature="8315:8349" ph="DELETE FROM article... " />
+            <marker date="1540516988262" expanded="true" signature="8375:8409" ph="DELETE FROM comment... " />
+            <marker date="1540516988262" expanded="true" signature="8435:8478" ph="DELETE FROM commentInComment... " />
+            <marker date="1540516988262" expanded="true" signature="8504:8546" ph="DELETE FROM userinformation... " />
+            <marker date="1540516988262" expanded="true" signature="8572:8603" ph="DELETE FROM user... " />
+            <marker date="1540516988262" expanded="true" signature="9969:10024" ph="UPDATE user... " />
+            <marker date="1540516988262" expanded="true" signature="10278:10322" ph="UPDATE article... " />
+            <marker date="1540516988262" expanded="true" signature="10523:10623" ph="UPDATE userinformation... " />
           </folding>
         </state>
       </provider>
