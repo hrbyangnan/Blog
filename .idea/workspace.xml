@@ -7,25 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Fixed bug with images, setup Hikari correctly">
-      <change beforePath="" afterPath="$PROJECT_DIR$/README group2.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/group2.sql" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blogs.sql" afterPath="$PROJECT_DIR$/blogs.sql" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LoginServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/LogoutServlet.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/ArticleDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/CommentDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/dao/UserDaoImp.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LoginServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/LogoutServlet.class" />
       <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/ArticleDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/CommentDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/out/production/webBlog/dao/UserDaoImp.class" />
       <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDaoImp.java" afterPath="$PROJECT_DIR$/src/dao/UserDaoImp.java" />
-      <change beforePath="$PROJECT_DIR$/web/displayArticle.jsp" afterPath="$PROJECT_DIR$/web/displayArticle.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/tessssssst.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,30 +42,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
         <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="articlePhoto: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="group2@db.sporadic.nz" type="feb32156:DbDataSourceImpl" />
-        <item name="group2: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="userinformation: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -356,8 +318,37 @@
       <file leaf-file-name="blogs.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogs.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-473">
+            <state relative-caret-position="17">
               <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c75938fc-f2d4-4557-addc-2238c7eebbdb/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+        <entry file="das://table:/f22bb17b/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -366,18 +357,28 @@
       <file leaf-file-name="group2.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group2.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
+            <state relative-caret-position="680">
               <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="129">
+              <caret line="184" column="59" lean-forward="false" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllArticlesServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -393,31 +394,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="true">
-        <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#833#834#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="displayArticle.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="7208">
               <caret line="430" column="101" lean-forward="false" selection-start-line="430" selection-start-column="101" selection-end-line="430" selection-end-column="101" />
               <folding>
                 <element signature="e#12937#13345#0#JSP" expanded="false" />
@@ -426,51 +406,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment" pinned="false" current-in-tab="false">
-        <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.comment">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentInComment" pinned="false" current-in-tab="false">
-        <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.commentInComment">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserDaoImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3467">
+            <state relative-caret-position="-3633">
               <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
               <folding>
-                <marker date="1540518242065" expanded="true" signature="820:866" ph="SELECT UserP... user" />
-                <marker date="1540518242065" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
-                <marker date="1540518242065" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
-                <marker date="1540518242065" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
-                <marker date="1540518242065" expanded="true" signature="3046:3080" ph="delete from article... " />
-                <marker date="1540518242065" expanded="true" signature="3221:3263" ph="delete from userinformation... " />
-                <marker date="1540518242065" expanded="true" signature="3404:3435" ph="delete from user... " />
-                <marker date="1540518242065" expanded="true" signature="3797:3869" ph="SELECT * FRO... user" />
-                <marker date="1540518242065" expanded="true" signature="4786:4823" ph="SELECT * FRO... user" />
-                <marker date="1540518242065" expanded="true" signature="5427:5464" ph="SELECT * FRO... user" />
-                <marker date="1540518242065" expanded="true" signature="6158:6194" ph="SELECT * FRO... user" />
-                <marker date="1540518242065" expanded="true" signature="6667:6713" ph="UPDATE user... " />
-                <marker date="1540518242065" expanded="true" signature="7264:7282" ph="SELECT * FRO... user" />
-                <marker date="1540518242065" expanded="true" signature="8314:8348" ph="DELETE FROM article... " />
-                <marker date="1540518242065" expanded="true" signature="8374:8408" ph="DELETE FROM comment... " />
-                <marker date="1540518242065" expanded="true" signature="8434:8477" ph="DELETE FROM commentInComment... " />
-                <marker date="1540518242065" expanded="true" signature="8503:8545" ph="DELETE FROM userinformation... " />
-                <marker date="1540518242065" expanded="true" signature="8571:8602" ph="DELETE FROM user... " />
-                <marker date="1540518242065" expanded="true" signature="9968:10023" ph="UPDATE user... " />
-                <marker date="1540518242065" expanded="true" signature="10277:10321" ph="UPDATE article... " />
-                <marker date="1540518242065" expanded="true" signature="10522:10622" ph="UPDATE userinformation... " />
+                <marker date="1540522367874" expanded="true" signature="820:866" ph="SELECT UserP... user" />
+                <marker date="1540522367874" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
+                <marker date="1540522367874" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
+                <marker date="1540522367874" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
+                <marker date="1540522367874" expanded="true" signature="3046:3080" ph="delete from article... " />
+                <marker date="1540522367874" expanded="true" signature="3221:3263" ph="delete from userinformation... " />
+                <marker date="1540522367874" expanded="true" signature="3404:3435" ph="delete from user... " />
+                <marker date="1540522367874" expanded="true" signature="3797:3869" ph="SELECT * FRO... user" />
+                <marker date="1540522367874" expanded="true" signature="4786:4823" ph="SELECT * FRO... user" />
+                <marker date="1540522367874" expanded="true" signature="5427:5464" ph="SELECT * FRO... user" />
+                <marker date="1540522367874" expanded="true" signature="6158:6194" ph="SELECT * FRO... user" />
+                <marker date="1540522367874" expanded="true" signature="6667:6713" ph="UPDATE user... " />
+                <marker date="1540522367874" expanded="true" signature="7264:7282" ph="SELECT * FRO... user" />
+                <marker date="1540522367874" expanded="true" signature="8314:8348" ph="DELETE FROM article... " />
+                <marker date="1540522367874" expanded="true" signature="8374:8408" ph="DELETE FROM comment... " />
+                <marker date="1540522367874" expanded="true" signature="8434:8477" ph="DELETE FROM commentInComment... " />
+                <marker date="1540522367874" expanded="true" signature="8503:8545" ph="DELETE FROM userinformation... " />
+                <marker date="1540522367874" expanded="true" signature="8571:8602" ph="DELETE FROM user... " />
+                <marker date="1540522367874" expanded="true" signature="9968:10023" ph="UPDATE user... " />
+                <marker date="1540522367874" expanded="true" signature="10277:10321" ph="UPDATE article... " />
+                <marker date="1540522367874" expanded="true" signature="10522:10622" ph="UPDATE userinformation... " />
               </folding>
             </state>
           </provider>
@@ -656,8 +618,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -693,6 +653,12 @@
               <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Administrative" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectteamtwo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectteamtwo" type="b2602c69:ProjectViewProjectNode" />
@@ -740,17 +706,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Monday" type="58d84e3e:PackageViewProjectNode" />
-              <item name="webBlog" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -768,6 +723,19 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Administrative" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Monday" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webBlog" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -918,7 +886,7 @@
       </method>
     </configuration>
     <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8181/index.jsp" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8283/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -930,7 +898,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="_webBlog" />
-        <option name="HTTP_PORT" value="8181" />
+        <option name="HTTP_PORT" value="8283" />
         <option name="JNDI_PORT" value="1091" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
@@ -1067,6 +1035,7 @@
       <workItem from="1540424433236" duration="499000" />
       <workItem from="1540424939878" duration="6000" />
       <workItem from="1540426049486" duration="14860000" />
+      <workItem from="1540522411408" duration="966000" />
     </task>
     <task id="LOCAL-00049" summary="Package three: the articles that have future date are not be visible.">
       <created>1539854126369</created>
@@ -1415,7 +1384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448448000" />
+    <option name="totallyTimeSpent" value="449414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1428,63 +1397,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05901639" sideWeight="0.33585477" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13691376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.64605546" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.48827294" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26298702" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19402985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05901639" sideWeight="0.33585477" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49924356" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20324574" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13691376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.64605546" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.48827294" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44153005" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05901639" sideWeight="0.33585477" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49946696" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44139388" sideWeight="0.66414523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49093816" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813852" sideWeight="0.6876333" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27047914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2703125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.203125" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13691376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.64605546" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49924356" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813852" sideWeight="0.6876333" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1762,35 +1708,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/SearchArticlesByUsernameServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/UpdateArticleServlet_Part2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1479">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArticleServlet/ShowArticleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1862,7 +1783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1886,24 +1806,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.articlePhoto">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.articlePhoto" />
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.article" />
     <entry file="file://$PROJECT_DIR$/web/allArticles.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1998,14 +1905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserServlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -2037,27 +1936,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1037">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <marker date="1540516988147" expanded="true" signature="543:654" ph="INSERT INTO article... " />
-            <marker date="1540516988147" expanded="true" signature="1353:1390" ph="DELETE FROM article... " />
-            <marker date="1540516988147" expanded="true" signature="1889:1977" ph="UPDATE article... " />
-            <marker date="1540516988147" expanded="true" signature="2565:2601" ph="SELECT * FRO... article" />
-            <marker date="1540516988147" expanded="true" signature="4116:4155" ph="SELECT * FRO... article" />
-            <marker date="1540516988147" expanded="true" signature="5127:5148" ph="SELECT * FRO... article" />
-            <marker date="1540516988147" expanded="true" signature="6638:6672" ph="SELECT MAX(A... article" />
-            <marker date="1540516988147" expanded="true" signature="7156:7214" ph="INSERT INTO articlePhoto... " />
-            <marker date="1540516988147" expanded="true" signature="7590:7646" ph="INSERT INTO multimedia... " />
-            <marker date="1540516988147" expanded="true" signature="8048:8101" ph="SELECT photo... articlePhoto" />
-            <marker date="1540516988147" expanded="true" signature="8723:8774" ph="SELECT media... multimedia" />
-            <marker date="1540516988147" expanded="true" signature="9367:9413" ph="UPDATE article... " />
-            <marker date="1540516988147" expanded="true" signature="9782:9828" ph="UPDATE article... " />
-            <marker date="1540516988147" expanded="true" signature="10229:10313" ph="SELECT * FRO... article" />
-            <marker date="1540516988147" expanded="true" signature="11761:11882" ph="SELECT DISTI... articlePhoto" />
-            <marker date="1540516988147" expanded="true" signature="12409:12526" ph="SELECT DISTI... multimedia" />
-            <marker date="1540516988147" expanded="true" signature="12968:13010" ph="DELETE FROM articlePhoto... " />
-            <marker date="1540516988147" expanded="true" signature="13351:13391" ph="DELETE FROM multimedia... " />
-            <marker date="1540516988147" expanded="true" signature="13813:13856" ph="select Profi... user" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2065,19 +1944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="140" column="6" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="142" selection-end-column="9" />
-          <folding>
-            <marker date="1540516988322" expanded="true" signature="875:927" ph="DELETE FROM commentInComment... " />
-            <marker date="1540516988322" expanded="true" signature="953:990" ph="DELETE FROM comment... " />
-            <marker date="1540516988322" expanded="true" signature="1665:1742" ph="INSERT INTO comment... " />
-            <marker date="1540516988322" expanded="true" signature="2441:2480" ph="SELECT * FRO... comment" />
-            <marker date="1540516988322" expanded="true" signature="3805:3858" ph="UPDATE comment... " />
-            <marker date="1540516988322" expanded="true" signature="4615:4667" ph="SELECT Comme... comment" />
-            <marker date="1540516988322" expanded="true" signature="5256:5302" ph="UPDATE comment... " />
-            <marker date="1540516988322" expanded="true" signature="5664:5710" ph="UPDATE comment... " />
-            <marker date="1540516988322" expanded="true" signature="6069:6167" ph="select Artic... article" />
-            <marker date="1540516988322" expanded="true" signature="6663:6684" ph="SELECT * FRO... comment" />
-            <marker date="1540516988322" expanded="true" signature="7438:7481" ph="select Profi... user" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2085,16 +1952,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="194" column="60" lean-forward="false" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
-          <folding>
-            <marker date="1540516988198" expanded="true" signature="993:1039" ph="delete from commentInComment... " />
-            <marker date="1540516988198" expanded="true" signature="1539:1631" ph="INSERT INTO commentInComment... " />
-            <marker date="1540516988198" expanded="true" signature="2375:2429" ph="SELECT * FRO... commentInComment" />
-            <marker date="1540516988198" expanded="true" signature="3696:3757" ph="SELECT Comme... commentInComment" />
-            <marker date="1540516988198" expanded="true" signature="4421:4451" ph="SELECT * FRO... commentInComment" />
-            <marker date="1540516988198" expanded="true" signature="5457:5512" ph="UPDATE commentInComment... " />
-            <marker date="1540516988198" expanded="true" signature="5822:5877" ph="UPDATE commentInComment... " />
-            <marker date="1540516988198" expanded="true" signature="6211:6254" ph="select Profi... user" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2103,7 +1961,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2124,27 +1982,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.userinformation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.userinformation" />
     <entry file="file://$PROJECT_DIR$/src/dao/ProfilePhotoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <marker date="1540516988419" expanded="true" signature="587:632" ph="insert into photo... " />
-            <marker date="1540516988419" expanded="true" signature="1239:1272" ph="delete from Photo... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="510">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#833#834#0" expanded="true" />
@@ -2152,39 +2001,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3467">
-          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding>
-            <marker date="1540518242065" expanded="true" signature="820:866" ph="SELECT UserP... user" />
-            <marker date="1540518242065" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
-            <marker date="1540518242065" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
-            <marker date="1540518242065" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
-            <marker date="1540518242065" expanded="true" signature="3046:3080" ph="delete from article... " />
-            <marker date="1540518242065" expanded="true" signature="3221:3263" ph="delete from userinformation... " />
-            <marker date="1540518242065" expanded="true" signature="3404:3435" ph="delete from user... " />
-            <marker date="1540518242065" expanded="true" signature="3797:3869" ph="SELECT * FRO... user" />
-            <marker date="1540518242065" expanded="true" signature="4786:4823" ph="SELECT * FRO... user" />
-            <marker date="1540518242065" expanded="true" signature="5427:5464" ph="SELECT * FRO... user" />
-            <marker date="1540518242065" expanded="true" signature="6158:6194" ph="SELECT * FRO... user" />
-            <marker date="1540518242065" expanded="true" signature="6667:6713" ph="UPDATE user... " />
-            <marker date="1540518242065" expanded="true" signature="7264:7282" ph="SELECT * FRO... user" />
-            <marker date="1540518242065" expanded="true" signature="8314:8348" ph="DELETE FROM article... " />
-            <marker date="1540518242065" expanded="true" signature="8374:8408" ph="DELETE FROM comment... " />
-            <marker date="1540518242065" expanded="true" signature="8434:8477" ph="DELETE FROM commentInComment... " />
-            <marker date="1540518242065" expanded="true" signature="8503:8545" ph="DELETE FROM userinformation... " />
-            <marker date="1540518242065" expanded="true" signature="8571:8602" ph="DELETE FROM user... " />
-            <marker date="1540518242065" expanded="true" signature="9968:10023" ph="UPDATE user... " />
-            <marker date="1540518242065" expanded="true" signature="10277:10321" ph="UPDATE article... " />
-            <marker date="1540518242065" expanded="true" signature="10522:10622" ph="UPDATE userinformation... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blogs.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-473">
+        <state relative-caret-position="17">
           <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
           <folding />
         </state>
@@ -2192,7 +2011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/group2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
+        <state relative-caret-position="680">
           <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding />
         </state>
@@ -2200,7 +2019,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/displayArticle.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="7208">
           <caret line="430" column="101" lean-forward="false" selection-start-line="430" selection-start-column="101" selection-end-line="430" selection-end-column="101" />
           <folding>
             <element signature="e#12937#13345#0#JSP" expanded="false" />
@@ -2208,28 +2027,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.commentInComment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.comment" />
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.commentInComment" />
     <entry file="file://$PROJECT_DIR$/src/Administrative/GenerateLinkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2238,10 +2037,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.user">
+    <entry file="das://table:/7edf32d7/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.user" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c75938fc-f2d4-4557-addc-2238c7eebbdb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/f22bb17b/c75938fc-f2d4-4557-addc-2238c7eebbdb/group2.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/GetAllArticlesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3633">
+          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <marker date="1540522367874" expanded="true" signature="820:866" ph="SELECT UserP... user" />
+            <marker date="1540522367874" expanded="true" signature="1415:1490" ph="INSERT INTO user... " />
+            <marker date="1540522367874" expanded="true" signature="1913:1936" ph="SELECT LAST_... " />
+            <marker date="1540522367874" expanded="true" signature="2262:2368" ph="INSERT INTO userinformation... " />
+            <marker date="1540522367874" expanded="true" signature="3046:3080" ph="delete from article... " />
+            <marker date="1540522367874" expanded="true" signature="3221:3263" ph="delete from userinformation... " />
+            <marker date="1540522367874" expanded="true" signature="3404:3435" ph="delete from user... " />
+            <marker date="1540522367874" expanded="true" signature="3797:3869" ph="SELECT * FRO... user" />
+            <marker date="1540522367874" expanded="true" signature="4786:4823" ph="SELECT * FRO... user" />
+            <marker date="1540522367874" expanded="true" signature="5427:5464" ph="SELECT * FRO... user" />
+            <marker date="1540522367874" expanded="true" signature="6158:6194" ph="SELECT * FRO... user" />
+            <marker date="1540522367874" expanded="true" signature="6667:6713" ph="UPDATE user... " />
+            <marker date="1540522367874" expanded="true" signature="7264:7282" ph="SELECT * FRO... user" />
+            <marker date="1540522367874" expanded="true" signature="8314:8348" ph="DELETE FROM article... " />
+            <marker date="1540522367874" expanded="true" signature="8374:8408" ph="DELETE FROM comment... " />
+            <marker date="1540522367874" expanded="true" signature="8434:8477" ph="DELETE FROM commentInComment... " />
+            <marker date="1540522367874" expanded="true" signature="8503:8545" ph="DELETE FROM userinformation... " />
+            <marker date="1540522367874" expanded="true" signature="8571:8602" ph="DELETE FROM user... " />
+            <marker date="1540522367874" expanded="true" signature="9968:10023" ph="UPDATE user... " />
+            <marker date="1540522367874" expanded="true" signature="10277:10321" ph="UPDATE article... " />
+            <marker date="1540522367874" expanded="true" signature="10522:10622" ph="UPDATE userinformation... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="184" column="59" lean-forward="false" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

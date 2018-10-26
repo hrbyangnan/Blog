@@ -182,7 +182,7 @@ public class RegisterUserServlet extends HttpServlet {
                     if (ud.register(user)) {
                         request.setAttribute("username", realName);
 
-                        request.getRequestDispatcher("personalpage.jsp").forward(request, response);
+                        request.getRequestDispatcher("index.jsp").forward(request, response);
                     }
                 } else {
 
