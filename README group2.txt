@@ -4,6 +4,8 @@ README Team Two Hungry Traveller Blog
 
 2. The media button in the WYSIWYG editor can be used to embed youtube videos. However if you wish to upload your own video or audio you should use the "Choose Files" button on the form. We were unable to configure the WYSIWYG photos function with our database so we have disabled the photo function on the editor.
 
+2b. When editing articles, all photos and media for that article are deleted unless you choose to add them back with the "Choose Files".
+
 3. A user is only able to comment once they are logged in, though they are able to view comments.
 
 4. We have popups for incorrect username or password when logging in. If intelliJ is open this will sometimes appear behind the browser window. The page will pause until the popup is clicked.
@@ -31,5 +33,5 @@ group2 DivideAndConquer
 
 10. If user wants to search by date, use the format yyyy-MM-dd. Fuzzy search is ok.
 
-
+11. The project may be slow to load on first load as there are quite a few images. 
 

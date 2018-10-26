@@ -6,12 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Fixed bug with images, setup Hikari correctly">
+    <list default="true" id="0dfb77c6-bfc7-4f2f-81c3-1cf27daa069c" name="Default Changelist" comment="Final commit and push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/webBlog_war_exploded/WEB-INF/classes/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" afterPath="$PROJECT_DIR$/out/production/webBlog/UserServlet/RegisterUserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" afterPath="$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java" />
-      <change beforePath="$PROJECT_DIR$/web/tessssssst.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README group2.txt" afterPath="$PROJECT_DIR$/README group2.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -315,16 +312,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blogs.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="95" column="40" lean-forward="false" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c75938fc-f2d4-4557-addc-2238c7eebbdb/console.sql">
           <provider selected="true" editor-type-id="text-editor">
@@ -364,11 +351,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterUserServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserServlet/RegisterUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
               <caret line="184" column="59" lean-forward="false" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README group2.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README group2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1035,14 +1032,7 @@
       <workItem from="1540424433236" duration="499000" />
       <workItem from="1540424939878" duration="6000" />
       <workItem from="1540426049486" duration="14860000" />
-      <workItem from="1540522411408" duration="966000" />
-    </task>
-    <task id="LOCAL-00049" summary="Package three: the articles that have future date are not be visible.">
-      <created>1539854126369</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1539854126369</updated>
+      <workItem from="1540522411408" duration="1086000" />
     </task>
     <task id="LOCAL-00050" summary="merged Annas work in">
       <created>1539913195789</created>
@@ -1380,11 +1370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540516999460</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Final commit and push">
+      <created>1540523416903</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1540523416903</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="449414000" />
+    <option name="totallyTimeSpent" value="449534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1500,7 +1497,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bugs with edit registration" />
     <MESSAGE value="Reminder for incorrect username or password." />
     <MESSAGE value="Search and Sort might work." />
     <MESSAGE value="Fix the problems that if username upload article photo/profile photo with same name.&#10;By adding a random number before file name." />
@@ -1525,7 +1521,8 @@
     <MESSAGE value="copyright logo" />
     <MESSAGE value="Made some comments, changed Scooby variable name to something more sensible" />
     <MESSAGE value="Fixed bug with images, setup Hikari correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with images, setup Hikari correctly" />
+    <MESSAGE value="Final commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit and push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1708,13 +1705,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ArticleServlet/ShowArticleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Administrative/EmailUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-127">
@@ -2103,6 +2093,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="184" column="59" lean-forward="false" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README group2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
